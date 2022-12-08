@@ -11,40 +11,12 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 #include "nrf_queue.h"
+#include "uartfunction.h"
 
 #include <stdio.h>
 #include <string.h>
 
-
-//Modem AT COMMAND START
-
-static uint8_t text[] = "AT\r\n";
-static uint8_t text_size = sizeof(text);
-
-static uint8_t Sigal_qul[] = "AT+CSQ\r\n";
-static uint8_t Sigal_qul_size = sizeof(Sigal_qul);
-
-static uint8_t LTE_ONLY[] = "AT+CNMP=38\r\n";
-static uint8_t LTE_ONLY_size = sizeof(LTE_ONLY);
-
-static uint8_t SET_NBIOT[] = "AT+CMNB=2\r\n";
-static uint8_t SET_NBIOT_size = sizeof(SET_NBIOT);
-
-static uint8_t SET_RM[] = "AT+NBSC=1\r\n";
-static uint8_t SET_RM_size = sizeof(SET_RM);
-
-static uint8_t SET_APN[] = "AT+CSTT=\"CMNBIOT\"\r\n";
-static uint8_t SET_APN_size = sizeof(SET_APN);
-
-static uint8_t APN_CHECK[] = "AT+CGNAPN\r\n";
-static uint8_t APN_CHECK_size = sizeof(APN_CHECK);
-
-static uint8_t NET_ADHERE[] = "AT+CGATT?\r\n";
-static uint8_t NET_ADHERE_size = sizeof(NET_ADHERE);
-
-static uint8_t NET_TYPE[] = "AT+CPSI?\r\n";
-static uint8_t NET_TYPE_size = sizeof(NET_TYPE);
-
+//NBIOT
 #define _AT_CHECK nrf_libuarte_async_tx(&libuarte, text, text_size);
 #define _SIG_CHECK nrf_libuarte_async_tx(&libuarte, Sigal_qul, Sigal_qul_size);
 #define _LTE_ONLY nrf_libuarte_async_tx(&libuarte, LTE_ONLY, LTE_ONLY_size);
@@ -54,17 +26,32 @@ static uint8_t NET_TYPE_size = sizeof(NET_TYPE);
 #define _APN_CHECK nrf_libuarte_async_tx(&libuarte, APN_CHECK, APN_CHECK_size)
 #define _NET_ADHERE nrf_libuarte_async_tx(&libuarte, NET_ADHERE, NET_ADHERE_size)
 #define _NET_TYPE nrf_libuarte_async_tx(&libuarte, NET_TYPE, NET_TYPE_size)
-
-//Modem AT COMMAND END
+#define _SHU_TCP nrf_libuarte_async_tx(&libuarte, SHU_TCP, SHU_TCP_size)
+//mqtt
+#define _S_APN_MQTT nrf_libuarte_async_tx(&libuarte, S_APN_MQTT, S_APN_MQTT_size)
+#define _COM_MQTT_IP nrf_libuarte_async_tx(&libuarte, COM_MQTT_IP, COM_MQTT_IP_size)
+#define _SET_MQTT_URL nrf_libuarte_async_tx(&libuarte, SET_MQTT_URL, SET_MQTT_URL_size)
+#define _S_KEP_T nrf_libuarte_async_tx(&libuarte, S_KEP_T, S_KEP_T_size)
+#define _S_USR_N nrf_libuarte_async_tx(&libuarte, S_USR_N, S_USR_N_size)
+#define _S_PASS_WD nrf_libuarte_async_tx(&libuarte, S_PASS_WD, S_PASS_WD_size)
+#define _S_CLE_ID nrf_libuarte_async_tx(&libuarte, S_CLE_ID, S_CLE_ID_size)
+#define _C_T_MQTT nrf_libuarte_async_tx(&libuarte, C_T_MQTT, C_T_MQTT_size)
+#define _DIS_MQTT nrf_libuarte_async_tx(&libuarte, DIS_MQTT, DIS_MQTT_size)
+#define _DIS_WILESS nrf_libuarte_async_tx(&libuarte, DIS_WILESS, DIS_WILESS_size)
+#define _SUB_TOP nrf_libuarte_async_tx(&libuarte, SUB_TOP, SUB_TOP_size)
+#define _PUB_T_TOP nrf_libuarte_async_tx(&libuarte, PUB_T_TOP, PUB_T_TOP_size)
+#define _SEND_CHECK nrf_libuarte_async_tx(&libuarte, SEND_CHECK, SEND_CHECK_size)
 
 
 //PERSIONAL FUNCTION DECLARATION
 void AT_Match(void);
 void Modem_Pwron(void);
-int isPresent( uint8_t *line,  uint8_t *word);
+int set_MQTT();
+
 
 bool status_modem;
-uint8_t Uart_AT[64];
+uint8_t Uart_AT[1000];
+int Modem_test_result = 0;
 
 //PERSIONAL FUNCTION DECLARATION END
 
@@ -73,7 +60,7 @@ uint8_t Uart_AT[64];
 
 //UART CONFIGURATION
 static volatile bool m_loopback_phase;
-NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 255, 8);
+NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
 
 
 typedef struct {
@@ -81,7 +68,7 @@ typedef struct {
     uint32_t length;
 } buffer_t;
 
-NRF_QUEUE_DEF(buffer_t, m_buf_queue, 10, NRF_QUEUE_MODE_NO_OVERFLOW);
+NRF_QUEUE_DEF(buffer_t, m_buf_queue, 30, NRF_QUEUE_MODE_NO_OVERFLOW);
 
 
 
@@ -117,29 +104,31 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
             //}
            // NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
+           Uart_AT[0]=0;
            strcpy(Uart_AT, p_evt->data.rxtx.p_data);
-           
+           nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
 
 
-            m_loopback_phase = true;
+            m_loopback_phase = false;
             break;
         case NRF_LIBUARTE_ASYNC_EVT_TX_DONE:
         nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,14));
+        
         NRF_LOG_FLUSH();
   
             
-            //if (m_loopback_phase)
-            //{
-            //    nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
-            //    if (!nrf_queue_is_empty(&m_buf_queue))
-            //    {
-            //        buffer_t buf;
-            //        ret = nrf_queue_pop(&m_buf_queue, &buf);
-            //        APP_ERROR_CHECK(ret);
-            //        UNUSED_RETURN_VALUE(nrf_libuarte_async_tx(p_libuarte, buf.p_data, buf.length));
-            //    }
-            //}
+            if (m_loopback_phase)
+            {
+                nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
+                if (!nrf_queue_is_empty(&m_buf_queue))
+                {
+                    buffer_t buf;
+                    ret = nrf_queue_pop(&m_buf_queue, &buf);
+                    APP_ERROR_CHECK(ret);
+                    UNUSED_RETURN_VALUE(nrf_libuarte_async_tx(p_libuarte, buf.p_data, buf.length));
+                }
+            }
 
             break;
         default:
@@ -147,26 +136,7 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
     }
 }
 
-//UART CONFIGURATION END
-
-
-
-
-
-
-
-int isPresent( uint8_t *line,  uint8_t *word)//Define a String searching function
-{
-	int i, j, status, n, m;
-	n = strlen(line);
-	m = strlen(word);
-	for (i = 0; i <= n - m; i++)
-        {       
-		if (strncmp(line+i, word, m)==0) return 1;
-                }
-	return 0;
-
-}
+//UART CONFIGURATION ENd
 
 
 
@@ -238,6 +208,55 @@ void Modem_Pwron(void)
 
 }
 
+int set_MQTT()
+{
+
+uint8_t MATCH[] = "\"CHECK";
+uint8_t OK[] = "OK";
+uint8_t SMSUB[] = "+SMSUB";
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
+NRF_LOG_INFO("Watchdog fed");
+
+_AT_CHECK;      
+_SHU_TCP;       nrf_delay_ms(200);
+_SIG_CHECK;     nrf_delay_ms(200);
+_LTE_ONLY;      nrf_delay_ms(200);
+_SET_NBIOT;     nrf_delay_ms(200);
+_SET_RM;        nrf_delay_ms(200);
+//_SET_APN;
+//_APN_CHECK;
+_NET_ADHERE;    nrf_delay_ms(200);
+_NET_TYPE;      nrf_delay_ms(200);
+while(!isPresent(Uart_AT,  OK)==1);
+
+//mqtt
+_DIS_MQTT;      nrf_delay_ms(500);
+_DIS_WILESS;    nrf_delay_ms(500);
+_S_APN_MQTT;    nrf_delay_ms(500);
+_COM_MQTT_IP;   nrf_delay_ms(500);
+_SET_MQTT_URL;  nrf_delay_ms(500);
+_S_KEP_T;       nrf_delay_ms(500);
+_S_USR_N;       nrf_delay_ms(500);
+_S_PASS_WD;     nrf_delay_ms(500);
+_S_CLE_ID;      nrf_delay_ms(500);
+_C_T_MQTT;      nrf_delay_ms(500);
+while(!isPresent(Uart_AT,  OK)==1);
+// _DIS_MQTT;
+//  nrf_delay_ms(200);
+_SUB_TOP;       nrf_delay_ms(500);
+_PUB_T_TOP;     nrf_delay_ms(500);
+_SEND_CHECK;    while(!isPresent(Uart_AT,  SMSUB)==1);
+
+if(isPresent(Uart_AT,  MATCH)==1)
+{
+NRF_LOG_INFO("MQTT test done");
+return 1;
+
+}
+return 0;
+
+
+}
 
 
 
@@ -314,6 +333,18 @@ NRF_LOG_FLUSH();
 
 
 
+while(!Modem_test_result==1)
+{
+  Modem_test_result = set_MQTT();
+  nrf_delay_ms(1000);
+  NRF_LOG_FLUSH();
+}
+
+
+NRF_LOG_FLUSH();
+
+NRF_LOG_INFO("Modem Passed!!!!!!");
+
     while (true)
     {
         count = count+1;
@@ -322,21 +353,13 @@ NRF_LOG_FLUSH();
         nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
         NRF_LOG_FLUSH();
 
-        if ((count % 50) == 0)
-        {
-        _AT_CHECK;
-        NRF_LOG_INFO("Counter Value: %d", count) 
-        nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
-        NRF_LOG_INFO("WatchDog Fed");
-        NRF_LOG_FLUSH();
-        
-        
-        
+
+               
         } 
 
 
     }
-}
+
 
 
 /** @} */

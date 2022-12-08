@@ -83,4 +83,5 @@ Output/Release/Obj/template_pca10056/main.o: \
  ../../../../../../components/libraries/log/nrf_log_backend_interface.h \
  ../../../../../../components/libraries/memobj/nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
- ../../../../../../components/libraries/log/nrf_log_default_backends.h
+ ../../../../../../components/libraries/log/nrf_log_default_backends.h \
+ uartfunction.h
