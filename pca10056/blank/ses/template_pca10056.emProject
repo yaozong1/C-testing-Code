@@ -106,6 +106,7 @@
       <file file_name="uartfunction.c">
         <configuration Name="Release" build_exclude_from_build="No" />
       </file>
+      <file file_name="IIC_LIS.c" />
     </folder>
     <folder Name="Board Support">
       <file file_name="../../../../../../components/libraries/bsp/bsp.c" />

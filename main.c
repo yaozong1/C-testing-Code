@@ -16,6 +16,10 @@
 #include <stdio.h>
 #include <string.h>
 
+
+#include "IIC_LIS.h"
+
+
 //NBIOT
 #define _AT_CHECK nrf_libuarte_async_tx(&libuarte, text, text_size);
 #define _SIG_CHECK nrf_libuarte_async_tx(&libuarte, Sigal_qul, Sigal_qul_size);
@@ -43,6 +47,7 @@
 #define _SEND_CHECK nrf_libuarte_async_tx(&libuarte, SEND_CHECK, SEND_CHECK_size)
 
 
+
 //PERSIONAL FUNCTION DECLARATION
 void AT_Match(void);
 void Modem_Pwron(void);
@@ -53,7 +58,11 @@ bool status_modem;
 uint8_t Uart_AT[1000];
 int Modem_test_result = 0;
 
+uint8_t lis_address = 0x19;
+uint8_t lis_sample_data = 0x7F;
+
 //PERSIONAL FUNCTION DECLARATION END
+
 
 
 
@@ -142,7 +151,6 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
 
 
 
-
 void AT_Match(void)//Define a AT respond function
 {
  uint8_t MATCH[] = "OK";
@@ -184,7 +192,6 @@ void Modem_Pwron(void)
     if (status_modem == 1)
     {
     NRF_LOG_INFO("Modem is on");
-    printf("asdfghjk:%d",status_modem);
     }
     else
     {
@@ -264,24 +271,9 @@ return 0;
 
 int main(void)
 {   
-    
-
-    // Initialize the Logger module and check if any error occured during initialization
-  //  APP_ERROR_CHECK(NRF_LOG_INIT(NULL));
-	
-	// Initialize the default backends for nrf logger
-   // NRF_LOG_DEFAULT_BACKENDS_INIT();
-
-	// print the log msg over uart port
-  //  NRF_LOG_INFO("This is log data from nordic device..");
-
-	// a variable to hold counter value
+  
     uint32_t count = 0;
-
-
-
-   
-    
+ 
     ret_code_t ret = nrf_drv_clock_init();
     APP_ERROR_CHECK(ret);
   
@@ -295,8 +287,6 @@ int main(void)
     nrf_libuarte_async_config_t nrf_libuarte_async_config = {
             .tx_pin     = TX_PIN_NUMBER,
             .rx_pin     = RX_PIN_NUMBER,
-            //.cts_pin    = CTS_PIN_NUMBER,
-            //.rts_pin    = RTS_PIN_NUMBER,
             .baudrate   = NRF_UARTE_BAUDRATE_115200,
             .pullup_rx  = false,
             .parity     = NRF_UARTE_PARITY_EXCLUDED,
@@ -316,34 +306,52 @@ int main(void)
     APP_ERROR_CHECK(err_code);
 
 
-//Modem Enable
-
+//Modem&iic Enable
+enable_3v3();
 Modem_Pwron();
+nrf_delay_ms(500);
+twi_init();
+nrf_delay_ms(500);
+NRF_LOG_INFO("IIC testing start....");
+nrf_delay_ms(500);
+NRF_LOG_FLUSH();
+
+//MODEM&iic ENABLE DONE
+
+//IIC ACK TEST
+err_code = nrf_drv_twi_rx(&m_twi, lis_address, &lis_sample_data, sizeof(lis_sample_data));
+
+if(err_code == NRF_SUCCESS)
+  {
+  
+  NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address);
+  
+  NRF_LOG_WARNING("Motion Sensor Passed!!!!!!");
+  }
+else NRF_LOG_WARNING("Motion Sensor Passed!!!!!!");
+
+//IIC ACK TEST DONE
 
 
-
-//MODEM ENABLE DONE
-
-
+nrf_delay_ms(500);
+NRF_LOG_FLUSH();
+nrf_delay_ms(50);
 AT_Match();
 NRF_LOG_INFO("AT_Matching Done");
 nrf_delay_ms(1000);
 NRF_LOG_INFO("READY TO GO");
-NRF_LOG_FLUSH();
 
 
-
-while(!Modem_test_result==1)
-{
-  Modem_test_result = set_MQTT();
-  nrf_delay_ms(1000);
-  NRF_LOG_FLUSH();
-}
-
+//while(!Modem_test_result==1)
+//{
+//  Modem_test_result = set_MQTT();
+//  nrf_delay_ms(1000);
+//  NRF_LOG_FLUSH();
+//}
 
 NRF_LOG_FLUSH();
+NRF_LOG_WARNING("Modem Passed!!!!!!");
 
-NRF_LOG_INFO("Modem Passed!!!!!!");
 
     while (true)
     {

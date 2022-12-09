@@ -50,6 +50,7 @@
 "Output/Release/Obj/template_pca10056/orkney8pts.o"
 "Output/Release/Obj/template_pca10056/main.o"
 "Output/Release/Obj/template_pca10056/uartfunction.o"
+"Output/Release/Obj/template_pca10056/IIC_LIS.o"
 "Output/Release/Obj/template_pca10056/bsp.o"
 "Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o"
 "Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o"
