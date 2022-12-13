@@ -90,4 +90,7 @@ Output/Release/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twi_twim.h \
  ../../../../../../modules/nrfx/hal/nrf_twim.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twi.h \
- ../../../../../../modules/nrfx/hal/nrf_twi.h
+ ../../../../../../modules/nrfx/hal/nrf_twi.h \
+ ../../../../../../integration/nrfx/legacy/nrf_drv_qspi.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_qspi.h \
+ ../../../../../../modules/nrfx/hal/nrf_qspi.h
