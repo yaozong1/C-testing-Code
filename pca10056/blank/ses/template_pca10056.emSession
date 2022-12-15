@@ -1,7 +1,9 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
@@ -22,6 +24,8 @@
   <ProjectSessionItem path="template_pca10056"/>
   <ProjectSessionItem path="template_pca10056;template_pca10056"/>
   <ProjectSessionItem path="template_pca10056;template_pca10056;Application"/>
+  <ProjectSessionItem path="template_pca10056;template_pca10056;nRF_Libraries"/>
+  <ProjectSessionItem path="template_pca10056;template_pca10056;nRF_Log"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="template_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -54,10 +58,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="499" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses/UartFunction.h" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="476" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="7339" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="7336" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="61" y="440" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses/UartFunction.h" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="415" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="7354" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="6703" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="27" y="175" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/libuarte/nrf_libuarte_drv.h" selected="0" top="145" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="46" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/src/nrf_log_backend_rtt.c" selected="0" top="12" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="47" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/src/nrf_log_backend_rtt.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="45" y="84" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="19" path="../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h" selected="0" top="75" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../external/segger_rtt/SEGGER_RTT.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="21" y="505" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../external/segger_rtt/SEGGER_RTT_printf.c" selected="0" top="491" codecName="Default"/>
@@ -72,9 +76,9 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="0" openedFrom="" useBinaryEdit="0" left="0" path="Output/Release/Obj/template_pca10056/uartfunction.o" selected="0" top="0" codecName=""/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/include/string.h" selected="0" top="45" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/mpu/nrf_mpu_lib.c" selected="0" top="54" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="uartfunction.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="73" y="86" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="uartfunction.h" selected="0" top="84" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="235" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/libuarte/nrf_libuarte_async.h" selected="0" top="224" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="5" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="uartfunction.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="18" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="uartfunction.h" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="62" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/libuarte/nrf_libuarte_async.h" selected="0" top="53" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="21" y="63" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/delay/nrf_delay.h" selected="0" top="48" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="50" y="63" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/nrf_log_instance.h" selected="0" top="55" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="IIC_LIS.c" selected="0" top="12" codecName="Default"/>
@@ -87,6 +91,7 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="54" y="86" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_qspi.h" selected="0" top="76" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="67" y="77" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_qspi.h" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/include/nrfx_qspi.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="11" y="555" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.h" selected="0" top="545" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="50" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c" selected="0" top="37" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="template_pca10056" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="template_pca10056" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

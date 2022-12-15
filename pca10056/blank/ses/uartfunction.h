@@ -16,6 +16,10 @@ extern int isPresent( uint8_t *line,  uint8_t *word);
 static uint8_t text[] = "AT\r\n";
 static uint8_t text_size = sizeof(text);
 
+static uint8_t Dect_sim[] = "AT+CPIN?\r\n";
+static uint8_t Dect_sim_size = sizeof(Dect_sim);
+
+
 static uint8_t Sigal_qul[] = "AT+CSQ\r\n";
 static uint8_t Sigal_qul_size = sizeof(Sigal_qul);
 

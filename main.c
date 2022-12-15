@@ -27,6 +27,7 @@
 
 //NBIOT
 #define _AT_CHECK nrf_libuarte_async_tx(&libuarte, text, text_size);
+#define _DET_SIM nrf_libuarte_async_tx(&libuarte, Dect_sim, Dect_sim_size);
 #define _SIG_CHECK nrf_libuarte_async_tx(&libuarte, Sigal_qul, Sigal_qul_size);
 #define _LTE_ONLY nrf_libuarte_async_tx(&libuarte, LTE_ONLY, LTE_ONLY_size);
 #define _SET_NBIOT nrf_libuarte_async_tx(&libuarte, SET_NBIOT, SET_NBIOT_size);
@@ -71,6 +72,9 @@ uint8_t lis_sample_data = 0x7F;
 bool result_modem = 0 ;
 bool result_qspi_flash = 0 ;
 bool result_motion_sensor = 0 ;
+
+bool SIM_CARD_FLAG = 1;//To define if SIM CARD TESTING OR NOT.
+bool sim_status = 0 ;
 
 
 //PERSIONAL FUNCTION DECLARATION END
@@ -142,8 +146,8 @@ void qspi_test(void)
         nrf_drv_qspi_config_t config = NRF_DRV_QSPI_DEFAULT_CONFIG;
 
     err_code = nrf_drv_qspi_init(&config, qspi_handler, NULL);
-   // NRF_LOG_INFO("::::%d",err_code);
     APP_ERROR_CHECK(err_code);
+
     NRF_LOG_INFO("QSPI example started.");
 
     configure_memory();
@@ -167,13 +171,13 @@ void qspi_test(void)
     if (memcmp(m_buffer_tx, m_buffer_rx, QSPI_TEST_DATA_SIZE) == 0)
     {
         NRF_LOG_INFO("Data consistent");
-      //  NRF_LOG_INFO("QSPI Flash Passed!!!!!!");
-        result_qspi_flash = 1 ;
+      
+        result_qspi_flash = 1 ;//QSPI PASS FLAG
     }
     else
     {
-        NRF_LOG_INFO("Data inconsistent");
-     //   NRF_LOG_INFO("QSPI Flash Failed!!!!!!");
+        NRF_LOG_INFO("Data inconsistent");//QSPI FAIL FLAG
+     
     }
 
     nrf_drv_qspi_uninit();
@@ -229,13 +233,11 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
             //}
            // NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
-           //Uart_AT[0]=0;
-           strcpy(Uart_AT, p_evt->data.rxtx.p_data);
+           Uart_AT[0]=0;
+           strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
-
-
-            m_loopback_phase = false;
+            m_loopback_phase = false;//loop back function from e.g
             break;
         case NRF_LIBUARTE_ASYNC_EVT_TX_DONE:
         nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,14));
@@ -271,7 +273,7 @@ void AT_Match(void)//Define a AT respond function
 {
  uint8_t MATCH[] = "OK";
 
- while(!isPresent(Uart_AT,  MATCH) == 1)
+ while(!isPresent(Uart_AT,  MATCH) == 1)//Matching AT:"OK" from module
 
 {
    _AT_CHECK;//Sending AT ack
@@ -280,50 +282,85 @@ void AT_Match(void)//Define a AT respond function
    nrf_delay_ms(1000);
    NRF_LOG_FLUSH();
    
-
-   //NRF_LOG_INFO("Received: %s", Uart_AT);
-   //NRF_LOG_INFO("COMPARED1: %s", MATCH);
-   //NRF_LOG_INFO("COMPARED2: %s", Uart_AT);   
+  
 }
 result_modem = 1;
 }
 
+bool SIM_DET(void)
+{
+  
+  uint8_t ok[] = "OK";
+  uint8_t ready[] = "READY";
+  uint8_t error[] = "ERROR";
+  _DET_SIM;
+  nrf_delay_ms(1000);
+  if(isPresent(Uart_AT,  ready)==1)
+  
+  
+  return 1;
+  
+  
+  return 0;
+}
 
 
 void Modem_Pwron(void)
 {
     
     NRF_LOG_INFO("Modem Power ON.....");       
-    nrf_delay_ms(1000);
+    nrf_delay_ms(100);
     NRF_LOG_FLUSH();
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));//Indicator
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,3));//PWRKEY
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,9));//WATCH DOD BUT DOESNOT WORK NOW
     nrf_gpio_cfg_input(NRF_GPIO_PIN_MAP(1,7),NRF_GPIO_PIN_PULLDOWN);
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     status_modem = nrf_gpio_pin_read(NRF_GPIO_PIN_MAP(1,7));
     NRF_LOG_INFO("Modem Status: %d",status_modem);
+    nrf_delay_ms(100);
+    NRF_LOG_FLUSH();
+
+    if (status_modem == 1)//Modem is on already when testing.
+    {
+    NRF_LOG_INFO("Modem is on");
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-    if (status_modem == 1)
-    {
-    NRF_LOG_INFO("Modem is on");
+    NRF_LOG_INFO("Reboot the modem....");
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
+    nrf_delay_ms(2000);
+    NRF_LOG_FLUSH();
+
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
+    nrf_delay_ms(2000);
+    NRF_LOG_INFO("shut down the modem....");
+    nrf_delay_ms(2000);
+    NRF_LOG_FLUSH();
+
+    NRF_LOG_INFO("Modem is being powering on");
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
+    nrf_delay_ms(500);
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
+    nrf_delay_ms(2000);
+
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
+    nrf_delay_ms(2000);
+    NRF_LOG_INFO("POWER ON DONE");
     }
     else
     {
     NRF_LOG_INFO("Modem is being powering on");
     
-    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,14), 0);
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
-    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,14), 1);
+    
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
-    nrf_delay_ms(3000);
+    nrf_delay_ms(2000);
 
-    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,14), 0);
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(3000);
+    nrf_delay_ms(2000);
     NRF_LOG_INFO("POWER ON DONE");
     
     NRF_LOG_FLUSH();
@@ -457,8 +494,20 @@ nrf_delay_ms(50);
 AT_Match();
 NRF_LOG_INFO("AT_Matching Done");
 nrf_delay_ms(1000);
-NRF_LOG_INFO("READY TO GO");
 
+
+if (SIM_CARD_FLAG ==1)//if SIM CARD TESTING OR NOT.
+{ 
+sim_status = SIM_DET();
+if (sim_status == 1)
+ {
+  NRF_LOG_INFO("Found the SIM card");
+
+ }
+else NRF_LOG_WARNING("SIM CARD ERROR");
+}
+else
+NRF_LOG_WARNING("Proceed without sim card");
 
 //while(!Modem_test_result==1)
 //{
@@ -468,7 +517,7 @@ NRF_LOG_INFO("READY TO GO");
 //}
 
 NRF_LOG_FLUSH();
-//NRF_LOG_WARNING("Modem Passed!!!!!!");
+
 qspi_test();
 
 
@@ -485,6 +534,15 @@ NRF_LOG_INFO("     Modem(SIM7000G):          Passed \r\n");
 else 
 NRF_LOG_INFO("     Modem(SIM7000G):          Failed\r\n");
 
+if (SIM_CARD_FLAG ==1)
+ {
+if (sim_status == 1)
+{
+NRF_LOG_INFO("     SIMCARD(SIM7000G):        Passed \r\n");
+}
+else 
+NRF_LOG_INFO("     SIMCARD(SIM7000G):        Failed\r\n");
+ }
 if (result_motion_sensor == 1)
 {
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
@@ -508,8 +566,6 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
         nrf_delay_ms(200); // delay for 500 ms 
         nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
         NRF_LOG_FLUSH();
-
-
                
         } 
 

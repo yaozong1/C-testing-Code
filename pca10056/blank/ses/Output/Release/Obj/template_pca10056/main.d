@@ -4,7 +4,7 @@ Output/Release/Obj/template_pca10056/main.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
- D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/components/libraries/libuarte/nrf_libuarte_async.h \
+ ../../../../../../components/libraries/libuarte/nrf_libuarte_async.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
@@ -56,7 +56,7 @@ Output/Release/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/hal/nrf_timer.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_rtc.h \
  ../../../../../../modules/nrfx/hal/nrf_rtc.h \
- D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/components/libraries/libuarte/nrf_libuarte_drv.h \
+ ../../../../../../components/libraries/libuarte/nrf_libuarte_drv.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_clock.h \
@@ -84,7 +84,8 @@ Output/Release/Obj/template_pca10056/main.o: \
  ../../../../../../components/libraries/memobj/nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
- uartfunction.h IIC_LIS.h \
+ ../../../../../../examples/My\ projects/template_project/pca10056/blank/ses/uartfunction.h \
+ ../../../../../../examples/My\ projects/template_project/pca10056/blank/ses/IIC_LIS.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_twi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twim.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twi_twim.h \
