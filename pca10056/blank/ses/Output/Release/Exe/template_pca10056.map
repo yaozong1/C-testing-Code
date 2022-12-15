@@ -286,7 +286,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
  .debug_line    0x0000000000000000       0xe2 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
- .debug_str     0x0000000000000000     0xa7b0 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
+ .debug_str     0x0000000000000000     0xa7ae Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecc.o
@@ -309,7 +309,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
  .debug_line    0x0000000000000000       0xe3 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
- .debug_str     0x0000000000000000     0xa7b1 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
+ .debug_str     0x0000000000000000     0xa7af Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdh.o
@@ -332,7 +332,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
  .debug_line    0x0000000000000000       0xe4 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
- .debug_str     0x0000000000000000     0xa7b2 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
+ .debug_str     0x0000000000000000     0xa7b0 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/micro_ecc_backend_ecdsa.o
@@ -570,7 +570,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x70 Output/Release/Obj/template_pca10056/nrf_drv_power.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_drv_power.o
  .debug_line    0x0000000000000000      0x75e Output/Release/Obj/template_pca10056/nrf_drv_power.o
- .debug_str     0x0000000000000000    0x8de64 Output/Release/Obj/template_pca10056/nrf_drv_power.o
+ .debug_str     0x0000000000000000    0x8de62 Output/Release/Obj/template_pca10056/nrf_drv_power.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_power.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_power.o
@@ -675,7 +675,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
  .debug_macro   0x0000000000000000       0x88 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
  .debug_line    0x0000000000000000      0x5b6 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
- .debug_str     0x0000000000000000    0x8cf99 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
+ .debug_str     0x0000000000000000    0x8cf97 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_ppi.o
@@ -901,7 +901,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x32 Output/Release/Obj/template_pca10056/nrf_drv_spi.o
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/nrf_drv_spi.o
  .debug_line    0x0000000000000000      0x63d Output/Release/Obj/template_pca10056/nrf_drv_spi.o
- .debug_str     0x0000000000000000    0x8e0ea Output/Release/Obj/template_pca10056/nrf_drv_spi.o
+ .debug_str     0x0000000000000000    0x8e0e8 Output/Release/Obj/template_pca10056/nrf_drv_spi.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_spi.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_spi.o
@@ -1011,7 +1011,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/nrf_drv_spis.o
  .debug_macro   0x0000000000000000       0x76 Output/Release/Obj/template_pca10056/nrf_drv_spis.o
  .debug_line    0x0000000000000000      0x5b2 Output/Release/Obj/template_pca10056/nrf_drv_spis.o
- .debug_str     0x0000000000000000    0x8d4e0 Output/Release/Obj/template_pca10056/nrf_drv_spis.o
+ .debug_str     0x0000000000000000    0x8d4de Output/Release/Obj/template_pca10056/nrf_drv_spis.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_spis.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_spis.o
@@ -1116,7 +1116,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_drv_swi.o
  .debug_macro   0x0000000000000000       0x34 Output/Release/Obj/template_pca10056/nrf_drv_swi.o
  .debug_line    0x0000000000000000      0x586 Output/Release/Obj/template_pca10056/nrf_drv_swi.o
- .debug_str     0x0000000000000000    0x8cb0d Output/Release/Obj/template_pca10056/nrf_drv_swi.o
+ .debug_str     0x0000000000000000    0x8cb0b Output/Release/Obj/template_pca10056/nrf_drv_swi.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_swi.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_swi.o
@@ -1321,7 +1321,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_drv_uart.o
  .debug_macro   0x0000000000000000       0x3f Output/Release/Obj/template_pca10056/nrf_drv_uart.o
  .debug_line    0x0000000000000000      0x67f Output/Release/Obj/template_pca10056/nrf_drv_uart.o
- .debug_str     0x0000000000000000    0x8dd32 Output/Release/Obj/template_pca10056/nrf_drv_uart.o
+ .debug_str     0x0000000000000000    0x8dd30 Output/Release/Obj/template_pca10056/nrf_drv_uart.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_uart.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_uart.o
@@ -1399,7 +1399,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_nvic.o
  .debug_macro   0x0000000000000000       0x8e Output/Release/Obj/template_pca10056/nrf_nvic.o
  .debug_line    0x0000000000000000      0x559 Output/Release/Obj/template_pca10056/nrf_nvic.o
- .debug_str     0x0000000000000000    0x75ba3 Output/Release/Obj/template_pca10056/nrf_nvic.o
+ .debug_str     0x0000000000000000    0x75ba1 Output/Release/Obj/template_pca10056/nrf_nvic.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_nvic.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_nvic.o
@@ -1509,7 +1509,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x20 Output/Release/Obj/template_pca10056/nrf_nvmc.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_nvmc.o
  .debug_line    0x0000000000000000      0x7c0 Output/Release/Obj/template_pca10056/nrf_nvmc.o
- .debug_str     0x0000000000000000    0x8ca96 Output/Release/Obj/template_pca10056/nrf_nvmc.o
+ .debug_str     0x0000000000000000    0x8ca94 Output/Release/Obj/template_pca10056/nrf_nvmc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_nvmc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_nvmc.o
@@ -1566,7 +1566,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_soc.o
  .debug_macro   0x0000000000000000       0x8e Output/Release/Obj/template_pca10056/nrf_soc.o
  .debug_line    0x0000000000000000      0x24b Output/Release/Obj/template_pca10056/nrf_soc.o
- .debug_str     0x0000000000000000    0x755f6 Output/Release/Obj/template_pca10056/nrf_soc.o
+ .debug_str     0x0000000000000000    0x755f4 Output/Release/Obj/template_pca10056/nrf_soc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_soc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_soc.o
@@ -3499,7 +3499,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x64 Output/Release/Obj/template_pca10056/nrfx_spi.o
  .debug_macro   0x0000000000000000       0x20 Output/Release/Obj/template_pca10056/nrfx_spi.o
  .debug_line    0x0000000000000000      0x4ce Output/Release/Obj/template_pca10056/nrfx_spi.o
- .debug_str     0x0000000000000000    0x8c8bf Output/Release/Obj/template_pca10056/nrfx_spi.o
+ .debug_str     0x0000000000000000    0x8c8bd Output/Release/Obj/template_pca10056/nrfx_spi.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrfx_spi.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrfx_spi.o
@@ -3978,7 +3978,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x20 Output/Release/Obj/template_pca10056/nrfx_systick.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrfx_systick.o
  .debug_line    0x0000000000000000      0x736 Output/Release/Obj/template_pca10056/nrfx_systick.o
- .debug_str     0x0000000000000000    0x8cc9d Output/Release/Obj/template_pca10056/nrfx_systick.o
+ .debug_str     0x0000000000000000    0x8cc9b Output/Release/Obj/template_pca10056/nrfx_systick.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrfx_systick.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrfx_systick.o
@@ -4305,7 +4305,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x64 Output/Release/Obj/template_pca10056/nrfx_twim.o
  .debug_macro   0x0000000000000000       0x20 Output/Release/Obj/template_pca10056/nrfx_twim.o
  .debug_line    0x0000000000000000      0x4cf Output/Release/Obj/template_pca10056/nrfx_twim.o
- .debug_str     0x0000000000000000    0x8c8c0 Output/Release/Obj/template_pca10056/nrfx_twim.o
+ .debug_str     0x0000000000000000    0x8c8be Output/Release/Obj/template_pca10056/nrfx_twim.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrfx_twim.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrfx_twim.o
@@ -5127,7 +5127,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
  .debug_line    0x0000000000000000      0x358 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
- .debug_str     0x0000000000000000    0x85504 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
+ .debug_str     0x0000000000000000    0x85502 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cifra_backend_aes_aead.o
@@ -5154,7 +5154,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0xb3e Output/Release/Obj/template_pca10056/orkney24pts.o
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/orkney24pts.o
  .debug_line    0x0000000000000000       0xcc Output/Release/Obj/template_pca10056/orkney24pts.o
- .debug_str     0x0000000000000000     0x34cf Output/Release/Obj/template_pca10056/orkney24pts.o
+ .debug_str     0x0000000000000000     0x34cd Output/Release/Obj/template_pca10056/orkney24pts.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/orkney24pts.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/orkney24pts.o
@@ -5181,7 +5181,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0xb3e Output/Release/Obj/template_pca10056/orkney8pts.o
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/orkney8pts.o
  .debug_line    0x0000000000000000       0xcb Output/Release/Obj/template_pca10056/orkney8pts.o
- .debug_str     0x0000000000000000     0x34cb Output/Release/Obj/template_pca10056/orkney8pts.o
+ .debug_str     0x0000000000000000     0x34c9 Output/Release/Obj/template_pca10056/orkney8pts.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/orkney8pts.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/orkney8pts.o
@@ -5684,7 +5684,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
  .debug_line    0x0000000000000000      0x33a Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
- .debug_str     0x0000000000000000    0x854e6 Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
+ .debug_str     0x0000000000000000    0x854e4 Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_hw_backend_init.o
@@ -5755,7 +5755,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
  .debug_line    0x0000000000000000      0x339 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
- .debug_str     0x0000000000000000    0x854e5 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
+ .debug_str     0x0000000000000000    0x854e3 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng.o
@@ -5826,7 +5826,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
  .debug_line    0x0000000000000000      0x341 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
- .debug_str     0x0000000000000000    0x854ed Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
+ .debug_str     0x0000000000000000    0x854eb Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_hw_backend_rng_mbedtls.o
@@ -6084,7 +6084,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_aes.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/cc310_backend_aes.o
  .debug_line    0x0000000000000000      0xe83 Output/Release/Obj/template_pca10056/cc310_backend_aes.o
- .debug_str     0x0000000000000000    0x89a41 Output/Release/Obj/template_pca10056/cc310_backend_aes.o
+ .debug_str     0x0000000000000000    0x89a3f Output/Release/Obj/template_pca10056/cc310_backend_aes.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_aes.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_aes.o
@@ -6200,7 +6200,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
  .debug_line    0x0000000000000000      0x8f4 Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
- .debug_str     0x0000000000000000    0x8a39d Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
+ .debug_str     0x0000000000000000    0x8a39b Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o
@@ -6310,7 +6310,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
  .debug_line    0x0000000000000000      0x7e4 Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
- .debug_str     0x0000000000000000    0x88ff8 Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
+ .debug_str     0x0000000000000000    0x88ff6 Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_chacha_poly_aead.o
@@ -6504,7 +6504,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x5e Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
  .debug_line    0x0000000000000000      0xf3c Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
- .debug_str     0x0000000000000000    0x91568 Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
+ .debug_str     0x0000000000000000    0x91566 Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_ecc.o
@@ -6640,7 +6640,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
  .debug_line    0x0000000000000000      0xbbd Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
- .debug_str     0x0000000000000000    0x908b9 Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
+ .debug_str     0x0000000000000000    0x908b7 Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_ecdh.o
@@ -6776,7 +6776,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
  .debug_line    0x0000000000000000      0xc3d Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
- .debug_str     0x0000000000000000    0x9144f Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
+ .debug_str     0x0000000000000000    0x9144d Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_ecdsa.o
@@ -6902,7 +6902,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
  .debug_macro   0x0000000000000000       0x5e Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
  .debug_line    0x0000000000000000      0xc14 Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
- .debug_str     0x0000000000000000    0x8e56f Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
+ .debug_str     0x0000000000000000    0x8e56d Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o
@@ -7032,7 +7032,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x462 Output/Release/Obj/template_pca10056/cc310_backend_hash.o
  .debug_macro   0x0000000000000000       0x59 Output/Release/Obj/template_pca10056/cc310_backend_hash.o
  .debug_line    0x0000000000000000      0xabb Output/Release/Obj/template_pca10056/cc310_backend_hash.o
- .debug_str     0x0000000000000000    0x8b928 Output/Release/Obj/template_pca10056/cc310_backend_hash.o
+ .debug_str     0x0000000000000000    0x8b926 Output/Release/Obj/template_pca10056/cc310_backend_hash.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_hash.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_hash.o
@@ -7162,7 +7162,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
  .debug_line    0x0000000000000000      0xa95 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
- .debug_str     0x0000000000000000    0x8baa8 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
+ .debug_str     0x0000000000000000    0x8baa6 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o
@@ -7507,7 +7507,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_shared.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cc310_backend_shared.o
  .debug_line    0x0000000000000000      0x63e Output/Release/Obj/template_pca10056/cc310_backend_shared.o
- .debug_str     0x0000000000000000    0x88c72 Output/Release/Obj/template_pca10056/cc310_backend_shared.o
+ .debug_str     0x0000000000000000    0x88c70 Output/Release/Obj/template_pca10056/cc310_backend_shared.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cc310_backend_shared.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cc310_backend_shared.o
@@ -7578,7 +7578,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
  .debug_line    0x0000000000000000      0x36b Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
- .debug_str     0x0000000000000000    0x85517 Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
+ .debug_str     0x0000000000000000    0x85515 Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_chacha_poly_aead.o
@@ -7601,7 +7601,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
  .debug_line    0x0000000000000000       0xdc Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
- .debug_str     0x0000000000000000     0xa7aa Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
+ .debug_str     0x0000000000000000     0xa7a8 Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_ecc.o
@@ -7624,7 +7624,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
  .debug_line    0x0000000000000000       0xdd Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
- .debug_str     0x0000000000000000     0xa7ab Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
+ .debug_str     0x0000000000000000     0xa7a9 Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_ecdh.o
@@ -7647,7 +7647,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
  .debug_line    0x0000000000000000       0xde Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
- .debug_str     0x0000000000000000     0xa7ac Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
+ .debug_str     0x0000000000000000     0xa7aa Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_ecdsa.o
@@ -7670,7 +7670,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
  .debug_line    0x0000000000000000       0xde Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
- .debug_str     0x0000000000000000     0xa7ac Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
+ .debug_str     0x0000000000000000     0xa7aa Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_eddsa.o
@@ -7741,7 +7741,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/oberon_backend_hash.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/oberon_backend_hash.o
  .debug_line    0x0000000000000000      0x33a Output/Release/Obj/template_pca10056/oberon_backend_hash.o
- .debug_str     0x0000000000000000    0x854e6 Output/Release/Obj/template_pca10056/oberon_backend_hash.o
+ .debug_str     0x0000000000000000    0x854e4 Output/Release/Obj/template_pca10056/oberon_backend_hash.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_hash.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_hash.o
@@ -7812,7 +7812,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
  .debug_line    0x0000000000000000      0x33a Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
- .debug_str     0x0000000000000000    0x854e6 Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
+ .debug_str     0x0000000000000000    0x854e4 Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oberon_backend_hmac.o
@@ -7899,7 +7899,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x60 Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
  .debug_macro   0x0000000000000000       0xb2 Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
  .debug_line    0x0000000000000000      0x475 Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
- .debug_str     0x0000000000000000    0x86c9c Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
+ .debug_str     0x0000000000000000    0x86c9a Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_aes.o
@@ -7976,7 +7976,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x59 Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
  .debug_macro   0x0000000000000000       0xb2 Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
  .debug_line    0x0000000000000000      0x409 Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
- .debug_str     0x0000000000000000    0x86d8e Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
+ .debug_str     0x0000000000000000    0x86d8c Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o
@@ -7999,7 +7999,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
  .debug_line    0x0000000000000000       0xde Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
- .debug_str     0x0000000000000000     0xa7ac Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
+ .debug_str     0x0000000000000000     0xa7aa Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_ecc.o
@@ -8022,7 +8022,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
  .debug_line    0x0000000000000000       0xdf Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
- .debug_str     0x0000000000000000     0xa7ad Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
+ .debug_str     0x0000000000000000     0xa7ab Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_ecdh.o
@@ -8045,7 +8045,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
  .debug_line    0x0000000000000000       0xe0 Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
- .debug_str     0x0000000000000000     0xa7ae Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
+ .debug_str     0x0000000000000000     0xa7ac Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_ecdsa.o
@@ -8116,7 +8116,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
  .debug_line    0x0000000000000000      0x33c Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
- .debug_str     0x0000000000000000    0x854e8 Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
+ .debug_str     0x0000000000000000    0x854e6 Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_hash.o
@@ -8187,7 +8187,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
  .debug_line    0x0000000000000000      0x33c Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
- .debug_str     0x0000000000000000    0x854e8 Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
+ .debug_str     0x0000000000000000    0x854e6 Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_hmac.o
@@ -8258,7 +8258,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
  .debug_line    0x0000000000000000      0x33c Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
- .debug_str     0x0000000000000000    0x854e8 Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
+ .debug_str     0x0000000000000000    0x854e6 Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/mbedtls_backend_init.o
@@ -8357,7 +8357,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/aes.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/aes.o
  .debug_line    0x0000000000000000     0x1693 Output/Release/Obj/template_pca10056/aes.o
- .debug_str     0x0000000000000000     0xe7c6 Output/Release/Obj/template_pca10056/aes.o
+ .debug_str     0x0000000000000000     0xe7c4 Output/Release/Obj/template_pca10056/aes.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/aes.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/aes.o
@@ -8384,7 +8384,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/aesni.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/aesni.o
  .debug_line    0x0000000000000000      0x16f Output/Release/Obj/template_pca10056/aesni.o
- .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/aesni.o
+ .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/aesni.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/aesni.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/aesni.o
@@ -8411,7 +8411,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/arc4.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/arc4.o
  .debug_line    0x0000000000000000      0x16e Output/Release/Obj/template_pca10056/arc4.o
- .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/arc4.o
+ .debug_str     0x0000000000000000     0xad26 Output/Release/Obj/template_pca10056/arc4.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/arc4.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/arc4.o
@@ -8438,7 +8438,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/aria.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/aria.o
  .debug_line    0x0000000000000000      0x16e Output/Release/Obj/template_pca10056/aria.o
- .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/aria.o
+ .debug_str     0x0000000000000000     0xad26 Output/Release/Obj/template_pca10056/aria.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/aria.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/aria.o
@@ -8512,7 +8512,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/asn1parse.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/asn1parse.o
  .debug_line    0x0000000000000000      0x78b Output/Release/Obj/template_pca10056/asn1parse.o
- .debug_str     0x0000000000000000     0xc26b Output/Release/Obj/template_pca10056/asn1parse.o
+ .debug_str     0x0000000000000000     0xc269 Output/Release/Obj/template_pca10056/asn1parse.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/asn1parse.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/asn1parse.o
@@ -8590,7 +8590,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/asn1write.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/asn1write.o
  .debug_line    0x0000000000000000      0xb78 Output/Release/Obj/template_pca10056/asn1write.o
- .debug_str     0x0000000000000000     0xc2c1 Output/Release/Obj/template_pca10056/asn1write.o
+ .debug_str     0x0000000000000000     0xc2bf Output/Release/Obj/template_pca10056/asn1write.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/asn1write.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/asn1write.o
@@ -8638,7 +8638,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/base64.o
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/base64.o
  .debug_line    0x0000000000000000      0x76f Output/Release/Obj/template_pca10056/base64.o
- .debug_str     0x0000000000000000     0xb7c5 Output/Release/Obj/template_pca10056/base64.o
+ .debug_str     0x0000000000000000     0xb7c3 Output/Release/Obj/template_pca10056/base64.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/base64.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/base64.o
@@ -8792,7 +8792,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/bignum.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/bignum.o
  .debug_line    0x0000000000000000     0x4329 Output/Release/Obj/template_pca10056/bignum.o
- .debug_str     0x0000000000000000     0xc586 Output/Release/Obj/template_pca10056/bignum.o
+ .debug_str     0x0000000000000000     0xc584 Output/Release/Obj/template_pca10056/bignum.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/bignum.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/bignum.o
@@ -8819,7 +8819,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/blowfish.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/blowfish.o
  .debug_line    0x0000000000000000      0x172 Output/Release/Obj/template_pca10056/blowfish.o
- .debug_str     0x0000000000000000     0xad2c Output/Release/Obj/template_pca10056/blowfish.o
+ .debug_str     0x0000000000000000     0xad2a Output/Release/Obj/template_pca10056/blowfish.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/blowfish.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/blowfish.o
@@ -8889,7 +8889,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/camellia.o
  .debug_macro   0x0000000000000000       0x28 Output/Release/Obj/template_pca10056/camellia.o
  .debug_line    0x0000000000000000      0xb72 Output/Release/Obj/template_pca10056/camellia.o
- .debug_str     0x0000000000000000     0xbfbe Output/Release/Obj/template_pca10056/camellia.o
+ .debug_str     0x0000000000000000     0xbfbc Output/Release/Obj/template_pca10056/camellia.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/camellia.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/camellia.o
@@ -8945,7 +8945,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x60 Output/Release/Obj/template_pca10056/ccm.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/ccm.o
  .debug_line    0x0000000000000000      0x746 Output/Release/Obj/template_pca10056/ccm.o
- .debug_str     0x0000000000000000     0xc35a Output/Release/Obj/template_pca10056/ccm.o
+ .debug_str     0x0000000000000000     0xc358 Output/Release/Obj/template_pca10056/ccm.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ccm.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ccm.o
@@ -8976,7 +8976,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x89 Output/Release/Obj/template_pca10056/certs.o
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/certs.o
  .debug_line    0x0000000000000000      0x198 Output/Release/Obj/template_pca10056/certs.o
- .debug_str     0x0000000000000000     0xb045 Output/Release/Obj/template_pca10056/certs.o
+ .debug_str     0x0000000000000000     0xb043 Output/Release/Obj/template_pca10056/certs.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/certs.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/certs.o
@@ -9032,7 +9032,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/chacha20.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/chacha20.o
  .debug_line    0x0000000000000000      0x6f9 Output/Release/Obj/template_pca10056/chacha20.o
- .debug_str     0x0000000000000000     0xbb47 Output/Release/Obj/template_pca10056/chacha20.o
+ .debug_str     0x0000000000000000     0xbb45 Output/Release/Obj/template_pca10056/chacha20.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/chacha20.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/chacha20.o
@@ -9098,7 +9098,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/chachapoly.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/chachapoly.o
  .debug_line    0x0000000000000000      0x6d7 Output/Release/Obj/template_pca10056/chachapoly.o
- .debug_str     0x0000000000000000     0xbd97 Output/Release/Obj/template_pca10056/chachapoly.o
+ .debug_str     0x0000000000000000     0xbd95 Output/Release/Obj/template_pca10056/chachapoly.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/chachapoly.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/chachapoly.o
@@ -9212,7 +9212,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/cipher.o
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cipher.o
  .debug_line    0x0000000000000000     0x12c5 Output/Release/Obj/template_pca10056/cipher.o
- .debug_str     0x0000000000000000     0xd27d Output/Release/Obj/template_pca10056/cipher.o
+ .debug_str     0x0000000000000000     0xd27b Output/Release/Obj/template_pca10056/cipher.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cipher.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cipher.o
@@ -9456,7 +9456,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/cipher_wrap.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/cipher_wrap.o
  .debug_line    0x0000000000000000      0x72d Output/Release/Obj/template_pca10056/cipher_wrap.o
- .debug_str     0x0000000000000000     0xd874 Output/Release/Obj/template_pca10056/cipher_wrap.o
+ .debug_str     0x0000000000000000     0xd872 Output/Release/Obj/template_pca10056/cipher_wrap.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cipher_wrap.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cipher_wrap.o
@@ -9518,7 +9518,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/cmac.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/cmac.o
  .debug_line    0x0000000000000000      0x748 Output/Release/Obj/template_pca10056/cmac.o
- .debug_str     0x0000000000000000     0xc28f Output/Release/Obj/template_pca10056/cmac.o
+ .debug_str     0x0000000000000000     0xc28d Output/Release/Obj/template_pca10056/cmac.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cmac.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cmac.o
@@ -9588,7 +9588,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x6c Output/Release/Obj/template_pca10056/ctr_drbg.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/ctr_drbg.o
  .debug_line    0x0000000000000000      0x817 Output/Release/Obj/template_pca10056/ctr_drbg.o
- .debug_str     0x0000000000000000     0xbdaf Output/Release/Obj/template_pca10056/ctr_drbg.o
+ .debug_str     0x0000000000000000     0xbdad Output/Release/Obj/template_pca10056/ctr_drbg.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ctr_drbg.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ctr_drbg.o
@@ -9615,7 +9615,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/debug.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/debug.o
  .debug_line    0x0000000000000000      0x16f Output/Release/Obj/template_pca10056/debug.o
- .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/debug.o
+ .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/debug.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/debug.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/debug.o
@@ -9642,7 +9642,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/des.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/des.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/des.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/des.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/des.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/des.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/des.o
@@ -9669,7 +9669,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/dhm.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/dhm.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/dhm.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/dhm.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/dhm.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/dhm.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/dhm.o
@@ -9733,7 +9733,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x85 Output/Release/Obj/template_pca10056/ecdh.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/ecdh.o
  .debug_line    0x0000000000000000      0x6b4 Output/Release/Obj/template_pca10056/ecdh.o
- .debug_str     0x0000000000000000     0xc47f Output/Release/Obj/template_pca10056/ecdh.o
+ .debug_str     0x0000000000000000     0xc47d Output/Release/Obj/template_pca10056/ecdh.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ecdh.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ecdh.o
@@ -9811,7 +9811,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/ecdsa.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/ecdsa.o
  .debug_line    0x0000000000000000      0x7cf Output/Release/Obj/template_pca10056/ecdsa.o
- .debug_str     0x0000000000000000     0xcd0e Output/Release/Obj/template_pca10056/ecdsa.o
+ .debug_str     0x0000000000000000     0xcd0c Output/Release/Obj/template_pca10056/ecdsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ecdsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ecdsa.o
@@ -9838,7 +9838,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ecjpake.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ecjpake.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/ecjpake.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/ecjpake.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/ecjpake.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ecjpake.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ecjpake.o
@@ -9998,7 +9998,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3c Output/Release/Obj/template_pca10056/ecp.o
  .debug_macro   0x0000000000000000       0x4e Output/Release/Obj/template_pca10056/ecp.o
  .debug_line    0x0000000000000000     0x2ea1 Output/Release/Obj/template_pca10056/ecp.o
- .debug_str     0x0000000000000000     0xd2ac Output/Release/Obj/template_pca10056/ecp.o
+ .debug_str     0x0000000000000000     0xd2aa Output/Release/Obj/template_pca10056/ecp.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ecp.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ecp.o
@@ -10197,7 +10197,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x85 Output/Release/Obj/template_pca10056/ecp_curves.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/ecp_curves.o
  .debug_line    0x0000000000000000     0x2144 Output/Release/Obj/template_pca10056/ecp_curves.o
- .debug_str     0x0000000000000000     0xcee4 Output/Release/Obj/template_pca10056/ecp_curves.o
+ .debug_str     0x0000000000000000     0xcee2 Output/Release/Obj/template_pca10056/ecp_curves.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ecp_curves.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ecp_curves.o
@@ -10257,7 +10257,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/entropy.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/entropy.o
  .debug_line    0x0000000000000000      0x56a Output/Release/Obj/template_pca10056/entropy.o
- .debug_str     0x0000000000000000     0xbcf4 Output/Release/Obj/template_pca10056/entropy.o
+ .debug_str     0x0000000000000000     0xbcf2 Output/Release/Obj/template_pca10056/entropy.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/entropy.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/entropy.o
@@ -10298,7 +10298,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x4c Output/Release/Obj/template_pca10056/entropy_poll.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/entropy_poll.o
  .debug_line    0x0000000000000000      0x1d7 Output/Release/Obj/template_pca10056/entropy_poll.o
- .debug_str     0x0000000000000000     0xb93e Output/Release/Obj/template_pca10056/entropy_poll.o
+ .debug_str     0x0000000000000000     0xb93c Output/Release/Obj/template_pca10056/entropy_poll.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/entropy_poll.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/entropy_poll.o
@@ -10333,7 +10333,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x89 Output/Release/Obj/template_pca10056/error.o
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/error.o
  .debug_line    0x0000000000000000      0x1bd Output/Release/Obj/template_pca10056/error.o
- .debug_str     0x0000000000000000     0xb064 Output/Release/Obj/template_pca10056/error.o
+ .debug_str     0x0000000000000000     0xb062 Output/Release/Obj/template_pca10056/error.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/error.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/error.o
@@ -10394,7 +10394,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/gcm.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/gcm.o
  .debug_line    0x0000000000000000      0xa31 Output/Release/Obj/template_pca10056/gcm.o
- .debug_str     0x0000000000000000     0xc97c Output/Release/Obj/template_pca10056/gcm.o
+ .debug_str     0x0000000000000000     0xc97a Output/Release/Obj/template_pca10056/gcm.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/gcm.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/gcm.o
@@ -10421,7 +10421,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/havege.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/havege.o
  .debug_line    0x0000000000000000      0x170 Output/Release/Obj/template_pca10056/havege.o
- .debug_str     0x0000000000000000     0xad2a Output/Release/Obj/template_pca10056/havege.o
+ .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/havege.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/havege.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/havege.o
@@ -10487,7 +10487,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x4e Output/Release/Obj/template_pca10056/hmac_drbg.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/hmac_drbg.o
  .debug_line    0x0000000000000000      0x695 Output/Release/Obj/template_pca10056/hmac_drbg.o
- .debug_str     0x0000000000000000     0xb767 Output/Release/Obj/template_pca10056/hmac_drbg.o
+ .debug_str     0x0000000000000000     0xb765 Output/Release/Obj/template_pca10056/hmac_drbg.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/hmac_drbg.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/hmac_drbg.o
@@ -10579,7 +10579,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/md.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/md.o
  .debug_line    0x0000000000000000      0x823 Output/Release/Obj/template_pca10056/md.o
- .debug_str     0x0000000000000000     0xb7d2 Output/Release/Obj/template_pca10056/md.o
+ .debug_str     0x0000000000000000     0xb7d0 Output/Release/Obj/template_pca10056/md.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/md.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/md.o
@@ -10606,7 +10606,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/md2.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/md2.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/md2.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/md2.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/md2.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/md2.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/md2.o
@@ -10633,7 +10633,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/md4.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/md4.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/md4.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/md4.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/md4.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/md4.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/md4.o
@@ -10699,7 +10699,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/md5.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/md5.o
  .debug_line    0x0000000000000000      0x7a3 Output/Release/Obj/template_pca10056/md5.o
- .debug_str     0x0000000000000000     0xbbc1 Output/Release/Obj/template_pca10056/md5.o
+ .debug_str     0x0000000000000000     0xbbbf Output/Release/Obj/template_pca10056/md5.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/md5.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/md5.o
@@ -10815,7 +10815,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/md_wrap.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/md_wrap.o
  .debug_line    0x0000000000000000      0x4d7 Output/Release/Obj/template_pca10056/md_wrap.o
- .debug_str     0x0000000000000000     0xbfcc Output/Release/Obj/template_pca10056/md_wrap.o
+ .debug_str     0x0000000000000000     0xbfca Output/Release/Obj/template_pca10056/md_wrap.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/md_wrap.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/md_wrap.o
@@ -10842,7 +10842,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
  .debug_line    0x0000000000000000      0x17d Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
- .debug_str     0x0000000000000000     0xad37 Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
+ .debug_str     0x0000000000000000     0xad35 Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/memory_buffer_alloc.o
@@ -10869,7 +10869,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/net_sockets.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/net_sockets.o
  .debug_line    0x0000000000000000      0x175 Output/Release/Obj/template_pca10056/net_sockets.o
- .debug_str     0x0000000000000000     0xad47 Output/Release/Obj/template_pca10056/net_sockets.o
+ .debug_str     0x0000000000000000     0xad45 Output/Release/Obj/template_pca10056/net_sockets.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/net_sockets.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/net_sockets.o
@@ -10896,7 +10896,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/nist_kw.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/nist_kw.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/nist_kw.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/nist_kw.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/nist_kw.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nist_kw.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nist_kw.o
@@ -10923,7 +10923,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/oid.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/oid.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/oid.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/oid.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/oid.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/oid.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/oid.o
@@ -10950,7 +10950,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/padlock.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/padlock.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/padlock.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/padlock.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/padlock.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/padlock.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/padlock.o
@@ -10977,7 +10977,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pem.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pem.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/pem.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/pem.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/pem.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pem.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pem.o
@@ -11004,7 +11004,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pk.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pk.o
  .debug_line    0x0000000000000000      0x16c Output/Release/Obj/template_pca10056/pk.o
- .debug_str     0x0000000000000000     0xad26 Output/Release/Obj/template_pca10056/pk.o
+ .debug_str     0x0000000000000000     0xad24 Output/Release/Obj/template_pca10056/pk.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pk.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pk.o
@@ -11031,7 +11031,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pk_wrap.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pk_wrap.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/pk_wrap.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/pk_wrap.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/pk_wrap.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pk_wrap.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pk_wrap.o
@@ -11058,7 +11058,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pkcs11.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pkcs11.o
  .debug_line    0x0000000000000000      0x17c Output/Release/Obj/template_pca10056/pkcs11.o
- .debug_str     0x0000000000000000     0xad3c Output/Release/Obj/template_pca10056/pkcs11.o
+ .debug_str     0x0000000000000000     0xad3a Output/Release/Obj/template_pca10056/pkcs11.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pkcs11.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pkcs11.o
@@ -11085,7 +11085,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pkcs12.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pkcs12.o
  .debug_line    0x0000000000000000      0x170 Output/Release/Obj/template_pca10056/pkcs12.o
- .debug_str     0x0000000000000000     0xad2a Output/Release/Obj/template_pca10056/pkcs12.o
+ .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/pkcs12.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pkcs12.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pkcs12.o
@@ -11112,7 +11112,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pkcs5.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pkcs5.o
  .debug_line    0x0000000000000000      0x16f Output/Release/Obj/template_pca10056/pkcs5.o
- .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/pkcs5.o
+ .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/pkcs5.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pkcs5.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pkcs5.o
@@ -11139,7 +11139,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pkparse.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pkparse.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/pkparse.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/pkparse.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/pkparse.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pkparse.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pkparse.o
@@ -11166,7 +11166,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/pkwrite.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/pkwrite.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/pkwrite.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/pkwrite.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/pkwrite.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/pkwrite.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/pkwrite.o
@@ -11222,7 +11222,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/platform.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/platform.o
  .debug_line    0x0000000000000000      0x254 Output/Release/Obj/template_pca10056/platform.o
- .debug_str     0x0000000000000000     0xb374 Output/Release/Obj/template_pca10056/platform.o
+ .debug_str     0x0000000000000000     0xb372 Output/Release/Obj/template_pca10056/platform.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/platform.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/platform.o
@@ -11270,7 +11270,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/platform_util.o
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/platform_util.o
  .debug_line    0x0000000000000000      0x202 Output/Release/Obj/template_pca10056/platform_util.o
- .debug_str     0x0000000000000000     0xb38c Output/Release/Obj/template_pca10056/platform_util.o
+ .debug_str     0x0000000000000000     0xb38a Output/Release/Obj/template_pca10056/platform_util.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/platform_util.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/platform_util.o
@@ -11324,7 +11324,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/poly1305.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/poly1305.o
  .debug_line    0x0000000000000000      0xbaa Output/Release/Obj/template_pca10056/poly1305.o
- .debug_str     0x0000000000000000     0xbaec Output/Release/Obj/template_pca10056/poly1305.o
+ .debug_str     0x0000000000000000     0xbaea Output/Release/Obj/template_pca10056/poly1305.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/poly1305.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/poly1305.o
@@ -11351,7 +11351,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ripemd160.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ripemd160.o
  .debug_line    0x0000000000000000      0x173 Output/Release/Obj/template_pca10056/ripemd160.o
- .debug_str     0x0000000000000000     0xad2d Output/Release/Obj/template_pca10056/ripemd160.o
+ .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/ripemd160.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ripemd160.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ripemd160.o
@@ -11378,7 +11378,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/rsa.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/rsa.o
  .debug_line    0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/rsa.o
- .debug_str     0x0000000000000000     0xad27 Output/Release/Obj/template_pca10056/rsa.o
+ .debug_str     0x0000000000000000     0xad25 Output/Release/Obj/template_pca10056/rsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/rsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/rsa.o
@@ -11405,7 +11405,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/rsa_internal.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/rsa_internal.o
  .debug_line    0x0000000000000000      0x176 Output/Release/Obj/template_pca10056/rsa_internal.o
- .debug_str     0x0000000000000000     0xad30 Output/Release/Obj/template_pca10056/rsa_internal.o
+ .debug_str     0x0000000000000000     0xad2e Output/Release/Obj/template_pca10056/rsa_internal.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/rsa_internal.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/rsa_internal.o
@@ -11432,7 +11432,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/sha1.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/sha1.o
  .debug_line    0x0000000000000000      0x16e Output/Release/Obj/template_pca10056/sha1.o
- .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/sha1.o
+ .debug_str     0x0000000000000000     0xad26 Output/Release/Obj/template_pca10056/sha1.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/sha1.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/sha1.o
@@ -11499,7 +11499,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2c Output/Release/Obj/template_pca10056/sha256.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/sha256.o
  .debug_line    0x0000000000000000      0x8b7 Output/Release/Obj/template_pca10056/sha256.o
- .debug_str     0x0000000000000000     0xbe0b Output/Release/Obj/template_pca10056/sha256.o
+ .debug_str     0x0000000000000000     0xbe09 Output/Release/Obj/template_pca10056/sha256.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/sha256.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/sha256.o
@@ -11566,7 +11566,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2c Output/Release/Obj/template_pca10056/sha512.o
  .debug_macro   0x0000000000000000       0x26 Output/Release/Obj/template_pca10056/sha512.o
  .debug_line    0x0000000000000000      0x930 Output/Release/Obj/template_pca10056/sha512.o
- .debug_str     0x0000000000000000     0xbed2 Output/Release/Obj/template_pca10056/sha512.o
+ .debug_str     0x0000000000000000     0xbed0 Output/Release/Obj/template_pca10056/sha512.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/sha512.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/sha512.o
@@ -11593,7 +11593,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_cache.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_cache.o
  .debug_line    0x0000000000000000      0x173 Output/Release/Obj/template_pca10056/ssl_cache.o
- .debug_str     0x0000000000000000     0xad2d Output/Release/Obj/template_pca10056/ssl_cache.o
+ .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/ssl_cache.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_cache.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_cache.o
@@ -11620,7 +11620,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
  .debug_line    0x0000000000000000      0x17a Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
- .debug_str     0x0000000000000000     0xad34 Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
+ .debug_str     0x0000000000000000     0xad32 Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_ciphersuites.o
@@ -11647,7 +11647,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_cli.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_cli.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/ssl_cli.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/ssl_cli.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/ssl_cli.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_cli.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_cli.o
@@ -11674,7 +11674,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_cookie.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_cookie.o
  .debug_line    0x0000000000000000      0x174 Output/Release/Obj/template_pca10056/ssl_cookie.o
- .debug_str     0x0000000000000000     0xad2e Output/Release/Obj/template_pca10056/ssl_cookie.o
+ .debug_str     0x0000000000000000     0xad2c Output/Release/Obj/template_pca10056/ssl_cookie.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_cookie.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_cookie.o
@@ -11701,7 +11701,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_srv.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_srv.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/ssl_srv.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/ssl_srv.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/ssl_srv.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_srv.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_srv.o
@@ -11728,7 +11728,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_ticket.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_ticket.o
  .debug_line    0x0000000000000000      0x174 Output/Release/Obj/template_pca10056/ssl_ticket.o
- .debug_str     0x0000000000000000     0xad2e Output/Release/Obj/template_pca10056/ssl_ticket.o
+ .debug_str     0x0000000000000000     0xad2c Output/Release/Obj/template_pca10056/ssl_ticket.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_ticket.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_ticket.o
@@ -11755,7 +11755,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/ssl_tls.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/ssl_tls.o
  .debug_line    0x0000000000000000      0x171 Output/Release/Obj/template_pca10056/ssl_tls.o
- .debug_str     0x0000000000000000     0xad2b Output/Release/Obj/template_pca10056/ssl_tls.o
+ .debug_str     0x0000000000000000     0xad29 Output/Release/Obj/template_pca10056/ssl_tls.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/ssl_tls.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/ssl_tls.o
@@ -11782,7 +11782,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/threading.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/threading.o
  .debug_line    0x0000000000000000      0x173 Output/Release/Obj/template_pca10056/threading.o
- .debug_str     0x0000000000000000     0xad45 Output/Release/Obj/template_pca10056/threading.o
+ .debug_str     0x0000000000000000     0xad43 Output/Release/Obj/template_pca10056/threading.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/threading.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/threading.o
@@ -11828,7 +11828,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x89 Output/Release/Obj/template_pca10056/version.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/version.o
  .debug_line    0x0000000000000000      0x1e6 Output/Release/Obj/template_pca10056/version.o
- .debug_str     0x0000000000000000     0xb118 Output/Release/Obj/template_pca10056/version.o
+ .debug_str     0x0000000000000000     0xb116 Output/Release/Obj/template_pca10056/version.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/version.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/version.o
@@ -11870,7 +11870,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x89 Output/Release/Obj/template_pca10056/version_features.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/version_features.o
  .debug_line    0x0000000000000000      0x1f5 Output/Release/Obj/template_pca10056/version_features.o
- .debug_str     0x0000000000000000     0xb0fa Output/Release/Obj/template_pca10056/version_features.o
+ .debug_str     0x0000000000000000     0xb0f8 Output/Release/Obj/template_pca10056/version_features.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/version_features.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/version_features.o
@@ -11897,7 +11897,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509.o
  .debug_line    0x0000000000000000      0x16e Output/Release/Obj/template_pca10056/x509.o
- .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/x509.o
+ .debug_str     0x0000000000000000     0xad26 Output/Release/Obj/template_pca10056/x509.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509.o
@@ -11924,7 +11924,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509_create.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509_create.o
  .debug_line    0x0000000000000000      0x175 Output/Release/Obj/template_pca10056/x509_create.o
- .debug_str     0x0000000000000000     0xad2f Output/Release/Obj/template_pca10056/x509_create.o
+ .debug_str     0x0000000000000000     0xad2d Output/Release/Obj/template_pca10056/x509_create.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509_create.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509_create.o
@@ -11951,7 +11951,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509_crl.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509_crl.o
  .debug_line    0x0000000000000000      0x172 Output/Release/Obj/template_pca10056/x509_crl.o
- .debug_str     0x0000000000000000     0xad2c Output/Release/Obj/template_pca10056/x509_crl.o
+ .debug_str     0x0000000000000000     0xad2a Output/Release/Obj/template_pca10056/x509_crl.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509_crl.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509_crl.o
@@ -11978,7 +11978,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509_crt.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509_crt.o
  .debug_line    0x0000000000000000      0x172 Output/Release/Obj/template_pca10056/x509_crt.o
- .debug_str     0x0000000000000000     0xad2c Output/Release/Obj/template_pca10056/x509_crt.o
+ .debug_str     0x0000000000000000     0xad2a Output/Release/Obj/template_pca10056/x509_crt.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509_crt.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509_crt.o
@@ -12005,7 +12005,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509_csr.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509_csr.o
  .debug_line    0x0000000000000000      0x172 Output/Release/Obj/template_pca10056/x509_csr.o
- .debug_str     0x0000000000000000     0xad2c Output/Release/Obj/template_pca10056/x509_csr.o
+ .debug_str     0x0000000000000000     0xad2a Output/Release/Obj/template_pca10056/x509_csr.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509_csr.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509_csr.o
@@ -12032,7 +12032,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509write_crt.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509write_crt.o
  .debug_line    0x0000000000000000      0x177 Output/Release/Obj/template_pca10056/x509write_crt.o
- .debug_str     0x0000000000000000     0xad31 Output/Release/Obj/template_pca10056/x509write_crt.o
+ .debug_str     0x0000000000000000     0xad2f Output/Release/Obj/template_pca10056/x509write_crt.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509write_crt.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509write_crt.o
@@ -12059,7 +12059,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/x509write_csr.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/x509write_csr.o
  .debug_line    0x0000000000000000      0x177 Output/Release/Obj/template_pca10056/x509write_csr.o
- .debug_str     0x0000000000000000     0xad31 Output/Release/Obj/template_pca10056/x509write_csr.o
+ .debug_str     0x0000000000000000     0xad2f Output/Release/Obj/template_pca10056/x509write_csr.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/x509write_csr.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/x509write_csr.o
@@ -12086,7 +12086,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x86 Output/Release/Obj/template_pca10056/xtea.o
  .debug_macro   0x0000000000000000       0x12 Output/Release/Obj/template_pca10056/xtea.o
  .debug_line    0x0000000000000000      0x16e Output/Release/Obj/template_pca10056/xtea.o
- .debug_str     0x0000000000000000     0xad28 Output/Release/Obj/template_pca10056/xtea.o
+ .debug_str     0x0000000000000000     0xad26 Output/Release/Obj/template_pca10056/xtea.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/xtea.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/xtea.o
@@ -12350,7 +12350,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
  .debug_line    0x0000000000000000      0x32e Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
- .debug_str     0x0000000000000000    0x854da Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
+ .debug_str     0x0000000000000000    0x854d8 Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o
@@ -12607,7 +12607,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
  .debug_line    0x0000000000000000      0x32d Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
- .debug_str     0x0000000000000000    0x854d9 Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
+ .debug_str     0x0000000000000000    0x854d7 Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_log_backend_uart.o
@@ -13115,7 +13115,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x72 Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
  .debug_macro   0x0000000000000000       0x49 Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
  .debug_line    0x0000000000000000      0x345 Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
- .debug_str     0x0000000000000000    0x859c0 Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
+ .debug_str     0x0000000000000000    0x859be Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_error_handler_gcc.o
@@ -13288,7 +13288,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/app_fifo.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/app_fifo.o
  .debug_line    0x0000000000000000      0x6fc Output/Release/Obj/template_pca10056/app_fifo.o
- .debug_str     0x0000000000000000    0x856ab Output/Release/Obj/template_pca10056/app_fifo.o
+ .debug_str     0x0000000000000000    0x856a9 Output/Release/Obj/template_pca10056/app_fifo.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_fifo.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_fifo.o
@@ -13433,7 +13433,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x17 Output/Release/Obj/template_pca10056/app_gpiote.o
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/app_gpiote.o
  .debug_line    0x0000000000000000      0xc41 Output/Release/Obj/template_pca10056/app_gpiote.o
- .debug_str     0x0000000000000000    0x8e63b Output/Release/Obj/template_pca10056/app_gpiote.o
+ .debug_str     0x0000000000000000    0x8e639 Output/Release/Obj/template_pca10056/app_gpiote.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_gpiote.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_gpiote.o
@@ -13587,7 +13587,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x45 Output/Release/Obj/template_pca10056/app_pwm.o
  .debug_macro   0x0000000000000000       0xcc Output/Release/Obj/template_pca10056/app_pwm.o
  .debug_line    0x0000000000000000     0x1141 Output/Release/Obj/template_pca10056/app_pwm.o
- .debug_str     0x0000000000000000    0x906b8 Output/Release/Obj/template_pca10056/app_pwm.o
+ .debug_str     0x0000000000000000    0x906b6 Output/Release/Obj/template_pca10056/app_pwm.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_pwm.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_pwm.o
@@ -13691,7 +13691,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/app_scheduler.o
  .debug_macro   0x0000000000000000       0x8c Output/Release/Obj/template_pca10056/app_scheduler.o
  .debug_line    0x0000000000000000      0x61d Output/Release/Obj/template_pca10056/app_scheduler.o
- .debug_str     0x0000000000000000    0x8615a Output/Release/Obj/template_pca10056/app_scheduler.o
+ .debug_str     0x0000000000000000    0x86158 Output/Release/Obj/template_pca10056/app_scheduler.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_scheduler.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_scheduler.o
@@ -13828,7 +13828,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/app_sdcard.o
  .debug_macro   0x0000000000000000       0x73 Output/Release/Obj/template_pca10056/app_sdcard.o
  .debug_line    0x0000000000000000     0x179d Output/Release/Obj/template_pca10056/app_sdcard.o
- .debug_str     0x0000000000000000    0x8f4f5 Output/Release/Obj/template_pca10056/app_sdcard.o
+ .debug_str     0x0000000000000000    0x8f4f3 Output/Release/Obj/template_pca10056/app_sdcard.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_sdcard.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_sdcard.o
@@ -14119,7 +14119,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/app_uart_fifo.o
  .debug_macro   0x0000000000000000       0x3f Output/Release/Obj/template_pca10056/app_uart_fifo.o
  .debug_line    0x0000000000000000      0xaa5 Output/Release/Obj/template_pca10056/app_uart_fifo.o
- .debug_str     0x0000000000000000    0x8e615 Output/Release/Obj/template_pca10056/app_uart_fifo.o
+ .debug_str     0x0000000000000000    0x8e613 Output/Release/Obj/template_pca10056/app_uart_fifo.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_uart_fifo.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_uart_fifo.o
@@ -14577,7 +14577,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x42 Output/Release/Obj/template_pca10056/app_usbd_audio.o
  .debug_macro   0x0000000000000000       0x27 Output/Release/Obj/template_pca10056/app_usbd_audio.o
  .debug_line    0x0000000000000000     0x2c60 Output/Release/Obj/template_pca10056/app_usbd_audio.o
- .debug_str     0x0000000000000000    0x9c31c Output/Release/Obj/template_pca10056/app_usbd_audio.o
+ .debug_str     0x0000000000000000    0x9c31a Output/Release/Obj/template_pca10056/app_usbd_audio.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_usbd_audio.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_usbd_audio.o
@@ -15072,7 +15072,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x17e Output/Release/Obj/template_pca10056/app_usbd_hid.o
  .debug_macro   0x0000000000000000       0x9a Output/Release/Obj/template_pca10056/app_usbd_hid.o
  .debug_line    0x0000000000000000      0xf32 Output/Release/Obj/template_pca10056/app_usbd_hid.o
- .debug_str     0x0000000000000000    0x9d216 Output/Release/Obj/template_pca10056/app_usbd_hid.o
+ .debug_str     0x0000000000000000    0x9d214 Output/Release/Obj/template_pca10056/app_usbd_hid.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_usbd_hid.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_usbd_hid.o
@@ -15274,7 +15274,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x47 Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
  .debug_macro   0x0000000000000000       0x2f Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
  .debug_line    0x0000000000000000     0x20ff Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
- .debug_str     0x0000000000000000    0x9deff Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
+ .debug_str     0x0000000000000000    0x9defd Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_usbd_hid_generic.o
@@ -15470,7 +15470,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
  .debug_macro   0x0000000000000000       0x35 Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
  .debug_line    0x0000000000000000     0x1db7 Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
- .debug_str     0x0000000000000000    0x9c55a Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
+ .debug_str     0x0000000000000000    0x9c558 Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_usbd_hid_kbd.o
@@ -15664,7 +15664,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
  .debug_macro   0x0000000000000000       0x3c Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
  .debug_line    0x0000000000000000     0x1edb Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
- .debug_str     0x0000000000000000    0x9bacf Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
+ .debug_str     0x0000000000000000    0x9bacd Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o
@@ -16016,7 +16016,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x50 Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
  .debug_line    0x0000000000000000      0x850 Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
- .debug_str     0x0000000000000000    0x9a34f Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
+ .debug_str     0x0000000000000000    0x9a34d Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/app_usbd_string_desc.o
@@ -16111,7 +16111,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/blockwise.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/blockwise.o
  .debug_line    0x0000000000000000      0x477 Output/Release/Obj/template_pca10056/blockwise.o
- .debug_str     0x0000000000000000     0x392f Output/Release/Obj/template_pca10056/blockwise.o
+ .debug_str     0x0000000000000000     0x392d Output/Release/Obj/template_pca10056/blockwise.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/blockwise.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/blockwise.o
@@ -16165,7 +16165,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cifra_cmac.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/cifra_cmac.o
  .debug_line    0x0000000000000000      0x462 Output/Release/Obj/template_pca10056/cifra_cmac.o
- .debug_str     0x0000000000000000     0x3c5c Output/Release/Obj/template_pca10056/cifra_cmac.o
+ .debug_str     0x0000000000000000     0x3c5a Output/Release/Obj/template_pca10056/cifra_cmac.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cifra_cmac.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cifra_cmac.o
@@ -16244,7 +16244,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x28 Output/Release/Obj/template_pca10056/cifra_eax_aes.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/cifra_eax_aes.o
  .debug_line    0x0000000000000000      0xa39 Output/Release/Obj/template_pca10056/cifra_eax_aes.o
- .debug_str     0x0000000000000000     0x3d7e Output/Release/Obj/template_pca10056/cifra_eax_aes.o
+ .debug_str     0x0000000000000000     0x3d7c Output/Release/Obj/template_pca10056/cifra_eax_aes.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/cifra_eax_aes.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/cifra_eax_aes.o
@@ -16322,7 +16322,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/crc16.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/crc16.o
  .debug_line    0x0000000000000000      0x3f1 Output/Release/Obj/template_pca10056/crc16.o
- .debug_str     0x0000000000000000    0x85574 Output/Release/Obj/template_pca10056/crc16.o
+ .debug_str     0x0000000000000000    0x85572 Output/Release/Obj/template_pca10056/crc16.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/crc16.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/crc16.o
@@ -16400,7 +16400,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/crc32.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/crc32.o
  .debug_line    0x0000000000000000      0x3ac Output/Release/Obj/template_pca10056/crc32.o
- .debug_str     0x0000000000000000    0x8556b Output/Release/Obj/template_pca10056/crc32.o
+ .debug_str     0x0000000000000000    0x85569 Output/Release/Obj/template_pca10056/crc32.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/crc32.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/crc32.o
@@ -16581,7 +16581,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/eax.o
  .debug_macro   0x0000000000000000       0x34 Output/Release/Obj/template_pca10056/eax.o
  .debug_line    0x0000000000000000      0x342 Output/Release/Obj/template_pca10056/eax.o
- .debug_str     0x0000000000000000     0x3b6c Output/Release/Obj/template_pca10056/eax.o
+ .debug_str     0x0000000000000000     0x3b6a Output/Release/Obj/template_pca10056/eax.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/eax.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/eax.o
@@ -16720,7 +16720,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3a Output/Release/Obj/template_pca10056/fnmatch.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/fnmatch.o
  .debug_line    0x0000000000000000      0x402 Output/Release/Obj/template_pca10056/fnmatch.o
- .debug_str     0x0000000000000000     0x323e Output/Release/Obj/template_pca10056/fnmatch.o
+ .debug_str     0x0000000000000000     0x323c Output/Release/Obj/template_pca10056/fnmatch.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/fnmatch.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/fnmatch.o
@@ -16766,7 +16766,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/gf128.o
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/gf128.o
  .debug_line    0x0000000000000000      0x5d9 Output/Release/Obj/template_pca10056/gf128.o
- .debug_str     0x0000000000000000     0x38c1 Output/Release/Obj/template_pca10056/gf128.o
+ .debug_str     0x0000000000000000     0x38bf Output/Release/Obj/template_pca10056/gf128.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/gf128.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/gf128.o
@@ -17008,7 +17008,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/hci_mem_pool.o
  .debug_macro   0x0000000000000000       0x72 Output/Release/Obj/template_pca10056/hci_mem_pool.o
  .debug_line    0x0000000000000000      0x605 Output/Release/Obj/template_pca10056/hci_mem_pool.o
- .debug_str     0x0000000000000000    0x857a2 Output/Release/Obj/template_pca10056/hci_mem_pool.o
+ .debug_str     0x0000000000000000    0x857a0 Output/Release/Obj/template_pca10056/hci_mem_pool.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/hci_mem_pool.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/hci_mem_pool.o
@@ -17143,7 +17143,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x8c Output/Release/Obj/template_pca10056/hci_slip.o
  .debug_macro   0x0000000000000000       0x18 Output/Release/Obj/template_pca10056/hci_slip.o
  .debug_line    0x0000000000000000      0x8a0 Output/Release/Obj/template_pca10056/hci_slip.o
- .debug_str     0x0000000000000000    0x86511 Output/Release/Obj/template_pca10056/hci_slip.o
+ .debug_str     0x0000000000000000    0x8650f Output/Release/Obj/template_pca10056/hci_slip.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/hci_slip.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/hci_slip.o
@@ -17509,7 +17509,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/low_power_pwm.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/low_power_pwm.o
  .debug_line    0x0000000000000000      0xa92 Output/Release/Obj/template_pca10056/low_power_pwm.o
- .debug_str     0x0000000000000000    0x8e615 Output/Release/Obj/template_pca10056/low_power_pwm.o
+ .debug_str     0x0000000000000000    0x8e613 Output/Release/Obj/template_pca10056/low_power_pwm.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/low_power_pwm.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/low_power_pwm.o
@@ -17650,7 +17650,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/modes.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/modes.o
  .debug_line    0x0000000000000000      0x394 Output/Release/Obj/template_pca10056/modes.o
- .debug_str     0x0000000000000000     0x395e Output/Release/Obj/template_pca10056/modes.o
+ .debug_str     0x0000000000000000     0x395c Output/Release/Obj/template_pca10056/modes.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/modes.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/modes.o
@@ -17718,7 +17718,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x16d Output/Release/Obj/template_pca10056/nrf_assert.o
  .debug_macro   0x0000000000000000       0x49 Output/Release/Obj/template_pca10056/nrf_assert.o
  .debug_line    0x0000000000000000      0x2de Output/Release/Obj/template_pca10056/nrf_assert.o
- .debug_str     0x0000000000000000    0x766c5 Output/Release/Obj/template_pca10056/nrf_assert.o
+ .debug_str     0x0000000000000000    0x766c3 Output/Release/Obj/template_pca10056/nrf_assert.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_assert.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_assert.o
@@ -18577,7 +18577,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/nrf_drv_csense.o
  .debug_macro   0x0000000000000000       0x94 Output/Release/Obj/template_pca10056/nrf_drv_csense.o
  .debug_line    0x0000000000000000      0xbb5 Output/Release/Obj/template_pca10056/nrf_drv_csense.o
- .debug_str     0x0000000000000000    0x8f7cc Output/Release/Obj/template_pca10056/nrf_drv_csense.o
+ .debug_str     0x0000000000000000    0x8f7ca Output/Release/Obj/template_pca10056/nrf_drv_csense.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_drv_csense.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_drv_csense.o
@@ -18903,7 +18903,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x20 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
  .debug_line    0x0000000000000000      0x7a6 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
- .debug_str     0x0000000000000000    0x8d499 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
+ .debug_str     0x0000000000000000    0x8d497 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_fstorage_nvmc.o
@@ -19499,7 +19499,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x31 Output/Release/Obj/template_pca10056/nrf_section_iter.o
  .debug_macro   0x0000000000000000       0x11 Output/Release/Obj/template_pca10056/nrf_section_iter.o
  .debug_line    0x0000000000000000      0x3f6 Output/Release/Obj/template_pca10056/nrf_section_iter.o
- .debug_str     0x0000000000000000    0x85a03 Output/Release/Obj/template_pca10056/nrf_section_iter.o
+ .debug_str     0x0000000000000000    0x85a01 Output/Release/Obj/template_pca10056/nrf_section_iter.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_section_iter.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_section_iter.o
@@ -19716,7 +19716,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x47 Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
  .debug_macro   0x0000000000000000       0x1d Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
  .debug_line    0x0000000000000000      0xb17 Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
- .debug_str     0x0000000000000000    0x90c4e Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
+ .debug_str     0x0000000000000000    0x90c4c Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_spi_mngr.o
@@ -19800,7 +19800,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_strerror.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_strerror.o
  .debug_line    0x0000000000000000      0x3ca Output/Release/Obj/template_pca10056/nrf_strerror.o
- .debug_str     0x0000000000000000    0x855be Output/Release/Obj/template_pca10056/nrf_strerror.o
+ .debug_str     0x0000000000000000    0x855bc Output/Release/Obj/template_pca10056/nrf_strerror.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_strerror.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_strerror.o
@@ -19934,7 +19934,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x47 Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
  .debug_macro   0x0000000000000000       0x4b Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
  .debug_line    0x0000000000000000      0xc09 Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
- .debug_str     0x0000000000000000    0x91013 Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
+ .debug_str     0x0000000000000000    0x91011 Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_twi_mngr.o
@@ -20012,7 +20012,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/slip.o
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/slip.o
  .debug_line    0x0000000000000000      0x4de Output/Release/Obj/template_pca10056/slip.o
- .debug_str     0x0000000000000000    0x85639 Output/Release/Obj/template_pca10056/slip.o
+ .debug_str     0x0000000000000000    0x85637 Output/Release/Obj/template_pca10056/slip.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/slip.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/slip.o
@@ -20144,7 +20144,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x14 Output/Release/Obj/template_pca10056/task_manager_core_armgcc.o
  .debug_aranges
                 0x0000000000000000       0x20 Output/Release/Obj/template_pca10056/task_manager_core_armgcc.o
- .debug_str     0x0000000000000000       0xd7 Output/Release/Obj/template_pca10056/task_manager_core_armgcc.o
+ .debug_str     0x0000000000000000       0xd5 Output/Release/Obj/template_pca10056/task_manager_core_armgcc.o
  .ARM.attributes
                 0x0000000000000000       0x1f Output/Release/Obj/template_pca10056/task_manager_core_armgcc.o
  .group         0x0000000000000000        0xc Output/Release/Obj/template_pca10056/nrf_libuarte_async.o
@@ -20483,7 +20483,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
  .debug_macro   0x0000000000000000       0x2e Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
  .debug_line    0x0000000000000000      0x848 Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
- .debug_str     0x0000000000000000    0x88c72 Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
+ .debug_str     0x0000000000000000    0x88c70 Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_aead.o
@@ -20599,7 +20599,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
  .debug_line    0x0000000000000000      0xa00 Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
- .debug_str     0x0000000000000000    0x886ff Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
+ .debug_str     0x0000000000000000    0x886fd Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_aes.o
@@ -20681,7 +20681,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xb2 Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
  .debug_macro   0x0000000000000000       0x34 Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
  .debug_line    0x0000000000000000      0x441 Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
- .debug_str     0x0000000000000000    0x85e91 Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
+ .debug_str     0x0000000000000000    0x85e8f Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_aes_shared.o
@@ -20845,7 +20845,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x31 Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
  .debug_macro   0x0000000000000000       0xd9 Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
  .debug_line    0x0000000000000000     0x1003 Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
- .debug_str     0x0000000000000000    0x8f4aa Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
+ .debug_str     0x0000000000000000    0x8f4a8 Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_ecc.o
@@ -20977,7 +20977,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x19 Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
  .debug_macro   0x0000000000000000       0x64 Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
  .debug_line    0x0000000000000000      0x9ee Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
- .debug_str     0x0000000000000000    0x915af Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
+ .debug_str     0x0000000000000000    0x915ad Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o
@@ -21111,7 +21111,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
  .debug_line    0x0000000000000000      0xad1 Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
- .debug_str     0x0000000000000000    0x9021e Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
+ .debug_str     0x0000000000000000    0x9021c Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_ecdsa.o
@@ -21233,7 +21233,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
  .debug_line    0x0000000000000000      0x9c4 Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
- .debug_str     0x0000000000000000    0x8e21e Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
+ .debug_str     0x0000000000000000    0x8e21c Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_eddsa.o
@@ -21317,7 +21317,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x55 Output/Release/Obj/template_pca10056/nrf_crypto_error.o
  .debug_macro   0x0000000000000000       0xb2 Output/Release/Obj/template_pca10056/nrf_crypto_error.o
  .debug_line    0x0000000000000000      0x3a0 Output/Release/Obj/template_pca10056/nrf_crypto_error.o
- .debug_str     0x0000000000000000    0x85d10 Output/Release/Obj/template_pca10056/nrf_crypto_error.o
+ .debug_str     0x0000000000000000    0x85d0e Output/Release/Obj/template_pca10056/nrf_crypto_error.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_error.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_error.o
@@ -21423,7 +21423,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
  .debug_line    0x0000000000000000      0x854 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
- .debug_str     0x0000000000000000    0x87bc6 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
+ .debug_str     0x0000000000000000    0x87bc4 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_hash.o
@@ -21527,7 +21527,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
  .debug_line    0x0000000000000000      0x8b0 Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
- .debug_str     0x0000000000000000    0x87d80 Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
+ .debug_str     0x0000000000000000    0x87d7e Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_hkdf.o
@@ -21647,7 +21647,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
  .debug_line    0x0000000000000000      0x960 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
- .debug_str     0x0000000000000000    0x8a697 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
+ .debug_str     0x0000000000000000    0x8a695 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_hmac.o
@@ -21912,7 +21912,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
  .debug_macro   0x0000000000000000       0x10 Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
  .debug_line    0x0000000000000000      0x45c Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
- .debug_str     0x0000000000000000    0x859ba Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
+ .debug_str     0x0000000000000000    0x859b8 Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/nrf_crypto_shared.o
@@ -22016,7 +22016,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c Output/Release/Obj/template_pca10056/utf.o
  .debug_macro   0x0000000000000000      0x1a3 Output/Release/Obj/template_pca10056/utf.o
  .debug_line    0x0000000000000000      0x610 Output/Release/Obj/template_pca10056/utf.o
- .debug_str     0x0000000000000000     0x37d0 Output/Release/Obj/template_pca10056/utf.o
+ .debug_str     0x0000000000000000     0x37ce Output/Release/Obj/template_pca10056/utf.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/utf.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/utf.o
@@ -22212,7 +22212,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x28 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
  .debug_macro   0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
  .debug_line    0x0000000000000000      0x868 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
- .debug_str     0x0000000000000000    0x7e7f6 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
+ .debug_str     0x0000000000000000    0x7e7f4 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/SEGGER_RTT_printf.o
@@ -22233,7 +22233,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0xb3e Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
  .debug_line    0x0000000000000000       0x8b Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
- .debug_str     0x0000000000000000     0xa2b3 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
+ .debug_str     0x0000000000000000     0xa2b1 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_GCC.o
@@ -22254,7 +22254,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0xb3e Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
  .debug_line    0x0000000000000000       0x8b Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
- .debug_str     0x0000000000000000     0xa2b3 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
+ .debug_str     0x0000000000000000     0xa2b1 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_IAR.o
@@ -22275,7 +22275,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0xb3e Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
  .debug_macro   0x0000000000000000     0x1aea Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
  .debug_line    0x0000000000000000       0x8c Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
- .debug_str     0x0000000000000000     0xa2b4 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
+ .debug_str     0x0000000000000000     0xa2b2 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_KEIL.o
@@ -22363,7 +22363,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xa6 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
  .debug_macro   0x0000000000000000       0xc8 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
  .debug_line    0x0000000000000000      0x449 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
- .debug_str     0x0000000000000000    0x7f192 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
+ .debug_str     0x0000000000000000    0x7f190 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
  .comment       0x0000000000000000       0x40 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o
@@ -28783,7 +28783,7 @@ LOAD linker stubs
  .comment       0x00000000000000b8       0x7a ../../../../../../external/nrf_cc310/lib/cortex-m4/hard-float/libnrf_cc310_0.9.13.a(aes_driver.c.obj)
  .comment       0x00000000000000b8       0x7a ../../../../../../external/nrf_cc310/lib/cortex-m4/hard-float/libnrf_cc310_0.9.13.a(bypass_driver.c.obj)
 
-.debug_line     0x0000000000000000    0x4d0d6
+.debug_line     0x0000000000000000    0x4d0d0
  .debug_line    0x0000000000000000      0x21e Output/Release/Obj/template_pca10056/thumb_crt0.o
  .debug_line    0x000000000000021e      0xb08 Output/Release/Obj/template_pca10056/boards.o
  .debug_line    0x0000000000000d26      0xb81 Output/Release/Obj/template_pca10056/nrf_drv_clock.o
@@ -28815,61 +28815,61 @@ LOAD linker stubs
  .debug_line    0x0000000000019b5a     0x175c Output/Release/Obj/template_pca10056/nrfx_uarte.o
  .debug_line    0x000000000001b2b6     0x32fb Output/Release/Obj/template_pca10056/nrfx_usbd.o
  .debug_line    0x000000000001e5b1      0x9a8 Output/Release/Obj/template_pca10056/nrfx_wdt.o
- .debug_line    0x000000000001ef59     0x2068 Output/Release/Obj/template_pca10056/main.o
- .debug_line    0x0000000000020fc1      0x18f Output/Release/Obj/template_pca10056/uartfunction.o
- .debug_line    0x0000000000021150      0x750 Output/Release/Obj/template_pca10056/IIC_LIS.o
- .debug_line    0x00000000000218a0      0xdfe Output/Release/Obj/template_pca10056/bsp.o
- .debug_line    0x000000000002269e      0xa15 Output/Release/Obj/template_pca10056/nrf_twi_sensor.o
- .debug_line    0x00000000000230b3      0x78a Output/Release/Obj/template_pca10056/cc310_backend_init.o
- .debug_line    0x000000000002383d      0x431 Output/Release/Obj/template_pca10056/cc310_backend_mutex.o
- .debug_line    0x0000000000023c6e      0xa97 Output/Release/Obj/template_pca10056/cc310_backend_rng.o
- .debug_line    0x0000000000024705     0x1ed6 Output/Release/Obj/template_pca10056/nrf_log_frontend.o
- .debug_line    0x00000000000265db      0x7c7 Output/Release/Obj/template_pca10056/nrf_log_str_formatter.o
- .debug_line    0x0000000000026da2      0x8e6 Output/Release/Obj/template_pca10056/nrf_log_backend_rtt.o
- .debug_line    0x0000000000027688      0x6bc Output/Release/Obj/template_pca10056/nrf_log_backend_serial.o
- .debug_line    0x0000000000027d44      0x5b1 Output/Release/Obj/template_pca10056/nrf_log_default_backends.o
- .debug_line    0x00000000000282f5      0x738 Output/Release/Obj/template_pca10056/nrf_mpu_lib.o
- .debug_line    0x0000000000028a2d      0x559 Output/Release/Obj/template_pca10056/nrf_stack_guard.o
- .debug_line    0x0000000000028f86      0xd13 Output/Release/Obj/template_pca10056/app_button.o
- .debug_line    0x0000000000029c99      0x3b4 Output/Release/Obj/template_pca10056/app_error.o
- .debug_line    0x000000000002a04d      0x6e2 Output/Release/Obj/template_pca10056/app_error_weak.o
- .debug_line    0x000000000002a72f      0xddc Output/Release/Obj/template_pca10056/app_timer2.o
- .debug_line    0x000000000002b50b     0x256c Output/Release/Obj/template_pca10056/app_usbd.o
- .debug_line    0x000000000002da77     0x2ba7 Output/Release/Obj/template_pca10056/app_usbd_cdc_acm.o
- .debug_line    0x000000000003061e     0x1526 Output/Release/Obj/template_pca10056/app_usbd_core.o
- .debug_line    0x0000000000031b44     0x30c4 Output/Release/Obj/template_pca10056/app_usbd_msc.o
- .debug_line    0x0000000000034c08      0x442 Output/Release/Obj/template_pca10056/app_util_platform.o
- .debug_line    0x000000000003504a     0x1185 Output/Release/Obj/template_pca10056/drv_rtc.o
- .debug_line    0x00000000000361cf     0x1e10 Output/Release/Obj/template_pca10056/fds.o
- .debug_line    0x0000000000037fdf      0x357 Output/Release/Obj/template_pca10056/hardfault_handler_gcc.o
- .debug_line    0x0000000000038336      0x7af Output/Release/Obj/template_pca10056/hardfault_implementation.o
- .debug_line    0x0000000000038ae5      0xe2d Output/Release/Obj/template_pca10056/hci_transport.o
- .debug_line    0x0000000000039912      0x934 Output/Release/Obj/template_pca10056/led_softblink.o
- .debug_line    0x000000000003a246      0x782 Output/Release/Obj/template_pca10056/mem_manager.o
- .debug_line    0x000000000003a9c8      0x77d Output/Release/Obj/template_pca10056/nrf_atfifo.o
- .debug_line    0x000000000003b145      0x698 Output/Release/Obj/template_pca10056/nrf_atomic.o
- .debug_line    0x000000000003b7dd      0x9a3 Output/Release/Obj/template_pca10056/nrf_balloc.o
- .debug_line    0x000000000003c180     0x32d7 Output/Release/Obj/template_pca10056/nrf_cli.o
- .debug_line    0x000000000003f457      0xeb3 Output/Release/Obj/template_pca10056/nrf_cli_uart.o
- .debug_line    0x000000000004030a      0xe40 Output/Release/Obj/template_pca10056/nrf_csense.o
- .debug_line    0x000000000004114a      0x3d4 Output/Release/Obj/template_pca10056/nrf_fprintf.o
- .debug_line    0x000000000004151e      0x840 Output/Release/Obj/template_pca10056/nrf_fprintf_format.o
- .debug_line    0x0000000000041d5e      0xd3e Output/Release/Obj/template_pca10056/nrf_fstorage.o
- .debug_line    0x0000000000042a9c     0x1346 Output/Release/Obj/template_pca10056/nrf_gfx.o
- .debug_line    0x0000000000043de2      0x7ff Output/Release/Obj/template_pca10056/nrf_memobj.o
- .debug_line    0x00000000000445e1      0xb50 Output/Release/Obj/template_pca10056/nrf_pwr_mgmt.o
- .debug_line    0x0000000000045131      0xe89 Output/Release/Obj/template_pca10056/nrf_queue.o
- .debug_line    0x0000000000045fba      0x775 Output/Release/Obj/template_pca10056/nrf_ringbuf.o
- .debug_line    0x000000000004672f      0x5d0 Output/Release/Obj/template_pca10056/nrf_sortlist.o
- .debug_line    0x0000000000046cff      0xcf0 Output/Release/Obj/template_pca10056/task_manager.o
- .debug_line    0x00000000000479ef     0x124a Output/Release/Obj/template_pca10056/nrf_libuarte_async.o
- .debug_line    0x0000000000048c39     0x1943 Output/Release/Obj/template_pca10056/nrf_libuarte_drv.o
- .debug_line    0x000000000004a57c      0x4ec Output/Release/Obj/template_pca10056/nrf_crypto_init.o
- .debug_line    0x000000000004aa68      0xc97 Output/Release/Obj/template_pca10056/nrf_crypto_rng.o
- .debug_line    0x000000000004b6ff       0x89 Output/Release/Obj/template_pca10056/ses_startup_nrf52840.o
- .debug_line    0x000000000004b788       0xa8 Output/Release/Obj/template_pca10056/ses_startup_nrf_common.o
- .debug_line    0x000000000004b830      0x635 Output/Release/Obj/template_pca10056/system_nrf52840.o
- .debug_line    0x000000000004be65     0x1271 Output/Release/Obj/template_pca10056/SEGGER_RTT.o
+ .debug_line    0x000000000001ef59     0x2066 Output/Release/Obj/template_pca10056/main.o
+ .debug_line    0x0000000000020fbf      0x18d Output/Release/Obj/template_pca10056/uartfunction.o
+ .debug_line    0x000000000002114c      0x74e Output/Release/Obj/template_pca10056/IIC_LIS.o
+ .debug_line    0x000000000002189a      0xdfe Output/Release/Obj/template_pca10056/bsp.o
+ .debug_line    0x0000000000022698      0xa15 Output/Release/Obj/template_pca10056/nrf_twi_sensor.o
+ .debug_line    0x00000000000230ad      0x78a Output/Release/Obj/template_pca10056/cc310_backend_init.o
+ .debug_line    0x0000000000023837      0x431 Output/Release/Obj/template_pca10056/cc310_backend_mutex.o
+ .debug_line    0x0000000000023c68      0xa97 Output/Release/Obj/template_pca10056/cc310_backend_rng.o
+ .debug_line    0x00000000000246ff     0x1ed6 Output/Release/Obj/template_pca10056/nrf_log_frontend.o
+ .debug_line    0x00000000000265d5      0x7c7 Output/Release/Obj/template_pca10056/nrf_log_str_formatter.o
+ .debug_line    0x0000000000026d9c      0x8e6 Output/Release/Obj/template_pca10056/nrf_log_backend_rtt.o
+ .debug_line    0x0000000000027682      0x6bc Output/Release/Obj/template_pca10056/nrf_log_backend_serial.o
+ .debug_line    0x0000000000027d3e      0x5b1 Output/Release/Obj/template_pca10056/nrf_log_default_backends.o
+ .debug_line    0x00000000000282ef      0x738 Output/Release/Obj/template_pca10056/nrf_mpu_lib.o
+ .debug_line    0x0000000000028a27      0x559 Output/Release/Obj/template_pca10056/nrf_stack_guard.o
+ .debug_line    0x0000000000028f80      0xd13 Output/Release/Obj/template_pca10056/app_button.o
+ .debug_line    0x0000000000029c93      0x3b4 Output/Release/Obj/template_pca10056/app_error.o
+ .debug_line    0x000000000002a047      0x6e2 Output/Release/Obj/template_pca10056/app_error_weak.o
+ .debug_line    0x000000000002a729      0xddc Output/Release/Obj/template_pca10056/app_timer2.o
+ .debug_line    0x000000000002b505     0x256c Output/Release/Obj/template_pca10056/app_usbd.o
+ .debug_line    0x000000000002da71     0x2ba7 Output/Release/Obj/template_pca10056/app_usbd_cdc_acm.o
+ .debug_line    0x0000000000030618     0x1526 Output/Release/Obj/template_pca10056/app_usbd_core.o
+ .debug_line    0x0000000000031b3e     0x30c4 Output/Release/Obj/template_pca10056/app_usbd_msc.o
+ .debug_line    0x0000000000034c02      0x442 Output/Release/Obj/template_pca10056/app_util_platform.o
+ .debug_line    0x0000000000035044     0x1185 Output/Release/Obj/template_pca10056/drv_rtc.o
+ .debug_line    0x00000000000361c9     0x1e10 Output/Release/Obj/template_pca10056/fds.o
+ .debug_line    0x0000000000037fd9      0x357 Output/Release/Obj/template_pca10056/hardfault_handler_gcc.o
+ .debug_line    0x0000000000038330      0x7af Output/Release/Obj/template_pca10056/hardfault_implementation.o
+ .debug_line    0x0000000000038adf      0xe2d Output/Release/Obj/template_pca10056/hci_transport.o
+ .debug_line    0x000000000003990c      0x934 Output/Release/Obj/template_pca10056/led_softblink.o
+ .debug_line    0x000000000003a240      0x782 Output/Release/Obj/template_pca10056/mem_manager.o
+ .debug_line    0x000000000003a9c2      0x77d Output/Release/Obj/template_pca10056/nrf_atfifo.o
+ .debug_line    0x000000000003b13f      0x698 Output/Release/Obj/template_pca10056/nrf_atomic.o
+ .debug_line    0x000000000003b7d7      0x9a3 Output/Release/Obj/template_pca10056/nrf_balloc.o
+ .debug_line    0x000000000003c17a     0x32d7 Output/Release/Obj/template_pca10056/nrf_cli.o
+ .debug_line    0x000000000003f451      0xeb3 Output/Release/Obj/template_pca10056/nrf_cli_uart.o
+ .debug_line    0x0000000000040304      0xe40 Output/Release/Obj/template_pca10056/nrf_csense.o
+ .debug_line    0x0000000000041144      0x3d4 Output/Release/Obj/template_pca10056/nrf_fprintf.o
+ .debug_line    0x0000000000041518      0x840 Output/Release/Obj/template_pca10056/nrf_fprintf_format.o
+ .debug_line    0x0000000000041d58      0xd3e Output/Release/Obj/template_pca10056/nrf_fstorage.o
+ .debug_line    0x0000000000042a96     0x1346 Output/Release/Obj/template_pca10056/nrf_gfx.o
+ .debug_line    0x0000000000043ddc      0x7ff Output/Release/Obj/template_pca10056/nrf_memobj.o
+ .debug_line    0x00000000000445db      0xb50 Output/Release/Obj/template_pca10056/nrf_pwr_mgmt.o
+ .debug_line    0x000000000004512b      0xe89 Output/Release/Obj/template_pca10056/nrf_queue.o
+ .debug_line    0x0000000000045fb4      0x775 Output/Release/Obj/template_pca10056/nrf_ringbuf.o
+ .debug_line    0x0000000000046729      0x5d0 Output/Release/Obj/template_pca10056/nrf_sortlist.o
+ .debug_line    0x0000000000046cf9      0xcf0 Output/Release/Obj/template_pca10056/task_manager.o
+ .debug_line    0x00000000000479e9     0x124a Output/Release/Obj/template_pca10056/nrf_libuarte_async.o
+ .debug_line    0x0000000000048c33     0x1943 Output/Release/Obj/template_pca10056/nrf_libuarte_drv.o
+ .debug_line    0x000000000004a576      0x4ec Output/Release/Obj/template_pca10056/nrf_crypto_init.o
+ .debug_line    0x000000000004aa62      0xc97 Output/Release/Obj/template_pca10056/nrf_crypto_rng.o
+ .debug_line    0x000000000004b6f9       0x89 Output/Release/Obj/template_pca10056/ses_startup_nrf52840.o
+ .debug_line    0x000000000004b782       0xa8 Output/Release/Obj/template_pca10056/ses_startup_nrf_common.o
+ .debug_line    0x000000000004b82a      0x635 Output/Release/Obj/template_pca10056/system_nrf52840.o
+ .debug_line    0x000000000004be5f     0x1271 Output/Release/Obj/template_pca10056/SEGGER_RTT.o
 
 .debug_info     0x0000000000000000    0x83a14
  .debug_info    0x0000000000000000       0x22 Output/Release/Obj/template_pca10056/thumb_crt0.o
@@ -29221,178 +29221,178 @@ LOAD linker stubs
  .debug_aranges
                 0x00000000000028e0      0x108 Output/Release/Obj/template_pca10056/SEGGER_RTT.o
 
-.debug_str      0x0000000000000000    0xda6ce
- .debug_str     0x0000000000000000       0xba Output/Release/Obj/template_pca10056/thumb_crt0.o
- .debug_str     0x00000000000000ba    0x8bb52 Output/Release/Obj/template_pca10056/boards.o
-                                      0x8e0fe (size before relaxing)
- .debug_str     0x000000000008bc0c     0x3a79 Output/Release/Obj/template_pca10056/nrf_drv_clock.o
-                                      0x903be (size before relaxing)
- .debug_str     0x000000000008f685     0x1c9f Output/Release/Obj/template_pca10056/nrf_drv_rng.o
-                                      0x91530 (size before relaxing)
- .debug_str     0x0000000000091324     0x1bf2 Output/Release/Obj/template_pca10056/nrf_drv_twi.o
-                                      0x8e77c (size before relaxing)
- .debug_str     0x0000000000092f16      0x755 Output/Release/Obj/template_pca10056/nrfx_atomic.o
-                                      0x8cffb (size before relaxing)
- .debug_str     0x000000000009366b      0xad2 Output/Release/Obj/template_pca10056/nrfx_clock.o
-                                      0x90a30 (size before relaxing)
- .debug_str     0x000000000009413d      0xbf6 Output/Release/Obj/template_pca10056/nrfx_comp.o
-                                      0x90cf5 (size before relaxing)
- .debug_str     0x0000000000094d33     0x16c8 Output/Release/Obj/template_pca10056/nrfx_gpiote.o
-                                      0x91def (size before relaxing)
- .debug_str     0x00000000000963fb      0xc2f Output/Release/Obj/template_pca10056/nrfx_i2s.o
-                                      0x910b1 (size before relaxing)
- .debug_str     0x000000000009702a      0x9fb Output/Release/Obj/template_pca10056/nrfx_lpcomp.o
-                                      0x90bee (size before relaxing)
- .debug_str     0x0000000000097a25      0x87d Output/Release/Obj/template_pca10056/nrfx_pdm.o
-                                      0x90d35 (size before relaxing)
- .debug_str     0x00000000000982a2      0xdd0 Output/Release/Obj/template_pca10056/nrfx_power.o
-                                      0x8de6c (size before relaxing)
- .debug_str     0x0000000000099072      0x8d5 Output/Release/Obj/template_pca10056/nrfx_ppi.o
-                                      0x904d5 (size before relaxing)
- .debug_str     0x0000000000099947      0x42e Output/Release/Obj/template_pca10056/nrfx_prs.o
-                                      0x90380 (size before relaxing)
- .debug_str     0x0000000000099d75      0xe9d Output/Release/Obj/template_pca10056/nrfx_pwm.o
-                                      0x91394 (size before relaxing)
- .debug_str     0x000000000009ac12      0xb04 Output/Release/Obj/template_pca10056/nrfx_qdec.o
-                                      0x90f64 (size before relaxing)
- .debug_str     0x000000000009b716      0xfb1 Output/Release/Obj/template_pca10056/nrfx_qspi.o
-                                      0x8e2ab (size before relaxing)
- .debug_str     0x000000000009c6c7      0x24e Output/Release/Obj/template_pca10056/nrfx_rng.o
-                                      0x903cc (size before relaxing)
- .debug_str     0x000000000009c915      0xb31 Output/Release/Obj/template_pca10056/nrfx_rtc.o
-                                      0x90c3f (size before relaxing)
- .debug_str     0x000000000009d446     0x1891 Output/Release/Obj/template_pca10056/nrfx_saadc.o
-                                      0x91aaf (size before relaxing)
- .debug_str     0x000000000009ecd7     0x1079 Output/Release/Obj/template_pca10056/nrfx_spim.o
-                                      0x91830 (size before relaxing)
- .debug_str     0x000000000009fd50      0xccf Output/Release/Obj/template_pca10056/nrfx_spis.o
-                                      0x912fa (size before relaxing)
- .debug_str     0x00000000000a0a1f      0x686 Output/Release/Obj/template_pca10056/nrfx_swi.o
-                                      0x90793 (size before relaxing)
- .debug_str     0x00000000000a10a5     0x1180 Output/Release/Obj/template_pca10056/nrfx_timer.o
-                                      0x9133f (size before relaxing)
- .debug_str     0x00000000000a2225      0xbe0 Output/Release/Obj/template_pca10056/nrfx_twi.o
-                                      0x9198c (size before relaxing)
- .debug_str     0x00000000000a2e05      0xd94 Output/Release/Obj/template_pca10056/nrfx_twis.o
-                                      0x913ea (size before relaxing)
- .debug_str     0x00000000000a3b99      0xcb7 Output/Release/Obj/template_pca10056/nrfx_uart.o
-                                      0x9136c (size before relaxing)
- .debug_str     0x00000000000a4850      0xf88 Output/Release/Obj/template_pca10056/nrfx_uarte.o
-                                      0x91801 (size before relaxing)
- .debug_str     0x00000000000a57d8     0xa1a9 Output/Release/Obj/template_pca10056/nrfx_usbd.o
-                                      0x9aa67 (size before relaxing)
- .debug_str     0x00000000000af981      0x4ca Output/Release/Obj/template_pca10056/nrfx_wdt.o
-                                      0x90606 (size before relaxing)
- .debug_str     0x00000000000afe4b     0x44bd Output/Release/Obj/template_pca10056/main.o
-                                      0x9a2f9 (size before relaxing)
- .debug_str     0x00000000000b4308      0x2d1 Output/Release/Obj/template_pca10056/uartfunction.o
-                                       0x3d28 (size before relaxing)
- .debug_str     0x00000000000b45d9       0x84 Output/Release/Obj/template_pca10056/IIC_LIS.o
-                                      0x8f58d (size before relaxing)
- .debug_str     0x00000000000b465d     0x151e Output/Release/Obj/template_pca10056/bsp.o
-                                      0x90305 (size before relaxing)
- .debug_str     0x00000000000b5b7b      0xc34 Output/Release/Obj/template_pca10056/nrf_twi_sensor.o
-                                      0x93f2a (size before relaxing)
- .debug_str     0x00000000000b67af     0x2d1d Output/Release/Obj/template_pca10056/cc310_backend_init.o
-                                      0x884d1 (size before relaxing)
- .debug_str     0x00000000000b94cc       0x63 Output/Release/Obj/template_pca10056/cc310_backend_mutex.o
-                                      0x86615 (size before relaxing)
- .debug_str     0x00000000000b952f      0xce2 Output/Release/Obj/template_pca10056/cc310_backend_rng.o
-                                      0x8b53a (size before relaxing)
- .debug_str     0x00000000000ba211     0x36fc Output/Release/Obj/template_pca10056/nrf_log_frontend.o
-                                      0x8ed6e (size before relaxing)
- .debug_str     0x00000000000bd90d      0x340 Output/Release/Obj/template_pca10056/nrf_log_str_formatter.o
-                                      0x8988d (size before relaxing)
- .debug_str     0x00000000000bdc4d      0x914 Output/Release/Obj/template_pca10056/nrf_log_backend_rtt.o
-                                      0x90f54 (size before relaxing)
- .debug_str     0x00000000000be561       0x8e Output/Release/Obj/template_pca10056/nrf_log_backend_serial.o
-                                      0x897dd (size before relaxing)
- .debug_str     0x00000000000be5ef       0x7a Output/Release/Obj/template_pca10056/nrf_log_default_backends.o
-                                      0x89579 (size before relaxing)
- .debug_str     0x00000000000be669      0x1c4 Output/Release/Obj/template_pca10056/nrf_mpu_lib.o
-                                      0x88a01 (size before relaxing)
- .debug_str     0x00000000000be82d      0x269 Output/Release/Obj/template_pca10056/nrf_stack_guard.o
-                                      0x88331 (size before relaxing)
- .debug_str     0x00000000000bea96      0xacb Output/Release/Obj/template_pca10056/app_button.o
-                                      0x915a1 (size before relaxing)
- .debug_str     0x00000000000bf561      0x105 Output/Release/Obj/template_pca10056/app_error.o
-                                      0x766b1 (size before relaxing)
- .debug_str     0x00000000000bf666       0x75 Output/Release/Obj/template_pca10056/app_error_weak.o
-                                      0x89ca6 (size before relaxing)
- .debug_str     0x00000000000bf6db      0xd81 Output/Release/Obj/template_pca10056/app_timer2.o
-                                      0x912bf (size before relaxing)
- .debug_str     0x00000000000c045c     0x5034 Output/Release/Obj/template_pca10056/app_usbd.o
-                                      0x9e4a7 (size before relaxing)
- .debug_str     0x00000000000c5490     0x28ae Output/Release/Obj/template_pca10056/app_usbd_cdc_acm.o
-                                      0x9f620 (size before relaxing)
- .debug_str     0x00000000000c7d3e     0x115d Output/Release/Obj/template_pca10056/app_usbd_core.o
-                                      0x9df06 (size before relaxing)
- .debug_str     0x00000000000c8e9b     0x29dd Output/Release/Obj/template_pca10056/app_usbd_msc.o
-                                      0x9f56f (size before relaxing)
- .debug_str     0x00000000000cb878      0x122 Output/Release/Obj/template_pca10056/app_util_platform.o
-                                      0x76f0b (size before relaxing)
- .debug_str     0x00000000000cb99a      0x27d Output/Release/Obj/template_pca10056/drv_rtc.o
-                                      0x90ae4 (size before relaxing)
- .debug_str     0x00000000000cbc17     0x1428 Output/Release/Obj/template_pca10056/fds.o
-                                      0x8864a (size before relaxing)
- .debug_str     0x00000000000cd03f       0x7a Output/Release/Obj/template_pca10056/hardfault_handler_gcc.o
-                                      0x854fc (size before relaxing)
- .debug_str     0x00000000000cd0b9      0x1a4 Output/Release/Obj/template_pca10056/hardfault_implementation.o
-                                      0x89db6 (size before relaxing)
- .debug_str     0x00000000000cd25d      0xb41 Output/Release/Obj/template_pca10056/hci_transport.o
-                                      0x8773e (size before relaxing)
- .debug_str     0x00000000000cdd9e      0x87e Output/Release/Obj/template_pca10056/led_softblink.o
-                                      0x8e9c1 (size before relaxing)
- .debug_str     0x00000000000ce61c     0x109c Output/Release/Obj/template_pca10056/mem_manager.o
-                                      0x8915c (size before relaxing)
- .debug_str     0x00000000000cf6b8      0x161 Output/Release/Obj/template_pca10056/nrf_atfifo.o
-                                      0x885a3 (size before relaxing)
- .debug_str     0x00000000000cf819      0x626 Output/Release/Obj/template_pca10056/nrf_atomic.o
-                                      0x85bf9 (size before relaxing)
- .debug_str     0x00000000000cfe3f      0x207 Output/Release/Obj/template_pca10056/nrf_balloc.o
-                                      0x8d978 (size before relaxing)
- .debug_str     0x00000000000d0046     0x3c13 Output/Release/Obj/template_pca10056/nrf_cli.o
-                                      0x98245 (size before relaxing)
- .debug_str     0x00000000000d3c59      0xb39 Output/Release/Obj/template_pca10056/nrf_cli_uart.o
-                                      0x9602a (size before relaxing)
- .debug_str     0x00000000000d4792     0x2384 Output/Release/Obj/template_pca10056/nrf_csense.o
-                                      0x9045c (size before relaxing)
- .debug_str     0x00000000000d6b16       0x42 Output/Release/Obj/template_pca10056/nrf_fprintf.o
-                                      0x8578a (size before relaxing)
- .debug_str     0x00000000000d6b58      0x508 Output/Release/Obj/template_pca10056/nrf_fprintf_format.o
-                                      0x85c84 (size before relaxing)
- .debug_str     0x00000000000d7060      0x208 Output/Release/Obj/template_pca10056/nrf_fstorage.o
-                                      0x884ad (size before relaxing)
- .debug_str     0x00000000000d7268      0x5c1 Output/Release/Obj/template_pca10056/nrf_gfx.o
-                                      0x8ffaa (size before relaxing)
- .debug_str     0x00000000000d7829      0x179 Output/Release/Obj/template_pca10056/nrf_memobj.o
-                                      0x8793c (size before relaxing)
- .debug_str     0x00000000000d79a2      0x58b Output/Release/Obj/template_pca10056/nrf_pwr_mgmt.o
-                                      0x92090 (size before relaxing)
- .debug_str     0x00000000000d7f2d      0x208 Output/Release/Obj/template_pca10056/nrf_queue.o
-                                      0x8db27 (size before relaxing)
- .debug_str     0x00000000000d8135       0xac Output/Release/Obj/template_pca10056/nrf_ringbuf.o
-                                      0x85fd9 (size before relaxing)
- .debug_str     0x00000000000d81e1       0xfa Output/Release/Obj/template_pca10056/nrf_sortlist.o
-                                      0x882d9 (size before relaxing)
- .debug_str     0x00000000000d82db      0x720 Output/Release/Obj/template_pca10056/task_manager.o
-                                      0x8e072 (size before relaxing)
- .debug_str     0x00000000000d89fb      0x643 Output/Release/Obj/template_pca10056/nrf_libuarte_async.o
-                                      0x95e28 (size before relaxing)
- .debug_str     0x00000000000d903e      0x6d1 Output/Release/Obj/template_pca10056/nrf_libuarte_drv.o
-                                      0x933c5 (size before relaxing)
- .debug_str     0x00000000000d970f      0x1ca Output/Release/Obj/template_pca10056/nrf_crypto_init.o
-                                      0x85b69 (size before relaxing)
- .debug_str     0x00000000000d98d9      0x4e2 Output/Release/Obj/template_pca10056/nrf_crypto_rng.o
-                                      0x8b1ca (size before relaxing)
- .debug_str     0x00000000000d9dbb       0x4b Output/Release/Obj/template_pca10056/ses_startup_nrf52840.o
+.debug_str      0x0000000000000000    0xda6c6
+ .debug_str     0x0000000000000000       0xb8 Output/Release/Obj/template_pca10056/thumb_crt0.o
+ .debug_str     0x00000000000000b8    0x8bb52 Output/Release/Obj/template_pca10056/boards.o
+                                      0x8e0fc (size before relaxing)
+ .debug_str     0x000000000008bc0a     0x3a79 Output/Release/Obj/template_pca10056/nrf_drv_clock.o
+                                      0x903bc (size before relaxing)
+ .debug_str     0x000000000008f683     0x1c9f Output/Release/Obj/template_pca10056/nrf_drv_rng.o
+                                      0x9152e (size before relaxing)
+ .debug_str     0x0000000000091322     0x1bf2 Output/Release/Obj/template_pca10056/nrf_drv_twi.o
+                                      0x8e77a (size before relaxing)
+ .debug_str     0x0000000000092f14      0x755 Output/Release/Obj/template_pca10056/nrfx_atomic.o
+                                      0x8cff9 (size before relaxing)
+ .debug_str     0x0000000000093669      0xad2 Output/Release/Obj/template_pca10056/nrfx_clock.o
+                                      0x90a2e (size before relaxing)
+ .debug_str     0x000000000009413b      0xbf6 Output/Release/Obj/template_pca10056/nrfx_comp.o
+                                      0x90cf3 (size before relaxing)
+ .debug_str     0x0000000000094d31     0x16c8 Output/Release/Obj/template_pca10056/nrfx_gpiote.o
+                                      0x91ded (size before relaxing)
+ .debug_str     0x00000000000963f9      0xc2f Output/Release/Obj/template_pca10056/nrfx_i2s.o
+                                      0x910af (size before relaxing)
+ .debug_str     0x0000000000097028      0x9fb Output/Release/Obj/template_pca10056/nrfx_lpcomp.o
+                                      0x90bec (size before relaxing)
+ .debug_str     0x0000000000097a23      0x87d Output/Release/Obj/template_pca10056/nrfx_pdm.o
+                                      0x90d33 (size before relaxing)
+ .debug_str     0x00000000000982a0      0xdd0 Output/Release/Obj/template_pca10056/nrfx_power.o
+                                      0x8de6a (size before relaxing)
+ .debug_str     0x0000000000099070      0x8d5 Output/Release/Obj/template_pca10056/nrfx_ppi.o
+                                      0x904d3 (size before relaxing)
+ .debug_str     0x0000000000099945      0x42e Output/Release/Obj/template_pca10056/nrfx_prs.o
+                                      0x9037e (size before relaxing)
+ .debug_str     0x0000000000099d73      0xe9d Output/Release/Obj/template_pca10056/nrfx_pwm.o
+                                      0x91392 (size before relaxing)
+ .debug_str     0x000000000009ac10      0xb04 Output/Release/Obj/template_pca10056/nrfx_qdec.o
+                                      0x90f62 (size before relaxing)
+ .debug_str     0x000000000009b714      0xfb1 Output/Release/Obj/template_pca10056/nrfx_qspi.o
+                                      0x8e2a9 (size before relaxing)
+ .debug_str     0x000000000009c6c5      0x24e Output/Release/Obj/template_pca10056/nrfx_rng.o
+                                      0x903ca (size before relaxing)
+ .debug_str     0x000000000009c913      0xb31 Output/Release/Obj/template_pca10056/nrfx_rtc.o
+                                      0x90c3d (size before relaxing)
+ .debug_str     0x000000000009d444     0x1891 Output/Release/Obj/template_pca10056/nrfx_saadc.o
+                                      0x91aad (size before relaxing)
+ .debug_str     0x000000000009ecd5     0x1079 Output/Release/Obj/template_pca10056/nrfx_spim.o
+                                      0x9182e (size before relaxing)
+ .debug_str     0x000000000009fd4e      0xccf Output/Release/Obj/template_pca10056/nrfx_spis.o
+                                      0x912f8 (size before relaxing)
+ .debug_str     0x00000000000a0a1d      0x686 Output/Release/Obj/template_pca10056/nrfx_swi.o
+                                      0x90791 (size before relaxing)
+ .debug_str     0x00000000000a10a3     0x1180 Output/Release/Obj/template_pca10056/nrfx_timer.o
+                                      0x9133d (size before relaxing)
+ .debug_str     0x00000000000a2223      0xbe0 Output/Release/Obj/template_pca10056/nrfx_twi.o
+                                      0x9198a (size before relaxing)
+ .debug_str     0x00000000000a2e03      0xd94 Output/Release/Obj/template_pca10056/nrfx_twis.o
+                                      0x913e8 (size before relaxing)
+ .debug_str     0x00000000000a3b97      0xcb7 Output/Release/Obj/template_pca10056/nrfx_uart.o
+                                      0x9136a (size before relaxing)
+ .debug_str     0x00000000000a484e      0xf88 Output/Release/Obj/template_pca10056/nrfx_uarte.o
+                                      0x917ff (size before relaxing)
+ .debug_str     0x00000000000a57d6     0xa1a9 Output/Release/Obj/template_pca10056/nrfx_usbd.o
+                                      0x9aa65 (size before relaxing)
+ .debug_str     0x00000000000af97f      0x4ca Output/Release/Obj/template_pca10056/nrfx_wdt.o
+                                      0x90604 (size before relaxing)
+ .debug_str     0x00000000000afe49     0x44bb Output/Release/Obj/template_pca10056/main.o
+                                      0x9a2f5 (size before relaxing)
+ .debug_str     0x00000000000b4304      0x2cf Output/Release/Obj/template_pca10056/uartfunction.o
+                                       0x3d24 (size before relaxing)
+ .debug_str     0x00000000000b45d3       0x82 Output/Release/Obj/template_pca10056/IIC_LIS.o
+                                      0x8f589 (size before relaxing)
+ .debug_str     0x00000000000b4655     0x151e Output/Release/Obj/template_pca10056/bsp.o
+                                      0x90303 (size before relaxing)
+ .debug_str     0x00000000000b5b73      0xc34 Output/Release/Obj/template_pca10056/nrf_twi_sensor.o
+                                      0x93f28 (size before relaxing)
+ .debug_str     0x00000000000b67a7     0x2d1d Output/Release/Obj/template_pca10056/cc310_backend_init.o
+                                      0x884cf (size before relaxing)
+ .debug_str     0x00000000000b94c4       0x63 Output/Release/Obj/template_pca10056/cc310_backend_mutex.o
+                                      0x86613 (size before relaxing)
+ .debug_str     0x00000000000b9527      0xce2 Output/Release/Obj/template_pca10056/cc310_backend_rng.o
+                                      0x8b538 (size before relaxing)
+ .debug_str     0x00000000000ba209     0x36fc Output/Release/Obj/template_pca10056/nrf_log_frontend.o
+                                      0x8ed6c (size before relaxing)
+ .debug_str     0x00000000000bd905      0x340 Output/Release/Obj/template_pca10056/nrf_log_str_formatter.o
+                                      0x8988b (size before relaxing)
+ .debug_str     0x00000000000bdc45      0x914 Output/Release/Obj/template_pca10056/nrf_log_backend_rtt.o
+                                      0x90f52 (size before relaxing)
+ .debug_str     0x00000000000be559       0x8e Output/Release/Obj/template_pca10056/nrf_log_backend_serial.o
+                                      0x897db (size before relaxing)
+ .debug_str     0x00000000000be5e7       0x7a Output/Release/Obj/template_pca10056/nrf_log_default_backends.o
+                                      0x89577 (size before relaxing)
+ .debug_str     0x00000000000be661      0x1c4 Output/Release/Obj/template_pca10056/nrf_mpu_lib.o
+                                      0x889ff (size before relaxing)
+ .debug_str     0x00000000000be825      0x269 Output/Release/Obj/template_pca10056/nrf_stack_guard.o
+                                      0x8832f (size before relaxing)
+ .debug_str     0x00000000000bea8e      0xacb Output/Release/Obj/template_pca10056/app_button.o
+                                      0x9159f (size before relaxing)
+ .debug_str     0x00000000000bf559      0x105 Output/Release/Obj/template_pca10056/app_error.o
+                                      0x766af (size before relaxing)
+ .debug_str     0x00000000000bf65e       0x75 Output/Release/Obj/template_pca10056/app_error_weak.o
+                                      0x89ca4 (size before relaxing)
+ .debug_str     0x00000000000bf6d3      0xd81 Output/Release/Obj/template_pca10056/app_timer2.o
+                                      0x912bd (size before relaxing)
+ .debug_str     0x00000000000c0454     0x5034 Output/Release/Obj/template_pca10056/app_usbd.o
+                                      0x9e4a5 (size before relaxing)
+ .debug_str     0x00000000000c5488     0x28ae Output/Release/Obj/template_pca10056/app_usbd_cdc_acm.o
+                                      0x9f61e (size before relaxing)
+ .debug_str     0x00000000000c7d36     0x115d Output/Release/Obj/template_pca10056/app_usbd_core.o
+                                      0x9df04 (size before relaxing)
+ .debug_str     0x00000000000c8e93     0x29dd Output/Release/Obj/template_pca10056/app_usbd_msc.o
+                                      0x9f56d (size before relaxing)
+ .debug_str     0x00000000000cb870      0x122 Output/Release/Obj/template_pca10056/app_util_platform.o
+                                      0x76f09 (size before relaxing)
+ .debug_str     0x00000000000cb992      0x27d Output/Release/Obj/template_pca10056/drv_rtc.o
+                                      0x90ae2 (size before relaxing)
+ .debug_str     0x00000000000cbc0f     0x1428 Output/Release/Obj/template_pca10056/fds.o
+                                      0x88648 (size before relaxing)
+ .debug_str     0x00000000000cd037       0x7a Output/Release/Obj/template_pca10056/hardfault_handler_gcc.o
+                                      0x854fa (size before relaxing)
+ .debug_str     0x00000000000cd0b1      0x1a4 Output/Release/Obj/template_pca10056/hardfault_implementation.o
+                                      0x89db4 (size before relaxing)
+ .debug_str     0x00000000000cd255      0xb41 Output/Release/Obj/template_pca10056/hci_transport.o
+                                      0x8773c (size before relaxing)
+ .debug_str     0x00000000000cdd96      0x87e Output/Release/Obj/template_pca10056/led_softblink.o
+                                      0x8e9bf (size before relaxing)
+ .debug_str     0x00000000000ce614     0x109c Output/Release/Obj/template_pca10056/mem_manager.o
+                                      0x8915a (size before relaxing)
+ .debug_str     0x00000000000cf6b0      0x161 Output/Release/Obj/template_pca10056/nrf_atfifo.o
+                                      0x885a1 (size before relaxing)
+ .debug_str     0x00000000000cf811      0x626 Output/Release/Obj/template_pca10056/nrf_atomic.o
+                                      0x85bf7 (size before relaxing)
+ .debug_str     0x00000000000cfe37      0x207 Output/Release/Obj/template_pca10056/nrf_balloc.o
+                                      0x8d976 (size before relaxing)
+ .debug_str     0x00000000000d003e     0x3c13 Output/Release/Obj/template_pca10056/nrf_cli.o
+                                      0x98243 (size before relaxing)
+ .debug_str     0x00000000000d3c51      0xb39 Output/Release/Obj/template_pca10056/nrf_cli_uart.o
+                                      0x96028 (size before relaxing)
+ .debug_str     0x00000000000d478a     0x2384 Output/Release/Obj/template_pca10056/nrf_csense.o
+                                      0x9045a (size before relaxing)
+ .debug_str     0x00000000000d6b0e       0x42 Output/Release/Obj/template_pca10056/nrf_fprintf.o
+                                      0x85788 (size before relaxing)
+ .debug_str     0x00000000000d6b50      0x508 Output/Release/Obj/template_pca10056/nrf_fprintf_format.o
+                                      0x85c82 (size before relaxing)
+ .debug_str     0x00000000000d7058      0x208 Output/Release/Obj/template_pca10056/nrf_fstorage.o
+                                      0x884ab (size before relaxing)
+ .debug_str     0x00000000000d7260      0x5c1 Output/Release/Obj/template_pca10056/nrf_gfx.o
+                                      0x8ffa8 (size before relaxing)
+ .debug_str     0x00000000000d7821      0x179 Output/Release/Obj/template_pca10056/nrf_memobj.o
+                                      0x8793a (size before relaxing)
+ .debug_str     0x00000000000d799a      0x58b Output/Release/Obj/template_pca10056/nrf_pwr_mgmt.o
+                                      0x9208e (size before relaxing)
+ .debug_str     0x00000000000d7f25      0x208 Output/Release/Obj/template_pca10056/nrf_queue.o
+                                      0x8db25 (size before relaxing)
+ .debug_str     0x00000000000d812d       0xac Output/Release/Obj/template_pca10056/nrf_ringbuf.o
+                                      0x85fd7 (size before relaxing)
+ .debug_str     0x00000000000d81d9       0xfa Output/Release/Obj/template_pca10056/nrf_sortlist.o
+                                      0x882d7 (size before relaxing)
+ .debug_str     0x00000000000d82d3      0x720 Output/Release/Obj/template_pca10056/task_manager.o
+                                      0x8e070 (size before relaxing)
+ .debug_str     0x00000000000d89f3      0x643 Output/Release/Obj/template_pca10056/nrf_libuarte_async.o
+                                      0x95e26 (size before relaxing)
+ .debug_str     0x00000000000d9036      0x6d1 Output/Release/Obj/template_pca10056/nrf_libuarte_drv.o
+                                      0x933c3 (size before relaxing)
+ .debug_str     0x00000000000d9707      0x1ca Output/Release/Obj/template_pca10056/nrf_crypto_init.o
+                                      0x85b67 (size before relaxing)
+ .debug_str     0x00000000000d98d1      0x4e2 Output/Release/Obj/template_pca10056/nrf_crypto_rng.o
+                                      0x8b1c8 (size before relaxing)
+ .debug_str     0x00000000000d9db3       0x4b Output/Release/Obj/template_pca10056/ses_startup_nrf52840.o
+                                         0xb3 (size before relaxing)
+ .debug_str     0x00000000000d9dfe       0x4d Output/Release/Obj/template_pca10056/ses_startup_nrf_common.o
                                          0xb5 (size before relaxing)
- .debug_str     0x00000000000d9e06       0x4d Output/Release/Obj/template_pca10056/ses_startup_nrf_common.o
-                                         0xb7 (size before relaxing)
- .debug_str     0x00000000000d9e53      0x2c5 Output/Release/Obj/template_pca10056/system_nrf52840.o
-                                      0x7e222 (size before relaxing)
- .debug_str     0x00000000000da118      0x5b6 Output/Release/Obj/template_pca10056/SEGGER_RTT.o
-                                      0x7eb44 (size before relaxing)
+ .debug_str     0x00000000000d9e4b      0x2c5 Output/Release/Obj/template_pca10056/system_nrf52840.o
+                                      0x7e220 (size before relaxing)
+ .debug_str     0x00000000000da110      0x5b6 Output/Release/Obj/template_pca10056/SEGGER_RTT.o
+                                      0x7eb42 (size before relaxing)
 
 .debug_ranges   0x0000000000000000     0xb710
  .debug_ranges  0x0000000000000000       0x90 Output/Release/Obj/template_pca10056/thumb_crt0.o
