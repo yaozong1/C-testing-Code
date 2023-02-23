@@ -35,6 +35,10 @@ void enable_3v3(void)
 //LED ENABLE
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));
 
+//ENABLE CE_CHARGER
+nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,8));
+nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,8),0);
+
 //3v3 ENABLE
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,6));
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,6),1);

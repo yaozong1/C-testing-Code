@@ -24,6 +24,7 @@
   <ProjectSessionItem path="template_pca10056"/>
   <ProjectSessionItem path="template_pca10056;template_pca10056"/>
   <ProjectSessionItem path="template_pca10056;template_pca10056;Application"/>
+  <ProjectSessionItem path="template_pca10056;template_pca10056;None"/>
   <ProjectSessionItem path="template_pca10056;template_pca10056;nRF_Libraries"/>
   <ProjectSessionItem path="template_pca10056;template_pca10056;nRF_Log"/>
  </Project>
@@ -58,7 +59,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="428" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses/UartFunction.h" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="421" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="107" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses/UartFunction.h" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="31" y="7354" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="6703" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="27" y="175" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/libuarte/nrf_libuarte_drv.h" selected="0" top="145" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="23" y="47" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/src/nrf_log_backend_rtt.c" selected="0" top="0" codecName="Default"/>
@@ -92,6 +93,8 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="67" y="77" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_qspi.h" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/include/nrfx_qspi.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="11" y="555" useTextEdit="1" openedFrom="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/main.c" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.h" selected="0" top="545" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="50" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c" selected="0" top="37" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="7" y="117" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/mdk/ses_startup_nrf_common.s" selected="0" top="105" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/mem_manager/mem_manager.c" selected="1" top="0" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="template_pca10056" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/SDK_nRF/nRF5_SDK_17.1.0_ddde560/examples/My projects/template_project/pca10056/blank/ses" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
