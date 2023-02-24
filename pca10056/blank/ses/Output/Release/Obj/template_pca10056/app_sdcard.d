@@ -1,7 +1,7 @@
 Output/Release/Obj/template_pca10056/app_sdcard.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\sdcard\app_sdcard.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\sdcard\app_sdcard.c \
  ../config/sdk_config.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\sdcard\app_sdcard.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\sdcard\app_sdcard.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \

@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/drv_rtc.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\drv_rtc.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\drv_rtc.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \

@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_usbd.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
@@ -74,5 +74,5 @@ Output/Release/Obj/template_pca10056/app_usbd_hid_mouse.o: \
  ../../../../../../components/libraries/usbd/app_usbd_class_base.h \
  ../../../../../../components/libraries/usbd/app_usbd_core.h \
  ../../../../../../components/libraries/usbd/app_usbd_descriptor.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_desc.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_internal.h
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_desc.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_internal.h

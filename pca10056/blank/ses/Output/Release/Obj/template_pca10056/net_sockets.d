@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/net_sockets.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\mbedtls\library\net_sockets.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\mbedtls\library\net_sockets.c \
  ../../../../../../external/nrf_tls/mbedtls/nrf_crypto/config/nrf_crypto_mbedtls_config.h \
  ../config/sdk_config.h \
  ../../../../../../external/mbedtls/include/mbedtls/check_config.h \

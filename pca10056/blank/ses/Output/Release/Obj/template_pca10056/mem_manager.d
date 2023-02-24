@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/mem_manager.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\mem_manager\mem_manager.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\mem_manager\mem_manager.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -28,7 +28,7 @@ Output/Release/Obj/template_pca10056/mem_manager.o: \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\mem_manager\mem_manager.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\mem_manager\mem_manager.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

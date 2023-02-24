@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/nrf_balloc.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\balloc\nrf_balloc.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\balloc\nrf_balloc.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -29,7 +29,7 @@ Output/Release/Obj/template_pca10056/nrf_balloc.o: \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\balloc\nrf_balloc.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\balloc\nrf_balloc.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/app_error.h \

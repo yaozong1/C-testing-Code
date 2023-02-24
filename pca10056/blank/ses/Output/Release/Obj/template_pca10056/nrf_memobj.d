@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/nrf_memobj.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.c \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \

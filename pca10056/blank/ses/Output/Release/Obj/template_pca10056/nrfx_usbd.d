@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/nrfx_usbd.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_usbd.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_usbd.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -44,7 +44,7 @@ Output/Release/Obj/template_pca10056/nrfx_usbd.o: \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_usbd.h \
  ../../../../../../modules/nrfx/hal/nrf_usbd.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_usbd_errata.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_usbd_errata.h \
  ../../../../../../modules/nrfx/mdk/nrf_erratas.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf51_erratas.h \

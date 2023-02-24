@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/nrf_log_backend_flash.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\log\src\nrf_log_backend_flash.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\log\src\nrf_log_backend_flash.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \

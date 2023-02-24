@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/app_usbd_hid.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\app_usbd_hid.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\app_usbd_hid.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -66,9 +66,9 @@ Output/Release/Obj/template_pca10056/app_usbd_hid.o: \
  ../../../../../../components/libraries/usbd/app_usbd_langid.h \
  ../../../../../../components/libraries/usbd/app_usbd_class_base.h \
  ../../../../../../components/libraries/usbd/app_usbd_core.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\app_usbd_hid.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\app_usbd_hid.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\app_usbd_hid_types.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\app_usbd_hid_types.h \
  ../../../../../../components/libraries/usbd/app_usbd_types.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

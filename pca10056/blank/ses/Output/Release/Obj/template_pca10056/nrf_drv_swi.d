@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/nrf_drv_swi.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_swi.c \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_swi.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_swi.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_swi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_swi.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \

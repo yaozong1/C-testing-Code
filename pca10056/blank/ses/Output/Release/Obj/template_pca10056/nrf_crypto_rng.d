@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/nrf_crypto_rng.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,11 +27,11 @@ Output/Release/Obj/template_pca10056/nrf_crypto_rng.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_init.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_init.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_types.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_types.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/strerror/nrf_strerror.h \
  ../../../../../../components/libraries/log/src/nrf_log_internal.h \
@@ -39,12 +39,12 @@ Output/Release/Obj/template_pca10056/nrf_crypto_rng.o: \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_mem.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_mem.h \
  ../../../../../../components/libraries/util/sdk_alloca.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng_shared.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng_backend.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng_shared.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_rng_backend.h \
  ../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_rng.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_rng_shared.h \
  ../../../../../../external/nrf_cc310/include/crys_rnd.h \

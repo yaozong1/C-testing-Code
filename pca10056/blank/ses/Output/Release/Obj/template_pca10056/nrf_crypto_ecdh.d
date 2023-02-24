@@ -1,10 +1,10 @@
 Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh.c \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_mem.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_mem.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
@@ -30,11 +30,11 @@ Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_types.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_types.h \
  ../../../../../../components/libraries/util/sdk_alloca.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecc.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecc_shared.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecc_backend.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecc.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecc_shared.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecc_backend.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_ecc.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_ecc_shared.h \
@@ -59,9 +59,9 @@ Output/Release/Obj/template_pca10056/nrf_crypto_ecdh.o: \
  ../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_ecc.h \
  ../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecc.h \
  ../../../../../../components/libraries/crypto/backend/optiga/optiga_backend_ecc.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh_shared.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh_backend.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh_shared.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_ecdh_backend.h \
  ../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_ecdh.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_ecc.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_ecdh_shared.h \

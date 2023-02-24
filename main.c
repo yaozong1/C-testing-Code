@@ -52,6 +52,9 @@
 #define _PUB_T_TOP nrf_libuarte_async_tx(&libuarte, PUB_T_TOP, PUB_T_TOP_size)
 #define _SEND_CHECK nrf_libuarte_async_tx(&libuarte, SEND_CHECK, SEND_CHECK_size)
 
+
+//GSM ONLY
+#define _GSM_ONLY nrf_libuarte_async_tx(&libuarte, GSM_ONLY, GSM_ONLY_size);
 //NBIOT END
 
 //PERSIONAL FUNCTION DECLARATION
@@ -76,7 +79,8 @@ bool result_motion_sensor = 0 ;
 bool SIM_CARD_FLAG = 1;//To define if SIM CARD TESTING OR NOT.
 bool sim_status = 0 ;
 
-
+bool aliyun_testing_FLAG = 1;//To define if gsm/4g TESTING OR NOT.
+bool result_aliyun = 0 ;
 //PERSIONAL FUNCTION DECLARATION END
 
 
@@ -371,7 +375,7 @@ void Modem_Pwron(void)
 
 int set_MQTT()
 {
-
+int i = 1;
 uint8_t MATCH[] = "\"CHECK";
 uint8_t OK[] = "OK";
 uint8_t SMSUB[] = "+SMSUB";
@@ -379,16 +383,25 @@ nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
 NRF_LOG_INFO("Watchdog fed");
 
 _AT_CHECK;      
-_SHU_TCP;       nrf_delay_ms(200);
-_SIG_CHECK;     nrf_delay_ms(200);
-_LTE_ONLY;      nrf_delay_ms(200);
-_SET_NBIOT;     nrf_delay_ms(200);
-_SET_RM;        nrf_delay_ms(200);
+_SHU_TCP;       nrf_delay_ms(500);
+_GSM_ONLY;      nrf_delay_ms(500);
+//_LTE_ONLY;      nrf_delay_ms(500);
+//_SET_NBIOT;     nrf_delay_ms(500);
+_SET_RM;        nrf_delay_ms(500);
 //_SET_APN;
 //_APN_CHECK;
-_NET_ADHERE;    nrf_delay_ms(200);
-_NET_TYPE;      nrf_delay_ms(200);
-while(!isPresent(Uart_AT,  OK)==1);
+_SIG_CHECK;     nrf_delay_ms(1000);
+_NET_ADHERE;    nrf_delay_ms(1000);
+_NET_TYPE;      nrf_delay_ms(500);
+//while(!isPresent(Uart_AT,  OK)==1);
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+if(isPresent(Uart_AT,  OK)==1)
+{
+i=10;
+}
+nrf_delay_ms(500);
+}
 
 //mqtt
 _DIS_MQTT;      nrf_delay_ms(500);
@@ -401,16 +414,36 @@ _S_USR_N;       nrf_delay_ms(500);
 _S_PASS_WD;     nrf_delay_ms(500);
 _S_CLE_ID;      nrf_delay_ms(500);
 _C_T_MQTT;      nrf_delay_ms(500);
-while(!isPresent(Uart_AT,  OK)==1);
+//while(!isPresent(Uart_AT,  OK)==1);
+
+
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+if(isPresent(Uart_AT,  OK)==1)
+{
+i=10;
+}
+nrf_delay_ms(500);
+}
 // _DIS_MQTT;
 //  nrf_delay_ms(200);
 _SUB_TOP;       nrf_delay_ms(500);
 _PUB_T_TOP;     nrf_delay_ms(500);
-_SEND_CHECK;    while(!isPresent(Uart_AT,  SMSUB)==1);
+_SEND_CHECK;    
+
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+if(isPresent(Uart_AT,  SMSUB)==1)
+{
+i=10;
+}
+nrf_delay_ms(500);
+}
 
 if(isPresent(Uart_AT,  MATCH)==1)
 {
 NRF_LOG_INFO("MQTT test done");
+result_aliyun = 1;
 return 1;
 
 }
@@ -507,14 +540,20 @@ else NRF_LOG_WARNING("SIM CARD ERROR");
 else
 NRF_LOG_WARNING("Proceed without sim card");
 
+
+
+if (aliyun_testing_FLAG== 1 )
+{
 //while(!Modem_test_result==1)
 //{
-//  Modem_test_result = set_MQTT();
-//  nrf_delay_ms(1000);
-//  NRF_LOG_FLUSH();
+  Modem_test_result = set_MQTT();
+  nrf_delay_ms(1000);
+  NRF_LOG_FLUSH();
 //}
 
 NRF_LOG_FLUSH();
+}
+
 
 qspi_test();
 
@@ -540,6 +579,16 @@ NRF_LOG_INFO("     SIMCARD(SIM7000G):        Passed \r\n");
 }
 else 
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        Failed\r\n");
+ }
+
+if (aliyun_testing_FLAG ==1)
+{
+if (result_aliyun == 1)
+{
+NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Passed \r\n");
+}
+else 
+NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Failed\r\n");
  }
 if (result_motion_sensor == 1)
 {

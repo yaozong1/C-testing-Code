@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/bsp.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\bsp\bsp.c \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\bsp\bsp.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\bsp\bsp.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\bsp\bsp.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../../../../../../components/boards/boards.h \
@@ -48,7 +48,7 @@ Output/Release/Obj/template_pca10056/bsp.o: \
  ../../../../../../components/boards/pca10056.h \
  ../../../../../../components/libraries/button/app_button.h \
  ../../../../../../components/libraries/util/app_error.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\bsp\bsp_config.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\bsp\bsp_config.h \
  ../../../../../../components/libraries/timer/app_timer.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

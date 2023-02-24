@@ -26,6 +26,9 @@ static uint8_t Sigal_qul_size = sizeof(Sigal_qul);
 static uint8_t LTE_ONLY[] = "AT+CNMP=38\r\n";
 static uint8_t LTE_ONLY_size = sizeof(LTE_ONLY);
 
+static uint8_t GSM_ONLY[] = "AT+CNMP=13\r\n";
+static uint8_t GSM_ONLY_size = sizeof(LTE_ONLY);
+
 static uint8_t SET_NBIOT[] = "AT+CMNB=2\r\n";
 static uint8_t SET_NBIOT_size = sizeof(SET_NBIOT);
 
@@ -54,7 +57,7 @@ static uint8_t SHU_TCP[] = "AT+CIPSHUT\r\n";
 static uint8_t SHU_TCP_size = sizeof(SHU_TCP);
 
 
-static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"iot.1nce.net\"\r\n";
+static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"cmnet\"\r\n"; //iot.1nce.net
 static uint8_t  S_APN_MQTT_size = sizeof(S_APN_MQTT);
 
 static uint8_t COM_MQTT_IP[] = "AT+CNACT?\r\n";

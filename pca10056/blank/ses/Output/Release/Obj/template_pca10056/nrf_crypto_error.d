@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/nrf_crypto_error.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -28,5 +28,5 @@ Output/Release/Obj/template_pca10056/nrf_crypto_error.o: \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/libraries/util/nordic_common.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
  ../../../../../../components/libraries/util/sdk_errors.h

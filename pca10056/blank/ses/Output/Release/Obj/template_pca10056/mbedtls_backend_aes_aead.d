@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\mbedtls\mbedtls_backend_aes_aead.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\mbedtls\mbedtls_backend_aes_aead.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -32,4 +32,4 @@ Output/Release/Obj/template_pca10056/mbedtls_backend_aes_aead.o: \
  ../../../../../../modules/nrfx/mdk/nrf52840_peripherals.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_error.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\mbedtls\mbedtls_backend_aes_aead.h
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\mbedtls\mbedtls_backend_aes_aead.h

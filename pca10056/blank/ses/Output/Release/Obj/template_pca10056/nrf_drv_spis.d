@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/nrf_drv_spis.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_spis.c \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_spis.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_spis.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_spis.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_spis.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \

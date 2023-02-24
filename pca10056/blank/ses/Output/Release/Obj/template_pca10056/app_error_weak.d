@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/app_error_weak.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.c \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.c \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
@@ -17,10 +17,10 @@ Output/Release/Obj/template_pca10056/app_error_weak.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\sdk_errors.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\sdk_errors.h \
  ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nordic_common.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nordic_common.h \
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
@@ -50,4 +50,4 @@ Output/Release/Obj/template_pca10056/app_error_weak.o: \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/app_error.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.h
+ C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.h
