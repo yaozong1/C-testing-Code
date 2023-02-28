@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/app_button.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\button\app_button.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\button\app_button.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Release/Obj/template_pca10056/app_button.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\button\app_button.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\button\app_button.h \
  ../../../../../../components/libraries/util/app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  ../../../../../../components/libraries/util/app_error_weak.h \

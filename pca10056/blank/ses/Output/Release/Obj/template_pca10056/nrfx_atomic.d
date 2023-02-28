@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/nrfx_atomic.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\soc\nrfx_atomic.c \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\soc\nrfx_atomic.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\soc\nrfx_atomic.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\soc\nrfx_atomic.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -43,4 +43,4 @@ Output/Release/Obj/template_pca10056/nrfx_atomic.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\soc\nrfx_atomic_internal.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\soc\nrfx_atomic_internal.h

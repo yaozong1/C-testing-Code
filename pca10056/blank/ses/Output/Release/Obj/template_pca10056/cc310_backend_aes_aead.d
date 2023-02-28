@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_aes_aead.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_aes_aead.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -34,7 +34,7 @@ Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o: \
  ../../../../../../external/nrf_cc310/include/crys_error.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types_plat.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_aes_aead.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_aes_aead.h \
  ../../../../../../external/nrf_cc310/include/crys_aesccm.h \
  ../../../../../../external/nrf_cc310/include/ssi_aes.h \
  ../../../../../../external/nrf_cc310/include/ssi_aes_error.h \
@@ -44,8 +44,8 @@ Output/Release/Obj/template_pca10056/cc310_backend_aes_aead.o: \
  ../../../../../../components/libraries/crypto/nrf_crypto_types.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_aead_shared.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../../../../../../components/libraries/mutex/nrf_mtx.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h

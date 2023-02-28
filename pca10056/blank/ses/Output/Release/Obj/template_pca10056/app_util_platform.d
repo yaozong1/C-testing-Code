@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/app_util_platform.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.c \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_util_platform.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
@@ -15,12 +15,12 @@ Output/Release/Obj/template_pca10056/app_util_platform.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nrf_assert.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\sdk_errors.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\sdk_errors.h \
  ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nordic_common.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\nordic_common.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\util\app_error_weak.h

@@ -1,10 +1,10 @@
 Output/Release/Obj/template_pca10056/IIC_LIS.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\IIC_LIS.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\IIC_LIS.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\IIC_LIS.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\IIC_LIS.h \
  ../../../../../../components/boards/boards.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../modules/nrfx/nrfx.h \

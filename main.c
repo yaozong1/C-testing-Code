@@ -24,6 +24,24 @@
 #include "sdk_config.h"
 
 
+/************************************************
+/
+/ CAN MCP2515 Include Files
+/
+*************************************************/
+
+#include "inttypes.h"
+#include "nrf_delay.h"
+#include "nrf_gpio.h"
+#include "app_util_platform.h"
+#include "mcp_can.h"
+#include "SEGGER_RTT.h"
+#include "nrf_drv_spi.h"
+#include "nrfx_spim.h"
+
+
+
+
 
 //NBIOT
 #define _AT_CHECK nrf_libuarte_async_tx(&libuarte, text, text_size);

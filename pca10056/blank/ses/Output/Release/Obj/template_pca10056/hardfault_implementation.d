@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/hardfault_implementation.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\hardfault\hardfault_implementation.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\hardfault\hardfault_implementation.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Release/Obj/template_pca10056/hardfault_implementation.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\hardfault\hardfault.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\hardfault\hardfault.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../components/libraries/util/app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \

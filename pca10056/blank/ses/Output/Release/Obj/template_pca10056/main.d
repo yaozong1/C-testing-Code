@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/main.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\main.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\main.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
@@ -93,4 +93,16 @@ Output/Release/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/hal/nrf_twi.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_qspi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_qspi.h \
- ../../../../../../modules/nrfx/hal/nrf_qspi.h
+ ../../../../../../modules/nrfx/hal/nrf_qspi.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/inttypes.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/MCP2515/mcp_can.h \
+ ../../../../../../integration/nrfx/legacy/nrf_drv_spi.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_spim.h \
+ ../../../../../../modules/nrfx/hal/nrf_spim.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_spi.h \
+ ../../../../../../modules/nrfx/hal/nrf_spi.h \
+ ../../../../../../components/libraries/timer/app_timer.h \
+ ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/MCP2515/mcp_can_dfs.h \
+ ../../../../../../external/segger_rtt/SEGGER_RTT.h \
+ ../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h

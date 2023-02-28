@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_eddsa.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_eddsa.c \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
@@ -73,9 +73,9 @@ Output/Release/Obj/template_pca10056/cc310_backend_eddsa.o: \
  ../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_eddsa.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_eddsa_shared.h \
  ../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_eddsa.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_ecc.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_ecc.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../../../../../../components/libraries/mutex/nrf_mtx.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/util/nrf_assert.h \

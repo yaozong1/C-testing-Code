@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/app_timer2.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\app_timer2.c \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\app_timer.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\app_timer2.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\app_timer.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
@@ -60,5 +60,5 @@ Output/Release/Obj/template_pca10056/app_timer2.o: \
  ../../../../../../components/libraries/strerror/nrf_strerror.h \
  ../../../../../../components/libraries/log/src/nrf_log_internal.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\drv_rtc.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\timer\drv_rtc.h \
  ../../../../../../modules/nrfx/hal/nrf_rtc.h
