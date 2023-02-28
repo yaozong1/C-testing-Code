@@ -23,6 +23,10 @@
 #include "boards.h"
 #include "sdk_config.h"
 
+//MCP2515
+#include "mcp_can_dfs.h"
+
+
 
 
 //NBIOT
@@ -575,6 +579,7 @@ int main(void)
     bsp_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS, bsp_event_handler);
     nrf_mem_init();
     mcp_spi_init();
+    mcp_can_begin(CAN_250KBPS, MCP_16MHz);
 
 
 
