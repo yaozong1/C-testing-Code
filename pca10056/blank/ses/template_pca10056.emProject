@@ -107,6 +107,9 @@
         <configuration Name="Release" build_exclude_from_build="No" />
       </file>
       <file file_name="IIC_LIS.c" />
+      <file file_name="mcp_can.c" />
+      <file file_name="mcp_can.h" />
+      <file file_name="mcp_can_dfs.h" />
     </folder>
     <folder Name="Board Support">
       <file file_name="../../../../../../components/libraries/bsp/bsp.c" />

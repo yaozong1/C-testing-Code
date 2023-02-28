@@ -569,8 +569,17 @@ int main(void)
     nrf_delay_ms(1000);
     err_code = nrf_libuarte_async_tx(&libuarte, text, text_size);
     APP_ERROR_CHECK(err_code);
-    bsp_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS, bsp_event_handler);
 
+//////////////////
+
+    bsp_init(BSP_INIT_LEDS | BSP_INIT_BUTTONS, bsp_event_handler);
+    nrf_mem_init();
+    mcp_spi_init();
+
+
+
+
+//////////////////
 
 //Modem&iic Enable
 enable_3v3();
