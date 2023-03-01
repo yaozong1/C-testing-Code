@@ -128,9 +128,6 @@
     <folder Name="nRF_Drivers_External">
       <file file_name="../../../../../../components/libraries/twi_sensor/nrf_twi_sensor.c" />
     </folder>
-    <folder Name="nRF_micro-ecc">
-      <file file_name="../../../../../../external/micro-ecc/nrf52hf_armgcc/armgcc/micro_ecc_lib_nrf52.a" />
-    </folder>
     <folder Name="nRF_Crypto backend CC310">
       <file file_name="../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_aes.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_aes_aead.c" />
@@ -164,9 +161,6 @@
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_hash.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_hmac.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c" />
-    </folder>
-    <folder Name="nRF_Oberon_Crypto">
-      <file file_name="../../../../../../external/nrf_oberon/lib/cortex-m4/hard-float/liboberon_3.0.8.a" />
     </folder>
     <folder Name="nRF_TLS">
       <file file_name="../../../../../../external/mbedtls/library/aes.c" />
@@ -250,7 +244,9 @@
     <folder Name="nRF_Log">
       <file file_name="../../../../../../components/libraries/log/src/nrf_log_frontend.c" />
       <file file_name="../../../../../../components/libraries/log/src/nrf_log_str_formatter.c" />
-      <file file_name="../../../../../../components/libraries/log/src/nrf_log_backend_flash.c" />
+      <file file_name="../../../../../../components/libraries/log/src/nrf_log_backend_flash.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../components/libraries/log/src/nrf_log_backend_rtt.c" />
       <file file_name="../../../../../../components/libraries/log/src/nrf_log_backend_serial.c" />
       <file file_name="../../../../../../components/libraries/log/src/nrf_log_backend_uart.c" />
@@ -263,72 +259,196 @@
     <folder Name="nRF_Libraries">
       <file file_name="../../../../../../components/libraries/button/app_button.c" />
       <file file_name="../../../../../../components/libraries/util/app_error.c" />
-      <file file_name="../../../../../../components/libraries/util/app_error_handler_gcc.c" />
-      <file file_name="../../../../../../components/libraries/util/app_error_weak.c" />
-      <file file_name="../../../../../../components/libraries/fifo/app_fifo.c" />
-      <file file_name="../../../../../../components/libraries/gpiote/app_gpiote.c" />
-      <file file_name="../../../../../../components/libraries/pwm/app_pwm.c" />
-      <file file_name="../../../../../../components/libraries/scheduler/app_scheduler.c" />
-      <file file_name="../../../../../../components/libraries/sdcard/app_sdcard.c" />
+      <file file_name="../../../../../../components/libraries/util/app_error_handler_gcc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/util/app_error_weak.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/fifo/app_fifo.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/gpiote/app_gpiote.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/pwm/app_pwm.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/scheduler/app_scheduler.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/sdcard/app_sdcard.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../components/libraries/timer/app_timer2.c" />
-      <file file_name="../../../../../../components/libraries/uart/app_uart_fifo.c" />
-      <file file_name="../../../../../../components/libraries/usbd/app_usbd.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/audio/app_usbd_audio.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c" />
-      <file file_name="../../../../../../components/libraries/usbd/app_usbd_core.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/hid/app_usbd_hid.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/hid/kbd/app_usbd_hid_kbd.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/hid/mouse/app_usbd_hid_mouse.c" />
-      <file file_name="../../../../../../components/libraries/usbd/class/msc/app_usbd_msc.c" />
-      <file file_name="../../../../../../components/libraries/usbd/app_usbd_string_desc.c" />
-      <file file_name="../../../../../../components/libraries/util/app_util_platform.c" />
-      <file file_name="../../../../../../external/cifra_AES128-EAX/blockwise.c" />
-      <file file_name="../../../../../../external/cifra_AES128-EAX/cifra_cmac.c" />
-      <file file_name="../../../../../../external/cifra_AES128-EAX/cifra_eax_aes.c" />
-      <file file_name="../../../../../../components/libraries/crc16/crc16.c" />
-      <file file_name="../../../../../../components/libraries/crc32/crc32.c" />
-      <file file_name="../../../../../../components/libraries/timer/drv_rtc.c" />
-      <file file_name="../../../../../../external/cifra_AES128-EAX/eax.c" />
-      <file file_name="../../../../../../components/libraries/fds/fds.c" />
-      <file file_name="../../../../../../external/fnmatch/fnmatch.c" />
-      <file file_name="../../../../../../external/cifra_AES128-EAX/gf128.c" />
-      <file file_name="../../../../../../components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c" />
-      <file file_name="../../../../../../components/libraries/hardfault/hardfault_implementation.c" />
-      <file file_name="../../../../../../components/libraries/hci/hci_mem_pool.c" />
-      <file file_name="../../../../../../components/libraries/hci/hci_slip.c" />
-      <file file_name="../../../../../../components/libraries/hci/hci_transport.c" />
-      <file file_name="../../../../../../components/libraries/led_softblink/led_softblink.c" />
-      <file file_name="../../../../../../components/libraries/low_power_pwm/low_power_pwm.c" />
+      <file file_name="../../../../../../components/libraries/uart/app_uart_fifo.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/app_usbd.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/class/audio/app_usbd_audio.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/app_usbd_core.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/class/hid/app_usbd_hid.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/class/hid/kbd/app_usbd_hid_kbd.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/class/hid/mouse/app_usbd_hid_mouse.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="app_usbd_msc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/usbd/app_usbd_string_desc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/util/app_util_platform.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../external/cifra_AES128-EAX/blockwise.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../external/cifra_AES128-EAX/cifra_cmac.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../external/cifra_AES128-EAX/cifra_eax_aes.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/crc16/crc16.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/crc32/crc32.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="drv_rtc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../external/cifra_AES128-EAX/eax.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/fds/fds.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="fnmatch.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../external/cifra_AES128-EAX/gf128.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/hardfault/nrf52/handler/hardfault_handler_gcc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/hardfault/hardfault_implementation.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/hci/hci_mem_pool.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/hci/hci_slip.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/hci/hci_transport.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/led_softblink/led_softblink.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/low_power_pwm/low_power_pwm.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../components/libraries/mem_manager/mem_manager.c" />
-      <file file_name="../../../../../../external/cifra_AES128-EAX/modes.c" />
-      <file file_name="../../../../../../components/libraries/util/nrf_assert.c" />
-      <file file_name="../../../../../../components/libraries/atomic_fifo/nrf_atfifo.c" />
-      <file file_name="../../../../../../components/libraries/atomic/nrf_atomic.c" />
-      <file file_name="../../../../../../components/libraries/balloc/nrf_balloc.c" />
-      <file file_name="../../../../../../components/libraries/cli/nrf_cli.c" />
-      <file file_name="../../../../../../components/libraries/cli/uart/nrf_cli_uart.c" />
-      <file file_name="../../../../../../components/libraries/csense/nrf_csense.c" />
-      <file file_name="../../../../../../components/libraries/csense_drv/nrf_drv_csense.c" />
+      <file file_name="../../../../../../external/cifra_AES128-EAX/modes.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/util/nrf_assert.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/atomic_fifo/nrf_atfifo.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/atomic/nrf_atomic.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/balloc/nrf_balloc.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/cli/nrf_cli.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/cli/uart/nrf_cli_uart.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/csense/nrf_csense.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/csense_drv/nrf_drv_csense.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../external/fprintf/nrf_fprintf.c" />
-      <file file_name="../../../../../../external/fprintf/nrf_fprintf_format.c" />
-      <file file_name="../../../../../../components/libraries/fstorage/nrf_fstorage.c" />
-      <file file_name="../../../../../../components/libraries/fstorage/nrf_fstorage_nvmc.c" />
-      <file file_name="../../../../../../components/libraries/gfx/nrf_gfx.c" />
-      <file file_name="../../../../../../components/libraries/memobj/nrf_memobj.c" />
-      <file file_name="../../../../../../components/libraries/pwr_mgmt/nrf_pwr_mgmt.c" />
+      <file file_name="../../../../../../external/fprintf/nrf_fprintf_format.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/fstorage/nrf_fstorage.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/fstorage/nrf_fstorage_nvmc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/gfx/nrf_gfx.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/memobj/nrf_memobj.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/pwr_mgmt/nrf_pwr_mgmt.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../components/libraries/queue/nrf_queue.c" />
-      <file file_name="../../../../../../components/libraries/ringbuf/nrf_ringbuf.c" />
-      <file file_name="../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.c" />
-      <file file_name="../../../../../../components/libraries/sortlist/nrf_sortlist.c" />
-      <file file_name="../../../../../../components/libraries/spi_mngr/nrf_spi_mngr.c" />
-      <file file_name="../../../../../../components/libraries/strerror/nrf_strerror.c" />
-      <file file_name="../../../../../../components/libraries/twi_mngr/nrf_twi_mngr.c" />
-      <file file_name="../../../../../../components/libraries/slip/slip.c" />
-      <file file_name="../../../../../../components/libraries/experimental_task_manager/task_manager.c" />
-      <file file_name="../../../../../../components/libraries/experimental_task_manager/task_manager_core_armgcc.S" />
-      <file file_name="../../../../../../components/libraries/libuarte/nrf_libuarte_async.c" />
-      <file file_name="../../../../../../components/libraries/libuarte/nrf_libuarte_drv.c" />
+      <file file_name="../../../../../../components/libraries/ringbuf/nrf_ringbuf.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/sortlist/nrf_sortlist.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/spi_mngr/nrf_spi_mngr.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/strerror/nrf_strerror.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/twi_mngr/nrf_twi_mngr.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/slip/slip.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/experimental_task_manager/task_manager.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/experimental_task_manager/task_manager_core_armgcc.S">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/libraries/libuarte/nrf_libuarte_async.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/libraries/libuarte/nrf_libuarte_drv.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
       <configuration Name="Common" c_user_include_directories="." />
     </folder>
     <folder Name="nRF_Crypto">
@@ -355,13 +475,11 @@
     </folder>
     <folder Name="UTF8/UTF16 converter">
       <file file_name="../../../../../../external/utf_converter/utf.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Segger_RTT">
       <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT.c" />
       <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_printf.c" />
-      <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_GCC.c" />
-      <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_IAR.c" />
-      <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_KEIL.c" />
       <file file_name="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" />
     </folder>
     <folder Name="nRF_SoftDevice">
