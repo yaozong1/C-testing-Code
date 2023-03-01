@@ -37,6 +37,7 @@
     </folder>
     <folder Name="nrf_cc310">
       <file file_name="../../../../../../external/nrf_cc310/lib/cortex-m4/hard-float/libnrf_cc310_0.9.13.a" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="Board Definition">
       <file file_name="../../../../../../components/boards/boards.c" />
@@ -45,56 +46,131 @@
       <file file_name="../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecc.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecdh.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/micro_ecc/micro_ecc_backend_ecdsa.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Drivers">
       <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_clock.c" />
-      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_power.c" />
-      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_ppi.c" />
+      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_power.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_ppi.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_rng.c" />
       <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_spi.c" />
-      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_spis.c" />
-      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_swi.c" />
-      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c" />
-      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_uart.c" />
-      <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c" />
-      <file file_name="../../../../../../modules/nrfx/hal/nrf_nvmc.c" />
-      <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_soc.c" />
-      <file file_name="../../../../../../modules/nrfx/soc/nrfx_atomic.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_clock.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_comp.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_gpiote.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_i2s.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_lpcomp.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_pdm.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_power.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_ppi.c" />
+      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_spis.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_swi.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_uart.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/hal/nrf_nvmc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_soc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/soc/nrfx_atomic.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_clock.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_comp.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_gpiote.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_i2s.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_lpcomp.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_pdm.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_power.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_ppi.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
       <file file_name="../../../../../../modules/nrfx/drivers/src/prs/nrfx_prs.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_pwm.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_qdec.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_qspi.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_rng.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_rtc.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_saadc.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_spi.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_spim.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_spis.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_swi.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_systick.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_timer.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_twi.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_twim.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_twis.c" />
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_pwm.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_qdec.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_qspi.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_rng.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_rtc.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_saadc.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_spi.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_spim.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_spis.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_swi.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_systick.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_timer.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_twi.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_twim.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_twis.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_uart.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_uarte.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_usbd.c" />
-      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_wdt.c" />
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_uarte.c">
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_usbd.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_wdt.c">
+        <configuration Name="Release" build_exclude_from_build="Yes" />
+      </file>
     </folder>
     <folder Name="nRF_Crypto backend cifra">
       <file file_name="../../../../../../components/libraries/crypto/backend/cifra/cifra_backend_aes_aead.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_External">
       <file file_name="../../../../../../external/thedotfactory_fonts/orkney24pts.c" />
       <file file_name="../../../../../../external/thedotfactory_fonts/orkney8pts.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="Application">
       <file file_name="../../../main.c">
@@ -124,9 +200,11 @@
       <file file_name="../../../../../../components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_rng_mbedtls.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Drivers_External">
       <file file_name="../../../../../../components/libraries/twi_sensor/nrf_twi_sensor.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Crypto backend CC310">
       <file file_name="../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_aes.c" />
@@ -142,6 +220,7 @@
       <file file_name="../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_mutex.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_rng.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_shared.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Crypto backend Oberon">
       <file file_name="../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_chacha_poly_aead.c" />
@@ -151,6 +230,7 @@
       <file file_name="../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_eddsa.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_hash.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/oberon/oberon_backend_hmac.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Crypto backend mbed TLS">
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.c" />
@@ -161,6 +241,7 @@
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_hash.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_hmac.c" />
       <file file_name="../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_init.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_TLS">
       <file file_name="../../../../../../external/mbedtls/library/aes.c" />
@@ -255,12 +336,13 @@
     <folder Name="nRF_Core">
       <file file_name="../../../../../../components/libraries/mpu/nrf_mpu_lib.c" />
       <file file_name="../../../../../../components/libraries/stack_guard/nrf_stack_guard.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="nRF_Libraries">
       <file file_name="../../../../../../components/libraries/button/app_button.c" />
       <file file_name="../../../../../../components/libraries/util/app_error.c" />
       <file file_name="../../../../../../components/libraries/util/app_error_handler_gcc.c">
-        <configuration Name="Release" build_exclude_from_build="Yes" />
+        <configuration Name="Release" build_exclude_from_build="No" />
       </file>
       <file file_name="../../../../../../components/libraries/util/app_error_weak.c">
         <configuration Name="Release" build_exclude_from_build="No" />
@@ -466,6 +548,7 @@
       <file file_name="../../../../../../components/libraries/crypto/nrf_crypto_init.c" />
       <file file_name="../../../../../../components/libraries/crypto/nrf_crypto_rng.c" />
       <file file_name="../../../../../../components/libraries/crypto/nrf_crypto_shared.c" />
+      <configuration Name="Release" build_exclude_from_build="Yes" />
     </folder>
     <folder Name="None">
       <file file_name="../../../../../../modules/nrfx/mdk/ses_startup_nrf52840.s" />
