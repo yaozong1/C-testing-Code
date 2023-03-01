@@ -93,5 +93,4 @@ Output/Release/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/hal/nrf_twi.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_qspi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_qspi.h \
- ../../../../../../modules/nrfx/hal/nrf_qspi.h mcp_can_dfs.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/inttypes.h
+ ../../../../../../modules/nrfx/hal/nrf_qspi.h
