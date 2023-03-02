@@ -23,6 +23,32 @@
 #include "boards.h"
 #include "sdk_config.h"
 
+#include "nordic_common.h"
+#include "nrf.h"
+#include "nrf_sdm.h"
+
+//mcp
+
+#include "nrf_sdh.h"
+#include "app_error.h"
+#include "app_timer.h"
+#include "fds.h"
+#include "nrf_pwr_mgmt.h"
+
+/************************************************
+/
+/ CAN MCP2515 Include Files
+/
+*************************************************/
+
+#include "inttypes.h"
+#include "nrf_delay.h"
+#include "nrf_gpio.h"
+#include "app_util_platform.h"
+#include "mcp_can.h"
+#include "SEGGER_RTT.h"
+#include "nrf_drv_spi.h"
+#include "nrfx_spim.h"
 
 
 //NBIOT
