@@ -1,6 +1,6 @@
 Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o: \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\segger_rtt\SEGGER_RTT_Syscalls_SES.c \
- ../config/sdk_config.h \
+ ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\segger_rtt\SEGGER_RTT.h \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../../../../../../components/libraries/util/nordic_common.h \
@@ -25,7 +25,7 @@ Output/Release/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdarg.h \

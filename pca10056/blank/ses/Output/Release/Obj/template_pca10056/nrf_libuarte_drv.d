@@ -1,10 +1,10 @@
 Output/Release/Obj/template_pca10056/nrf_libuarte_drv.o: \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_drv.c \
- ../config/sdk_config.h \
+ ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_drv.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
- ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \

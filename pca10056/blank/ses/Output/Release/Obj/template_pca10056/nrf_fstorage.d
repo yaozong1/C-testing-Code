@@ -1,11 +1,11 @@
 Output/Release/Obj/template_pca10056/nrf_fstorage.o: \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\fstorage\nrf_fstorage.c \
- ../config/sdk_config.h \
+ ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
  C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\fstorage\nrf_fstorage.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stddef.h \
