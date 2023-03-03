@@ -139,6 +139,7 @@
       </file>
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_swi.c">
         <configuration Name="Release" build_exclude_from_build="Yes" />
+        <configuration Name="Debug" build_exclude_from_build="Yes" />
       </file>
       <file file_name="../../../../../../modules/nrfx/drivers/src/nrfx_systick.c">
         <configuration Name="Release" build_exclude_from_build="Yes" />
@@ -553,7 +554,7 @@
     <folder Name="nRF_SoftDevice">
       <file file_name="../../../../../../components/softdevice/common/nrf_sdh.c">
         <configuration Name="Release" build_exclude_from_build="No" />
-        <configuration Name="Debug" build_exclude_from_build="No" />
+        <configuration Name="Debug" build_exclude_from_build="Yes" />
       </file>
       <configuration Name="Release" build_exclude_from_build="No" />
     </folder>
@@ -576,12 +577,15 @@
       <file file_name="IIC_LIS.c" />
       <file file_name="mcp_can.c">
         <configuration Name="Release" build_exclude_from_build="Yes" />
+        <configuration Name="Debug" build_exclude_from_build="Yes" />
       </file>
       <file file_name="mcp_can.h">
         <configuration Name="Release" build_exclude_from_build="Yes" />
+        <configuration Name="Debug" build_exclude_from_build="Yes" />
       </file>
       <file file_name="mcp_can_dfs.h">
         <configuration Name="Release" build_exclude_from_build="Yes" />
+        <configuration Name="Debug" build_exclude_from_build="Yes" />
       </file>
     </folder>
   </project>
