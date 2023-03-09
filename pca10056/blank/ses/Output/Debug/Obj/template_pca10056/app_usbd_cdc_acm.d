@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_usbd.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
@@ -72,7 +72,7 @@ Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o: \
  ../../../../../../components/libraries/usbd/class/cdc/app_usbd_cdc_desc.h \
  ../../../../../../components/libraries/usbd/class/cdc/app_usbd_cdc_types.h \
  ../../../../../../components/libraries/usbd/class/cdc/app_usbd_cdc_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm_internal.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm_internal.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/inttypes.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

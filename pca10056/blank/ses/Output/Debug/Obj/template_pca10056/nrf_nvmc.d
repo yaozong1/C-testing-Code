@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_nvmc.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\hal\nrf_nvmc.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\hal\nrf_nvmc.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
@@ -43,4 +43,4 @@ Output/Debug/Obj/template_pca10056/nrf_nvmc.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\hal\nrf_nvmc.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\hal\nrf_nvmc.h

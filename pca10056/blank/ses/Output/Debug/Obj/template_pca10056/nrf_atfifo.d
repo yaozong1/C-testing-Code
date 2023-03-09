@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_atfifo.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
@@ -20,7 +20,7 @@ Output/Debug/Obj/template_pca10056/nrf_atfifo.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo.h \
  ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
@@ -29,7 +29,7 @@ Output/Debug/Obj/template_pca10056/nrf_atfifo.o: \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo_internal.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\atomic_fifo\nrf_atfifo_internal.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  ../../../../../../components/libraries/util/sdk_os.h \

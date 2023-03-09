@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_cli.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -31,8 +31,8 @@ Output/Debug/Obj/template_pca10056/nrf_cli.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdarg.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli_types.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli_types.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/inttypes.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
@@ -55,7 +55,7 @@ Output/Debug/Obj/template_pca10056/nrf_cli.o: \
  ../../../../../../external/fprintf/nrf_fprintf.h \
  ../../../../../../external/fprintf/nrf_fprintf_format.h \
  ../../../../../../external/fprintf/nrf_fprintf.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli_vt100.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\cli\nrf_cli_vt100.h \
  ../../../../../../components/libraries/util/app_error.h \
  ../../../../../../components/libraries/delay/nrf_delay.h \
  ../../../../../../modules/nrfx/nrfx.h \

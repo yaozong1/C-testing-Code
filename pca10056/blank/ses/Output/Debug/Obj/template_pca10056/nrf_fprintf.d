@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_fprintf.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -29,5 +29,5 @@ Output/Debug/Obj/template_pca10056/nrf_fprintf.o: \
  ../../../../../../components/libraries/util/nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdarg.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf_format.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf_format.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf.h

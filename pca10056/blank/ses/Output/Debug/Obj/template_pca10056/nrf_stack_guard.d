@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_stack_guard.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\stack_guard\nrf_stack_guard.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\stack_guard\nrf_stack_guard.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52840.h \
@@ -19,7 +19,7 @@ Output/Debug/Obj/template_pca10056/nrf_stack_guard.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\stack_guard\nrf_stack_guard.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\stack_guard\nrf_stack_guard.h \
  ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
  ../../../../../../components/libraries/util/app_util.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \

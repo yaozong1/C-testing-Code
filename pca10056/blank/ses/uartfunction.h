@@ -57,7 +57,7 @@ static uint8_t SHU_TCP[] = "AT+CIPSHUT\r\n";
 static uint8_t SHU_TCP_size = sizeof(SHU_TCP);
 
 
-static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"cmnet\"\r\n"; //iot.1nce.net
+static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"iot.1nce.net\"\r\n"; //iot.1nce.net,CMNBIOT
 static uint8_t  S_APN_MQTT_size = sizeof(S_APN_MQTT);
 
 static uint8_t COM_MQTT_IP[] = "AT+CNACT?\r\n";

@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_csense.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\csense\nrf_csense.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\csense\nrf_csense.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -48,7 +48,7 @@ Output/Debug/Obj/template_pca10056/nrf_csense.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\csense\nrf_csense.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\csense\nrf_csense.h \
  ../../../../../../components/libraries/timer/app_timer.h \
  ../../../../../../components/libraries/util/app_error.h \
  ../../../../../../components/libraries/log/nrf_log_instance.h \
@@ -56,4 +56,4 @@ Output/Debug/Obj/template_pca10056/nrf_csense.o: \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
  ../../../../../../components/libraries/csense_drv/nrf_drv_csense.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\csense\nrf_csense_macros.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\csense\nrf_csense_macros.h
