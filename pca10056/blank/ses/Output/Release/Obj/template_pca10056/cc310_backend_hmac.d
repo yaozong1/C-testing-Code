@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/cc310_backend_hmac.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_hmac.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_hmac.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -38,7 +38,7 @@ Output/Release/Obj/template_pca10056/cc310_backend_hmac.o: \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_hmac_shared.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_hmac.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_hmac.h \
  ../../../../../../external/nrf_cc310/include/crys_hmac.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types_plat.h \
@@ -54,8 +54,8 @@ Output/Release/Obj/template_pca10056/cc310_backend_hmac.o: \
  ../../../../../../external/nrf_cc310/include/crys_hmac_defs.h \
  ../../../../../../external/nrf_cc310/include/crys_hmac_error.h \
  ../../../../../../external/nrf_cc310/include/crys_hash.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../../../../../../components/libraries/mutex/nrf_mtx.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h

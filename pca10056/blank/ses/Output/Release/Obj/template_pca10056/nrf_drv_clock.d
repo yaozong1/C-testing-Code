@@ -1,7 +1,7 @@
 Output/Release/Obj/template_pca10056/nrf_drv_clock.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_clock.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_clock.c \
  ../../../../../../components/libraries/util/nordic_common.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_clock.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\integration\nrfx\legacy\nrf_drv_clock.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_clock.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \

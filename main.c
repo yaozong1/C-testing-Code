@@ -61,6 +61,7 @@
 void AT_Match(void);
 void Modem_Pwron(void);
 int set_MQTT();
+int32_t j;
 
 
 bool status_modem;
@@ -193,7 +194,7 @@ void qspi_test(void)
 
 //UART CONFIGURATION
 static volatile bool m_loopback_phase;
-NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
+NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 2048, 8);
 
 
 typedef struct {
@@ -240,6 +241,7 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
            Uart_AT[0]=0;
            strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
+           p_evt = 0;
             
             m_loopback_phase = false;//loop back function from e.g
             break;
@@ -390,7 +392,14 @@ _GSM_ONLY;      nrf_delay_ms(500);
 _SET_RM;        nrf_delay_ms(500);
 //_SET_APN;
 //_APN_CHECK;
-_SIG_CHECK;     nrf_delay_ms(1000);
+
+while(1)//For signal checking
+{
+j++;
+NRF_LOG_INFO("SIGNAL_QUALITY_CHECK_%d \r\n", j);
+_SIG_CHECK;     nrf_delay_ms(5000);
+NRF_LOG_FLUSH();
+}
 _NET_ADHERE;    nrf_delay_ms(1000);
 _NET_TYPE;      nrf_delay_ms(500);
 //while(!isPresent(Uart_AT,  OK)==1);

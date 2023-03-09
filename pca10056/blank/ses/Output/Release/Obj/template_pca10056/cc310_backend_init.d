@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/cc310_backend_init.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_init.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_init.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -32,7 +32,7 @@ Output/Release/Obj/template_pca10056/cc310_backend_init.o: \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_shared.h \
  ../../../../../../external/nrf_cc310/include/sns_silib.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types_plat.h \
@@ -41,7 +41,7 @@ Output/Release/Obj/template_pca10056/cc310_backend_init.o: \
  ../../../../../../external/nrf_cc310/include/ssi_aes.h \
  ../../../../../../external/nrf_cc310/include/ssi_aes_error.h \
  ../../../../../../external/nrf_cc310/include/ssi_aes_defs.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\backend\cc310\cc310_backend_mutex.h \
  ../../../../../../components/libraries/mutex/nrf_mtx.h \
  ../../../../../../components/libraries/atomic/nrf_atomic.h \
  ../../../../../../components/libraries/util/nrf_assert.h \

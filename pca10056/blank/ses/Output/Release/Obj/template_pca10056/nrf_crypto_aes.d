@@ -1,5 +1,5 @@
 Output/Release/Obj/template_pca10056/nrf_crypto_aes.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,10 +27,10 @@ Output/Release/Obj/template_pca10056/nrf_crypto_aes.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes_shared.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes_backend.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_types.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes_shared.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_aes_backend.h \
  ../../../../../../components/libraries/crypto/backend/cc310/cc310_backend_aes.h \
  ../../../../../../external/nrf_cc310/include/ssi_aes.h \
  ../../../../../../external/nrf_cc310/include/ssi_pal_types.h \
@@ -43,8 +43,8 @@ Output/Release/Obj/template_pca10056/nrf_crypto_aes.o: \
  ../../../../../../components/libraries/crypto/nrf_crypto_types.h \
  ../../../../../../components/libraries/crypto/nrf_crypto_aes_shared.h \
  ../../../../../../components/libraries/crypto/backend/mbedtls/mbedtls_backend_aes.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_mem.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_mem.h \
  ../../../../../../components/libraries/util/sdk_alloca.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_shared.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_error.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_shared.h \
  ../../../../../../components/libraries/util/sdk_macros.h

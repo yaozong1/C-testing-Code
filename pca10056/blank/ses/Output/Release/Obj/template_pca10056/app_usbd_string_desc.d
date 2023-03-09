@@ -1,7 +1,7 @@
 Output/Release/Obj/template_pca10056/app_usbd_string_desc.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_string_desc.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_string_desc.c \
  ../config/sdk_config.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_string_desc.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_string_desc.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -28,7 +28,7 @@ Output/Release/Obj/template_pca10056/app_usbd_string_desc.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_usbd.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
@@ -61,10 +61,10 @@ Output/Release/Obj/template_pca10056/app_usbd_string_desc.o: \
  ../../../../../../modules/nrfx/mdk/nrf52_erratas.h \
  ../../../../../../modules/nrfx/mdk/nrf53_erratas.h \
  ../../../../../../modules/nrfx/mdk/nrf91_erratas.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_request.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_descriptor.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_langid.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_class_base.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_core.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_types.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_request.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_descriptor.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_langid.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_class_base.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\app_usbd_core.h \
  ../../../../../../external/utf_converter/utf.h
