@@ -97,5 +97,12 @@ static uint8_t PUB_T_TOP_size = sizeof(PUB_T_TOP);
 static uint8_t SEND_CHECK[] = "CHECK\r\n";
 static uint8_t SEND_CHECK_size = sizeof(SEND_CHECK);
 
+static uint8_t GNSS_POW_ON[] = "AT+CGNSPWR=1\r\n";
+static uint8_t GNSS_POW_ON_size = sizeof(GNSS_POW_ON);
+
+static uint8_t GNSS_SIG[] = "AT+CGNSINF\r\n";
+static uint8_t GNSS_SIG_size = sizeof(GNSS_SIG);
+
+
 
 //Modem AT COMMAND END

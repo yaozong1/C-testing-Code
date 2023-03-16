@@ -78,6 +78,8 @@
 #define _PUB_T_TOP nrf_libuarte_async_tx(&libuarte, PUB_T_TOP, PUB_T_TOP_size)
 #define _SEND_CHECK nrf_libuarte_async_tx(&libuarte, SEND_CHECK, SEND_CHECK_size)
 
+#define _GNSS_POW_ON nrf_libuarte_async_tx(&libuarte, GNSS_POW_ON, GNSS_POW_ON_size)
+#define _GNSS_SIG nrf_libuarte_async_tx(&libuarte, GNSS_SIG, GNSS_SIG_size)
 
 //GSM ONLY
 #define _GSM_ONLY nrf_libuarte_async_tx(&libuarte, GSM_ONLY, GSM_ONLY_size);
