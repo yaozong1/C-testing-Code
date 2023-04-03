@@ -320,9 +320,9 @@ void Modem_Pwron(void)
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));//Indicator
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,3));//PWRKEY
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,9));//WATCH DOD BUT DOESNOT WORK NOW
-    nrf_gpio_cfg_input(NRF_GPIO_PIN_MAP(1,7),NRF_GPIO_PIN_PULLDOWN);
+    nrf_gpio_cfg_input(NRF_GPIO_PIN_MAP(1,11),NRF_GPIO_PIN_PULLDOWN);
     nrf_delay_ms(100);
-    status_modem = nrf_gpio_pin_read(NRF_GPIO_PIN_MAP(1,7));
+    status_modem = nrf_gpio_pin_read(NRF_GPIO_PIN_MAP(1,11));
     NRF_LOG_INFO("Modem Status: %d",status_modem);
     nrf_delay_ms(100);
     NRF_LOG_FLUSH();
