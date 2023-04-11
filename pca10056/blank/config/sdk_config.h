@@ -4259,7 +4259,7 @@
 // <196609=> External Full Swing 
 
 #ifndef CLOCK_CONFIG_LF_SRC
-#define CLOCK_CONFIG_LF_SRC 1
+#define CLOCK_CONFIG_LF_SRC 0
 #endif
 
 // <q> CLOCK_CONFIG_LF_CAL_ENABLED  - Calibration enable for LF Clock Source

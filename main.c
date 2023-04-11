@@ -77,6 +77,8 @@
 #define _SUB_TOP nrf_libuarte_async_tx(&libuarte, SUB_TOP, SUB_TOP_size)
 #define _PUB_T_TOP nrf_libuarte_async_tx(&libuarte, PUB_T_TOP, PUB_T_TOP_size)
 #define _SEND_CHECK nrf_libuarte_async_tx(&libuarte, SEND_CHECK, SEND_CHECK_size)
+#define _SEND_MoSensor_SAT nrf_libuarte_async_tx(&libuarte, SEND_MoSensor_SAT, SEND_MoSensor_SAT_size)
+#define _SEND_QSPI_SAT nrf_libuarte_async_tx(&libuarte, SEND_QSPI_SAT, SEND_QSPI_SAT_size)
 
 #define _GNSS_POW_ON nrf_libuarte_async_tx(&libuarte, GNSS_POW_ON, GNSS_POW_ON_size)
 #define _GNSS_SIG nrf_libuarte_async_tx(&libuarte, GNSS_SIG, GNSS_SIG_size)
@@ -345,8 +347,13 @@ void Modem_Pwron(void)
     NRF_LOG_FLUSH();
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));//Indicator
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,3));//PWRKEY
+
+    nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,12));//Roam board backside LED
+    nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,7));// Roam board backside LED
+    
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,9));//WATCH DOD BUT DOESNOT WORK NOW
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,13));//GPS ANTENNA POWER
+    nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,1));// CAN BUS POWER
     nrf_gpio_cfg_input(NRF_GPIO_PIN_MAP(1,11),NRF_GPIO_PIN_PULLDOWN);
     nrf_delay_ms(100);
     status_modem = nrf_gpio_pin_read(NRF_GPIO_PIN_MAP(1,11));
@@ -381,10 +388,15 @@ void Modem_Pwron(void)
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
     NRF_LOG_INFO("POWER ON DONE");
-
+    NRF_LOG_FLUSH();
 
     NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
+    nrf_delay_ms(500);
+    NRF_LOG_FLUSH();
+
+    NRF_LOG_INFO("ENABLE CAN ");
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
     }
@@ -404,7 +416,12 @@ void Modem_Pwron(void)
     NRF_LOG_FLUSH();
 
     NRF_LOG_INFO("ENABLE GNSS ");
-    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
+    nrf_delay_ms(500);
+    NRF_LOG_FLUSH();
+
+    NRF_LOG_INFO("ENABLE CAN ");
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
     }
@@ -455,6 +472,7 @@ i=10;
 nrf_delay_ms(500);
 }
 
+Uart_AT[0]=0;//Clean the UART_AT
 //mqtt
 
 //_DIS_MQTT;      nrf_delay_ms(500);
@@ -480,9 +498,75 @@ nrf_delay_ms(500);
 }
 // _DIS_MQTT;
 //  nrf_delay_ms(200);
-_SUB_TOP;       nrf_delay_ms(500);
+
+//_SUB_TOP;       nrf_delay_ms(500); //cancel to save buff
+
 _PUB_T_TOP;     nrf_delay_ms(500);
 _SEND_CHECK;    
+
+while(1)
+{
+
+uint32_t err_code = 2;
+err_code = nrf_drv_twi_rx(&m_twi, lis_address, &lis_sample_data, sizeof(lis_sample_data));
+
+
+
+nrf_delay_ms(500);
+
+if(err_code == NRF_SUCCESS)
+  {
+  
+//  NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address); //cancel to save buff
+//  result_motion_sensor = 1;
+  _PUB_T_TOP;
+  nrf_delay_ms(500);
+ _SEND_MoSensor_SAT;
+  
+  }
+
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
+nrf_delay_ms(3000);
+}
+
+
+result_qspi_flash = 2;
+qspi_test();
+if(result_qspi_flash == 1)
+  {
+  
+  _PUB_T_TOP;
+  nrf_delay_ms(500);
+ _SEND_QSPI_SAT;
+  
+  }
+
+
+
+
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
+nrf_delay_ms(3000);
+}
+
+
+_PUB_T_TOP;     nrf_delay_ms(500);
+_SEND_CHECK;    
+
+
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
+nrf_delay_ms(3000);
+}
+
+}
 
 for(i=1; i <=10;i++) //Added timeout for waiting
 {
@@ -565,7 +649,6 @@ if(err_code == NRF_SUCCESS)
   NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address);
   result_motion_sensor = 1;
   
-  
   }
 else NRF_LOG_WARNING("Cannot detected a device at address");
 
@@ -609,6 +692,10 @@ NRF_LOG_FLUSH();
 
 
 qspi_test();
+
+
+
+
 
 
 
