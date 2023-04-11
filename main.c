@@ -363,23 +363,23 @@ void Modem_Pwron(void)
 
     if (status_modem == 1)//Modem is on already when testing.
     {
-    NRF_LOG_INFO("Modem is on");
+//    NRF_LOG_INFO("Modem is on");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-    NRF_LOG_INFO("Reboot the modem....");
+//    NRF_LOG_INFO("Reboot the modem....");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
     nrf_delay_ms(2000);
     NRF_LOG_FLUSH();
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
-    NRF_LOG_INFO("shut down the modem....");
+//    NRF_LOG_INFO("shut down the modem....");
     nrf_delay_ms(2000);
     NRF_LOG_FLUSH();
 
-    NRF_LOG_INFO("Modem is being powering on");
+//    NRF_LOG_INFO("Modem is being powering on");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
@@ -387,22 +387,22 @@ void Modem_Pwron(void)
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
-    NRF_LOG_INFO("POWER ON DONE");
+//    NRF_LOG_INFO("POWER ON DONE");
     NRF_LOG_FLUSH();
 
-    NRF_LOG_INFO("ENABLE GNSS ");
+//    NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-    NRF_LOG_INFO("ENABLE CAN ");
+//    NRF_LOG_INFO("ENABLE CAN ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
     }
     else
     {
-    NRF_LOG_INFO("Modem is being powering on");
+//    NRF_LOG_INFO("Modem is being powering on");
     
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
@@ -412,15 +412,15 @@ void Modem_Pwron(void)
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
-    NRF_LOG_INFO("POWER ON DONE");
+//    NRF_LOG_INFO("POWER ON DONE");
     NRF_LOG_FLUSH();
 
-    NRF_LOG_INFO("ENABLE GNSS ");
+//    NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-    NRF_LOG_INFO("ENABLE CAN ");
+//    NRF_LOG_INFO("ENABLE CAN ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
@@ -496,16 +496,36 @@ i=10;
 }
 nrf_delay_ms(500);
 }
+
+
+
 // _DIS_MQTT;
 //  nrf_delay_ms(200);
 
 //_SUB_TOP;       nrf_delay_ms(500); //cancel to save buff
 
-_PUB_T_TOP;     nrf_delay_ms(500);
-_SEND_CHECK;    
+_PUB_T_TOP; 
+nrf_delay_ms(500);   
+_SEND_CHECK; 
+nrf_delay_ms(500);
 
-while(1)
+for(i=1; i <=10;i++) //Added timeout for waiting
 {
+if(isPresent(Uart_AT,  SMSUB)==1)
+{
+i=10;
+}
+nrf_delay_ms(500);
+}
+
+
+for(i=1; i <=10;i++) //Added timeout for waiting
+{
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
+nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
+nrf_delay_ms(1000);
+}
+
 
 uint32_t err_code = 2;
 err_code = nrf_drv_twi_rx(&m_twi, lis_address, &lis_sample_data, sizeof(lis_sample_data));
@@ -517,11 +537,13 @@ nrf_delay_ms(500);
 if(err_code == NRF_SUCCESS)
   {
   
-//  NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address); //cancel to save buff
+// NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address); //cancel to save buff
 //  result_motion_sensor = 1;
   _PUB_T_TOP;
   nrf_delay_ms(500);
  _SEND_MoSensor_SAT;
+ nrf_delay_ms(500);
+
   
   }
 
@@ -529,11 +551,12 @@ for(i=1; i <=10;i++) //Added timeout for waiting
 {
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(3000);
+nrf_delay_ms(1000);
 }
 
 
 result_qspi_flash = 2;
+
 qspi_test();
 if(result_qspi_flash == 1)
   {
@@ -541,7 +564,7 @@ if(result_qspi_flash == 1)
   _PUB_T_TOP;
   nrf_delay_ms(500);
  _SEND_QSPI_SAT;
-  
+  nrf_delay_ms(500);
   }
 
 
@@ -551,40 +574,31 @@ for(i=1; i <=10;i++) //Added timeout for waiting
 {
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(3000);
+nrf_delay_ms(1000);
 }
 
 
-_PUB_T_TOP;     nrf_delay_ms(500);
-_SEND_CHECK;    
 
 
-for(i=1; i <=10;i++) //Added timeout for waiting
-{
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(3000);
-}
+//}
 
-}
+//for(i=1; i <=10;i++) //Added timeout for waiting
+//{
+//if(isPresent(Uart_AT,  SMSUB)==1)
+//{
+//i=10;
+//}
+//nrf_delay_ms(500);
+//}
 
-for(i=1; i <=10;i++) //Added timeout for waiting
-{
-if(isPresent(Uart_AT,  SMSUB)==1)
-{
-i=10;
-}
-nrf_delay_ms(500);
-}
+//if(isPresent(Uart_AT,  MATCH)==1)
+//{
+//NRF_LOG_INFO("MQTT test done");
+//result_aliyun = 1;
+//return 1;
 
-if(isPresent(Uart_AT,  MATCH)==1)
-{
-NRF_LOG_INFO("MQTT test done");
-result_aliyun = 1;
-return 1;
-
-}
-return 0;
+//}
+//return 0;
 
 
 }
@@ -682,12 +696,18 @@ if (aliyun_testing_FLAG== 1 )
 {
 //while(!Modem_test_result==1)
 //{
+while(1)
+{
+  
   Modem_test_result = set_MQTT();
   nrf_delay_ms(1000);
+  Modem_Pwron();
+nrf_delay_ms(1000);
   NRF_LOG_FLUSH();
 //}
 
 NRF_LOG_FLUSH();
+}
 }
 
 
