@@ -347,6 +347,7 @@ void Modem_Pwron(void)
     NRF_LOG_FLUSH();
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));//Indicator
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,3));//PWRKEY
+    nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,4));//PWRKEY
 
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,12));//Roam board backside LED
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,7));// Roam board backside LED
@@ -368,41 +369,55 @@ void Modem_Pwron(void)
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-//    NRF_LOG_INFO("Reboot the modem....");
+    NRF_LOG_INFO("Reboot the modem....");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
     nrf_delay_ms(2000);
     NRF_LOG_FLUSH();
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
-//    NRF_LOG_INFO("shut down the modem....");
+    NRF_LOG_INFO("shut down the modem....");
     nrf_delay_ms(2000);
     NRF_LOG_FLUSH();
 
-//    NRF_LOG_INFO("Modem is being powering on");
+    NRF_LOG_INFO("Modem is being powering on");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
     nrf_delay_ms(2000);
+////////////////////////////////////
+    NRF_LOG_INFO("Modem is being reseting");
+    
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,4), 0);
+    nrf_delay_ms(500);
+    
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,4), 1);
+    nrf_delay_ms(2000);
+
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,4), 0);
+    nrf_delay_ms(2000);
+    NRF_LOG_INFO("Reset DONE");
+    NRF_LOG_FLUSH();
+//////////////////////////////////////////////
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
-//    NRF_LOG_INFO("POWER ON DONE");
+    NRF_LOG_INFO("POWER ON DONE");
     NRF_LOG_FLUSH();
 
-//    NRF_LOG_INFO("ENABLE GNSS ");
+    NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-//    NRF_LOG_INFO("ENABLE CAN ");
+    NRF_LOG_INFO("ENABLE CAN ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
     }
     else
     {
-//    NRF_LOG_INFO("Modem is being powering on");
+    NRF_LOG_INFO("Modem is being powering on");
     
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(500);
@@ -412,15 +427,28 @@ void Modem_Pwron(void)
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     nrf_delay_ms(2000);
-//    NRF_LOG_INFO("POWER ON DONE");
+    NRF_LOG_INFO("POWER ON DONE");
     NRF_LOG_FLUSH();
+//////////////////////////////////////
+    NRF_LOG_INFO("Modem is being reseting");
+    
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,4), 0);
+    nrf_delay_ms(500);
+    
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,4), 1);
+    nrf_delay_ms(2000);
 
-//    NRF_LOG_INFO("ENABLE GNSS ");
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,4), 0);
+    nrf_delay_ms(2000);
+    NRF_LOG_INFO("Reset DONE");
+    NRF_LOG_FLUSH();
+/////////////////////////////////
+    NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
-//    NRF_LOG_INFO("ENABLE CAN ");
+    NRF_LOG_INFO("ENABLE CAN ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
     nrf_delay_ms(500);
     NRF_LOG_FLUSH();
@@ -497,7 +525,7 @@ i=10;
 nrf_delay_ms(500);
 }
 
-
+nrf_delay_ms(2000);
 
 // _DIS_MQTT;
 //  nrf_delay_ms(200);
@@ -505,25 +533,25 @@ nrf_delay_ms(500);
 //_SUB_TOP;       nrf_delay_ms(500); //cancel to save buff
 
 _PUB_T_TOP; 
-nrf_delay_ms(500);   
+nrf_delay_ms(50);   
 _SEND_CHECK; 
 nrf_delay_ms(500);
 
-for(i=1; i <=10;i++) //Added timeout for waiting
-{
-if(isPresent(Uart_AT,  SMSUB)==1)
-{
-i=10;
-}
-nrf_delay_ms(500);
-}
+//for(i=1; i <=10;i++) //Added timeout for waiting
+//{
+//if(isPresent(Uart_AT,  SMSUB)==1)
+//{
+//i=10;
+//}
+//nrf_delay_ms(500);
+//}
 
 
 for(i=1; i <=10;i++) //Added timeout for waiting
 {
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(1000);
+nrf_delay_ms(500);
 }
 
 
@@ -540,7 +568,7 @@ if(err_code == NRF_SUCCESS)
 // NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address); //cancel to save buff
 //  result_motion_sensor = 1;
   _PUB_T_TOP;
-  nrf_delay_ms(500);
+  nrf_delay_ms(50);
  _SEND_MoSensor_SAT;
  nrf_delay_ms(500);
 
@@ -551,7 +579,7 @@ for(i=1; i <=10;i++) //Added timeout for waiting
 {
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(1000);
+nrf_delay_ms(500);
 }
 
 
@@ -562,7 +590,7 @@ if(result_qspi_flash == 1)
   {
   
   _PUB_T_TOP;
-  nrf_delay_ms(500);
+  nrf_delay_ms(50);
  _SEND_QSPI_SAT;
   nrf_delay_ms(500);
   }
@@ -574,7 +602,7 @@ for(i=1; i <=10;i++) //Added timeout for waiting
 {
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(1000);
+nrf_delay_ms(500);
 }
 
 

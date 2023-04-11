@@ -57,7 +57,7 @@ static uint8_t SHU_TCP[] = "AT+CIPSHUT\r\n";
 static uint8_t SHU_TCP_size = sizeof(SHU_TCP);
 
 
-static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"cmnet\"\r\n"; //iot.1nce.net,CMNBIOT
+static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"iot.1nce.net\"\r\n"; //iot.1nce.net,CMNBIOT
 static uint8_t  S_APN_MQTT_size = sizeof(S_APN_MQTT);
 
 static uint8_t COM_MQTT_IP[] = "AT+CNACT?\r\n";
@@ -94,13 +94,13 @@ static uint8_t SUB_TOP_size = sizeof(SUB_TOP);
 static uint8_t PUB_T_TOP[] = "AT+SMPUB=\"/i0skjc3rzVY/7000c/user/send\",7,1,0\r\n";
 static uint8_t PUB_T_TOP_size = sizeof(PUB_T_TOP);
 
-static uint8_t SEND_CHECK[] = "NET_OK\r\n";
+static uint8_t SEND_CHECK[] = "NETOK\r\n";
 static uint8_t SEND_CHECK_size = sizeof(SEND_CHECK);
 
-static uint8_t SEND_MoSensor_SAT[] = "MSR_OK\r\n";
+static uint8_t SEND_MoSensor_SAT[] = "MSROK\r\n";
 static uint8_t SEND_MoSensor_SAT_size = sizeof(SEND_MoSensor_SAT);
 
-static uint8_t SEND_QSPI_SAT[] = "QSP_OK\r\n";
+static uint8_t SEND_QSPI_SAT[] = "QSPOK\r\n";
 static uint8_t SEND_QSPI_SAT_size = sizeof(SEND_QSPI_SAT);
 
 static uint8_t GNSS_POW_ON[] = "AT+CGNSPWR=1\r\n";
