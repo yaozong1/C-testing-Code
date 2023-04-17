@@ -532,28 +532,13 @@ nrf_delay_ms(2000);
 
 //_SUB_TOP;       nrf_delay_ms(500); //cancel to save buff
 
-_PUB_T_TOP; 
+while(1)
+
+  {
+  _PUB_T_TOP; 
 nrf_delay_ms(50);   
 _SEND_CHECK; 
-nrf_delay_ms(500);
-
-//for(i=1; i <=10;i++) //Added timeout for waiting
-//{
-//if(isPresent(Uart_AT,  SMSUB)==1)
-//{
-//i=10;
-//}
-//nrf_delay_ms(500);
-//}
-
-
-for(i=1; i <=10;i++) //Added timeout for waiting
-{
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(500);
-}
-
+nrf_delay_ms(2000);
 
 uint32_t err_code = 2;
 err_code = nrf_drv_twi_rx(&m_twi, lis_address, &lis_sample_data, sizeof(lis_sample_data));
@@ -570,17 +555,10 @@ if(err_code == NRF_SUCCESS)
   _PUB_T_TOP;
   nrf_delay_ms(50);
  _SEND_MoSensor_SAT;
- nrf_delay_ms(500);
+ nrf_delay_ms(2000);
 
   
   }
-
-for(i=1; i <=10;i++) //Added timeout for waiting
-{
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(500);
-}
 
 
 result_qspi_flash = 2;
@@ -592,41 +570,17 @@ if(result_qspi_flash == 1)
   _PUB_T_TOP;
   nrf_delay_ms(50);
  _SEND_QSPI_SAT;
-  nrf_delay_ms(500);
+  nrf_delay_ms(2000);
+  }
+  
+  
   }
 
 
 
 
-for(i=1; i <=10;i++) //Added timeout for waiting
-{
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,12));//Tell NRF working good
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7));
-nrf_delay_ms(500);
-}
 
 
-
-
-//}
-
-//for(i=1; i <=10;i++) //Added timeout for waiting
-//{
-//if(isPresent(Uart_AT,  SMSUB)==1)
-//{
-//i=10;
-//}
-//nrf_delay_ms(500);
-//}
-
-//if(isPresent(Uart_AT,  MATCH)==1)
-//{
-//NRF_LOG_INFO("MQTT test done");
-//result_aliyun = 1;
-//return 1;
-
-//}
-//return 0;
 
 
 }
