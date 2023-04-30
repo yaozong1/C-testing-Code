@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/led_softblink.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\led_softblink\led_softblink.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\led_softblink\led_softblink.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Debug/Obj/template_pca10056/led_softblink.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\led_softblink\led_softblink.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\led_softblink\led_softblink.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../modules/nrfx/nrfx.h \

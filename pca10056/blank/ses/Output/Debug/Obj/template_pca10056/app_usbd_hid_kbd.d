@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/app_usbd_hid_kbd.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Debug/Obj/template_pca10056/app_usbd_hid_kbd.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_usbd.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
@@ -74,5 +74,5 @@ Output/Debug/Obj/template_pca10056/app_usbd_hid_kbd.o: \
  ../../../../../../components/libraries/usbd/app_usbd_class_base.h \
  ../../../../../../components/libraries/usbd/app_usbd_core.h \
  ../../../../../../components/libraries/usbd/app_usbd_descriptor.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_desc.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_internal.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_desc.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_internal.h

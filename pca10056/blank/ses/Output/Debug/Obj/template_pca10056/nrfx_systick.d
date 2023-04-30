@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrfx_systick.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_systick.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_systick.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \

@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_strerror.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\strerror\nrf_strerror.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\strerror\nrf_strerror.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
@@ -27,5 +27,5 @@ Output/Debug/Obj/template_pca10056/nrf_strerror.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\strerror\nrf_strerror.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\strerror\nrf_strerror.h \
  ../../../../../../components/libraries/util/sdk_errors.h

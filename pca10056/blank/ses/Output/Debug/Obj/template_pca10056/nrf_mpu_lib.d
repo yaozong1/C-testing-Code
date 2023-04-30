@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrf_mpu_lib.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\mpu\nrf_mpu_lib.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\mpu\nrf_mpu_lib.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52840.h \
@@ -13,7 +13,7 @@ Output/Debug/Obj/template_pca10056/nrf_mpu_lib.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\mpu\nrf_mpu_lib.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\mpu\nrf_mpu_lib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  ../../../../../../components/libraries/util/sdk_errors.h \

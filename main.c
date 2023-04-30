@@ -57,6 +57,7 @@
 #define _SIG_CHECK nrf_libuarte_async_tx(&libuarte, Sigal_qul, Sigal_qul_size);
 #define _LTE_ONLY nrf_libuarte_async_tx(&libuarte, LTE_ONLY, LTE_ONLY_size);
 #define _SET_NBIOT nrf_libuarte_async_tx(&libuarte, SET_NBIOT, SET_NBIOT_size);
+#define _SET_CAT_M nrf_libuarte_async_tx(&libuarte, SET_CAT_M, SET_CAT_M_size);
 #define _SET_RM nrf_libuarte_async_tx(&libuarte, SET_RM, SET_RM_size)
 #define _SET_APN nrf_libuarte_async_tx(&libuarte, SET_APN, SET_APN_size)
 #define _APN_CHECK nrf_libuarte_async_tx(&libuarte, APN_CHECK, APN_CHECK_size)
@@ -408,12 +409,13 @@ uint8_t SMSUB[] = "+SMSUB";
 nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
 NRF_LOG_INFO("Watchdog fed");
 
-_AT_CHECK;      
-_SHU_TCP;       nrf_delay_ms(500);
-_GSM_ONLY;      nrf_delay_ms(500);
-//_LTE_ONLY;      nrf_delay_ms(500);
-//_SET_NBIOT;     nrf_delay_ms(500);
-_SET_RM;        nrf_delay_ms(500);
+_AT_CHECK;      nrf_delay_ms(1000);
+_SHU_TCP;       nrf_delay_ms(1000);
+//_GSM_ONLY;      nrf_delay_ms(1000);
+_LTE_ONLY;      nrf_delay_ms(1000);
+//_SET_NBIOT;     nrf_delay_ms(1000);
+_SET_CAT_M;     nrf_delay_ms(2000);
+_SET_RM;        nrf_delay_ms(2000);//0 is good for sweden
 //_SET_APN;
 //_APN_CHECK;
 
@@ -469,7 +471,13 @@ nrf_delay_ms(500);
 //  nrf_delay_ms(200);
 _SUB_TOP;       nrf_delay_ms(500);
 _PUB_T_TOP;     nrf_delay_ms(500);
-_SEND_CHECK;    
+
+while(1)
+{
+_PUB_T_TOP;     nrf_delay_ms(500);
+_SEND_CHECK;   
+nrf_delay_ms(3000); 
+}
 
 for(i=1; i <=10;i++) //Added timeout for waiting
 {

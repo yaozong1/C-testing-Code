@@ -32,7 +32,10 @@ static uint8_t GSM_ONLY_size = sizeof(LTE_ONLY);
 static uint8_t SET_NBIOT[] = "AT+CMNB=2\r\n";
 static uint8_t SET_NBIOT_size = sizeof(SET_NBIOT);
 
-static uint8_t SET_RM[] = "AT+NBSC=1\r\n";
+static uint8_t SET_CAT_M[] = "AT+CMNB=1\r\n";
+static uint8_t SET_CAT_M_size = sizeof(SET_CAT_M);
+
+static uint8_t SET_RM[] = "AT+NBSC=0\r\n";
 static uint8_t SET_RM_size = sizeof(SET_RM);
 
 static uint8_t SET_APN[] = "AT+CSTT=\"iot.1nce.net\"\r\n";
@@ -57,7 +60,7 @@ static uint8_t SHU_TCP[] = "AT+CIPSHUT\r\n";
 static uint8_t SHU_TCP_size = sizeof(SHU_TCP);
 
 
-static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"cmnet\"\r\n"; //iot.1nce.net
+static uint8_t  S_APN_MQTT[] = "AT+CNACT=1,\"iot.1nce.net\"\r\n"; //iot.1nce.net
 static uint8_t  S_APN_MQTT_size = sizeof(S_APN_MQTT);
 
 static uint8_t COM_MQTT_IP[] = "AT+CNACT?\r\n";

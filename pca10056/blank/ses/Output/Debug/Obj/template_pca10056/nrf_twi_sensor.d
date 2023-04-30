@@ -1,6 +1,6 @@
 Output/Debug/Obj/template_pca10056/nrf_twi_sensor.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\twi_sensor\nrf_twi_sensor.c \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\twi_sensor\nrf_twi_sensor.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\twi_sensor\nrf_twi_sensor.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\twi_sensor\nrf_twi_sensor.h \
  ../../../../../../components/libraries/twi_mngr/nrf_twi_mngr.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_twi.h \

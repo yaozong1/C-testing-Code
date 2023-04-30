@@ -1,5 +1,5 @@
 Output/Debug/Obj/template_pca10056/nrfx_lpcomp.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_lpcomp.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\nrfx_lpcomp.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
@@ -45,7 +45,7 @@ Output/Debug/Obj/template_pca10056/nrfx_lpcomp.o: \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_lpcomp.h \
  ../../../../../../modules/nrfx/hal/nrf_lpcomp.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\prs/nrfx_prs.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\modules\nrfx\drivers\src\prs/nrfx_prs.h \
  ../../../../../../integration/nrfx/nrfx_log.h \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
