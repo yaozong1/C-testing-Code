@@ -50,6 +50,24 @@
 #include "nrf_drv_spi.h"
 #include "nrfx_spim.h"
 
+/************************************************
+/
+/ CAN MCP2515 Include Files
+/
+*************************************************/
+#include <stdbool.h>
+#include <stdint.h>
+#include "nrf.h"
+#include "nordic_common.h"
+#include "boards.h"
+
+#include "app_timer.h"
+#include "nrf_drv_clock.h"
+#include "nrf_gpio.h"
+
+#include "yz_timer.h"
+
+
 
 //NBIOT
 #define _AT_CHECK nrf_libuarte_async_tx(&libuarte, text, text_size);
@@ -509,7 +527,8 @@ return 0;
 
 int main(void)
 {   
-  
+
+    
     uint32_t count = 0;
  
     ret_code_t ret = nrf_drv_clock_init();
@@ -521,6 +540,7 @@ int main(void)
     APP_ERROR_CHECK(err_code);
 
     NRF_LOG_DEFAULT_BACKENDS_INIT();
+
 
     nrf_libuarte_async_config_t nrf_libuarte_async_config = {
             .tx_pin     = TX_PIN_NUMBER,
@@ -545,6 +565,7 @@ int main(void)
 
 
 //Modem&iic Enable
+start_timer();
 enable_3v3();
 Modem_Pwron();
 nrf_delay_ms(500);
@@ -609,6 +630,9 @@ NRF_LOG_FLUSH();
 
 
 qspi_test();
+
+  //LED ENABLE
+
 
 
 

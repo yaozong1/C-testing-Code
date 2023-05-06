@@ -115,4 +115,5 @@ Output/Debug/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/drivers/include/nrfx_spi.h \
  ../../../../../../modules/nrfx/hal/nrf_spi.h MCP2515/mcp_can_dfs.h \
  ../../../../../../external/segger_rtt/SEGGER_RTT.h \
- ../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h
+ ../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\yz_timer.h
