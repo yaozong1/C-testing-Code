@@ -6,10 +6,18 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
+#include "nrf_libuarte_async.h"
+#include "sdk_config.h"
+#include "boards.h"
 
 
-
+extern void uart_init_elevate(void);
 extern int isPresent( uint8_t *line,  uint8_t *word);
+
+extern bool AT_Match(void);
+extern void Modem_Pwron(void);
+extern bool set_MQTT();
+extern bool SIM_DET();
 
 //Modem AT COMMAND START
 
@@ -102,6 +110,8 @@ static uint8_t GNSS_POW_ON_size = sizeof(GNSS_POW_ON);
 
 static uint8_t GNSS_SIG[] = "AT+CGNSINF\r\n";
 static uint8_t GNSS_SIG_size = sizeof(GNSS_SIG);
+
+
 
 #endif
 
