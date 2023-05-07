@@ -926,7 +926,7 @@
 #endif
 // <o> GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS - Number of lower power input pins 
 #ifndef GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS
-#define GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS 4
+#define GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS 6
 #endif
 
 // <o> GPIOTE_CONFIG_IRQ_PRIORITY  - Interrupt priority
@@ -1239,7 +1239,7 @@
 // <196609=> External Full Swing 
 
 #ifndef NRFX_CLOCK_CONFIG_LF_SRC
-#define NRFX_CLOCK_CONFIG_LF_SRC 1
+#define NRFX_CLOCK_CONFIG_LF_SRC 0
 #endif
 
 // <o> NRFX_CLOCK_CONFIG_IRQ_PRIORITY  - Interrupt priority
@@ -1456,7 +1456,7 @@
 #endif
 // <o> NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS - Number of lower power input pins 
 #ifndef NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS
-#define NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS 1
+#define NRFX_GPIOTE_CONFIG_NUM_OF_LOW_POWER_EVENTS 6
 #endif
 
 // <o> NRFX_GPIOTE_CONFIG_IRQ_PRIORITY  - Interrupt priority
@@ -1477,7 +1477,7 @@
 // <e> NRFX_GPIOTE_CONFIG_LOG_ENABLED - Enables logging in the module.
 //==========================================================
 #ifndef NRFX_GPIOTE_CONFIG_LOG_ENABLED
-#define NRFX_GPIOTE_CONFIG_LOG_ENABLED 0
+#define NRFX_GPIOTE_CONFIG_LOG_ENABLED 1
 #endif
 // <o> NRFX_GPIOTE_CONFIG_LOG_LEVEL  - Default Severity level
  
@@ -4259,7 +4259,7 @@
 // <196609=> External Full Swing 
 
 #ifndef CLOCK_CONFIG_LF_SRC
-#define CLOCK_CONFIG_LF_SRC 1
+#define CLOCK_CONFIG_LF_SRC 0
 #endif
 
 // <q> CLOCK_CONFIG_LF_CAL_ENABLED  - Calibration enable for LF Clock Source
@@ -10278,7 +10278,7 @@
 // <4294967295=> Not connected 
 
 #ifndef MCP2515_PIN_INT
-#define MCP2515_PIN_INT 41
+#define MCP2515_PIN_INT 28
 #endif
 
 
@@ -10340,7 +10340,7 @@
 // <4294967295=> Not connected 
 
 #ifndef SPI_SCK_PIN
-#define SPI_SCK_PIN 13
+#define SPI_SCK_PIN 15
 #endif
 
 // <o> SPI_MISO_PIN  - Pin number
@@ -10396,7 +10396,7 @@
 // <4294967295=> Not connected 
 
 #ifndef SPI_MISO_PIN
-#define SPI_MISO_PIN 14
+#define SPI_MISO_PIN 16
 #endif
 
 // <o> SPI_MOSI_PIN  - Pin number
@@ -10452,7 +10452,7 @@
 // <4294967295=> Not connected 
 
 #ifndef SPI_MOSI_PIN
-#define SPI_MOSI_PIN 15
+#define SPI_MOSI_PIN 17
 #endif
 
 // <o> SPI_SS_PIN  - Pin number
@@ -10543,7 +10543,7 @@
 // <e> NRF_SDH_BLE_ENABLED - nrf_sdh_ble - SoftDevice BLE event handler
 //==========================================================
 #ifndef NRF_SDH_BLE_ENABLED
-#define NRF_SDH_BLE_ENABLED 1
+#define NRF_SDH_BLE_ENABLED 0
 #endif
 // <h> BLE Stack configuration - Stack configuration parameters
 
@@ -11023,7 +11023,7 @@
 // <e> NRF_SDH_ENABLED - nrf_sdh - SoftDevice handler
 //==========================================================
 #ifndef NRF_SDH_ENABLED
-#define NRF_SDH_ENABLED 1
+#define NRF_SDH_ENABLED 0
 #endif
 // <h> Dispatch model 
 
@@ -11191,7 +11191,7 @@
 // <e> NRF_SDH_SOC_ENABLED - nrf_sdh_soc - SoftDevice SoC event handler
 //==========================================================
 #ifndef NRF_SDH_SOC_ENABLED
-#define NRF_SDH_SOC_ENABLED 1
+#define NRF_SDH_SOC_ENABLED 0
 #endif
 // <h> SoC Observers - Observers and priority levels
 

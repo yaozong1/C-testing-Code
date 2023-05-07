@@ -178,6 +178,7 @@
     </folder>
     <folder Name="Board Support">
       <file file_name="../../../../../../components/libraries/bsp/bsp.c" />
+      <file file_name="MCP2515/mcp_can.c" />
     </folder>
     <folder Name="nRF_Crypto backend nRF HW">
       <file file_name="../../../../../../components/libraries/crypto/backend/nrf_hw/nrf_hw_backend_init.c" />
@@ -531,9 +532,6 @@
       <file file_name="../../../../../../modules/nrfx/mdk/ses_startup_nrf52840.s" />
       <file file_name="../../../../../../modules/nrfx/mdk/ses_startup_nrf_common.s" />
       <file file_name="../../../../../../modules/nrfx/mdk/system_nrf52840.c" />
-      <file file_name="MCP2515/mcp_can.c">
-        <configuration Name="Debug" build_exclude_from_build="No" />
-      </file>
     </folder>
     <folder Name="UTF8/UTF16 converter">
       <file file_name="../../../../../../external/utf_converter/utf.c" />
@@ -571,6 +569,7 @@
       <configuration Name="Debug" build_exclude_from_build="No" />
       <file file_name="src/IIC_LIS.c" />
       <file file_name="src/qspi_flash.c" />
+      <file file_name="src/can_bus_elevate.c" />
     </folder>
     <folder Name="APP_TIMER">
       <file file_name="../../../yz_timer.c" />

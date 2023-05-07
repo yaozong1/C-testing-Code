@@ -15,6 +15,25 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
+/************************************************
+/
+/ CAN MCP2515 Include Files
+/
+*************************************************/
+
+
+
+#define SPI_SS_PIN_2        33
+#define MCP2515_PIN_INT_2   3
+#define SPI_MISO_PIN_2      13
+#define SPI_MOSI_PIN_2      14
+#define SPI_SCK_PIN_2       12
+
+
+
+
+
+
 static volatile bool spi_xfer_done = true;
 mcp_can_t m_mcp_can;
 
@@ -66,13 +85,18 @@ void mcp_spi_init()
     uint32_t err_code = NRF_SUCCESS;
 
     mcp_can_setcs(SPI_SS_PIN);
+    NRF_LOG_INFO("hello1.");
+    NRF_LOG_FLUSH();
 
     nrf_drv_gpiote_in_config_t mcp2515_int_config = GPIOTE_CONFIG_IN_SENSE_TOGGLE(true);
     mcp2515_int_config.pull = NRF_GPIO_PIN_PULLUP;
+    NRF_LOG_INFO("hello2.");
+    NRF_LOG_FLUSH();
 
     err_code = nrf_drv_gpiote_in_init(MCP2515_PIN_INT, &mcp2515_int_config, mcp2515_int_pin_handler);
     APP_ERROR_CHECK(err_code);
-
+    NRF_LOG_INFO("hello3.");
+    NRF_LOG_FLUSH();
     nrf_drv_gpiote_in_event_enable(MCP2515_PIN_INT, true);
 
     nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
@@ -86,6 +110,52 @@ void mcp_spi_init()
 
     err_code = nrf_drv_spi_init(&can_spi, &spi_config, spi_can_event_handler, NULL);
     APP_ERROR_CHECK(err_code);
+    NRF_LOG_INFO("hello4.");
+    NRF_LOG_FLUSH();
+
+    #if MCP2515_DEBUG_MODE
+        NRF_LOG_DEBUG("mcp_spi_init complete"); 
+    #endif
+}
+
+void mcp_spi_uninit(void)
+{
+  //  err_code = nrf_drv_spi_init(&can_spi, &spi_config, spi_can_event_handler, NULL);
+ //   nrf_gpio_pin_set(SPI_SS_PIN);
+    nrf_drv_spi_uninit(&can_spi);
+}
+
+void mcp_spi_init2()
+{
+    uint32_t err_code = NRF_SUCCESS;
+    mcp_can_setcs(SPI_SS_PIN_2);
+    NRF_LOG_INFO("hello5.");
+    NRF_LOG_FLUSH();
+
+    nrf_drv_gpiote_in_config_t mcp2515_int_config = GPIOTE_CONFIG_IN_SENSE_TOGGLE(true);
+    mcp2515_int_config.pull = NRF_GPIO_PIN_PULLUP;
+    NRF_LOG_INFO("hello6.");
+    NRF_LOG_FLUSH();
+
+    err_code = nrf_drv_gpiote_in_init(MCP2515_PIN_INT_2, &mcp2515_int_config, mcp2515_int_pin_handler);
+    APP_ERROR_CHECK(err_code);
+    NRF_LOG_INFO("hello7.");
+    NRF_LOG_FLUSH();
+    nrf_drv_gpiote_in_event_enable(MCP2515_PIN_INT_2, true);
+
+    nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG;
+    spi_config.frequency = NRF_DRV_SPI_FREQ_125K;
+    spi_config.mode = NRF_DRV_SPI_MODE_0;
+    spi_config.ss_pin   = SPI_SS_PIN_2;
+    spi_config.miso_pin = SPI_MISO_PIN_2;
+    spi_config.mosi_pin = SPI_MOSI_PIN_2;
+    spi_config.sck_pin  = SPI_SCK_PIN_2;
+    spi_config.bit_order = NRF_DRV_SPI_BIT_ORDER_MSB_FIRST;
+
+    err_code = nrf_drv_spi_init(&can_spi, &spi_config, spi_can_event_handler, NULL);
+    APP_ERROR_CHECK(err_code);
+    NRF_LOG_INFO("hello8.");
+    NRF_LOG_FLUSH();
 
     #if MCP2515_DEBUG_MODE
         NRF_LOG_DEBUG("mcp_spi_init complete"); 
@@ -113,17 +183,10 @@ void mcp2515_reset()
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_length, NULL, 0));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+        while (!spi_xfer_done)
         {
             __WFE();
         }
-    }
 
     mcp2515_unselect();
 }
@@ -144,18 +207,21 @@ uint8_t mcp2515_readRegister(const uint8_t address)
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_tx_length, m_rx_buf, m_rx_length));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+    //while (!spi_xfer_done)
+    //{
+    //    if (nrf_sdh_is_enabled())
+    //    {
+    //        sd_app_evt_wait();
+    //    }
+    //    else
+    //    {
+    //        __WFE();
+    //    }
+    //}
+        while (!spi_xfer_done)
         {
             __WFE();
         }
-    }
-
     mcp2515_unselect();
 
     return m_rx_buf[2];  
@@ -179,17 +245,22 @@ void  mcp2515_readRegisterS(const uint8_t address, uint8_t values[], const uint8
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_tx_length, m_rx_buf, m_rx_length));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+    //while (!spi_xfer_done)
+    //{
+    //    if (nrf_sdh_is_enabled())
+    //    {
+    //        sd_app_evt_wait();
+    //    }
+    //    else
+    //    {
+    //        __WFE();
+    //    }
+    //}  
+
+            while (!spi_xfer_done)
         {
             __WFE();
         }
-    }  
 
     for (i=0; i<n && i<CAN_MAX_CHAR_IN_MESSAGE-2; i++)
     {
@@ -212,17 +283,10 @@ void  mcp2515_setRegister(const uint8_t address, const uint8_t value)
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_length, NULL, 0));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+        while (!spi_xfer_done)
         {
             __WFE();
         }
-    }
 
     mcp2515_unselect();
 }
@@ -243,18 +307,21 @@ void mcp2515_setRegisterS(const uint8_t address, const uint8_t values[], const u
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_tx_length, NULL, 0));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+    //while (!spi_xfer_done)
+    //{
+    //    if (nrf_sdh_is_enabled())
+    //    {
+    //        sd_app_evt_wait();
+    //    }
+    //    else
+    //    {
+    //        __WFE();
+    //    }
+    //}
+          while (!spi_xfer_done)
         {
             __WFE();
         }
-    }
-
     nrf_free(m_tx_buf);
 
     mcp2515_unselect();
@@ -271,17 +338,10 @@ void  mcp2515_modifyRegister(const uint8_t address, const uint8_t mask, const ui
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_length, NULL, 0));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+        while (!spi_xfer_done)
         {
             __WFE();
-        }
-    }        
+        }       
 
     mcp2515_unselect();
 }
@@ -301,17 +361,21 @@ uint8_t  mcp2515_readStatus(void)
 
     APP_ERROR_CHECK(nrf_drv_spi_transfer(&can_spi, m_tx_buf, m_length, m_rx_buf, m_length));
 
-    while (!spi_xfer_done)
-    {
-        if (nrf_sdh_is_enabled())
-        {
-            sd_app_evt_wait();
-        }
-        else
+    //while (!spi_xfer_done)
+    //{
+    //    if (nrf_sdh_is_enabled())
+    //    {
+    //        sd_app_evt_wait();
+    //    }
+    //    else
+    //    {
+    //        __WFE();
+    //    }
+    //}   
+            while (!spi_xfer_done)
         {
             __WFE();
         }
-    }   
 
     mcp2515_unselect();
 

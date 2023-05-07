@@ -24,7 +24,7 @@ void twi_init(void)
     .scl   = 27,
     .sda   = 26,
     .frequency = NRF_DRV_TWI_FREQ_100K,
-    .interrupt_priority = APP_IRQ_PRIORITY_HIGH,
+    .interrupt_priority = APP_IRQ_PRIORITY_LOWEST,
     .clear_bus_init  = false,
     .hold_bus_uninit = false
 
@@ -52,6 +52,11 @@ nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,8),0);
 //3v3 ENABLE
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,6));     //doesn't work on Roam_PCBA
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,6),0);
+
+nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,1));//CAN
+nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
+
+nrf_delay_ms(1000);
 
 }
 

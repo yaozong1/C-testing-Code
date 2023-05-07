@@ -46,6 +46,10 @@
 #include "nrf_drv_spi.h"
 #include "nrfx_spim.h"
 
+#include "can_bus_elevate.h"
+#include "nrf_drv_gpiote.h"
+#include "nrf_gpio.h"
+
 
 int Modem_test_result = 0;
 
@@ -62,21 +66,39 @@ bool result_aliyun = 0 ;
 
  uint8_t start[] = "START";
 
+
+
 int main(void)
 {   
-    ret_code_t ret = nrf_drv_clock_init();
-    APP_ERROR_CHECK(ret);
-  
-    nrf_drv_clock_lfclk_request(NULL);
 
     ret_code_t err_code = NRF_LOG_INIT(NULL);
     APP_ERROR_CHECK(err_code);
 
     NRF_LOG_DEFAULT_BACKENDS_INIT();
 
-    uart_init_elevate();
+
+
+    
+    err_code = nrf_drv_gpiote_init();
+    APP_ERROR_CHECK(err_code);
+
+    
+
+    
+    ret_code_t ret = nrf_drv_clock_init();
+    APP_ERROR_CHECK(ret);
+  
+    nrf_drv_clock_lfclk_request(NULL);
+
+    
 
     enable_3v3();
+
+    can_bus_start();
+
+    twi_init();
+
+    uart_init_elevate();  
 
     start_timer();
     
@@ -84,7 +106,7 @@ int main(void)
    
     result_modem = AT_Match();
     nrf_delay_ms(500);
-    twi_init();
+    
     nrf_delay_ms(500);
     NRF_LOG_INFO("IIC testing start....");
     nrf_delay_ms(50);
@@ -181,6 +203,14 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
          {
          NRF_LOG_INFO("Testing start\r\n");
          nrf_delay_ms(2000);
+                uint32_t can_idd = 0x0005;
+                uint8_t ext_send;
+                uint8_t buff[8] = {1,2,3,4,5,6,7,8};                
+                uint8_t lens = 0x08;
+
+                mcp_can_send_msg(can_idd, ext_send, lens, buff);
+                nrf_delay_ms(2000);        
+
 
          }
        __WFE();

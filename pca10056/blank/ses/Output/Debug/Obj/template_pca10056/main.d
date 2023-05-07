@@ -117,4 +117,9 @@ Output/Debug/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/drivers/include/nrfx_spi.h \
  ../../../../../../modules/nrfx/hal/nrf_spi.h MCP2515/mcp_can_dfs.h \
  ../../../../../../external/segger_rtt/SEGGER_RTT.h \
- ../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h
+ ../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/src/can_bus_elevate.h \
+ ../../../../../../integration/nrfx/legacy/nrf_drv_gpiote.h \
+ ../../../../../../modules/nrfx/drivers/include/nrfx_gpiote.h \
+ ../../../../../../modules/nrfx/hal/nrf_gpiote.h \
+ ../../../../../../modules/nrfx/hal/nrf_gpio.h

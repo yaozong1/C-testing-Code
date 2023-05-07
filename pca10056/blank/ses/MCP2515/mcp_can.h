@@ -11,6 +11,7 @@
 #include "nordic_common.h"
 #include "mcp_can_dfs.h"
 
+
 #define MAX_CHAR_IN_MESSAGE 8
 
 typedef struct
@@ -24,6 +25,10 @@ typedef struct
 	
 void mcp_can_setcs(uint8_t cs);
 void mcp_spi_init(void);
+void mcp_spi_init2(void);
+
+void mcp_spi_uninit(void);
+
 uint8_t mcp_can_begin(uint8_t speedset, const uint8_t clockset);
 uint8_t mcp_can_send_msg(uint32_t id, uint8_t ext, uint8_t len, uint8_t *buf);
 uint8_t mcp_can_read_msg(uint32_t *id, uint8_t *len, uint8_t buf[]);

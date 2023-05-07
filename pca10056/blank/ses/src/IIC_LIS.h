@@ -21,7 +21,7 @@ extern bool Lis_test(void);
 
 //iic define
 
-#define TWI_INSTANCE_ID     0
+#define TWI_INSTANCE_ID     1
 static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID);
 //iic define done
 
