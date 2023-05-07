@@ -10,6 +10,8 @@
 #include "sdk_config.h"
 #include "boards.h"
 
+extern uint8_t Uart_AT[1000];
+
 
 extern void uart_init_elevate(void);
 extern int isPresent( uint8_t *line,  uint8_t *word);

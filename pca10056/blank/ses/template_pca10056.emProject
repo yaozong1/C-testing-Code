@@ -565,26 +565,12 @@
           c_user_include_directories=".;D:\\SDK_nRF\\nRF5_SDK_17.1.0_ddde560\\components\\libraries\\libuarte\\" />
       </file>
       <file file_name="../config/sdk_config.h" />
-      <file file_name="mcp_can.c">
-        <configuration Name="Release" build_exclude_from_build="Yes" />
-        <configuration Name="Debug" build_exclude_from_build="Yes" />
-      </file>
-      <file file_name="mcp_can.h">
-        <configuration Name="Release" build_exclude_from_build="Yes" />
-        <configuration Name="Debug" build_exclude_from_build="Yes" />
-      </file>
-      <file file_name="mcp_can_dfs.h">
-        <configuration Name="Release" build_exclude_from_build="Yes" />
-        <configuration Name="Debug" build_exclude_from_build="Yes" />
-      </file>
       <file file_name="src/uartfunction.c">
         <configuration Name="Debug" build_exclude_from_build="No" />
       </file>
       <configuration Name="Debug" build_exclude_from_build="No" />
       <file file_name="src/IIC_LIS.c" />
-      <file file_name="src/uart_c.c">
-        <configuration Name="Debug" build_exclude_from_build="Yes" />
-      </file>
+      <file file_name="src/qspi_flash.c" />
     </folder>
     <folder Name="APP_TIMER">
       <file file_name="../../../yz_timer.c" />

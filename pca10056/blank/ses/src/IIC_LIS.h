@@ -16,6 +16,7 @@
 
 extern void twi_init(void);
 extern void enable_3v3(void);
+extern bool Lis_test(void);
 
 
 //iic define

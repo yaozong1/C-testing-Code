@@ -9,6 +9,11 @@
 #include "nrf_gpio.h"
 #include "yz_timer.h"
 
+#include "nrf_log.h"
+#include "nrf_delay.h"
+#include "nrf_log_ctrl.h"
+#include "nrf_log_default_backends.h"
+
 
 #define LED_INTERVAL1 APP_TIMER_TICKS(500)
 //#define LED_INTERVAL2 APP_TIMER_TICKS(500)
@@ -34,6 +39,7 @@ static void app_timer_handler(void * p_context)
 {
 
   nrf_gpio_pin_toggle(LED_Pin1);
+  NRF_LOG_FLUSH();
 
 }
 

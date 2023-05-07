@@ -62,11 +62,8 @@ bool status_modem;
 
 
 
-
-
-
 //PERSIONAL FUNCTION DECLARATION END
-extern uint8_t Uart_AT[1000];
+uint8_t Uart_AT[1000];
 
 NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
 
@@ -363,6 +360,10 @@ _SUB_TOP;       nrf_delay_ms(500);
 _PUB_T_TOP;     nrf_delay_ms(500);
 _SEND_CHECK;    
 
+NRF_LOG_INFO("Waiting for responding");
+nrf_delay_ms(3000);
+
+
 for(i=1; i <=10;i++) //Added timeout for waiting
 {
 if(isPresent(Uart_AT,  SMSUB)==1)
@@ -374,7 +375,9 @@ nrf_delay_ms(500);
 
 if(isPresent(Uart_AT,  MATCH)==1)
 {
+nrf_delay_ms(50);
 NRF_LOG_INFO("MQTT test done");
+nrf_delay_ms(500);
 return 1;
 
 }

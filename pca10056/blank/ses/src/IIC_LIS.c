@@ -2,9 +2,19 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "IIC_LIS.h"
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "nrf_libuarte_async.h"
+#include "nrf_drv_clock.h"
+#include <bsp.h>
+#include "nrf_log.h"
+#include "nrf_delay.h"
+#include "nrf_log_ctrl.h"
+#include "nrf_log_default_backends.h"
 
-
-
+uint8_t lis_address = 0x19;
+uint8_t lis_sample_data = 0x7F;
 
 void twi_init(void)
 {
@@ -40,7 +50,28 @@ nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,8));
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,8),0);
 
 //3v3 ENABLE
-nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,6));
-nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,6),1);
+nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,6));     //doesn't work on Roam_PCBA
+nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,6),0);
 
+}
+
+
+bool Lis_test(void)
+{
+//IIC ACK TEST
+
+ret_code_t err_code;
+err_code = nrf_drv_twi_rx(&m_twi, lis_address, &lis_sample_data, sizeof(lis_sample_data));
+
+if(err_code == NRF_SUCCESS)
+  {
+  
+  NRF_LOG_INFO("Successfully detected a device at address: 0x%x", lis_address);
+   return 1;
+  
+
+  }
+else NRF_LOG_WARNING("Cannot detected a device at address");
+
+//IIC ACK TEST DONE
 }

@@ -1,5 +1,5 @@
-Output/Debug/Obj/template_pca10056/main.o: \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\main.c \
+Output/Debug/Obj/template_pca10056/qspi_flash.o: \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\src\qspi_flash.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
@@ -84,8 +84,8 @@ Output/Debug/Obj/template_pca10056/main.o: \
  ../../../../../../components/libraries/memobj/nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
- ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/src/uartfunction.h \
- ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/src/IIC_LIS.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\src\uartfunction.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\src\IIC_LIS.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_twi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twim.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twi_twim.h \
@@ -95,26 +95,4 @@ Output/Debug/Obj/template_pca10056/main.o: \
  ../../../../../../integration/nrfx/legacy/nrf_drv_qspi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_qspi.h \
  ../../../../../../modules/nrfx/hal/nrf_qspi.h \
- ../../../../../../components/softdevice/s140/headers/nrf_sdm.h \
- ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
- ../../../../../../components/softdevice/s140/headers/nrf_error.h \
- ../../../../../../components/softdevice/s140/headers/nrf_error_sdm.h \
- ../../../../../../components/softdevice/s140/headers/nrf_soc.h \
- ../../../../../../components/softdevice/s140/headers/nrf_error_soc.h \
- D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\yz_timer.h \
- ../../../../../../components/libraries/timer/app_timer.h \
- ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
- ../../../../../../components/softdevice/common/nrf_sdh.h \
- ../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.h \
- ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
- ../../../../../../components/libraries/fds/fds.h \
- ../../../../../../components/libraries/pwr_mgmt/nrf_pwr_mgmt.h \
- C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/inttypes.h \
- MCP2515/mcp_can.h \
- ../../../../../../integration/nrfx/legacy/nrf_drv_spi.h \
- ../../../../../../modules/nrfx/drivers/include/nrfx_spim.h \
- ../../../../../../modules/nrfx/hal/nrf_spim.h \
- ../../../../../../modules/nrfx/drivers/include/nrfx_spi.h \
- ../../../../../../modules/nrfx/hal/nrf_spi.h MCP2515/mcp_can_dfs.h \
- ../../../../../../external/segger_rtt/SEGGER_RTT.h \
- ../../../../../../external/segger_rtt/SEGGER_RTT_Conf.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\src\qspi_flash.h
