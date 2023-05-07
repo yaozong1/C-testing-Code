@@ -4,11 +4,11 @@ Output/Debug/Obj/template_pca10056/main.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
- ../../../../../../components\libraries\libuarte/nrf_libuarte_async.h \
+ ../../../../../../components/libraries\libuarte/nrf_libuarte_async.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
@@ -56,7 +56,7 @@ Output/Debug/Obj/template_pca10056/main.o: \
  ../../../../../../modules/nrfx/hal/nrf_timer.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_rtc.h \
  ../../../../../../modules/nrfx/hal/nrf_rtc.h \
- ../../../../../../components\libraries\libuarte/nrf_libuarte_drv.h \
+ ../../../../../../components/libraries\libuarte/nrf_libuarte_drv.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_clock.h \
@@ -84,7 +84,8 @@ Output/Debug/Obj/template_pca10056/main.o: \
  ../../../../../../components/libraries/memobj/nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
- uartfunction.h IIC_LIS.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/src/uartfunction.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/src/IIC_LIS.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_twi.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twim.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_twi_twim.h \

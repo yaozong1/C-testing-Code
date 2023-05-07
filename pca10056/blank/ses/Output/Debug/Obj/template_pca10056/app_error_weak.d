@@ -24,7 +24,7 @@ Output/Debug/Obj/template_pca10056/app_error_weak.o: \
  ../../../../../../components/libraries/log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_os.h \

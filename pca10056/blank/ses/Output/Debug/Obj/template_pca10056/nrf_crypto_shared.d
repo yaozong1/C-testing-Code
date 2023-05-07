@@ -1,6 +1,6 @@
 Output/Debug/Obj/template_pca10056/nrf_crypto_shared.o: \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_shared.c \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\crypto\nrf_crypto_shared.h \
  ../../../../../../components/libraries/util/sdk_macros.h \

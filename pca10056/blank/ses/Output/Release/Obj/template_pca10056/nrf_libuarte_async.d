@@ -1,7 +1,7 @@
 Output/Release/Obj/template_pca10056/nrf_libuarte_async.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_async.c \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_async.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_async.c \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_async.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
@@ -56,7 +56,7 @@ Output/Release/Obj/template_pca10056/nrf_libuarte_async.o: \
  ../../../../../../modules/nrfx/hal/nrf_timer.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_rtc.h \
  ../../../../../../modules/nrfx/hal/nrf_rtc.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_drv.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\libuarte\nrf_libuarte_drv.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../modules/nrfx/hal/nrf_uarte.h \
  ../../../../../../components/libraries/util/app_error.h \

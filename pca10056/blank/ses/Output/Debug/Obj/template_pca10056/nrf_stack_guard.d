@@ -20,7 +20,7 @@ Output/Debug/Obj/template_pca10056/nrf_stack_guard.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\stack_guard\nrf_stack_guard.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/app_util.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stddef.h \

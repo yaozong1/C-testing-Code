@@ -1,7 +1,7 @@
 #ifndef UARTFUNCTION_H
 #define UARTFUNCTION_H
 
-#endif
+
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -103,6 +103,6 @@ static uint8_t GNSS_POW_ON_size = sizeof(GNSS_POW_ON);
 static uint8_t GNSS_SIG[] = "AT+CGNSINF\r\n";
 static uint8_t GNSS_SIG_size = sizeof(GNSS_SIG);
 
-
+#endif
 
 //Modem AT COMMAND END

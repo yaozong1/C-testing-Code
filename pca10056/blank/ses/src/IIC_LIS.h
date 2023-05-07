@@ -1,4 +1,8 @@
 //For iic include
+
+#ifndef IIC_LIS_H
+#define IIC_LIS_H
+
 #include "boards.h"
 #include "app_util_platform.h"
 #include "app_error.h"
@@ -19,3 +23,5 @@ extern void enable_3v3(void);
 #define TWI_INSTANCE_ID     0
 static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID);
 //iic define done
+
+#endif

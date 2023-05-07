@@ -1,6 +1,6 @@
 Output/Debug/Obj/template_pca10056/SEGGER_RTT_Syscalls_SES.o: \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\segger_rtt\SEGGER_RTT_Syscalls_SES.c \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\segger_rtt\SEGGER_RTT.h \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../../../../../../components/libraries/util/nordic_common.h \

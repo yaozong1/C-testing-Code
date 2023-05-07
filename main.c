@@ -4,10 +4,8 @@
 #include "nrf_libuarte_async.h"
 #include "nrf_drv_clock.h"
 #include <bsp.h>
-
 #include "nrf_log.h"
 #include "nrf_delay.h"
-
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 #include "nrf_queue.h"
@@ -332,7 +330,6 @@ void AT_Match(void)//Define a AT respond function
    nrf_delay_ms(1000);
    NRF_LOG_FLUSH();
    
-  
 }
 result_modem = 1;
 }
@@ -565,6 +562,7 @@ int main(void)
 
 
 //Modem&iic Enable
+
 start_timer();
 enable_3v3();
 Modem_Pwron();

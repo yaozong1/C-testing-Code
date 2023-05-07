@@ -1,9 +1,9 @@
 Output/Release/Obj/template_pca10056/mcp_can.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\MCP2515\mcp_can.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\MCP2515\mcp_can.c \
  ../../../../../../components/libraries/delay/nrf_delay.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stddef.h \
@@ -60,8 +60,8 @@ Output/Release/Obj/template_pca10056/mcp_can.o: \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/log/nrf_log_types.h \
  ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\MCP2515\mcp_can.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\MCP2515\mcp_can_dfs.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\MCP2515\mcp_can.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\MCP2515\mcp_can_dfs.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/inttypes.h \
  ../../../../../../integration/nrfx/legacy/nrf_drv_gpiote.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_gpiote.h \

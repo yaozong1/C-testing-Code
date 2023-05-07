@@ -1,16 +1,16 @@
 Output/Release/Obj/template_pca10056/app_usbd_msc.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\msc\app_usbd_msc.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\pca10056\blank\ses\src\app_usbd_msc.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
- ../config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_os.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../components/libraries/util/app_util.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stddef.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
@@ -67,15 +67,15 @@ Output/Release/Obj/template_pca10056/app_usbd_msc.o: \
  ../../../../../../components/libraries/usbd/app_usbd_descriptor.h \
  ../../../../../../components/libraries/usbd/app_usbd_langid.h \
  ../../../../../../components/libraries/usbd/app_usbd_class_base.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\msc\app_usbd_msc.h \
- ../../../../../../components/libraries/block_dev/nrf_block_dev.h \
+ ../../../../../../components/libraries/usbd/class/msc/app_usbd_msc.h \
+ ../../../../../../components\libraries\block_dev/nrf_block_dev.h \
  ../../../../../../components/libraries/usbd/app_usbd_class_base.h \
  ../../../../../../components/libraries/usbd/app_usbd_core.h \
  ../../../../../../components/libraries/usbd/app_usbd_descriptor.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\msc\app_usbd_msc_types.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\msc\app_usbd_msc_desc.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\msc\app_usbd_msc_scsi.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\usbd\class\msc\app_usbd_msc_internal.h \
+ ../../../../../../components/libraries/usbd/class/msc/app_usbd_msc_types.h \
+ ../../../../../../components/libraries/usbd/class/msc/app_usbd_msc_desc.h \
+ ../../../../../../components/libraries/usbd/class/msc/app_usbd_msc_scsi.h \
+ ../../../../../../components/libraries/usbd/class/msc/app_usbd_msc_internal.h \
  ../../../../../../components/libraries/usbd/app_usbd_string_desc.h \
  ../../../../../../components/libraries/usbd/app_usbd.h \
  ../../../../../../components/libraries/delay/nrf_delay.h \

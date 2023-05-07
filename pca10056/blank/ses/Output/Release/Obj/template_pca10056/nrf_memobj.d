@@ -1,13 +1,13 @@
 Output/Release/Obj/template_pca10056/nrf_memobj.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.c \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\memobj\nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \

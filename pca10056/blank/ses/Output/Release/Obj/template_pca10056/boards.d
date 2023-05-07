@@ -1,10 +1,10 @@
 Output/Release/Obj/template_pca10056/boards.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\boards\boards.c \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\boards\boards.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\boards\boards.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\boards\boards.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stddef.h \
@@ -45,4 +45,4 @@ Output/Release/Obj/template_pca10056/boards.o: \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/sdk_resources.h \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\components\boards\pca10056.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\boards\pca10056.h

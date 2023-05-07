@@ -1,11 +1,11 @@
 Output/Release/Obj/template_pca10056/nrf_fprintf_format.o: \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf_format.c \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf_format.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/string.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/__crossworks.h \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_os.h \
@@ -29,5 +29,5 @@ Output/Release/Obj/template_pca10056/nrf_fprintf_format.o: \
  ../../../../../../components/libraries/util/nrf_assert.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdarg.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf.h \
- C:\NRFSDK\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf_format.h
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf.h \
+ D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\external\fprintf\nrf_fprintf_format.h

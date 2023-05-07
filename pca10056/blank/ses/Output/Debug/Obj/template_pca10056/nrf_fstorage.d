@@ -1,6 +1,6 @@
 Output/Debug/Obj/template_pca10056/nrf_fstorage.o: \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\fstorage\nrf_fstorage.c \
- ../../../../../../examples\My\ projects\C-testing-Code\pca10056\blank\config/sdk_config.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/config/sdk_config.h \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\components\libraries\fstorage\nrf_fstorage.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.68/include/stdbool.h \
