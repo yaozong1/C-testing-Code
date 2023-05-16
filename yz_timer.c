@@ -13,7 +13,7 @@
 #include "nrf_delay.h"
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
-
+#include "mcp_can.h"
 
 #define LED_INTERVAL1 APP_TIMER_TICKS(500)
 //#define LED_INTERVAL2 APP_TIMER_TICKS(500)
@@ -42,7 +42,6 @@ static void app_timer_handler(void * p_context)
   NRF_LOG_FLUSH();
 
 }
-
 /*
 static void app_timer_handler2(void * p_context)
 {

@@ -10278,7 +10278,7 @@
 // <4294967295=> Not connected 
 
 #ifndef MCP2515_PIN_INT
-#define MCP2515_PIN_INT 28
+#define MCP2515_PIN_INT 41
 #endif
 
 
@@ -10340,7 +10340,7 @@
 // <4294967295=> Not connected 
 
 #ifndef SPI_SCK_PIN
-#define SPI_SCK_PIN 15
+#define SPI_SCK_PIN 13
 #endif
 
 // <o> SPI_MISO_PIN  - Pin number
@@ -10396,7 +10396,7 @@
 // <4294967295=> Not connected 
 
 #ifndef SPI_MISO_PIN
-#define SPI_MISO_PIN 16
+#define SPI_MISO_PIN 14
 #endif
 
 // <o> SPI_MOSI_PIN  - Pin number
@@ -10452,7 +10452,7 @@
 // <4294967295=> Not connected 
 
 #ifndef SPI_MOSI_PIN
-#define SPI_MOSI_PIN 17
+#define SPI_MOSI_PIN 15
 #endif
 
 // <o> SPI_SS_PIN  - Pin number

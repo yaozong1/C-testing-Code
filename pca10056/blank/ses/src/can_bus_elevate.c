@@ -108,9 +108,9 @@ void can_bus_start(void)
 
 // bsp_board_init(BSP_INIT_LEDS);
     NRF_LOG_INFO("SPI example started.");
-    nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,1));//CAN
+    nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,0));//CAN
 
-    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
+    nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,0), 1);
     nrf_delay_ms(1000);//Give period to change the status
 
     NRF_LOG_FLUSH();
@@ -122,9 +122,9 @@ void can_bus_start(void)
     can_init();
  //   nrf_drv_gpiote_in_init(MCP2515_PIN_INT, &mcp2515_int_config, mcp2515_int_pin_handler);
     nrf_drv_gpiote_in_event_enable(MCP2515_PIN_INT, false);
-    nrf_drv_gpiote_in_uninit(MCP2515_PIN_INT);
-    mcp_spi_uninit();
-    can_init2();
+   // nrf_drv_gpiote_in_uninit(MCP2515_PIN_INT);
+   // mcp_spi_uninit();
+   // can_init2();
     //nrf_drv_gpiote_in_event_enable(MCP2515_PIN_INT_2, false);
     //nrf_drv_gpiote_in_uninit(MCP2515_PIN_INT_2);
     //mcp_spi_uninit();
