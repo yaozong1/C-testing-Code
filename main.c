@@ -266,8 +266,9 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
                 if ( buf[0] == 'b')
                 {
                 can_confirm = 1;
+                
                 NRF_LOG_INFO("   ESP32 Reviced confirmation \r\n");
-
+                 nrf_delay_ms(100);
                 }
             }
 
