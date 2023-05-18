@@ -15,7 +15,7 @@
 
 
 
-#define LED_Pin1 NRF_GPIO_PIN_MAP(1,12)
+#define WDT_WAVE NRF_GPIO_PIN_MAP(0,9)
 #define LED_Pin2 NRF_GPIO_PIN_MAP(1,7)
 
 extern  void timers_init(void);

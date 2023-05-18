@@ -557,11 +557,6 @@
       link_linker_script_file=""
       link_use_linker_script_file="No" />
     <folder Name="Application">
-      <file file_name="../../../main.c">
-        <configuration
-          Name="Common"
-          c_user_include_directories=".;D:\\SDK_nRF\\nRF5_SDK_17.1.0_ddde560\\components\\libraries\\libuarte\\" />
-      </file>
       <file file_name="../config/sdk_config.h" />
       <file file_name="src/uartfunction.c">
         <configuration Name="Debug" build_exclude_from_build="No" />
@@ -570,6 +565,11 @@
       <file file_name="src/IIC_LIS.c" />
       <file file_name="src/qspi_flash.c" />
       <file file_name="src/can_bus_elevate.c" />
+      <file file_name="../../../main.c">
+        <configuration
+          Name="Common"
+          c_user_include_directories=".;D:\\SDK_nRF\\nRF5_SDK_17.1.0_ddde560\\components\\libraries\\libuarte\\" />
+      </file>
     </folder>
     <folder Name="APP_TIMER">
       <file file_name="../../../yz_timer.c" />

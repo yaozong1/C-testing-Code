@@ -104,7 +104,7 @@ int main(void)
 
     enable_3v3();
 
-    can_bus_start();
+   // can_bus_start();
 
     twi_init();
 
@@ -243,44 +243,44 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
          //uint8_t lens = 0x08;
 
 
-         if(!can_confirm)
-     {
-         NRF_LOG_INFO("Send the result to ESP32 again\r\n");
-         mcp_can_send_msg(can_idd, ext_send, lens, buff);//CAN with testing reslut
-         nrf_delay_ms(5000);  
-          }
+     //    if(!can_confirm)
+     //{
+     //    NRF_LOG_INFO("Send the result to ESP32 again\r\n");
+     //    mcp_can_send_msg(can_idd, ext_send, lens, buff);//CAN with testing reslut
+     //    nrf_delay_ms(5000);  
+     //     }
                 
-        if (!nrf_gpio_pin_read(MCP2515_PIN_INT))
-      {         
-           // nrf_gpio_pin_clear(BSP_LED_3);
+     //   if (!nrf_gpio_pin_read(MCP2515_PIN_INT))
+     // {         
+     //      // nrf_gpio_pin_clear(BSP_LED_3);
             
-            if(CAN_MSGAVAIL == mcp_can_check_receive())
-            {
-                uint32_t can_id;
-                uint8_t buf[8];                
-                uint8_t len;
-                mcp_can_read_msg(&can_id, &len, buf);
-                NRF_LOG_INFO("CAN ID: %x\t Data length: %u\t Data:", can_id, len);
-                NRF_LOG_HEXDUMP_DEBUG(NRF_LOG_PUSH(buf), len);
-                NRF_LOG_FLUSH();
-                if ( buf[0] == 'b')
-                {
-                can_confirm = 1;
+     //       if(CAN_MSGAVAIL == mcp_can_check_receive())
+     //       {
+     //           uint32_t can_id;
+     //           uint8_t buf[8];                
+     //           uint8_t len;
+     //           mcp_can_read_msg(&can_id, &len, buf);
+     //           NRF_LOG_INFO("CAN ID: %x\t Data length: %u\t Data:", can_id, len);
+     //           NRF_LOG_HEXDUMP_DEBUG(NRF_LOG_PUSH(buf), len);
+     //           NRF_LOG_FLUSH();
+     //           if ( buf[0] == 'b')
+     //           {
+     //           can_confirm = 1;
                 
-                NRF_LOG_INFO("   ESP32 Reviced confirmation \r\n");
-                 nrf_delay_ms(100);
-                }
-            }
+     //           NRF_LOG_INFO("   ESP32 Reviced confirmation \r\n");
+     //            nrf_delay_ms(100);
+     //           }
+     //       }
 
-            nrf_delay_ms(1);
+     //       nrf_delay_ms(1);
 
-            }        
+     //       }        
                 
                 
 
 
   //       }
-  //     __WFE();
+       __WFE();
     
         } 
 
