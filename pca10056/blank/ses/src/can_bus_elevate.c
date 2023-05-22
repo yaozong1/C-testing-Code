@@ -18,6 +18,16 @@
 #include "can_bus_elevate.h"
 //#include "nrf_drv_clock.h"
 
+//-------CAN DEFINE--------//
+
+uint32_t can_idd = 0x055;
+uint8_t ext_send;
+uint8_t buff[8] = {'a',2,3,4,5,6,7,8};                
+uint8_t lens = 0x08;
+//bool can_confirm = 0;
+
+//-------CAN DEFINE--------//
+
 
 #define SPI_INSTANCE  0 /**< SPI instance index. */
  const nrf_drv_spi_t spi = NRF_DRV_SPI_INSTANCE(SPI_INSTANCE);  /**< SPI instance. */
@@ -132,3 +142,62 @@ void can_bus_start(void)
 
 
 }
+
+int can_send_receive()
+{
+bool can_confirm = 0;
+int i;
+
+for(i=1; i<=50; i++) //add timeout for can sync
+ {
+
+if(!can_confirm)
+     {
+         NRF_LOG_INFO("Send the result to ESP32 again\r\n");
+         mcp_can_send_msg(can_idd, ext_send, lens, buff);//CAN with testing reslut
+         nrf_delay_ms(2000);  
+          }
+                
+        if (!nrf_gpio_pin_read(MCP2515_PIN_INT))
+      {         
+           // nrf_gpio_pin_clear(BSP_LED_3);
+            
+            if(CAN_MSGAVAIL == mcp_can_check_receive())
+             {
+                uint32_t can_id;
+                uint8_t buf[8];                
+                uint8_t len;
+                mcp_can_read_msg(&can_id, &len, buf);
+                NRF_LOG_INFO("CAN ID: %x\t Data length: %u\t Data:", can_id, len);
+                NRF_LOG_HEXDUMP_DEBUG(NRF_LOG_PUSH(buf), len);
+                NRF_LOG_FLUSH();
+                if ( buf[0] == 'b')
+                 {
+                can_confirm = 1;
+               
+                
+                NRF_LOG_INFO("   ESP32 Reviced confirmation \r\n");
+                 nrf_delay_ms(100);
+                 i=10;
+                 return 1;
+                 
+                 }
+             }
+
+
+      }
+  
+  }
+ return 0 ;
+ 
+ }
+
+
+// \for(i=1; i <=10;i++) //Added timeout for waiting
+//{
+//if(isPresent(Uart_AT,  SMSUB)==1)
+//{
+//i=10;
+//}
+//nrf_delay_ms(500);
+//}
