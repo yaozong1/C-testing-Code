@@ -65,6 +65,14 @@ bool result_aliyun = 0 ;
 
 bool can_loop_result = 0 ;
 
+
+static uint32_t can_id_final = 0x56;
+static uint8_t  buff_final[8]={'c',2,3,4,5,6,7,8};
+static uint8_t  lens_final = 8;
+static uint8_t  can_confirm_final = 0;
+static uint8_t  ext_send_final = 0;
+
+
 uint8_t start[] = "START";
 
 
@@ -162,14 +170,14 @@ NRF_LOG_INFO("     MCU(nRF52840):            Passed \r\n");//Of course if passed
 
 if (result_modem == 1)
 {
-//  buff[1] = 11;
+  buff_final[1] = 11;
   NRF_LOG_INFO("     Modem(SIM7000G):          Passed \r\n");
 }
 
 else 
 {
   NRF_LOG_INFO("     Modem(SIM7000G):          Failed\r\n");
-//  buff[1] = 00;
+  buff_final[1] = 00;
 }
 
 
@@ -177,12 +185,12 @@ if (sim_testing_flag ==1)
  {
 if (sim_status == 1)
 {
-//  buff[2] = 11;
+  buff_final[2] = 11;
   NRF_LOG_INFO("     SIMCARD(SIM7000G):        Passed \r\n");
 }
 
 else 
-{// buff[2] = 00;
+{ buff_final[2] = 00;
   NRF_LOG_INFO("     SIMCARD(SIM7000G):        Failed\r\n");
 }
  }
@@ -191,12 +199,12 @@ if (aliyun_testing_FLAG ==1)
 {
 if (result_aliyun == 1)
   {
-// buff[3] = 11;
+ buff_final[3] = 11;
  NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Passed \r\n");
   }
 else 
   { 
-//  buff[3] = 00;
+  buff_final[3] = 00;
   NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Failed\r\n");
   }
  }
@@ -204,33 +212,33 @@ else
 
 if (result_motion_sensor == 1)
 {
-//buff[4] = 11;
+buff_final[4] = 11;
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
 }
 else 
 {
-//buff[4] = 00;
+buff_final[4] = 00;
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Failed\r\n");
 }
 if (result_qspi_flash == 1)
 {
-//buff[5] = 11;
+buff_final[5] = 11;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
 }
 else
 {
-//buff[5] = 00;
+buff_final[5] = 00;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Failed\r\n");
 }
 
 if (can_loop_result == 1)
 {
-
+buff_final[6] = 11;
 NRF_LOG_INFO("     CAN BUS(MCP25625):        Passed \r\n");
 }
 else
 {
-
+buff_final[5] = 00;
 NRF_LOG_INFO("     CAN BUS(MCP25625):        Failed\r\n");
 }
 
@@ -238,49 +246,42 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
 
     while (true)
     {
-         //if(isPresent(Uart_AT,  start)==1)
-         //{
-         //NRF_LOG_INFO("Testing start\r\n");
-         //nrf_delay_ms(2000);
-
-         //uint32_t can_idd = 0x0001;
-         //uint8_t ext_send;
-         //uint8_t buff[8] = {'a',2,3,4,5,6,7,8};                
-         //uint8_t lens = 0x08;
 
 
-     //    if(!can_confirm)
-     //{
-     //    NRF_LOG_INFO("Send the result to ESP32 again\r\n");
-     //    mcp_can_send_msg(can_idd, ext_send, lens, buff);//CAN with testing reslut
-     //    nrf_delay_ms(5000);  
-     //     }
+
+
+         if(!can_confirm_final)
+     {
+         NRF_LOG_INFO("Send the result to ESP32 again\r\n");
+         mcp_can_send_msg(can_id_final, ext_send_final, lens_final, buff_final);//CAN with testing reslut
+         nrf_delay_ms(5000);  
+          }
                 
-     //   if (!nrf_gpio_pin_read(MCP2515_PIN_INT))
-     // {         
-     //      // nrf_gpio_pin_clear(BSP_LED_3);
+        if (!nrf_gpio_pin_read(MCP2515_PIN_INT))
+      {         
+           // nrf_gpio_pin_clear(BSP_LED_3);
             
-     //       if(CAN_MSGAVAIL == mcp_can_check_receive())
-     //       {
-     //           uint32_t can_id;
-     //           uint8_t buf[8];                
-     //           uint8_t len;
-     //           mcp_can_read_msg(&can_id, &len, buf);
-     //           NRF_LOG_INFO("CAN ID: %x\t Data length: %u\t Data:", can_id, len);
-     //           NRF_LOG_HEXDUMP_DEBUG(NRF_LOG_PUSH(buf), len);
-     //           NRF_LOG_FLUSH();
-     //           if ( buf[0] == 'b')
-     //           {
-     //           can_confirm = 1;
+            if(CAN_MSGAVAIL == mcp_can_check_receive())
+            {
+                uint32_t can_id;
+                uint8_t buf[8];                
+                uint8_t len;
+                mcp_can_read_msg(&can_id, &len, buf);
+                NRF_LOG_INFO("CAN ID: %x\t Data length: %u\t Data:", can_id, len);
+                NRF_LOG_HEXDUMP_DEBUG(NRF_LOG_PUSH(buf), len);
+                NRF_LOG_FLUSH();
+                if ( buf[0] == 'd')
+                {
+                can_confirm_final = 1;
                 
-     //           NRF_LOG_INFO("   ESP32 Reviced confirmation \r\n");
-     //            nrf_delay_ms(100);
-     //           }
-     //       }
+                NRF_LOG_INFO("   ESP32 Reviced confirmation \r\n");
+                 nrf_delay_ms(100);
+                }
+            }
 
-     //       nrf_delay_ms(1);
+            nrf_delay_ms(1);
 
-     //       }        
+            }        
                 
                 
 

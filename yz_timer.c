@@ -38,7 +38,7 @@ void lfclk_config(void)
 static void app_timer_handler(void * p_context)
 {
 
- // nrf_gpio_pin_toggle(LED_Pin1);
+  nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
   NRF_LOG_FLUSH();
 
 }
@@ -72,7 +72,7 @@ void timers_init(void)
 
 
 */
-
+nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,9));//WATCHDOG ENABLE
 
 }
 

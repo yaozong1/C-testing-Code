@@ -148,7 +148,7 @@ int can_send_receive()
 bool can_confirm = 0;
 int i;
 
-for(i=1; i<=50; i++) //add timeout for can sync
+for(i=1; i<=9; i++) //add timeout for can sync
  {
 
 if(!can_confirm)
