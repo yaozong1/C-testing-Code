@@ -58,23 +58,23 @@ nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));
 
 //ENABLE CE_CHARGER
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,8));
-nrf_delay_ms(100);
+nrf_delay_ms(2);
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,8),0);
 
 //3v3 ENABLE
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,6));
-nrf_delay_ms(100);     //doesn't work on Roam_PCBA
+nrf_delay_ms(2);     //doesn't work on Roam_PCBA
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,6),1);
-nrf_delay_ms(100);
+nrf_delay_ms(2);
 
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,0));//CAN
-nrf_delay_ms(100);
+nrf_delay_ms(2);
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,0), 1);
 
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,12));//GPS
-nrf_delay_ms(100);
+nrf_delay_ms(2);
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,12), 1);
-nrf_delay_ms(100);
+nrf_delay_ms(2);
 
 }
 

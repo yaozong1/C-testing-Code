@@ -60,7 +60,7 @@ bool result_qspi_flash = 0 ;
 bool result_motion_sensor = 0 ;
 
 bool sim_testing_flag = 1;//To define if SIM CARD TESTING OR NOT.
-bool aliyun_testing_FLAG = 1;//To define if gsm/4g TESTING OR NOT.
+bool aliyun_testing_FLAG = 0;//To define if gsm/4g TESTING OR NOT.
 bool result_aliyun = 0 ;
 
 bool can_loop_result = 0 ;
@@ -116,21 +116,21 @@ int main(void)
     Modem_Pwron();
    
     result_modem = AT_Match();
-    nrf_delay_ms(500);
+    nrf_delay_ms(20);
     
-    nrf_delay_ms(500);
+    nrf_delay_ms(20);
     NRF_LOG_INFO("IIC testing start....");
-    nrf_delay_ms(50);
+    nrf_delay_ms(20);
     
 
     result_motion_sensor = Lis_test();
 
-    nrf_delay_ms(500);
+    nrf_delay_ms(20);
     
     
     AT_Match();
     NRF_LOG_INFO("AT_Matching Done");
-    nrf_delay_ms(1000);
+    nrf_delay_ms(20);
 
 
  if (sim_testing_flag ==1)//if SIM CARD TESTING OR NOT.
@@ -151,7 +151,7 @@ int main(void)
       {
 
          result_aliyun = set_MQTT();
-          nrf_delay_ms(2000);
+          nrf_delay_ms(20);
 
       }
 
@@ -254,7 +254,7 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
      {
          NRF_LOG_INFO("Send the result to ESP32 again\r\n");
          mcp_can_send_msg(can_id_final, ext_send_final, lens_final, buff_final);//CAN with testing reslut
-         nrf_delay_ms(5000);  
+         nrf_delay_ms(500);  
           }
                 
         if (!nrf_gpio_pin_read(MCP2515_PIN_INT))

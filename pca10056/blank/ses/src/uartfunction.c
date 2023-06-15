@@ -172,7 +172,7 @@ void uart_init_elevate(void)
     APP_ERROR_CHECK(err_code);
 
     nrf_libuarte_async_enable(&libuarte);
-    nrf_delay_ms(1000);
+    nrf_delay_ms(20);
     err_code = nrf_libuarte_async_tx(&libuarte, text, text_size);
     APP_ERROR_CHECK(err_code);
 }
@@ -187,8 +187,7 @@ bool AT_Match(void)//Define a AT respond function
    _AT_CHECK;//Sending AT ack
    
    NRF_LOG_INFO("Matching....");
-   nrf_delay_ms(1000);
-   NRF_LOG_FLUSH();
+   nrf_delay_ms(20);
    
 }
 return 1;
@@ -234,55 +233,55 @@ void Modem_Pwron(void)
     {
     NRF_LOG_INFO("Modem is on");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(500);
-    NRF_LOG_FLUSH();
+    nrf_delay_ms(100);
+    
 
     NRF_LOG_INFO("Reboot the modem....");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
-    nrf_delay_ms(2000);
-    NRF_LOG_FLUSH();
+    nrf_delay_ms(100);
+    
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(100);
     NRF_LOG_INFO("shut down the modem....");
-    nrf_delay_ms(2000);
-    NRF_LOG_FLUSH();
+    nrf_delay_ms(100);
+    
 
     NRF_LOG_INFO("Modem is being powering on");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(100);
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(10);
     NRF_LOG_INFO("POWER ON DONE");
 
 
     NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
-    nrf_delay_ms(500);
-    NRF_LOG_FLUSH();
+    nrf_delay_ms(10);
+    
     }
     else
     {
     NRF_LOG_INFO("Modem is being powering on");
     
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 1);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(100);
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(10);
     NRF_LOG_INFO("POWER ON DONE");
     NRF_LOG_FLUSH();
 
     NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
-    nrf_delay_ms(500);
-    NRF_LOG_FLUSH();
+    nrf_delay_ms(10);
+    
     }
 
 
