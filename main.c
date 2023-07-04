@@ -100,8 +100,10 @@ int main(void)
 
     uart_init_elevate();  
 
-    start_timer();
     
+    start_timer();
+ 
+
     Modem_Pwron();
    
     result_modem = AT_Match();
@@ -196,6 +198,11 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
 
     while (true)
     {
+          
+
+
+
+
          if(isPresent(Uart_AT,  start)==1)
          {
          NRF_LOG_INFO("Testing start\r\n");

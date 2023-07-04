@@ -38,7 +38,8 @@ void lfclk_config(void)
 static void app_timer_handler(void * p_context)
 {
 
-  nrf_gpio_pin_toggle(LED_Pin1);
+
+//  nrf_gpio_pin_toggle(LED_Pin1);
   NRF_LOG_FLUSH();
 
 }

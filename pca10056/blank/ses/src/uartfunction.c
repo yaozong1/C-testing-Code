@@ -64,6 +64,7 @@ bool status_modem;
 
 //PERSIONAL FUNCTION DECLARATION END
 uint8_t Uart_AT[1000];
+static uint8_t ERROR[] = "ERROR";
 
 NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
 
@@ -123,6 +124,14 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
            NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            Uart_AT[0]=0;
            strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing
+          
+           if(isPresent(Uart_AT,  ERROR)==1)
+              {
+                  NRF_LOG_INFO("Found the error, rebooting");
+                   nrf_delay_ms(500);
+                  NVIC_SystemReset();
+               }           
+
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
             m_loopback_phase = false;//loop back function from e.g
@@ -287,100 +296,134 @@ void Modem_Pwron(void)
 
 }
 
-bool set_MQTT()
-{
-int i = 1;
-uint8_t MATCH[] = "\"CHECK";
-uint8_t OK[] = "OK";
-uint8_t SMSUB[] = "+SMSUB";
-nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
-NRF_LOG_INFO("Watchdog fed");
+ bool set_MQTT()
+ {
+   int i = 1;
+   uint8_t MATCH[] = "\"CHECK";
+   uint8_t OK[] = "OK";
+   uint8_t SMSUB[] = "+SMSUB";
+   nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
+   NRF_LOG_INFO("Watchdog fed");
 
-_AT_CHECK;      
-_SHU_TCP;       nrf_delay_ms(500);
-_GSM_ONLY;      nrf_delay_ms(500);
-//_LTE_ONLY;      nrf_delay_ms(500);
-//_SET_NBIOT;     nrf_delay_ms(500);
-_SET_RM;        nrf_delay_ms(500);
-//_SET_APN;
-//_APN_CHECK;
-
-
-NRF_LOG_INFO("Waiting for modem....");
-NRF_LOG_FLUSH();
-nrf_delay_ms(5000);
-NRF_LOG_FLUSH();
-nrf_delay_ms(3000);
-NRF_LOG_FLUSH();
-nrf_delay_ms(3000);
-NRF_LOG_FLUSH();
-nrf_delay_ms(2000);
-NRF_LOG_FLUSH();
-
-_SIG_CHECK;     nrf_delay_ms(1000);
-_NET_ADHERE;    nrf_delay_ms(1000);
-_NET_TYPE;      nrf_delay_ms(500);
-//while(!isPresent(Uart_AT,  OK)==1);
-for(i=1; i <=20;i++) //Added timeout for waiting
-{
-if(isPresent(Uart_AT,  OK)==1)
-{
-i=20;
-}
-nrf_delay_ms(500);
-}
-
-//mqtt
-
-//_DIS_MQTT;      nrf_delay_ms(500);
-//_DIS_WILESS;    nrf_delay_ms(500);
-_S_APN_MQTT;    nrf_delay_ms(500);
-_COM_MQTT_IP;   nrf_delay_ms(500);
-_SET_MQTT_URL;  nrf_delay_ms(500);
-_S_KEP_T;       nrf_delay_ms(500);
-_S_USR_N;       nrf_delay_ms(500);
-_S_PASS_WD;     nrf_delay_ms(500);
-_S_CLE_ID;      nrf_delay_ms(500);
-_C_T_MQTT;      nrf_delay_ms(500);
-//while(!isPresent(Uart_AT,  OK)==1);
+   _AT_CHECK;      
+   _SHU_TCP;       nrf_delay_ms(500);
+   _GSM_ONLY;      nrf_delay_ms(500);
+   //_LTE_ONLY;      nrf_delay_ms(500);
+   //_SET_NBIOT;     nrf_delay_ms(500);
+   _SET_RM;        nrf_delay_ms(500);
+   //_SET_APN;
+   //_APN_CHECK;
 
 
-for(i=1; i <=20;i++) //Added timeout for waiting
-{
-if(isPresent(Uart_AT,  OK)==1)
-{
-i=20;
-}
-nrf_delay_ms(500);
-}
-// _DIS_MQTT;
-//  nrf_delay_ms(200);
-_SUB_TOP;       nrf_delay_ms(500);
-_PUB_T_TOP;     nrf_delay_ms(500);
-_SEND_CHECK;    
+   NRF_LOG_INFO("Waiting for modem....");
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(5000);
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(3000);
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(3000);
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(2000);
+   NRF_LOG_FLUSH();
 
-NRF_LOG_INFO("Waiting for responding");
-nrf_delay_ms(3000);
+   _SIG_CHECK;     nrf_delay_ms(1000);
+   _NET_ADHERE;    nrf_delay_ms(1000);
+   _NET_TYPE;      nrf_delay_ms(500);
+    //while(!isPresent(Uart_AT,  OK)==1);
+   for(i=1; i <=20;i++) //Added timeout for waiting
+  {
+     if(isPresent(Uart_AT,  OK)==1)
+    {
+       i=20;
+
+    }
+
+     if(isPresent(Uart_AT,  ERROR)==1)
+     {
+        NRF_LOG_INFO("Found the error, rebooting");
+        nrf_delay_ms(500);
+        NVIC_SystemReset();
+     }
+
+     nrf_delay_ms(500);
+   }
+
+    //mqtt
+
+       //_DIS_MQTT;      nrf_delay_ms(500);
+       //_DIS_WILESS;    nrf_delay_ms(500);
+      _S_APN_MQTT;    nrf_delay_ms(500);
+      _COM_MQTT_IP;   nrf_delay_ms(500);
+      _SET_MQTT_URL;  nrf_delay_ms(500);
+      _S_KEP_T;       nrf_delay_ms(500);
+      _S_USR_N;       nrf_delay_ms(500);
+      _S_PASS_WD;     nrf_delay_ms(500);
+      _S_CLE_ID;      nrf_delay_ms(500);
+      _C_T_MQTT;      nrf_delay_ms(500);
+    //while(!isPresent(Uart_AT,  OK)==1);
 
 
-for(i=1; i <=20;i++) //Added timeout for waiting
-{
-if(isPresent(Uart_AT,  SMSUB)==1)
-{
-i=20;
-}
-nrf_delay_ms(500);
-}
+   for(i=1; i <=20;i++) //Added timeout for waiting
+   {
+       if(isPresent(Uart_AT,  OK)==1)
+     {
+       i=20;
+     }
 
-if(isPresent(Uart_AT,  MATCH)==1)
-{
-nrf_delay_ms(50);
-NRF_LOG_INFO("MQTT test done");
-nrf_delay_ms(500);
-return 1;
+        if(isPresent(Uart_AT,  ERROR)==1)
+     {
+        NRF_LOG_INFO("Found the error, rebooting");
+        nrf_delay_ms(500);
+        NVIC_SystemReset();
+     }
+     nrf_delay_ms(500);
+   }
+     // _DIS_MQTT;
+     //  nrf_delay_ms(200);
+    _SUB_TOP;       nrf_delay_ms(500);
+    _PUB_T_TOP;     nrf_delay_ms(500);
+    _SEND_CHECK;    
 
-}
-return 0;
+    NRF_LOG_INFO("Waiting for responding");
+    nrf_delay_ms(3000);
 
 
-}
+   for(i=1; i <=20;i++) //Added timeout for waiting
+      {
+        if(isPresent(Uart_AT,  SMSUB)==1)
+       {
+         i=20;
+       }
+        nrf_delay_ms(500);
+      }
+
+
+   if(isPresent(Uart_AT,  MATCH)==1)
+     {
+         nrf_delay_ms(50);
+         NRF_LOG_INFO("MQTT test done");
+         nrf_delay_ms(500);
+
+
+//For Antenna Testing
+
+      while(1)
+      {
+
+     _PUB_T_TOP;     nrf_delay_ms(500);
+     _SEND_CHECK;   
+                     nrf_delay_ms(10000);
+     nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7)); 
+
+      }
+
+//For Antenna Testing
+
+
+         return 1;
+
+     }
+        return 0;
+
+
+ }
