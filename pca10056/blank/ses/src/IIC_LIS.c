@@ -56,7 +56,7 @@ nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,6),0);
 nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,1));//CAN
 nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,1), 1);
 
-nrf_delay_ms(1000);
+nrf_delay_ms(10);
 
 }
 

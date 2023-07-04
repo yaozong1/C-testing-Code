@@ -172,7 +172,7 @@ void uart_init_elevate(void)
     APP_ERROR_CHECK(err_code);
 
     nrf_libuarte_async_enable(&libuarte);
-    nrf_delay_ms(1000);
+    nrf_delay_ms(100);
     err_code = nrf_libuarte_async_tx(&libuarte, text, text_size);
     APP_ERROR_CHECK(err_code);
 }
@@ -243,7 +243,6 @@ void Modem_Pwron(void)
     NRF_LOG_FLUSH();
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(2000);
     NRF_LOG_INFO("shut down the modem....");
     nrf_delay_ms(2000);
     NRF_LOG_FLUSH();
@@ -255,13 +254,13 @@ void Modem_Pwron(void)
     nrf_delay_ms(2000);
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(500);
     NRF_LOG_INFO("POWER ON DONE");
 
 
     NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     NRF_LOG_FLUSH();
     }
     else
@@ -275,13 +274,13 @@ void Modem_Pwron(void)
     nrf_delay_ms(2000);
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(2000);
+    nrf_delay_ms(500);
     NRF_LOG_INFO("POWER ON DONE");
     NRF_LOG_FLUSH();
 
     NRF_LOG_INFO("ENABLE GNSS ");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,13), 1);
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     NRF_LOG_FLUSH();
     }
 
@@ -322,11 +321,11 @@ _SIG_CHECK;     nrf_delay_ms(1000);
 _NET_ADHERE;    nrf_delay_ms(1000);
 _NET_TYPE;      nrf_delay_ms(500);
 //while(!isPresent(Uart_AT,  OK)==1);
-for(i=1; i <=10;i++) //Added timeout for waiting
+for(i=1; i <=20;i++) //Added timeout for waiting
 {
 if(isPresent(Uart_AT,  OK)==1)
 {
-i=10;
+i=20;
 }
 nrf_delay_ms(500);
 }
@@ -346,11 +345,11 @@ _C_T_MQTT;      nrf_delay_ms(500);
 //while(!isPresent(Uart_AT,  OK)==1);
 
 
-for(i=1; i <=10;i++) //Added timeout for waiting
+for(i=1; i <=20;i++) //Added timeout for waiting
 {
 if(isPresent(Uart_AT,  OK)==1)
 {
-i=10;
+i=20;
 }
 nrf_delay_ms(500);
 }
@@ -364,11 +363,11 @@ NRF_LOG_INFO("Waiting for responding");
 nrf_delay_ms(3000);
 
 
-for(i=1; i <=10;i++) //Added timeout for waiting
+for(i=1; i <=20;i++) //Added timeout for waiting
 {
 if(isPresent(Uart_AT,  SMSUB)==1)
 {
-i=10;
+i=20;
 }
 nrf_delay_ms(500);
 }

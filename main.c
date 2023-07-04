@@ -94,7 +94,7 @@ int main(void)
 
     enable_3v3();
 
-    can_bus_start();
+ //   can_bus_start();
 
     twi_init();
 
@@ -105,21 +105,18 @@ int main(void)
     Modem_Pwron();
    
     result_modem = AT_Match();
-    nrf_delay_ms(500);
     
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     NRF_LOG_INFO("IIC testing start....");
     nrf_delay_ms(50);
     
 
     result_motion_sensor = Lis_test();
 
-    nrf_delay_ms(500);
+    nrf_delay_ms(100);
     
-    
-    AT_Match();
     NRF_LOG_INFO("AT_Matching Done");
-    nrf_delay_ms(1000);
+    nrf_delay_ms(100);
 
 
  if (sim_testing_flag ==1)//if SIM CARD TESTING OR NOT.
@@ -140,7 +137,7 @@ int main(void)
       {
 
          result_aliyun = set_MQTT();
-          nrf_delay_ms(2000);
+          nrf_delay_ms(100);
 
       }
 
@@ -210,8 +207,6 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
 
                 mcp_can_send_msg(can_idd, ext_send, lens, buff);
                 nrf_delay_ms(2000);        
-
-
          }
        __WFE();
     
