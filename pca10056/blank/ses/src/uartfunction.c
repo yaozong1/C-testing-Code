@@ -63,8 +63,11 @@ bool status_modem;
 
 
 //PERSIONAL FUNCTION DECLARATION END
-uint8_t Uart_AT[1000];
-static uint8_t ERROR[] = "ERROR";
+uint8_t  Uart_AT[1000];
+static   uint8_t MATCH[] = "\"CHECK";
+static   uint8_t OK[] = "OK";
+static   uint8_t SMSUB[] = "+SMSUB";
+static   uint8_t ERROR[] = "ERROR";
 
 NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
 
@@ -123,15 +126,7 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
            // NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            Uart_AT[0]=0;
-           strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing
-          
-           if(isPresent(Uart_AT,  ERROR)==1)
-              {
-                  NRF_LOG_INFO("Found the error, rebooting");
-                   nrf_delay_ms(500);
-                  NVIC_SystemReset();
-               }           
-
+           strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
             m_loopback_phase = false;//loop back function from e.g
@@ -299,9 +294,6 @@ void Modem_Pwron(void)
  bool set_MQTT()
  {
    int i = 1;
-   uint8_t MATCH[] = "\"CHECK";
-   uint8_t OK[] = "OK";
-   uint8_t SMSUB[] = "+SMSUB";
    nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
    NRF_LOG_INFO("Watchdog fed");
 
@@ -328,59 +320,41 @@ void Modem_Pwron(void)
 
    _SIG_CHECK;     nrf_delay_ms(1000);
    _NET_ADHERE;    nrf_delay_ms(1000);
+   error_uart_detect();
    _NET_TYPE;      nrf_delay_ms(500);
     //while(!isPresent(Uart_AT,  OK)==1);
-   for(i=1; i <=20;i++) //Added timeout for waiting
-  {
-     if(isPresent(Uart_AT,  OK)==1)
-    {
-       i=20;
+   error_uart_detect();
 
-    }
 
-     if(isPresent(Uart_AT,  ERROR)==1)
-     {
-        NRF_LOG_INFO("Found the error, rebooting");
-        nrf_delay_ms(500);
-        NVIC_SystemReset();
-     }
-
-     nrf_delay_ms(500);
-   }
 
     //mqtt
 
        //_DIS_MQTT;      nrf_delay_ms(500);
        //_DIS_WILESS;    nrf_delay_ms(500);
       _S_APN_MQTT;    nrf_delay_ms(500);
+      error_uart_detect();
       _COM_MQTT_IP;   nrf_delay_ms(500);
+      error_uart_detect();
       _SET_MQTT_URL;  nrf_delay_ms(500);
+      error_uart_detect();
       _S_KEP_T;       nrf_delay_ms(500);
+      error_uart_detect();
       _S_USR_N;       nrf_delay_ms(500);
+      error_uart_detect();
       _S_PASS_WD;     nrf_delay_ms(500);
+      error_uart_detect();
       _S_CLE_ID;      nrf_delay_ms(500);
+      error_uart_detect();
       _C_T_MQTT;      nrf_delay_ms(500);
     //while(!isPresent(Uart_AT,  OK)==1);
 
 
-   for(i=1; i <=20;i++) //Added timeout for waiting
-   {
-       if(isPresent(Uart_AT,  OK)==1)
-     {
-       i=20;
-     }
+      error_uart_detect();
 
-        if(isPresent(Uart_AT,  ERROR)==1)
-     {
-        NRF_LOG_INFO("Found the error, rebooting");
-        nrf_delay_ms(500);
-        NVIC_SystemReset();
-     }
-     nrf_delay_ms(500);
-   }
      // _DIS_MQTT;
      //  nrf_delay_ms(200);
     _SUB_TOP;       nrf_delay_ms(500);
+      error_uart_detect();
     _PUB_T_TOP;     nrf_delay_ms(500);
     _SEND_CHECK;    
 
@@ -427,3 +401,26 @@ void Modem_Pwron(void)
 
 
  }
+
+void error_uart_detect()
+{
+
+   for( int  i = 1; i <= 20; i++) //Added timeout for waiting
+  {
+     if(isPresent(Uart_AT,  OK)==1)
+    {
+       i=20;
+
+    }
+
+     if(isPresent(Uart_AT, ERROR)==1)
+       {
+         NRF_LOG_INFO("Found the error, rebooting");
+         nrf_delay_ms(500);
+         NVIC_SystemReset();
+       }   
+
+     nrf_delay_ms(500);
+   }
+
+}
