@@ -204,8 +204,8 @@ void uart_init_elevate_vcu(void)
 {
     ret_code_t err_code;
     nrf_libuarte_async_config_t nrf_libuarte_async_config = {
-            .tx_pin     = 10,
-            .rx_pin     = 9,
+            .tx_pin     = 6,
+            .rx_pin     = 5,
             .baudrate   = NRF_UARTE_BAUDRATE_115200,
             .pullup_rx  = false,
             .parity     = NRF_UARTE_PARITY_EXCLUDED,
