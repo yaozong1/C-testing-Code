@@ -69,7 +69,7 @@ static   uint8_t OK[] = "OK";
 static   uint8_t SMSUB[] = "+SMSUB";
 static   uint8_t ERROR[] = "ERROR";
 
-NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
+NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 2, 2, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
 
 
 typedef struct {
@@ -81,19 +81,6 @@ NRF_QUEUE_DEF(buffer_t, m_buf_queue, 30, NRF_QUEUE_MODE_NO_OVERFLOW);
 
 static volatile bool m_loopback_phase;
 
-
-int isPresent( uint8_t *line,  uint8_t *word)//Define a String searching function
-{
-	int i, j, status, n, m;
-	n = strlen(line);
-	m = strlen(word);
-	for (i = 0; i <= n - m; i++)
-        {       
-		if (strncmp(line+i, word, m)==0) return 1;
-                }
-	return 0;
-
-}
 
 
 void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
@@ -180,6 +167,8 @@ void uart_init_elevate(void)
     err_code = nrf_libuarte_async_tx(&libuarte, text, text_size);
     APP_ERROR_CHECK(err_code);
 }
+
+
 
 bool AT_Match(void)//Define a AT respond function
 {
@@ -422,5 +411,18 @@ void error_uart_detect()
 
      nrf_delay_ms(500);
    }
+
+}
+
+int isPresent( uint8_t *line,  uint8_t *word)//Define a String searching function
+{
+	int i, j, status, n, m;
+	n = strlen(line);
+	m = strlen(word);
+	for (i = 0; i <= n - m; i++)
+        {       
+		if (strncmp(line+i, word, m)==0) return 1;
+                }
+	return 0;
 
 }
