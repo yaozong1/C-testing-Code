@@ -14,6 +14,7 @@ extern uint8_t Uart_AT[1000];
 
 
 extern void uart_init_elevate(void);
+extern void uart_init_elevate_vcu(void);
 extern int isPresent( uint8_t *line,  uint8_t *word);
 
 extern bool AT_Match(void);

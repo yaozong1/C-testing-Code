@@ -98,7 +98,9 @@ int main(void)
 
     twi_init();
 
-    uart_init_elevate();  
+    uart_init_elevate(); 
+    
+    uart_init_elevate_vcu(); 
 
     
     start_timer();

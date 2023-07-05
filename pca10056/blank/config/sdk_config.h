@@ -7111,7 +7111,7 @@
  
 
 #ifndef NRF_LIBUARTE_DRV_UARTE1
-#define NRF_LIBUARTE_DRV_UARTE1 0
+#define NRF_LIBUARTE_DRV_UARTE1 1
 #endif
 // </h> 
 //==========================================================
