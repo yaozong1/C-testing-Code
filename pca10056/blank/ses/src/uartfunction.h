@@ -24,6 +24,11 @@ extern bool set_MQTT();
 extern bool SIM_DET();
 
 extern void ce_fcc_testing();
+void clean_uart_buffer(void);
+extern bool try_login_4G(void);
+extern bool try_login_2G(void);
+extern void lte_gsm_switch(void);
+void wait_ack_present(uint8_t *word);
 
 //Modem AT COMMAND START
 
@@ -42,6 +47,10 @@ static uint8_t LTE_ONLY_size = sizeof(LTE_ONLY);
 
 static uint8_t GSM_ONLY[] = "AT+CNMP=13\r\n";
 static uint8_t GSM_ONLY_size = sizeof(LTE_ONLY);
+
+static uint8_t SET_CATM1[] = "AT+CMNB=1\r\n";
+static uint8_t SET_CATM1_size = sizeof(SET_CATM1);
+
 
 static uint8_t SET_NBIOT[] = "AT+CMNB=2\r\n";
 static uint8_t SET_NBIOT_size = sizeof(SET_NBIOT);

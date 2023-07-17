@@ -64,6 +64,7 @@ bool aliyun_testing_FLAG = 1;//To define if gsm/4g TESTING OR NOT.
 bool result_aliyun = 0 ;
 
 
+
  uint8_t start[] = "START";
 
 
@@ -139,6 +140,11 @@ int main(void)
 
 
 //////////////////////
+NRF_LOG_INFO("Enter loop of lte gsm detecting");
+NRF_LOG_WARNING("Need to quit by rebooting");
+
+    lte_gsm_switch();
+
 
     ce_fcc_testing();
 

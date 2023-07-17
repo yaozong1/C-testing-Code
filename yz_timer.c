@@ -15,10 +15,10 @@
 #include "nrf_log_default_backends.h"
 
 
-#define LED_INTERVAL1 APP_TIMER_TICKS(500)
+#define LED_INTERVAL1 APP_TIMER_TICKS(2000)
 //#define LED_INTERVAL2 APP_TIMER_TICKS(500)
 
-#define TIMER1_PRIORITY 3
+#define TIMER1_PRIORITY 
 //#define TIMER2_PRIORITY 2
 
 APP_TIMER_DEF(m_app_timer_id_1);
