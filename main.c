@@ -69,7 +69,7 @@ bool result_aliyun = 0 ;
 
 
 int main(void)
-{   
+  {   
 
     ret_code_t err_code = NRF_LOG_INIT(NULL);
     APP_ERROR_CHECK(err_code);
@@ -135,6 +135,15 @@ int main(void)
     }
     else
     NRF_LOG_WARNING("Proceed without sim card");
+
+
+
+//////////////////////
+
+    ce_fcc_testing();
+
+
+
 
 
  if (aliyun_testing_FLAG== 1 )

@@ -53,6 +53,9 @@
 
 //GSM ONLY
 #define _GSM_ONLY nrf_libuarte_async_tx(&libuarte, GSM_ONLY, GSM_ONLY_size);
+
+#define _GSM_BD_CHECK nrf_libuarte_async_tx(&libuarte, GSM_BD_CHECK, GSM_BD_CHECK_size);
+//#define _GSM_BD_CHECK nrf_libuarte_async_tx(&libuarte, GSM_BD_CHECK, GSM_BD_CHECK_size);
 //NBIOT END
 
 
@@ -71,18 +74,19 @@ static   uint8_t MATCH[] = "\"CHECK";
 static   uint8_t OK[] = "OK";
 static   uint8_t SMSUB[] = "+SMSUB";
 static   uint8_t ERROR[] = "ERROR";
+static   uint8_t GNSS_ACK[] = "+CGNSINF";
 static   uint8_t GNSS_CON[] = "+CGNSINF: 1";
 
-NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
-NRF_LIBUARTE_ASYNC_DEFINE(libuarte_vcu, 1, 2, 2, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
+NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 512, 100);
+NRF_LIBUARTE_ASYNC_DEFINE(libuarte_vcu, 1, 2, 2, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 512, 100);
 
 typedef struct {
     uint8_t * p_data;
     uint32_t length;
 } buffer_t;
 
-NRF_QUEUE_DEF(buffer_t, m_buf_queue, 30, NRF_QUEUE_MODE_NO_OVERFLOW);
-NRF_QUEUE_DEF(buffer_t, m_buf_queue_vcu, 30, NRF_QUEUE_MODE_NO_OVERFLOW);/////
+NRF_QUEUE_DEF(buffer_t, m_buf_queue, 30, NRF_QUEUE_MODE_OVERFLOW);
+NRF_QUEUE_DEF(buffer_t, m_buf_queue_vcu, 30, NRF_QUEUE_MODE_OVERFLOW);/////
 
 static volatile bool m_loopback_phase;
 static volatile bool m_loopback_phase_vcu;
@@ -104,23 +108,17 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
 
            NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            Uart_AT[0]=0;
-           nrf_delay_ms(10);
-           int size = sizeof(Uart_AT);
-           memset(Uart_AT, 0, size);
+           //nrf_delay_ms(10);
+           //int size = sizeof(Uart_AT);
+           //memset(Uart_AT, 0, size);
+
            strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing 
-           int size2 = sizeof(p_evt->data.rxtx.p_data);
-           memset(p_evt->data.rxtx.p_data, 0, size);
-                  
-           if(isPresent(Uart_AT,  GNSS_CON)==1)
-       {
-        
-         strcpy(Uart2_AT, Uart_AT);
-         nrf_delay_ms(10);
-         nrf_libuarte_async_tx(&libuarte_vcu, Uart2_AT, sizeof(Uart2_AT));
-         nrf_delay_ms(10);
-       }
+           NRF_LOG_INFO("Clean p_libuarte");
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
-            
+//          nrf_delay_ms(10);
+//           int size2 = sizeof(p_evt->data.rxtx.p_data);
+//           memset(p_evt->data.rxtx.p_data, 0, size);
+
             m_loopback_phase = false;//loop back function from e.g
             break;
         case NRF_LIBUARTE_ASYNC_EVT_TX_DONE:
@@ -162,11 +160,11 @@ void uart_event_handler_vcu(void * context, nrf_libuarte_async_evt_t * p_evt)
 
            NRF_LOG_INFO("UART2 Received: %s", p_evt->data.rxtx.p_data);
            Uart2_AT[0]=0;
-           int size = sizeof(Uart2_AT);
-           memset(Uart2_AT, 0, size);
-           nrf_delay_ms(10);
-           int size2 = sizeof(p_evt->data.rxtx.p_data);
-           memset(p_evt->data.rxtx.p_data, 0, size);
+           //int size = sizeof(Uart2_AT);
+           //memset(Uart2_AT, 0, size);
+           //nrf_delay_ms(10);
+           //int size2 = sizeof(p_evt->data.rxtx.p_data);
+           //memset(p_evt->data.rxtx.p_data, 0, size);
           // strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
@@ -234,7 +232,7 @@ void uart_init_elevate_vcu(void)
             .parity     = NRF_UARTE_PARITY_EXCLUDED,
             .hwfc       = NRF_UARTE_HWFC_DISABLED,
             .timeout_us = 100,
-            .int_prio   = APP_IRQ_PRIORITY_LOW
+            .int_prio   = APP_IRQ_PRIORITY_MID
             
     };
 
@@ -274,13 +272,15 @@ bool SIM_DET(void)
   uint8_t ok[] = "OK";
   uint8_t ready[] = "READY";
   uint8_t error[] = "ERROR";
+
+  NRF_LOG_INFO("sim card detecting start");
   _DET_SIM;
   nrf_delay_ms(1000);
+
   if(isPresent(Uart_AT,  ready)==1)
   
   
   return 1;
-  
   
   return 0;
 }
@@ -425,6 +425,7 @@ void Modem_Pwron(void)
     _SUB_TOP;       nrf_delay_ms(500);
       error_uart_detect();
     _PUB_T_TOP;     nrf_delay_ms(500);
+
     _SEND_CHECK;
     
        
@@ -448,53 +449,6 @@ void Modem_Pwron(void)
          nrf_delay_ms(50);
          NRF_LOG_INFO("MQTT test done");
          nrf_delay_ms(500);
-         _GNSS_POW_ON; // 
-         NRF_LOG_INFO("GNSS_POWON_ON");
-         nrf_delay_ms(500);
-
-//For Antenna Testing
-
-      while(1)
-      {
-
-     _PUB_T_TOP; 
-     
-  
-     
-     nrf_delay_ms(100);
-
-
-     _SEND_CHECK;   
-    NRF_LOG_INFO("WHAT HAPPENDED?");
-
-    for(i=1; i <=20;i++) //Added timeout for waiting
-      {
-        if(isPresent(Uart_AT,  OK)==1)
-       {
-         i=20;
-       }
-        nrf_delay_ms(500);
-      }
-
-      nrf_delay_ms(10000);
-
-     _GNSS_SIG;
-
-    for(i=1; i <=20;i++) //Added timeout for waiting
-      {
-        if(isPresent(Uart_AT,  OK)==1)
-       {
-         i=20;
-       }
-        nrf_delay_ms(500);
-      }
-        nrf_delay_ms(10000);
-
-     nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7)); 
-
-      }
-
-//For Antenna Testing
 
 
          return 1;
@@ -504,6 +458,208 @@ void Modem_Pwron(void)
 
 
  }
+
+void ce_fcc_testing()
+{
+   int i = 1;
+
+  // nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,13)); GPS POWER
+  // nrf_gpio_pin_set(NRF_GPIO_PIN_MAP(1,13));
+
+   NRF_LOG_INFO("Watchdog fed");
+
+   _AT_CHECK;      nrf_delay_ms(500);
+
+   _GNSS_POW_ON;   nrf_delay_ms(500);
+
+   NRF_LOG_INFO("Trun on GPS :");
+      
+   _SHU_TCP;       nrf_delay_ms(500);
+   _GSM_ONLY;      nrf_delay_ms(500);
+   //_LTE_ONLY;      nrf_delay_ms(500);
+   //_SET_NBIOT;     nrf_delay_ms(500);
+   _SET_RM;        nrf_delay_ms(500);
+   //_SET_APN;
+   //_APN_CHECK;
+
+
+   NRF_LOG_INFO("Waiting for modem....");
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(5000);
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(3000);
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(3000);
+   NRF_LOG_FLUSH();
+   nrf_delay_ms(2000);
+   NRF_LOG_FLUSH();
+
+   _SIG_CHECK;     nrf_delay_ms(1000);
+
+   _NET_ADHERE;    nrf_delay_ms(1000);
+   error_uart_detect();
+   _NET_TYPE;      nrf_delay_ms(500);
+    //while(!isPresent(Uart_AT,  OK)==1);
+   error_uart_detect();
+
+
+
+    //mqtt
+
+       //_DIS_MQTT;      nrf_delay_ms(500);
+       //_DIS_WILESS;    nrf_delay_ms(500);
+      _S_APN_MQTT;    nrf_delay_ms(500);
+      
+      _COM_MQTT_IP;   nrf_delay_ms(500);
+      
+      _SET_MQTT_URL;  nrf_delay_ms(500);
+      
+      _S_KEP_T;       nrf_delay_ms(500);
+      
+      _S_USR_N;       nrf_delay_ms(500);
+      
+      _S_PASS_WD;     nrf_delay_ms(500);
+      
+      _S_CLE_ID;      nrf_delay_ms(500);
+      
+      _C_T_MQTT;      nrf_delay_ms(500);
+    //while(!isPresent(Uart_AT,  OK)==1);
+
+
+    
+
+     // _DIS_MQTT;
+     //  nrf_delay_ms(200);
+    _SUB_TOP;       nrf_delay_ms(500);
+    
+    _PUB_T_TOP;     nrf_delay_ms(500);
+
+    NRF_LOG_INFO("GSM band:  ");
+    _GSM_BD_CHECK;  nrf_delay_ms(500);
+
+    //_SEND_CHECK;
+    
+       
+
+    NRF_LOG_INFO("Waiting for responding");
+    nrf_delay_ms(3000);
+
+
+  
+//For Antenna Testing
+
+      while(1)
+      {
+
+    // _PUB_T_TOP; 
+     
+  
+     
+     nrf_delay_ms(10);
+
+
+    // _SEND_CHECK;   
+    NRF_LOG_INFO("WHAT HAPPENDED?");
+
+    //for(i=1; i <=20;i++) //Added timeout for waiting
+    //  {
+    //    if(isPresent(Uart_AT,  OK)==1)
+    //   {
+    //     i=20;
+    //   }
+    //    nrf_delay_ms(500);
+    //  }
+
+    //  nrf_delay_ms(10);
+
+
+    nrf_delay_ms(10);
+    int size = sizeof(Uart_AT);
+    memset(Uart_AT, 0, size);
+
+     _GNSS_SIG;
+
+    for(i=1; i <=20;i++) //Added timeout for waiting
+      {
+        if(isPresent(Uart_AT,  GNSS_ACK)==1)
+       {
+         i=20;
+         NRF_LOG_INFO("GNSS SIGNAL RECEIVE");
+       }
+
+        nrf_delay_ms(500);
+      }
+      
+
+
+
+
+        if(isPresent(Uart_AT,  GNSS_CON)==1)
+       {
+        
+       //  strcpy(Uart2_AT, Uart_AT);//Copy the received Uart message for comparing 
+         nrf_libuarte_async_tx(&libuarte_vcu, Uart_AT, sizeof(Uart_AT));
+         nrf_delay_ms(10);
+       }
+
+
+
+    nrf_delay_ms(500);
+    size = sizeof(Uart_AT);
+    memset(Uart_AT, 0, size);//CLEAR UART_AT[]
+
+    nrf_delay_ms(5000);
+
+//to check if receive GNSS on signal
+
+     nrf_delay_ms(10);
+
+     nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7)); 
+
+     nrf_delay_ms(10);
+
+     //_GSM_BD_CHECK;
+
+     //    for(i=1; i <=20;i++) //Added timeout for waiting
+     // {
+     //   if(isPresent(Uart_AT,  OK)==1)
+     //  {
+     //    i=20;
+
+     //  }
+     //   nrf_delay_ms(500);
+     // }
+
+     //nrf_delay_ms(2000);
+
+
+
+      }
+
+
+
+
+//For Antenna Testing
+
+/*
+           if(isPresent(Uart_AT,  GNSS_CON)==1)
+       {
+        
+         strcpy(Uart2_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing 
+         nrf_delay_ms(10);
+         nrf_libuarte_async_tx(&libuarte_vcu, Uart2_AT, sizeof(Uart2_AT));
+         nrf_delay_ms(10);
+       }
+
+*/
+
+
+
+}
+
+
+
+
 
 void error_uart_detect()
 {

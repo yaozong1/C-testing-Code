@@ -11,6 +11,7 @@
 #include "boards.h"
 
 extern uint8_t Uart_AT[1000];
+extern uint8_t Uart2_AT[1000];
 
 
 extern void uart_init_elevate(void);
@@ -21,6 +22,8 @@ extern bool AT_Match(void);
 extern void Modem_Pwron(void);
 extern bool set_MQTT();
 extern bool SIM_DET();
+
+extern void ce_fcc_testing();
 
 //Modem AT COMMAND START
 
@@ -115,6 +118,8 @@ static uint8_t GNSS_SIG[] = "AT+CGNSINF\r\n";
 static uint8_t GNSS_SIG_size = sizeof(GNSS_SIG);
 
 
+static uint8_t GSM_BD_CHECK[] = "AT+CBAND?\r\n";
+static uint8_t GSM_BD_CHECK_size = sizeof(GSM_BD_CHECK);
 
 #endif
 
