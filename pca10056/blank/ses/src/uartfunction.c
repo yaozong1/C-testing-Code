@@ -56,6 +56,8 @@
 //NBIOT END
 
 
+//UART2_FOR GNSS
+//#define _GNSS_SNR nrf_libuarte_async_tx(&libuarte_vcu, GNSS_SNR, GNSS_SNR_size);
 
 
 bool status_modem;
@@ -64,10 +66,12 @@ bool status_modem;
 
 //PERSIONAL FUNCTION DECLARATION END
 uint8_t  Uart_AT[1000];
+uint8_t  Uart2_AT[1000];
 static   uint8_t MATCH[] = "\"CHECK";
 static   uint8_t OK[] = "OK";
 static   uint8_t SMSUB[] = "+SMSUB";
 static   uint8_t ERROR[] = "ERROR";
+static   uint8_t GNSS_CON[] = "+CGNSINF: 1";
 
 NRF_LIBUARTE_ASYNC_DEFINE(libuarte, 0, 0, 0, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
 NRF_LIBUARTE_ASYNC_DEFINE(libuarte_vcu, 1, 2, 2, NRF_LIBUARTE_PERIPHERAL_NOT_USED, 1024, 8);
@@ -100,7 +104,21 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
 
            NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
            Uart_AT[0]=0;
-           strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
+           nrf_delay_ms(10);
+           int size = sizeof(Uart_AT);
+           memset(Uart_AT, 0, size);
+           strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing 
+           int size2 = sizeof(p_evt->data.rxtx.p_data);
+           memset(p_evt->data.rxtx.p_data, 0, size);
+                  
+           if(isPresent(Uart_AT,  GNSS_CON)==1)
+       {
+        
+         strcpy(Uart2_AT, Uart_AT);
+         nrf_delay_ms(10);
+         nrf_libuarte_async_tx(&libuarte_vcu, Uart2_AT, sizeof(Uart2_AT));
+         nrf_delay_ms(10);
+       }
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
             m_loopback_phase = false;//loop back function from e.g
@@ -142,9 +160,14 @@ void uart_event_handler_vcu(void * context, nrf_libuarte_async_evt_t * p_evt)
         case NRF_LIBUARTE_ASYNC_EVT_RX_DATA:
         NRF_LOG_FLUSH();
 
-           NRF_LOG_INFO("Received: %s", p_evt->data.rxtx.p_data);
-           Uart_AT[0]=0;
-           strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
+           NRF_LOG_INFO("UART2 Received: %s", p_evt->data.rxtx.p_data);
+           Uart2_AT[0]=0;
+           int size = sizeof(Uart2_AT);
+           memset(Uart2_AT, 0, size);
+           nrf_delay_ms(10);
+           int size2 = sizeof(p_evt->data.rxtx.p_data);
+           memset(p_evt->data.rxtx.p_data, 0, size);
+          // strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
             m_loopback_phase = false;//loop back function from e.g
@@ -402,7 +425,9 @@ void Modem_Pwron(void)
     _SUB_TOP;       nrf_delay_ms(500);
       error_uart_detect();
     _PUB_T_TOP;     nrf_delay_ms(500);
-    _SEND_CHECK;    
+    _SEND_CHECK;
+    
+       
 
     NRF_LOG_INFO("Waiting for responding");
     nrf_delay_ms(3000);
@@ -423,16 +448,48 @@ void Modem_Pwron(void)
          nrf_delay_ms(50);
          NRF_LOG_INFO("MQTT test done");
          nrf_delay_ms(500);
-
+         _GNSS_POW_ON; // 
+         NRF_LOG_INFO("GNSS_POWON_ON");
+         nrf_delay_ms(500);
 
 //For Antenna Testing
 
       while(1)
       {
 
-     _PUB_T_TOP;     nrf_delay_ms(500);
+     _PUB_T_TOP; 
+     
+  
+     
+     nrf_delay_ms(100);
+
+
      _SEND_CHECK;   
-                     nrf_delay_ms(10000);
+    NRF_LOG_INFO("WHAT HAPPENDED?");
+
+    for(i=1; i <=20;i++) //Added timeout for waiting
+      {
+        if(isPresent(Uart_AT,  OK)==1)
+       {
+         i=20;
+       }
+        nrf_delay_ms(500);
+      }
+
+      nrf_delay_ms(10000);
+
+     _GNSS_SIG;
+
+    for(i=1; i <=20;i++) //Added timeout for waiting
+      {
+        if(isPresent(Uart_AT,  OK)==1)
+       {
+         i=20;
+       }
+        nrf_delay_ms(500);
+      }
+        nrf_delay_ms(10000);
+
      nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7)); 
 
       }
