@@ -13,6 +13,8 @@
 extern uint8_t Uart_AT[1000];
 extern uint8_t Uart2_AT[1000];
 
+extern int lte_gsm_gps;
+
 
 extern void uart_init_elevate(void);
 extern void uart_init_elevate_vcu(void);
@@ -24,11 +26,12 @@ extern bool set_MQTT();
 extern bool SIM_DET();
 
 extern void ce_fcc_testing();
-void clean_uart_buffer(void);
+extern void clean_uart_buffer(void);
 extern bool try_login_4G(void);
 extern bool try_login_2G(void);
-extern void lte_gsm_switch(void);
-void wait_ack_present(uint8_t *word);
+extern void lte_gsm_switch_for_toby(void);
+extern int wait_uart_ack(uint8_t *word);
+extern void gps_receive(void);
 
 //Modem AT COMMAND START
 

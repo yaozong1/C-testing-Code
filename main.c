@@ -77,25 +77,20 @@ int main(void)
 
     NRF_LOG_DEFAULT_BACKENDS_INIT();
 
-
-
     
     err_code = nrf_drv_gpiote_init();
     APP_ERROR_CHECK(err_code);
-
-    
 
     
     ret_code_t ret = nrf_drv_clock_init();
     APP_ERROR_CHECK(ret);
   
     nrf_drv_clock_lfclk_request(NULL);
-
     
 
     enable_3v3();
 
- //   can_bus_start();
+ //   can_bus_start(); There's no canbus in Roam p5 anymore.
 
     twi_init();
 
@@ -124,6 +119,7 @@ int main(void)
     nrf_delay_ms(100);
 
 
+
  if (sim_testing_flag ==1)//if SIM CARD TESTING OR NOT.
     { 
        sim_status = SIM_DET();
@@ -139,17 +135,26 @@ int main(void)
 
 
 
+
+
+
+
+
 //////////////////////
 NRF_LOG_INFO("Enter loop of lte gsm detecting");
 NRF_LOG_WARNING("Need to quit by rebooting");
 
-    lte_gsm_switch();
+   
 
 
-    ce_fcc_testing();
+lte_gsm_switch_for_toby();
 
 
 
+
+
+
+//    ce_fcc_testing();
 
 
  if (aliyun_testing_FLAG== 1 )
@@ -216,10 +221,6 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
     while (true)
     {
           
-
-
-
-
          if(isPresent(Uart_AT,  start)==1)
          {
          NRF_LOG_INFO("Testing start\r\n");
