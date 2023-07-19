@@ -140,14 +140,12 @@ int main(void)
 
 
 
-//////////////////////
-NRF_LOG_INFO("Enter loop of lte gsm detecting");
-NRF_LOG_WARNING("Need to quit by rebooting");
+
 
    
 
 
-lte_gsm_switch_for_toby();
+//lte_gsm_switch_for_toby();
 
 
 
