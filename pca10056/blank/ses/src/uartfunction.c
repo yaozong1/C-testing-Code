@@ -187,7 +187,7 @@ void uart_event_handler_vcu(void * context, nrf_libuarte_async_evt_t * p_evt)
            //int size2 = sizeof(p_evt->data.rxtx.p_data);
            //memset(p_evt->data.rxtx.p_data, 0, size);
           // strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
-          // nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
+           nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
             m_loopback_phase = false;//loop back function from e.g
             break;
@@ -296,7 +296,8 @@ bool SIM_DET(void)
 
   NRF_LOG_INFO("sim card detecting start");
   _DET_SIM;
-   result = wait_uart_ack(ready);
+   result = wait_uart_ack_x_second(ready, 5);  
+   
   
   //if(isPresent(Uart_AT,  ready)==1)
  if (result == 1)
@@ -384,7 +385,7 @@ void Modem_Pwron(void)
  {
    int i = 1;
    nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(0,9));
-   NRF_LOG_INFO("Watchdog fed");
+
 
    _AT_CHECK;      nrf_delay_ms(10);
 
@@ -425,9 +426,6 @@ void Modem_Pwron(void)
 
     //while(!isPresent(Uart_AT,  OK)==1);
    
-   
-
-
     //mqtt
 
        //_DIS_MQTT;      nrf_delay_ms(500);
@@ -693,89 +691,51 @@ void ce_fcc_testing()
 bool try_login_2G(void)
 {
 
-    bool gsm_connected = 0;
+  bool gsm_connected = 0;
 
-   _AT_CHECK;      nrf_delay_ms(500);
+  _AT_CHECK;      nrf_delay_ms(10);
 
-   _GNSS_POW_ON;   nrf_delay_ms(500);
+   if(wait_uart_ack_x_second(OK, 5) ==0)//如果拿不到读取不到       OK就退出，函数就作为等待使用
+   return 0;
 
-      
-   _SHU_TCP;       nrf_delay_ms(500);
-   _GSM_ONLY;      nrf_delay_ms(500);
-   //_LTE_ONLY;      nrf_delay_ms(500);
-   //_SET_CATM1;     nrf_delay_ms(500);
-   //_SET_NBIOT;     nrf_delay_ms(500);
-   _SET_RM;        nrf_delay_ms(500);
-   //_SET_APN;
-   //_APN_CHECK;
+   _SHU_TCP;       nrf_delay_ms(10);
+
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+
+   _GSM_ONLY;      nrf_delay_ms(10);
+
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+
+   _SET_RM;        nrf_delay_ms(10);
+
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+
 
 
    NRF_LOG_INFO("Waiting for modem....");
    NRF_LOG_FLUSH();
-   nrf_delay_ms(5000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(3000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(3000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(2000);
-   NRF_LOG_FLUSH();
-
-   _SIG_CHECK;     nrf_delay_ms(1000);
-
-   _NET_ADHERE;    nrf_delay_ms(1000);
-  // error_uart_detect();
-
-    clean_uart_buffer();
-
-   _NET_TYPE;      nrf_delay_ms(500);
+   nrf_delay_ms(100);
 
 
+   _SIG_CHECK;     nrf_delay_ms(10);
 
-  // error_uart_detect();
-   
-  //if(isPresent(Uart_AT,  OK)==1)
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
 
-  //   NRF_LOG_INFO("连上拉  ");
+   _NET_ADHERE;    nrf_delay_ms(10);
 
-   //mqtt
-
-    //_DIS_MQTT;      nrf_delay_ms(500);
-    //_DIS_WILESS;    nrf_delay_ms(500);
-
-      //_S_APN_MQTT;    nrf_delay_ms(500);
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+ 
+   _NET_TYPE;      nrf_delay_ms(10);
       
-      //_COM_MQTT_IP;   nrf_delay_ms(500);
-      
-      //_SET_MQTT_URL;  nrf_delay_ms(500);
-      
-      //_S_KEP_T;       nrf_delay_ms(500);
-      
-      //_S_USR_N;       nrf_delay_ms(500);
-      
-      //_S_PASS_WD;     nrf_delay_ms(500);
-      
-      //_S_CLE_ID;      nrf_delay_ms(500);
-      
-      //_C_T_MQTT;      nrf_delay_ms(500);
+   if(wait_uart_ack_x_second(GSM_OL, 5) ==1)
+   gsm_connected = 1;
 
-      
-
-      for(int i=1; i <=200;i++) //Added timeout for waiting
-       {
-        if( isPresent(Uart_AT,  GSM_OL)==1 )
-        {
-            NRF_LOG_INFO("Connected");
-            gsm_connected = 1;
-          //  NRF_LOG_FLUSH();
-            break; // Exit the loop when the ack is found
-         
-        }
-        nrf_delay_ms(50);
-       }
-
-     clean_uart_buffer();
-     return gsm_connected;
+   return gsm_connected;
 
 }
 
@@ -786,77 +746,50 @@ bool try_login_4G(void)
 
     bool lte_connected = 0;
 
-   _AT_CHECK;      nrf_delay_ms(500);
+     _AT_CHECK;      nrf_delay_ms(10);
 
-   _GNSS_POW_ON;   nrf_delay_ms(500);
+   if(wait_uart_ack_x_second(OK, 5) ==0)//如果拿不到读取不到       OK就退出，函数就作为等待使用
+   return 0;
 
-      
-   _SHU_TCP;       nrf_delay_ms(500);
-   //_GSM_ONLY;      nrf_delay_ms(500);
-   _LTE_ONLY;      nrf_delay_ms(500);
-   _SET_CATM1;     nrf_delay_ms(500);
-   //_SET_NBIOT;     nrf_delay_ms(500);
-   _SET_RM;        nrf_delay_ms(500);
-   //_SET_APN;
-   //_APN_CHECK;
+   _SHU_TCP;       nrf_delay_ms(10);
+
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+
+   _GSM_ONLY;      nrf_delay_ms(10);
+
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+
+   _SET_RM;        nrf_delay_ms(10);
+
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+
 
 
    NRF_LOG_INFO("Waiting for modem....");
    NRF_LOG_FLUSH();
-   nrf_delay_ms(5000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(3000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(3000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(2000);
-   NRF_LOG_FLUSH();
+   nrf_delay_ms(100);
 
-   _SIG_CHECK;     nrf_delay_ms(1000);
 
-   _NET_ADHERE;    nrf_delay_ms(1000);
- //  error_uart_detect();
-    clean_uart_buffer();
+   _SIG_CHECK;     nrf_delay_ms(10);
 
-   _NET_TYPE;      nrf_delay_ms(500);
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
 
-   //mqtt
+   _NET_ADHERE;    nrf_delay_ms(10);
 
-    //_DIS_MQTT;      nrf_delay_ms(500);
-    //_DIS_WILESS;    nrf_delay_ms(500);
-      //_S_APN_MQTT;    nrf_delay_ms(500);
-      
-      //_COM_MQTT_IP;   nrf_delay_ms(500);
-      
-      //_SET_MQTT_URL;  nrf_delay_ms(500);
-      
-      //_S_KEP_T;       nrf_delay_ms(500);
-      
-      //_S_USR_N;       nrf_delay_ms(500);
-      
-      //_S_PASS_WD;     nrf_delay_ms(500);
-      
-      //_S_CLE_ID;      nrf_delay_ms(500);
-      
-     // _C_T_MQTT;      nrf_delay_ms(500);
-
+   if(wait_uart_ack_x_second(OK, 5) ==0)
+   return 0;
+ 
+   _NET_TYPE;      nrf_delay_ms(10);
      
+   if(wait_uart_ack_x_second(CAT_OL, 5) ==1)
+   lte_connected = 1;
 
-      for(int i=1; i <=200;i++) //Added timeout for waiting
-       {
-        if( isPresent(Uart_AT,  CAT_OL)==1 )
-        {
-            NRF_LOG_INFO("Connected");
-            lte_connected = 1;
-          //  NRF_LOG_FLUSH();
-            break; // Exit the loop when the ack is found
-         
-        }
-        nrf_delay_ms(50);
-       }
-
-     clean_uart_buffer();
-     return lte_connected;
+   
+   return lte_connected;
 }
 
 
@@ -949,6 +882,27 @@ for(int i=1; i <=500;i++) //Added timeout for waiting
   return result;
 }
 
+int wait_uart_ack_x_second(uint8_t *word, int second)
+{
 
+int result = 0;
+
+for(int i=1; i <=second*100;i++) //Added timeout for waiting
+       {
+        if( isPresent(Uart_AT,  word)==1 )
+        {
+            NRF_LOG_INFO("Found the ack: %s", word);
+            result = 1;
+          //  NRF_LOG_FLUSH();
+            break; // Exit the loop when the ack is found
+         
+        }
+        nrf_delay_ms(10);
+       }
+  
+  int size = sizeof(Uart_AT);//不请空的话在进     uart,会导致对比失效有可能对比的是上次的数据
+  memset(Uart_AT, 0, size);
+  return result;
+}
 
 

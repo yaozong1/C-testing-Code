@@ -31,6 +31,7 @@ extern bool try_login_4G(void);
 extern bool try_login_2G(void);
 extern void lte_gsm_switch_for_toby(void);
 extern int wait_uart_ack(uint8_t *word);
+extern int wait_uart_ack_x_second(uint8_t *word, int second);
 extern void gps_receive(void);
 
 //Modem AT COMMAND START
