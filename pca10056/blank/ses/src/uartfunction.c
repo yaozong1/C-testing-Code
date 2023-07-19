@@ -137,7 +137,7 @@ void uart_event_handler(void * context, nrf_libuarte_async_evt_t * p_evt)
          nrf_delay_ms(10);
                   }
 
-            nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
+            //nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             //处理完数据释放内存       CHATGPT提示  rxfree函数可能和    RTT存在复用冲突关系
 
             m_loopback_phase = false;//loop back function from e.g
@@ -187,7 +187,7 @@ void uart_event_handler_vcu(void * context, nrf_libuarte_async_evt_t * p_evt)
            //int size2 = sizeof(p_evt->data.rxtx.p_data);
            //memset(p_evt->data.rxtx.p_data, 0, size);
           // strcpy(Uart_AT, p_evt->data.rxtx.p_data);//Copy the received Uart message for comparing        
-           nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
+         //  nrf_libuarte_async_rx_free(p_libuarte, p_evt->data.rxtx.p_data, p_evt->data.rxtx.length);
             
             m_loopback_phase = false;//loop back function from e.g
             break;
