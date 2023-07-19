@@ -560,134 +560,6 @@ while(1)
 }
 
 
-
-void ce_fcc_testing()
-{
-
-
-   int i = 1;
-
-  // nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,13)); GPS POWER
-  // nrf_gpio_pin_set(NRF_GPIO_PIN_MAP(1,13));
-
-   _AT_CHECK;      nrf_delay_ms(500);
-
-   _GNSS_POW_ON;   nrf_delay_ms(500);
-
-   NRF_LOG_INFO("Trun on GPS :");
-      
-   _SHU_TCP;       nrf_delay_ms(500);
-
-   _GSM_ONLY;      nrf_delay_ms(500);
-   //_LTE_ONLY;      nrf_delay_ms(500);
-   //_SET_CATM1;     nrf_delay_ms(500);
-   //_SET_NBIOT;     nrf_delay_ms(500);
-   _SET_RM;        nrf_delay_ms(500);
-   //_SET_APN;
-   //_APN_CHECK;
-
-
-   NRF_LOG_INFO("Waiting for modem....");
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(5000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(3000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(3000);
-   NRF_LOG_FLUSH();
-   nrf_delay_ms(2000);
-   NRF_LOG_FLUSH();
-
-   _SIG_CHECK;     nrf_delay_ms(1000);
-
-   _NET_ADHERE;    nrf_delay_ms(1000);
-
-   error_uart_detect();
-   _NET_TYPE;      nrf_delay_ms(500);
-    //while(!isPresent(Uart_AT,  OK)==1);
-   error_uart_detect();
-
-
-
-   //mqtt
-
-    //_DIS_MQTT;      nrf_delay_ms(500);
-    //_DIS_WILESS;    nrf_delay_ms(500);
-      _S_APN_MQTT;    nrf_delay_ms(500);
-      
-      _COM_MQTT_IP;   nrf_delay_ms(500);
-      
-      _SET_MQTT_URL;  nrf_delay_ms(500);
-      
-      _S_KEP_T;       nrf_delay_ms(500);
-      
-      _S_USR_N;       nrf_delay_ms(500);
-      
-      _S_PASS_WD;     nrf_delay_ms(500);
-      
-      _S_CLE_ID;      nrf_delay_ms(500);
-      
-      _C_T_MQTT;      nrf_delay_ms(500);
-
-    //while(!isPresent(Uart_AT,  OK)==1);
-
-
-    
-
-     // _DIS_MQTT;
-     //  nrf_delay_ms(200);
-    _SUB_TOP;       nrf_delay_ms(500);
-    
-    _PUB_T_TOP;     nrf_delay_ms(500);
-
-   
-    // _GSM_BD_CHECK;  nrf_delay_ms(500);
-
-    //_SEND_CHECK;
-    
-       
-
-   // NRF_LOG_INFO("Waiting for responding");
-   // nrf_delay_ms(3000);
-
-
-  
-//For Antenna Testing
-
- while(1)
-
-      {
-
-    // _PUB_T_TOP; 
-     
-     nrf_delay_ms(100);
-
-
-    // _SEND_CHECK;   
-
-       _GNSS_SIG;
-
-       wait_uart_ack(GNSS_ACK);
-      
-
-       nrf_delay_ms(200);
-
-
-       nrf_gpio_pin_toggle(NRF_GPIO_PIN_MAP(1,7)); 
-
-       nrf_delay_ms(10);
-
-
-
-      }
-
-//For Antenna Testing
-
-
-}
-
-
-
 bool try_login_2G(void)
 {
 
@@ -881,6 +753,8 @@ for(int i=1; i <=500;i++) //Added timeout for waiting
   memset(Uart_AT, 0, size);
   return result;
 }
+
+
 
 int wait_uart_ack_x_second(uint8_t *word, int second)
 {
