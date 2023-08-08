@@ -90,7 +90,7 @@ int main(void)
 
     enable_3v3();
 
- //   can_bus_start(); There's no canbus in Roam p5 anymore.
+ // can_bus_start(); There's no canbus in Roam p5 anymore.
 
     twi_init();
 
@@ -135,9 +135,7 @@ int main(void)
 
 
 
-lte_gsm_switch_for_toby();
-
-
+//lte_gsm_switch_for_toby();
 
 
 
