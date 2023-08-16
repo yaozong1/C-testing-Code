@@ -44,6 +44,7 @@ static void app_timer_handler(void * p_context)
 
 
 //  nrf_gpio_pin_toggle(LED_Pin1);
+  //send_ack_to_stm_timer();
   
   NRF_LOG_FLUSH();
 

@@ -59,13 +59,15 @@ bool result_modem = 0 ;
 bool result_qspi_flash = 0 ;
 bool result_motion_sensor = 0 ;
 
-bool sim_testing_flag = 1;//To define if SIM CARD TESTING OR NOT.
-bool aliyun_testing_FLAG = 1;//To define if gsm/4g TESTING OR NOT.
+bool sim_testing_flag = 0;//To define if SIM CARD TESTING OR NOT.
+bool aliyun_testing_FLAG = 0;//To define if gsm/4g TESTING OR NOT.
 bool result_aliyun = 0 ;
 
 
 
- uint8_t start[] = "START";
+uint8_t start[] = "START";
+
+uint8_t result[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07}; //for sending to esp32 by stm32___can____
 
 
 
@@ -164,32 +166,53 @@ NRF_LOG_INFO("     MCU(nRF52840):            Passed \r\n");//Of course if passed
 
 if (result_modem == 1)
 {
+result[1] = 0x11;
 NRF_LOG_INFO("     Modem(SIM7000G):          Passed \r\n");
 }
 else 
 NRF_LOG_INFO("     Modem(SIM7000G):          Failed\r\n");
 
+
 if (sim_testing_flag ==1)
  {
 if (sim_status == 1)
 {
+result[2] = 0x11;
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        Passed \r\n");
 }
 else 
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        Failed\r\n");
  }
 
+else
+{
+NRF_LOG_INFO("     SIMCARD(SIM7000G):        SKIPED\r\n");
+result[2] = 0x04;
+}
+
+
+
 if (aliyun_testing_FLAG ==1)
 {
 if (result_aliyun == 1)
 {
+result[3] = 0x11;
 NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Passed \r\n");
 }
 else 
 NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Failed\r\n");
  }
+ else
+{
+NRF_LOG_INFO("     GSM/LTE(SIM7000G):        SKIPED\r\n");
+result[3] = 0x04;
+}
+
+
+
 if (result_motion_sensor == 1)
 {
+result[4] = 0x11;
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
 }
 else 
@@ -197,16 +220,29 @@ NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Failed\r\n");
 
 if (result_qspi_flash == 1)
 {
+result[5] = 0x11;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
 }
 else
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Failed\r\n");
 
+result[6] = 0x11;//先默认c  CAN BUS 没有问题
+
 NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n");
 
     while (true)
     {
-          
+
+     //result[6] = 0x11;
+     uint8_t hello[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
+     int size = sizeof(result);
+     send_ack_to_stm(result, size);
+     nrf_delay_ms(2000);
+
+
+
+     /*     
+       do{
          if(isPresent(Uart_AT,  start)==1)
          {
          NRF_LOG_INFO("Testing start\r\n");
@@ -219,8 +255,24 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
                 mcp_can_send_msg(can_idd, ext_send, lens, buff);
                 nrf_delay_ms(2000);        
          }
-       __WFE();
-    
+         
+   
+         }while(0);
+
+      do{
+      
+      
+      
+      
+      ;
+      
+      
+         }while(1);
+*/
+
+
+
+
         } 
 
 

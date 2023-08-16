@@ -33,6 +33,8 @@ extern void lte_gsm_switch_for_toby(void);
 extern int wait_uart_ack(uint8_t *word);
 extern int wait_uart_ack_x_second(uint8_t *word, int second);
 extern void gps_receive(void);
+extern void send_ack_to_stm( uint8_t *send_array, size_t size );
+extern void send_ack_to_stm_timer( void );
 
 //Modem AT COMMAND START
 
@@ -133,6 +135,9 @@ static uint8_t GNSS_SIG_size = sizeof(GNSS_SIG);
 
 static uint8_t GSM_BD_CHECK[] = "AT+CBAND?\r\n";
 static uint8_t GSM_BD_CHECK_size = sizeof(GSM_BD_CHECK);
+
+static uint8_t SEND_ACK_STM[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
+static uint8_t SEND_ACK_STM_size = sizeof(SEND_ACK_STM);
 
 #endif
 

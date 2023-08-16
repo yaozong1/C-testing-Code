@@ -64,6 +64,7 @@
 //UART2_FOR GNSS
 //#define _GNSS_SNR nrf_libuarte_async_tx(&libuarte_vcu, GNSS_SNR, GNSS_SNR_size);
 
+#define _SEND_ACK_STM nrf_libuarte_async_tx(&libuarte_vcu, SEND_ACK_STM, SEND_ACK_STM_size);
 
 bool status_modem;
 
@@ -246,8 +247,8 @@ void uart_init_elevate_vcu(void)
 {
     ret_code_t err_code;
     nrf_libuarte_async_config_t nrf_libuarte_async_config = {
-            .tx_pin     = 6,
-            .rx_pin     = 5,
+            .tx_pin     = 5,
+            .rx_pin     = 6,
             .baudrate   = NRF_UARTE_BAUDRATE_115200,
             .pullup_rx  = false,
             .parity     = NRF_UARTE_PARITY_EXCLUDED,
@@ -780,3 +781,21 @@ for(int i=1; i <=second*100;i++) //Added timeout for waiting
 }
 
 
+void send_ack_to_stm( uint8_t *send_array, size_t size )
+{
+//uint8_t SEND_ACK_STM[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
+
+
+nrf_libuarte_async_tx(&libuarte_vcu, send_array, size);
+
+ NRF_LOG_INFO("SENT ACK TO STM");
+
+}
+
+void send_ack_to_stm_timer( void )
+{
+
+_SEND_ACK_STM;
+ NRF_LOG_INFO("SENT ACK TO STM");
+
+}
