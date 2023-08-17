@@ -49,7 +49,7 @@ static void qspi_handler(nrf_drv_qspi_evt_t event, void * p_context)
     m_finished = true;
 }
 
-static void configure_memory()
+static bool configure_memory()
 {
     uint8_t temporary = 0x40;
     uint32_t err_code;
@@ -63,19 +63,27 @@ static void configure_memory()
     };
 
     // Send reset enable
+    
     err_code = nrf_drv_qspi_cinstr_xfer(&cinstr_cfg, NULL, NULL);
-    APP_ERROR_CHECK(err_code);
+    if (err_code != NRF_SUCCESS)
+    return 0 ;
+    // APP_ERROR_CHECK(err_code);
 
     // Send reset command
     cinstr_cfg.opcode = QSPI_STD_CMD_RST;
     err_code = nrf_drv_qspi_cinstr_xfer(&cinstr_cfg, NULL, NULL);
-    APP_ERROR_CHECK(err_code);
+    if (err_code != NRF_SUCCESS)
+    return 0 ;
+    //APP_ERROR_CHECK(err_code);
 
     // Switch to qspi mode
     cinstr_cfg.opcode = QSPI_STD_CMD_WRSR;
     cinstr_cfg.length = NRF_QSPI_CINSTR_LEN_2B;
     err_code = nrf_drv_qspi_cinstr_xfer(&cinstr_cfg, &temporary, NULL);
-    APP_ERROR_CHECK(err_code);
+    if (err_code != NRF_SUCCESS)
+    return 0; 
+    //APP_ERROR_CHECK(err_code);
+    return 1;
 }
 
 bool qspi_test(void)
@@ -90,20 +98,21 @@ bool qspi_test(void)
         nrf_drv_qspi_config_t config = NRF_DRV_QSPI_DEFAULT_CONFIG;
 
     err_code = nrf_drv_qspi_init(&config, qspi_handler, NULL);
-    APP_ERROR_CHECK(err_code);
+   // APP_ERROR_CHECK(err_code);
 
     NRF_LOG_INFO("QSPI example started.");
 
-    configure_memory();
+     if (configure_memory() == false)
+     return false ; 
 
     m_finished = false;
     err_code = nrf_drv_qspi_erase(NRF_QSPI_ERASE_LEN_64KB, 0);
-    APP_ERROR_CHECK(err_code);
+   // APP_ERROR_CHECK(err_code);
     WAIT_FOR_PERIPH();
     NRF_LOG_INFO("Process of erasing first block start");
 
     err_code = nrf_drv_qspi_write(m_buffer_tx, QSPI_TEST_DATA_SIZE, 0);
-    APP_ERROR_CHECK(err_code);
+   // APP_ERROR_CHECK(err_code);
     WAIT_FOR_PERIPH();
     NRF_LOG_INFO("Process of writing data start");
 

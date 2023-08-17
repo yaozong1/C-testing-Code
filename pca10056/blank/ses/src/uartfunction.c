@@ -237,7 +237,7 @@ void uart_init_elevate(void)
     APP_ERROR_CHECK(err_code);
 
     nrf_libuarte_async_enable(&libuarte);
-    nrf_delay_ms(100);
+    nrf_delay_ms(10);
     err_code = nrf_libuarte_async_tx(&libuarte, text, text_size);
     APP_ERROR_CHECK(err_code);
 }
@@ -263,7 +263,7 @@ void uart_init_elevate_vcu(void)
     APP_ERROR_CHECK(err_code);
 
     nrf_libuarte_async_enable(&libuarte_vcu);
-    nrf_delay_ms(100);
+    nrf_delay_ms(10);
     err_code = nrf_libuarte_async_tx(&libuarte_vcu, text, text_size);
     APP_ERROR_CHECK(err_code);
 }
@@ -280,8 +280,8 @@ bool AT_Match(void)//Define a AT respond function
    _AT_CHECK;//Sending AT ack
    
    NRF_LOG_INFO("Matching....");
-   nrf_delay_ms(1000);
-   NRF_LOG_FLUSH();
+   nrf_delay_ms(100);
+   
    
 }
 return 1;
@@ -312,24 +312,24 @@ void Modem_Pwron(void)
 {
     
     NRF_LOG_INFO("Modem Power ON.....");       
-    nrf_delay_ms(100);
+    nrf_delay_ms(5);
     NRF_LOG_FLUSH();
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,14));//Indicator
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,3));//PWRKEY
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,9));//WATCH DOD BUT DOESNOT WORK NOW
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(1,13));//GPS ANTENNA POWER
     nrf_gpio_cfg_input(NRF_GPIO_PIN_MAP(1,11),NRF_GPIO_PIN_PULLDOWN);
-    nrf_delay_ms(100);
+    nrf_delay_ms(5);
     status_modem = nrf_gpio_pin_read(NRF_GPIO_PIN_MAP(1,11));
     NRF_LOG_INFO("Modem Status: %d",status_modem);
-    nrf_delay_ms(100);
+    nrf_delay_ms(5);
     NRF_LOG_FLUSH();
 
     if (status_modem == 1)//Modem is on already when testing.
     {
     NRF_LOG_INFO("Modem is on");
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(500);
+    nrf_delay_ms(50);
     NRF_LOG_FLUSH();
 
     NRF_LOG_INFO("Reboot the modem....");
@@ -339,7 +339,7 @@ void Modem_Pwron(void)
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
     NRF_LOG_INFO("shut down the modem....");
-    nrf_delay_ms(2000);
+    nrf_delay_ms(500);
     NRF_LOG_FLUSH();
 
     NRF_LOG_INFO("Modem is being powering on");
@@ -349,7 +349,7 @@ void Modem_Pwron(void)
     nrf_delay_ms(2000);
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(1,3), 0);
-    nrf_delay_ms(500);
+    nrf_delay_ms(50);
     NRF_LOG_INFO("POWER ON DONE");
 
 

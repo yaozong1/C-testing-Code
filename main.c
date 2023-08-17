@@ -107,24 +107,27 @@ int main(void)
     Modem_Pwron();
    
     result_modem = AT_Match();
+
+    nrf_delay_ms(10);
     
-    nrf_delay_ms(100);
+    NRF_LOG_INFO("AT_Matching Done");
+    nrf_delay_ms(10);
+    
+    nrf_delay_ms(10);
     NRF_LOG_INFO("IIC testing start....");
-    nrf_delay_ms(50);
+    nrf_delay_ms(10);
     
 
     result_motion_sensor = Lis_test();
 
-    nrf_delay_ms(100);
-    
-    NRF_LOG_INFO("AT_Matching Done");
-    nrf_delay_ms(100);
+
 
 
 
  if (sim_testing_flag ==1)//if SIM CARD TESTING OR NOT.
     { 
        sim_status = SIM_DET();
+
         if (sim_status == 1)
        {
          NRF_LOG_INFO("Found the SIM card");
@@ -149,7 +152,7 @@ int main(void)
       {
 
          result_aliyun = set_MQTT();
-          nrf_delay_ms(100);
+          nrf_delay_ms(10);
 
       }
 
@@ -237,7 +240,7 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
      uint8_t hello[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
      int size = sizeof(result);
      send_ack_to_stm(result, size);
-     nrf_delay_ms(2000);
+     nrf_delay_ms(100);
 
 
 
