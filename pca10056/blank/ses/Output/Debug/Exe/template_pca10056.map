@@ -38723,7 +38723,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fast_run is too large to fit in RAM1 memory segment)
                 0x0000000000018454                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000234      0x434 load address 0x0000000000018454
+.data           0x0000000020000234      0x42c load address 0x0000000000018454
                 0x0000000020000234                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.m_buffer_mask
@@ -38749,143 +38749,136 @@ Linker script and memory map
                 0x0000000020000304       0x14 Output/Debug/Obj/template_pca10056/nrf_log_str_formatter.o
  .data.m_colors
                 0x0000000020000318       0x24 Output/Debug/Obj/template_pca10056/nrf_log_str_formatter.o
- .data.sim_testing_flag
-                0x000000002000033c        0x1 Output/Debug/Obj/template_pca10056/main.o
-                0x000000002000033c                sim_testing_flag
- .data.aliyun_testing_FLAG
-                0x000000002000033d        0x1 Output/Debug/Obj/template_pca10056/main.o
-                0x000000002000033d                aliyun_testing_FLAG
- *fill*         0x000000002000033e        0x2 
- .data.result   0x0000000020000340        0x8 Output/Debug/Obj/template_pca10056/main.o
-                0x0000000020000340                result
- .data.text     0x0000000020000348        0x5 Output/Debug/Obj/template_pca10056/uartfunction.o
+ .data.result   0x000000002000033c        0x8 Output/Debug/Obj/template_pca10056/main.o
+                0x000000002000033c                result
+ .data.text     0x0000000020000344        0x5 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.text_size
-                0x000000002000034d        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x000000002000034e        0x2 
+                0x0000000020000349        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x000000002000034a        0x2 
  .data.Dect_sim
-                0x0000000020000350        0xb Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000034c        0xb Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.Dect_sim_size
-                0x000000002000035b        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000357        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.Sigal_qul
-                0x000000002000035c        0x9 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000358        0x9 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.Sigal_qul_size
-                0x0000000020000365        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000366        0x2 
+                0x0000000020000361        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000362        0x2 
  .data.GSM_ONLY
-                0x0000000020000368        0xd Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000364        0xd Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.GSM_ONLY_size
-                0x0000000020000375        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000376        0x2 
- .data.SET_RM   0x0000000020000378        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000371        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000372        0x2 
+ .data.SET_RM   0x0000000020000374        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.SET_RM_size
-                0x0000000020000384        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000385        0x3 
+                0x0000000020000380        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000381        0x3 
  .data.NET_ADHERE
-                0x0000000020000388        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000384        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.NET_ADHERE_size
-                0x0000000020000394        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000395        0x3 
+                0x0000000020000390        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000391        0x3 
  .data.NET_TYPE
-                0x0000000020000398        0xb Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000394        0xb Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.NET_TYPE_size
-                0x00000000200003a3        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- .data.SHU_TCP  0x00000000200003a4        0xd Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000039f        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ .data.SHU_TCP  0x00000000200003a0        0xd Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.SHU_TCP_size
-                0x00000000200003b1        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200003b2        0x2 
+                0x00000000200003ad        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200003ae        0x2 
  .data.S_APN_MQTT
-                0x00000000200003b4       0x1c Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200003b0       0x1c Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.S_APN_MQTT_size
-                0x00000000200003d0        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200003d1        0x3 
+                0x00000000200003cc        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200003cd        0x3 
  .data.COM_MQTT_IP
-                0x00000000200003d4        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200003d0        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.COM_MQTT_IP_size
-                0x00000000200003e0        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200003e1        0x3 
+                0x00000000200003dc        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200003dd        0x3 
  .data.SET_MQTT_URL
-                0x00000000200003e4       0x44 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200003e0       0x44 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.SET_MQTT_URL_size
-                0x0000000020000428        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000429        0x3 
- .data.S_KEP_T  0x000000002000042c       0x1a Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000424        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000425        0x3 
+ .data.S_KEP_T  0x0000000020000428       0x1a Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.S_KEP_T_size
-                0x0000000020000446        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000447        0x1 
- .data.S_USR_N  0x0000000020000448       0x29 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000442        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000443        0x1 
+ .data.S_USR_N  0x0000000020000444       0x29 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.S_USR_N_size
-                0x0000000020000471        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000472        0x2 
+                0x000000002000046d        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x000000002000046e        0x2 
  .data.S_PASS_WD
-                0x0000000020000474       0x58 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000470       0x58 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.S_PASS_WD_size
-                0x00000000200004cc        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200004cd        0x3 
+                0x00000000200004c8        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200004c9        0x3 
  .data.S_CLE_ID
-                0x00000000200004d0       0x67 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200004cc       0x67 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.S_CLE_ID_size
-                0x0000000020000537        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000533        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.C_T_MQTT
-                0x0000000020000538        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000534        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.C_T_MQTT_size
-                0x0000000020000544        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000545        0x3 
- .data.SUB_TOP  0x0000000020000548       0x2c Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000540        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000541        0x3 
+ .data.SUB_TOP  0x0000000020000544       0x2c Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.SUB_TOP_size
-                0x0000000020000574        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000020000575        0x3 
+                0x0000000020000570        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000020000571        0x3 
  .data.PUB_T_TOP
-                0x0000000020000578       0x30 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000574       0x30 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.PUB_T_TOP_size
-                0x00000000200005a8        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200005a9        0x3 
+                0x00000000200005a4        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200005a5        0x3 
  .data.SEND_CHECK
-                0x00000000200005ac        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200005a8        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.SEND_CHECK_size
-                0x00000000200005b4        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200005b5        0x3 
+                0x00000000200005b0        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200005b1        0x3 
  .data.GNSS_POW_ON
-                0x00000000200005b8        0xf Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200005b4        0xf Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.GNSS_POW_ON_size
-                0x00000000200005c7        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200005c3        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.GNSS_SIG
-                0x00000000200005c8        0xd Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200005c4        0xd Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.GNSS_SIG_size
-                0x00000000200005d5        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200005d6        0x2 
- .data.MATCH    0x00000000200005d8        0x7 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200005d1        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200005d2        0x2 
+ .data.MATCH    0x00000000200005d4        0x7 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200005db        0x1 
+ .data.OK       0x00000000200005dc        0x3 Output/Debug/Obj/template_pca10056/uartfunction.o
  *fill*         0x00000000200005df        0x1 
- .data.OK       0x00000000200005e0        0x3 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200005e3        0x1 
- .data.SMSUB    0x00000000200005e4        0x7 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200005eb        0x1 
+ .data.SMSUB    0x00000000200005e0        0x7 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200005e7        0x1 
  .data.GNSS_ACK
-                0x00000000200005ec        0x9 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x00000000200005f5        0x3 
+                0x00000000200005e8        0x9 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x00000000200005f1        0x3 
  .data.GNSS_CON
-                0x00000000200005f8        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200005f4        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.MD_ACTIVE
-                0x0000000020000604        0x5 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020000600        0x5 Output/Debug/Obj/template_pca10056/uartfunction.o
  .data.lis_address
-                0x0000000020000609        0x1 Output/Debug/Obj/template_pca10056/IIC_LIS.o
-                0x0000000020000609                lis_address
+                0x0000000020000605        0x1 Output/Debug/Obj/template_pca10056/IIC_LIS.o
+                0x0000000020000605                lis_address
  .data.lis_sample_data
-                0x000000002000060a        0x1 Output/Debug/Obj/template_pca10056/IIC_LIS.o
-                0x000000002000060a                lis_sample_data
- *fill*         0x000000002000060b        0x5 
+                0x0000000020000606        0x1 Output/Debug/Obj/template_pca10056/IIC_LIS.o
+                0x0000000020000606                lis_sample_data
+ *fill*         0x0000000020000607        0x1 
  .data.m_app_timer_id_1_data
-                0x0000000020000610       0x20 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000020000608       0x20 Output/Debug/Obj/template_pca10056/yz_timer.o
  .data.m_app_timer_id_2_data
-                0x0000000020000630       0x20 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000020000628       0x20 Output/Debug/Obj/template_pca10056/yz_timer.o
  .data.libc.__RAL_global_locale
-                0x0000000020000650       0x14 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000020000650                __RAL_global_locale
+                0x0000000020000648       0x14 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000020000648                __RAL_global_locale
  .data.libc.__RAL_rand_next
-                0x0000000020000664        0x4 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000020000664                __RAL_rand_next
-                0x0000000020000668                __data_end__ = (__data_start__ + SIZEOF (.data))
-                0x0000000000000434                __data_size__ = SIZEOF (.data)
-                0x0000000000018888                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x000000002000065c        0x4 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x000000002000065c                __RAL_rand_next
+                0x0000000020000660                __data_end__ = (__data_start__ + SIZEOF (.data))
+                0x000000000000042c                __data_size__ = SIZEOF (.data)
+                0x0000000000018880                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/Debug/Obj/template_pca10056/thumb_crt0.o
@@ -38893,160 +38886,160 @@ Linker script and memory map
 
 .data_run       0x0000000020000234        0x0
                 0x0000000020000234                __data_run_start__ = .
-                0x0000000020000668                __data_run_end__ = (__data_run_start__ + SIZEOF (.data))
-                0x0000000000000434                __data_run_size__ = (__data_run_end__ - __data_run_start__)
-                0x0000000020000668                __data_run_load_end__ = __data_run_end__
+                0x0000000020000660                __data_run_end__ = (__data_run_start__ + SIZEOF (.data))
+                0x000000000000042c                __data_run_size__ = (__data_run_end__ - __data_run_start__)
+                0x0000000020000660                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .data_run is too large to fit in RAM1 memory segment)
-                0x0000000000018888                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000000000018880                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x0000000020000668        0x0 load address 0x0000000000018888
-                0x0000000020000668                __tdata_start__ = .
+.tdata          0x0000000020000660        0x0 load address 0x0000000000018880
+                0x0000000020000660                __tdata_start__ = .
  *(.tdata .tdata.*)
-                0x0000000020000668                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
+                0x0000000020000660                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000000018888                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000000018888                __FLASH1_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000018888                __FLASH1_segment_used_size__ = (__FLASH1_segment_used_end__ - __FLASH1_segment_start__)
+                0x0000000000018880                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000000000018880                __FLASH1_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000000000018880                __FLASH1_segment_used_size__ = (__FLASH1_segment_used_end__ - __FLASH1_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .tdata is too large to fit in FLASH1 memory segment)
 
-.tdata_run      0x0000000020000668        0x0
-                0x0000000020000668                __tdata_run_start__ = .
-                0x0000000020000668                __tdata_run_end__ = (__tdata_run_start__ + SIZEOF (.tdata))
+.tdata_run      0x0000000020000660        0x0
+                0x0000000020000660                __tdata_run_start__ = .
+                0x0000000020000660                __tdata_run_end__ = (__tdata_run_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_run_size__ = (__tdata_run_end__ - __tdata_run_start__)
-                0x0000000020000668                __tdata_run_load_end__ = __tdata_run_end__
+                0x0000000020000660                __tdata_run_load_end__ = __tdata_run_end__
                 0x0000000000000001                . = ASSERT (((__tdata_run_start__ == __tdata_run_end__) || ((__tdata_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tdata_run is too large to fit in RAM1 memory segment)
-                0x0000000020000668                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
+                0x0000000020000660                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
 
-.bss            0x0000000020000668    0x1c6e8
-                0x0000000020000668                __bss_start__ = .
+.bss            0x0000000020000660    0x1c6f0
+                0x0000000020000660                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss.m_clock_cb
-                0x0000000020000668       0x24 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
+                0x0000000020000660       0x24 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
  .bss.m_rand_pool_nrf_queue_buffer
-                0x000000002000068c       0x41 Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
- *fill*         0x00000000200006cd        0x3 
+                0x0000000020000684       0x41 Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
+ *fill*         0x00000000200006c5        0x3 
  .bss.m_rand_pool_nrf_queue_cb
-                0x00000000200006d0        0xc Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
+                0x00000000200006c8        0xc Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
  .bss.m_handlers
-                0x00000000200006dc        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
+                0x00000000200006d4        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
  .bss.m_contexts
-                0x00000000200006e4        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
+                0x00000000200006dc        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
  .bss.m_clock_cb
-                0x00000000200006ec        0x8 Output/Debug/Obj/template_pca10056/nrfx_clock.o
+                0x00000000200006e4        0x8 Output/Debug/Obj/template_pca10056/nrfx_clock.o
  .bss.nrfx_clock_irq_enabled
-                0x00000000200006f4        0x1 Output/Debug/Obj/template_pca10056/nrfx_clock.o
-                0x00000000200006f4                nrfx_clock_irq_enabled
- *fill*         0x00000000200006f5        0x3 
- .bss.m_cb      0x00000000200006f8       0x78 Output/Debug/Obj/template_pca10056/nrfx_gpiote.o
- .bss.m_cb      0x0000000020000770       0x18 Output/Debug/Obj/template_pca10056/nrfx_i2s.o
- .bss.m_cb      0x0000000020000788       0x18 Output/Debug/Obj/template_pca10056/nrfx_pdm.o
+                0x00000000200006ec        0x1 Output/Debug/Obj/template_pca10056/nrfx_clock.o
+                0x00000000200006ec                nrfx_clock_irq_enabled
+ *fill*         0x00000000200006ed        0x3 
+ .bss.m_cb      0x00000000200006f0       0x78 Output/Debug/Obj/template_pca10056/nrfx_gpiote.o
+ .bss.m_cb      0x0000000020000768       0x18 Output/Debug/Obj/template_pca10056/nrfx_i2s.o
+ .bss.m_cb      0x0000000020000780       0x18 Output/Debug/Obj/template_pca10056/nrfx_pdm.o
  .bss.m_pofwarn_handler
-                0x00000000200007a0        0x4 Output/Debug/Obj/template_pca10056/nrfx_power.o
+                0x0000000020000798        0x4 Output/Debug/Obj/template_pca10056/nrfx_power.o
  .bss.m_sleepevt_handler
-                0x00000000200007a4        0x4 Output/Debug/Obj/template_pca10056/nrfx_power.o
+                0x000000002000079c        0x4 Output/Debug/Obj/template_pca10056/nrfx_power.o
  .bss.m_usbevt_handler
-                0x00000000200007a8        0x4 Output/Debug/Obj/template_pca10056/nrfx_power.o
+                0x00000000200007a0        0x4 Output/Debug/Obj/template_pca10056/nrfx_power.o
  .bss.m_channels_allocated
-                0x00000000200007ac        0x4 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
+                0x00000000200007a4        0x4 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
  .bss.m_groups_allocated
-                0x00000000200007b0        0x1 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
- *fill*         0x00000000200007b1        0x3 
+                0x00000000200007a8        0x1 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
+ *fill*         0x00000000200007a9        0x3 
  .bss.m_prs_box_0
-                0x00000000200007b4        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
+                0x00000000200007ac        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
  .bss.m_prs_box_1
-                0x00000000200007bc        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
+                0x00000000200007b4        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
  .bss.m_prs_box_2
-                0x00000000200007c4        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
+                0x00000000200007bc        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
  .bss.m_prs_box_3
-                0x00000000200007cc        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
+                0x00000000200007c4        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
  .bss.m_prs_box_4
-                0x00000000200007d4        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
- .bss.m_cb      0x00000000200007dc       0x20 Output/Debug/Obj/template_pca10056/nrfx_pwm.o
+                0x00000000200007cc        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
+ .bss.m_cb      0x00000000200007d4       0x20 Output/Debug/Obj/template_pca10056/nrfx_pwm.o
  .bss.m_qdec_event_handler
-                0x00000000200007fc        0x4 Output/Debug/Obj/template_pca10056/nrfx_qdec.o
- .bss.m_cb      0x0000000020000800        0xc Output/Debug/Obj/template_pca10056/nrfx_qspi.o
+                0x00000000200007f4        0x4 Output/Debug/Obj/template_pca10056/nrfx_qdec.o
+ .bss.m_cb      0x00000000200007f8        0xc Output/Debug/Obj/template_pca10056/nrfx_qspi.o
  .bss.m_rng_hndl
-                0x000000002000080c        0x4 Output/Debug/Obj/template_pca10056/nrfx_rng.o
+                0x0000000020000804        0x4 Output/Debug/Obj/template_pca10056/nrfx_rng.o
  .bss.m_handlers
-                0x0000000020000810        0x8 Output/Debug/Obj/template_pca10056/nrfx_rtc.o
- .bss.m_cb      0x0000000020000818        0x6 Output/Debug/Obj/template_pca10056/nrfx_rtc.o
- *fill*         0x000000002000081e        0x2 
- .bss.m_cb      0x0000000020000820       0x30 Output/Debug/Obj/template_pca10056/nrfx_saadc.o
- .bss.m_cb      0x0000000020000850       0x90 Output/Debug/Obj/template_pca10056/nrfx_spim.o
- .bss.m_cb      0x00000000200008e0       0x3c Output/Debug/Obj/template_pca10056/nrfx_timer.o
- .bss.m_cb      0x000000002000091c       0x78 Output/Debug/Obj/template_pca10056/nrfx_twi.o
+                0x0000000020000808        0x8 Output/Debug/Obj/template_pca10056/nrfx_rtc.o
+ .bss.m_cb      0x0000000020000810        0x6 Output/Debug/Obj/template_pca10056/nrfx_rtc.o
+ *fill*         0x0000000020000816        0x2 
+ .bss.m_cb      0x0000000020000818       0x30 Output/Debug/Obj/template_pca10056/nrfx_saadc.o
+ .bss.m_cb      0x0000000020000848       0x90 Output/Debug/Obj/template_pca10056/nrfx_spim.o
+ .bss.m_cb      0x00000000200008d8       0x3c Output/Debug/Obj/template_pca10056/nrfx_timer.o
+ .bss.m_cb      0x0000000020000914       0x78 Output/Debug/Obj/template_pca10056/nrfx_twi.o
  .bss.m_event_handler
-                0x0000000020000994        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x000000002000098c        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
  .bss.m_bus_suspend
-                0x0000000020000998        0x1 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x0000000020000990        0x1 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
  .bss.m_last_setup_dir
-                0x0000000020000999        0x1 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
- *fill*         0x000000002000099a        0x2 
+                0x0000000020000991        0x1 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+ *fill*         0x0000000020000992        0x2 
  .bss.m_ep_ready
-                0x000000002000099c        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x0000000020000994        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
  .bss.m_ep_dma_waiting
-                0x00000000200009a0        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x0000000020000998        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
  .bss.m_dma_pending
-                0x00000000200009a4        0x1 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
- *fill*         0x00000000200009a5        0x3 
+                0x000000002000099c        0x1 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+ *fill*         0x000000002000099d        0x3 
  .bss.m_ep_state
-                0x00000000200009a8      0x120 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x00000000200009a0      0x120 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
  .bss.m_wdt_event_handler
-                0x0000000020000ac8        0x4 Output/Debug/Obj/template_pca10056/nrfx_wdt.o
+                0x0000000020000ac0        0x4 Output/Debug/Obj/template_pca10056/nrfx_wdt.o
  .bss.log_mempool_nrf_balloc_pool_stack
-                0x0000000020000acc        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000020000ac4        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .bss.log_mempool_nrf_balloc_pool_mem
-                0x0000000020000ad4       0xc0 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000020000acc       0xc0 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .bss.log_mempool_nrf_balloc_cb
-                0x0000000020000b94        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000020000b8c        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .bss.m_log_push_ringbuf_buf
-                0x0000000020000b9c       0x80 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000020000b94       0x80 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .bss.m_log_push_ringbuf_cb
-                0x0000000020000c1c       0x18 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000020000c14       0x18 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .bss.m_log_data
-                0x0000000020000c34      0x420 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000020000c2c      0x420 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .bss.m_host_present
-                0x0000000020001054        0x1 Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
- *fill*         0x0000000020001055        0x3 
+                0x000000002000104c        0x1 Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
+ *fill*         0x000000002000104d        0x3 
  .bss.m_string_buff
-                0x0000000020001058      0x100 Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
+                0x0000000020001050      0x100 Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
  .bss.m_error_data.0
-                0x0000000020001158       0x20 Output/Debug/Obj/template_pca10056/app_error.o
+                0x0000000020001150       0x20 Output/Debug/Obj/template_pca10056/app_error.o
  .bss.mp_active_timer
-                0x0000000020001178        0x4 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x0000000020001170        0x4 Output/Debug/Obj/template_pca10056/app_timer2.o
  .bss.m_global_active
-                0x000000002000117c        0x1 Output/Debug/Obj/template_pca10056/app_timer2.o
- *fill*         0x000000002000117d        0x3 
+                0x0000000020001174        0x1 Output/Debug/Obj/template_pca10056/app_timer2.o
+ *fill*         0x0000000020001175        0x3 
  .bss.m_base_counter
-                0x0000000020001180        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x0000000020001178        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
  .bss.m_stamp64
-                0x0000000020001188        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x0000000020001180        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
  .bss.m_req_fifo_data
-                0x0000000020001190       0x58 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x0000000020001188       0x58 Output/Debug/Obj/template_pca10056/app_timer2.o
  .bss.m_app_timer_sortlist_sortlist_cb
-                0x00000000200011e8        0x4 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x00000000200011e0        0x4 Output/Debug/Obj/template_pca10056/app_timer2.o
  .bss.m_in_critical_region
-                0x00000000200011ec        0x4 Output/Debug/Obj/template_pca10056/app_util_platform.o
- .bss.m_flags   0x00000000200011f0        0x8 Output/Debug/Obj/template_pca10056/fds.o
+                0x00000000200011e4        0x4 Output/Debug/Obj/template_pca10056/app_util_platform.o
+ .bss.m_flags   0x00000000200011e8        0x8 Output/Debug/Obj/template_pca10056/fds.o
  .bss.m_queued_op_cnt
-                0x00000000200011f8        0x4 Output/Debug/Obj/template_pca10056/fds.o
+                0x00000000200011f0        0x4 Output/Debug/Obj/template_pca10056/fds.o
  .bss.m_cb_table
-                0x00000000200011fc       0x10 Output/Debug/Obj/template_pca10056/fds.o
+                0x00000000200011f4       0x10 Output/Debug/Obj/template_pca10056/fds.o
  .bss.m_latest_rec_id
-                0x000000002000120c        0x4 Output/Debug/Obj/template_pca10056/fds.o
- .bss.m_pages   0x0000000020001210       0x28 Output/Debug/Obj/template_pca10056/fds.o
+                0x0000000020001204        0x4 Output/Debug/Obj/template_pca10056/fds.o
+ .bss.m_pages   0x0000000020001208       0x28 Output/Debug/Obj/template_pca10056/fds.o
  .bss.m_swap_page
-                0x0000000020001238        0x8 Output/Debug/Obj/template_pca10056/fds.o
- .bss.m_gc      0x0000000020001240       0x10 Output/Debug/Obj/template_pca10056/fds.o
- .bss.tok.4     0x0000000020001250        0x8 Output/Debug/Obj/template_pca10056/fds.o
- .bss.desc.3    0x0000000020001258        0xc Output/Debug/Obj/template_pca10056/fds.o
- .bss.page.2    0x0000000020001264        0x2 Output/Debug/Obj/template_pca10056/fds.o
- *fill*         0x0000000020001266        0x2 
+                0x0000000020001230        0x8 Output/Debug/Obj/template_pca10056/fds.o
+ .bss.m_gc      0x0000000020001238       0x10 Output/Debug/Obj/template_pca10056/fds.o
+ .bss.tok.4     0x0000000020001248        0x8 Output/Debug/Obj/template_pca10056/fds.o
+ .bss.desc.3    0x0000000020001250        0xc Output/Debug/Obj/template_pca10056/fds.o
+ .bss.page.2    0x000000002000125c        0x2 Output/Debug/Obj/template_pca10056/fds.o
+ *fill*         0x000000002000125e        0x2 
  .bss.m_p_cur_op.1
-                0x0000000020001268        0x4 Output/Debug/Obj/template_pca10056/fds.o
+                0x0000000020001260        0x4 Output/Debug/Obj/template_pca10056/fds.o
  .bss.m_iget_ctx.0
-                0x000000002000126c        0x4 Output/Debug/Obj/template_pca10056/fds.o
- *fill*         0x0000000020001270       0x90 
+                0x0000000020001264        0x4 Output/Debug/Obj/template_pca10056/fds.o
+ *fill*         0x0000000020001268       0x98 
  .bss.s_task_stacks
                 0x0000000020001300      0xf00 Output/Debug/Obj/template_pca10056/task_manager.o
  .bss.s_task_state
@@ -39080,13 +39073,18 @@ Linker script and memory map
  .bss.result_motion_sensor
                 0x00000000200025cb        0x1 Output/Debug/Obj/template_pca10056/main.o
                 0x00000000200025cb                result_motion_sensor
- .bss.result_aliyun
+ .bss.sim_testing_flag
                 0x00000000200025cc        0x1 Output/Debug/Obj/template_pca10056/main.o
-                0x00000000200025cc                result_aliyun
+                0x00000000200025cc                sim_testing_flag
+ .bss.aliyun_testing_FLAG
+                0x00000000200025cd        0x1 Output/Debug/Obj/template_pca10056/main.o
+                0x00000000200025cd                aliyun_testing_FLAG
+ .bss.result_aliyun
+                0x00000000200025ce        0x1 Output/Debug/Obj/template_pca10056/main.o
+                0x00000000200025ce                result_aliyun
  .bss.status_modem
-                0x00000000200025cd        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x00000000200025cd                status_modem
- *fill*         0x00000000200025ce        0x2 
+                0x00000000200025cf        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200025cf                status_modem
  .bss.Uart_AT   0x00000000200025d0      0x3e8 Output/Debug/Obj/template_pca10056/uartfunction.o
                 0x00000000200025d0                Uart_AT
  .bss.lte_gsm_gps
@@ -39141,7 +39139,7 @@ Linker script and memory map
                 0x000000002001cc50      0x100 Output/Debug/Obj/template_pca10056/qspi_flash.o
  *(COMMON)
                 0x000000002001cd50                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
-                0x000000000001c6e8                __bss_size__ = SIZEOF (.bss)
+                0x000000000001c6f0                __bss_size__ = SIZEOF (.bss)
                 0x000000002001cd50                __bss_load_end__ = __bss_end__
                 0x0000000000000001                . = ASSERT (((__bss_start__ == __bss_end__) || ((__bss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .bss is too large to fit in RAM1 memory segment)
                 0x000000002001cd50                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
