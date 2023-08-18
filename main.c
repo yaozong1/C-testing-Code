@@ -59,8 +59,8 @@ bool result_modem = 0 ;
 bool result_qspi_flash = 0 ;
 bool result_motion_sensor = 0 ;
 
-bool sim_testing_flag = 0;//To define if SIM CARD TESTING OR NOT.
-bool aliyun_testing_FLAG = 0;//To define if gsm/4g TESTING OR NOT.
+bool sim_testing_flag = 1;//To define if SIM CARD TESTING OR NOT.
+bool aliyun_testing_FLAG = 1;//To define if gsm/4g TESTING OR NOT.
 bool result_aliyun = 0 ;
 
 
