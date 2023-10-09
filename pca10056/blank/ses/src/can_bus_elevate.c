@@ -121,13 +121,13 @@ void can_bus_start(void)
     nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,0));//CAN
 
     nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,0), 1);
-    nrf_delay_ms(1000);//Give period to change the status
+    nrf_delay_ms(100);//Give period to change the status
 
     NRF_LOG_FLUSH();
 
 
     mem_init();
-    nrf_delay_ms(1000);
+    nrf_delay_ms(10);
      //   mcp_spi_init();
     can_init();
  //   nrf_drv_gpiote_in_init(MCP2515_PIN_INT, &mcp2515_int_config, mcp2515_int_pin_handler);

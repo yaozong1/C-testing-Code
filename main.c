@@ -116,16 +116,15 @@ int main(void)
     Modem_Pwron();
    
     result_modem = AT_Match();
-    nrf_delay_ms(500);
+    nrf_delay_ms(10);
     
-    nrf_delay_ms(500);
     NRF_LOG_INFO("IIC testing start....");
-    nrf_delay_ms(50);
+    nrf_delay_ms(10);
     
 
     result_motion_sensor = Lis_test();
 
-    nrf_delay_ms(500);
+    nrf_delay_ms(10);
     
     
     AT_Match();
@@ -151,7 +150,7 @@ int main(void)
       {
 
          result_aliyun = set_MQTT();
-          nrf_delay_ms(2000);
+          nrf_delay_ms(10);
 
       }
 
