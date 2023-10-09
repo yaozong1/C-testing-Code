@@ -67,7 +67,7 @@ bool can_loop_result = 0 ;
 
 
 static uint32_t can_id_final = 0x56;
-static uint8_t  buff_final[8]={'c',2,3,4,5,6,7,8};
+static uint8_t  buff_final[8]={'c',0x2,0x3,0x4,0x5,0x6,0x7,0x8};
 static uint8_t  lens_final = 8;
 static uint8_t  can_confirm_final = 0;
 static uint8_t  ext_send_final = 0;
