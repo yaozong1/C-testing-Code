@@ -238,7 +238,7 @@ NRF_LOG_INFO("     CAN BUS(MCP25625):        Passed \r\n");
 }
 else
 {
-buff_final[5] = 00;
+buff_final[6] = 00;
 NRF_LOG_INFO("     CAN BUS(MCP25625):        Failed\r\n");
 }
 
