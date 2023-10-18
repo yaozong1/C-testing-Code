@@ -140,7 +140,7 @@ int main(void)
 
 
 
-//lte_gsm_switch_for_toby();
+lte_gsm_switch_for_toby();
 
 
 
