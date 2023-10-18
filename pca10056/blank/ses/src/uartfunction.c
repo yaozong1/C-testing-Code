@@ -529,6 +529,7 @@ while(1)
    {
   if (net_types == 0)
   {
+  NRF_LOG_WARNING("Trying 4G");
   lte_gsm_gps = 0;
   net_types =  try_login_4G();
   lte_gsm_gps = 1;
@@ -537,13 +538,15 @@ while(1)
   if (net_types == 1)
   while(1)
      {
-       NRF_LOG_WARNING("4G..............");
+       NRF_LOG_WARNING("4G......Lock in.........");
        //gps_receive();
        nrf_delay_ms(2000);
      }
 
   if (net_types == 0)
     {
+
+  NRF_LOG_WARNING("Trying 2G");
   lte_gsm_gps = 0;
   net_types = try_login_2G();
   lte_gsm_gps = 1;
@@ -551,7 +554,7 @@ while(1)
   if (net_types == 1)
   while(1)
      {
-       NRF_LOG_WARNING("2G..............");
+       NRF_LOG_WARNING("2G......Lock in.......");
       // gps_receive();
        nrf_delay_ms(2000);
      }
