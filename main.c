@@ -240,7 +240,7 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
      uint8_t hello[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
      int size = sizeof(result);
      send_ack_to_stm(result, size);
-     nrf_delay_ms(100);
+     nrf_delay_ms(1000);
 
 
 
