@@ -3,6 +3,8 @@
 
 
 extern bool qspi_test(void);
+extern void read_REMS(uint8_t*, uint8_t*);
+extern int qspi_read_id(void);
 
 
 #endif

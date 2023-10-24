@@ -15,6 +15,7 @@
 #include "IIC_LIS.h"
 
 #include "nrf_drv_qspi.h"
+#include "qspi_flash.h"
 #include "boards.h"
 #include "sdk_config.h"
 
@@ -104,7 +105,7 @@ int main(void)
     start_timer();
  
 
-    Modem_Pwron();
+ //   Modem_Pwron();
    
     result_modem = AT_Match();
 
@@ -140,7 +141,7 @@ int main(void)
 
 
 
-lte_gsm_switch_for_toby();
+//lte_gsm_switch_for_toby();
 
 
 
@@ -156,7 +157,9 @@ lte_gsm_switch_for_toby();
 
       }
 
-    result_qspi_flash = qspi_test();
+    qspi_read_id();
+
+ //   result_qspi_flash = qspi_test();
 
 
 
