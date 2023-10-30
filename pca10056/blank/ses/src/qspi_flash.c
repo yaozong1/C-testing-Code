@@ -47,6 +47,8 @@ static uint8_t m_buffer_rx[QSPI_TEST_DATA_SIZE];
 
 static void qspi_handler(nrf_drv_qspi_evt_t event, void * p_context)
 {
+    NRF_LOG_INFO("interupt.....");
+     NRF_LOG_FLUSH();
     UNUSED_PARAMETER(event);
     UNUSED_PARAMETER(p_context);
     m_finished = true;
@@ -155,16 +157,17 @@ uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_i
         REMS_COMMAND,       // REMS命令
         
         0x00,               // 虚拟字节1
+        0x00,               // 虚拟字节1
         0x00,                // 虚拟字节2
         address            // 地址字节
     };
 
-    uint8_t response[2] = {0};
+    uint8_t response[3] = {0x01, 0x02,0x3};
 
     // 使用   QSPI的自定义指令接口来发送         REMS命令及其后续字节
     nrf_qspi_cinstr_conf_t cinstr_cfg = {
         .opcode    = command_sequence[0],
-        .length    = NRF_QSPI_CINSTR_LEN_4B,
+        .length    = NRF_QSPI_CINSTR_LEN_5B,
         .io2_level = true,
         .io3_level = true,
         .wipwait   = true,
@@ -175,12 +178,15 @@ uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_i
     //nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,18), 0);
 
     err_code = nrf_drv_qspi_cinstr_xfer(&cinstr_cfg, command_sequence, response);
-    NRF_LOG_INFO("IDs = %d", manufacturer_id);
+    NRF_LOG_INFO("IDs = %d", err_code);
     if (err_code != NRF_SUCCESS) {
         return err_code;
     }
 
     // 根据地址，确定是先读制造商           ID还是设备    ID
+    NRF_LOG_INFO("Manufacturer ID = 0x%04x", response[0]);
+    NRF_LOG_INFO("Manufacturer ID = 0x%04x", response[1]);
+    NRF_LOG_INFO("Manufacturer ID = 0x%04x", response[2]);
     if (address == 0x00) {
         *manufacturer_id = response[0];
         *device_id = response[1];

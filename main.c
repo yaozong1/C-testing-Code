@@ -107,7 +107,7 @@ int main(void)
 
  //   Modem_Pwron();
    
-    result_modem = AT_Match();
+  //  result_modem = AT_Match();
 
     nrf_delay_ms(10);
     
