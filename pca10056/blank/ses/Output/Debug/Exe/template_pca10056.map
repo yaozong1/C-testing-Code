@@ -32749,7 +32749,7 @@ Discarded input sections
  .text.configure_memory
                 0x0000000000000000       0x84 Output/Debug/Obj/template_pca10056/qspi_flash.o
  .text.qspi_test
-                0x0000000000000000      0x208 Output/Debug/Obj/template_pca10056/qspi_flash.o
+                0x0000000000000000      0x210 Output/Debug/Obj/template_pca10056/qspi_flash.o
  .debug_macro   0x0000000000000000      0xb3e Output/Debug/Obj/template_pca10056/qspi_flash.o
  .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/template_pca10056/qspi_flash.o
  .debug_macro   0x0000000000000000      0x1a3 Output/Debug/Obj/template_pca10056/qspi_flash.o
@@ -35579,7 +35579,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .init_rodata is too large to fit in FLASH1 memory segment)
                 0x00000000000003d0                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x00000000000003d0    0x1233c
+.text           0x00000000000003d0    0x12314
                 0x00000000000003d0                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x00000000000003d0        0x0 linker stubs
@@ -37416,80 +37416,80 @@ Linker script and memory map
  .text.qspi_handler
                 0x0000000000011ef4       0x58 Output/Debug/Obj/template_pca10056/qspi_flash.o
  .text.read_ids
-                0x0000000000011f4c      0x13c Output/Debug/Obj/template_pca10056/qspi_flash.o
+                0x0000000000011f4c      0x138 Output/Debug/Obj/template_pca10056/qspi_flash.o
                 0x0000000000011f4c                read_ids
  .text.qspi_read_id
-                0x0000000000012088      0x140 Output/Debug/Obj/template_pca10056/qspi_flash.o
-                0x0000000000012088                qspi_read_id
+                0x0000000000012084      0x11c Output/Debug/Obj/template_pca10056/qspi_flash.o
+                0x0000000000012084                qspi_read_id
  .text.__NVIC_SetPriority
-                0x00000000000121c8       0x50 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x00000000000121a0       0x50 Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.nrf_gpio_pin_port_decode
-                0x0000000000012218       0x4c Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x00000000000121f0       0x4c Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.nrf_gpio_cfg
-                0x0000000000012264       0x62 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x000000000001223c       0x62 Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.nrf_gpio_cfg_output
-                0x00000000000122c6       0x22 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x000000000001229e       0x22 Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.nrf_gpio_pin_toggle
-                0x00000000000122e8       0x44 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x00000000000122c0       0x44 Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.nrf_gpio_pin_present_check
-                0x000000000001232c       0x50 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012304       0x50 Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.app_timer_handler
-                0x000000000001237c       0x1c Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012354       0x1c Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.app_timer_handler2
-                0x0000000000012398       0x24 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012370       0x24 Output/Debug/Obj/template_pca10056/yz_timer.o
  .text.timers_init
-                0x00000000000123bc       0xa0 Output/Debug/Obj/template_pca10056/yz_timer.o
-                0x00000000000123bc                timers_init
+                0x0000000000012394       0xa0 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012394                timers_init
  .text.start_timer
-                0x000000000001245c       0x44 Output/Debug/Obj/template_pca10056/yz_timer.o
-                0x000000000001245c                start_timer
+                0x0000000000012434       0x44 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012434                start_timer
  .text.libc.__RAL_ascii_isctype
-                0x00000000000124a0       0x1c C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000012478       0x1c C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_toupper
-                0x00000000000124bc        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000012494        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_tolower
-                0x00000000000124c8        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000124a0        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_wctomb
-                0x00000000000124d4       0x10 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000124d4                __RAL_ascii_wctomb
+                0x00000000000124ac       0x10 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000124ac                __RAL_ascii_wctomb
  .text.libc.__RAL_ascii_mbtowc
-                0x00000000000124e4       0x24 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000124e4                __RAL_ascii_mbtowc
+                0x00000000000124bc       0x24 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000124bc                __RAL_ascii_mbtowc
  .text.libc.__RAL_ascii_towupper
-                0x0000000000012508        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000124e0        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_towlower
-                0x0000000000012514        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000124ec        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_iswctype
-                0x0000000000012520       0x1c C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000124f8       0x1c C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
  .text.libc.isspace
-                0x000000000001253c       0x10 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000001253c                isspace
+                0x0000000000012514       0x10 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000012514                isspace
  .text.libc.isprint
-                0x000000000001254c       0x10 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000001254c                isprint
+                0x0000000000012524       0x10 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000012524                isprint
  .text.libc.strncmp
-                0x000000000001255c       0x48 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x000000000001255c                strncmp
+                0x0000000000012534       0x48 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000012534                strncmp
  .text.libc.memcpy
-                0x00000000000125a4       0x52 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x00000000000125a4                __aeabi_memcpy
-                0x00000000000125a4                memcpy
-                0x00000000000125b0                __aeabi_memcpy8
-                0x00000000000125b0                __aeabi_memcpy4
+                0x000000000001257c       0x52 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x000000000001257c                __aeabi_memcpy
+                0x000000000001257c                memcpy
+                0x0000000000012588                __aeabi_memcpy8
+                0x0000000000012588                __aeabi_memcpy4
  .text.libc.memset
-                0x00000000000125f6       0x66 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x00000000000125f6                memset
+                0x00000000000125ce       0x66 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x00000000000125ce                memset
  .text.libc.strcmp
-                0x000000000001265c       0x4e C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x000000000001265c                strcmp
+                0x0000000000012634       0x4e C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x0000000000012634                strcmp
  .text.libc.strlen
-                0x00000000000126aa       0x60 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
-                0x00000000000126aa                strlen
-                0x000000000001270c                . = ALIGN (MAX ((__text_start__ + 0x4), .), 0x4)
- *fill*         0x000000000001270a        0x2 
-                0x000000000001270c                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x000000000001233c                __text_size__ = SIZEOF (.text)
-                0x000000000001270c                __text_load_end__ = __text_end__
+                0x0000000000012682       0x60 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2_asm.o)
+                0x0000000000012682                strlen
+                0x00000000000126e4                . = ALIGN (MAX ((__text_start__ + 0x4), .), 0x4)
+ *fill*         0x00000000000126e2        0x2 
+                0x00000000000126e4                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x0000000000012314                __text_size__ = SIZEOF (.text)
+                0x00000000000126e4                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -37500,322 +37500,322 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/Debug/Obj/template_pca10056/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .text is too large to fit in FLASH1 memory segment)
-                0x000000000001270c                __nrf_queue_load_start__ = ALIGN (__text_end__, 0x4)
+                0x00000000000126e4                __nrf_queue_load_start__ = ALIGN (__text_end__, 0x4)
 
-.nrf_queue      0x000000000001270c       0x8c
-                0x000000000001270c                __nrf_queue_start__ = .
-                0x000000000001270c                __start_nrf_queue = __nrf_queue_start__
+.nrf_queue      0x00000000000126e4       0x8c
+                0x00000000000126e4                __nrf_queue_start__ = .
+                0x00000000000126e4                __start_nrf_queue = __nrf_queue_start__
  *(.nrf_queue*)
- .nrf_queue     0x000000000001270c       0x1c Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
-                0x000000000001270c                m_rand_pool
- .nrf_queue     0x0000000000012728       0x70 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000000012728                libuarte_rxdata_queue
-                0x0000000000012744                libuarte_vcu_rxdata_queue
-                0x0000000000012760                m_buf_queue
-                0x000000000001277c                m_buf_queue_vcu
-                0x0000000000012798                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
+ .nrf_queue     0x00000000000126e4       0x1c Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
+                0x00000000000126e4                m_rand_pool
+ .nrf_queue     0x0000000000012700       0x70 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000000012700                libuarte_rxdata_queue
+                0x000000000001271c                libuarte_vcu_rxdata_queue
+                0x0000000000012738                m_buf_queue
+                0x0000000000012754                m_buf_queue_vcu
+                0x0000000000012770                __nrf_queue_end__ = (__nrf_queue_start__ + SIZEOF (.nrf_queue))
                 0x000000000000008c                __nrf_queue_size__ = SIZEOF (.nrf_queue)
-                0x0000000000012798                __stop_nrf_queue = __nrf_queue_end__
-                0x0000000000012798                __nrf_queue_load_end__ = __nrf_queue_end__
+                0x0000000000012770                __stop_nrf_queue = __nrf_queue_end__
+                0x0000000000012770                __nrf_queue_load_end__ = __nrf_queue_end__
                 0x0000000000000001                . = ASSERT (((__nrf_queue_start__ == __nrf_queue_end__) || ((__nrf_queue_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .nrf_queue is too large to fit in FLASH1 memory segment)
-                0x0000000000012798                __pwr_mgmt_data_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
+                0x0000000000012770                __pwr_mgmt_data_load_start__ = ALIGN (__nrf_queue_end__, 0x4)
 
-.pwr_mgmt_data  0x0000000000012798        0x0
-                0x0000000000012798                __pwr_mgmt_data_start__ = .
-                0x0000000000012798                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
+.pwr_mgmt_data  0x0000000000012770        0x0
+                0x0000000000012770                __pwr_mgmt_data_start__ = .
+                0x0000000000012770                __start_pwr_mgmt_data = __pwr_mgmt_data_start__
  *(SORT_BY_NAME(.pwr_mgmt_data*))
-                0x0000000000012798                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
+                0x0000000000012770                __pwr_mgmt_data_end__ = (__pwr_mgmt_data_start__ + SIZEOF (.pwr_mgmt_data))
                 0x0000000000000000                __pwr_mgmt_data_size__ = SIZEOF (.pwr_mgmt_data)
-                0x0000000000012798                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
-                0x0000000000012798                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
+                0x0000000000012770                __stop_pwr_mgmt_data = __pwr_mgmt_data_end__
+                0x0000000000012770                __pwr_mgmt_data_load_end__ = __pwr_mgmt_data_end__
                 0x0000000000000001                . = ASSERT (((__pwr_mgmt_data_start__ == __pwr_mgmt_data_end__) || ((__pwr_mgmt_data_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .pwr_mgmt_data is too large to fit in FLASH1 memory segment)
-                0x0000000000012798                __log_const_data_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
+                0x0000000000012770                __log_const_data_load_start__ = ALIGN (__pwr_mgmt_data_end__, 0x4)
 
 .log_const_data
-                0x0000000000012798      0x200
-                0x0000000000012798                __log_const_data_start__ = .
-                0x0000000000012798                __start_log_const_data = __log_const_data_start__
+                0x0000000000012770      0x200
+                0x0000000000012770                __log_const_data_start__ = .
+                0x0000000000012770                __start_log_const_data = __log_const_data_start__
  *(SORT_BY_NAME(.log_const_data*))
  .log_const_data_CLOCK
-                0x0000000000012798        0x8 Output/Debug/Obj/template_pca10056/nrfx_clock.o
-                0x0000000000012798                m_nrf_log_CLOCK_logs_data_const
+                0x0000000000012770        0x8 Output/Debug/Obj/template_pca10056/nrfx_clock.o
+                0x0000000000012770                m_nrf_log_CLOCK_logs_data_const
  .log_const_data_COMP
-                0x00000000000127a0        0x8 Output/Debug/Obj/template_pca10056/nrfx_comp.o
-                0x00000000000127a0                m_nrf_log_COMP_logs_data_const
+                0x0000000000012778        0x8 Output/Debug/Obj/template_pca10056/nrfx_comp.o
+                0x0000000000012778                m_nrf_log_COMP_logs_data_const
  .log_const_data_GPIOTE
-                0x00000000000127a8        0x8 Output/Debug/Obj/template_pca10056/nrfx_gpiote.o
-                0x00000000000127a8                m_nrf_log_GPIOTE_logs_data_const
+                0x0000000000012780        0x8 Output/Debug/Obj/template_pca10056/nrfx_gpiote.o
+                0x0000000000012780                m_nrf_log_GPIOTE_logs_data_const
  .log_const_data_I2S
-                0x00000000000127b0        0x8 Output/Debug/Obj/template_pca10056/nrfx_i2s.o
-                0x00000000000127b0                m_nrf_log_I2S_logs_data_const
+                0x0000000000012788        0x8 Output/Debug/Obj/template_pca10056/nrfx_i2s.o
+                0x0000000000012788                m_nrf_log_I2S_logs_data_const
  .log_const_data_LPCOMP
-                0x00000000000127b8        0x8 Output/Debug/Obj/template_pca10056/nrfx_lpcomp.o
-                0x00000000000127b8                m_nrf_log_LPCOMP_logs_data_const
+                0x0000000000012790        0x8 Output/Debug/Obj/template_pca10056/nrfx_lpcomp.o
+                0x0000000000012790                m_nrf_log_LPCOMP_logs_data_const
  .log_const_data_PDM
-                0x00000000000127c0        0x8 Output/Debug/Obj/template_pca10056/nrfx_pdm.o
-                0x00000000000127c0                m_nrf_log_PDM_logs_data_const
+                0x0000000000012798        0x8 Output/Debug/Obj/template_pca10056/nrfx_pdm.o
+                0x0000000000012798                m_nrf_log_PDM_logs_data_const
  .log_const_data_PPI
-                0x00000000000127c8        0x8 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
-                0x00000000000127c8                m_nrf_log_PPI_logs_data_const
+                0x00000000000127a0        0x8 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
+                0x00000000000127a0                m_nrf_log_PPI_logs_data_const
  .log_const_data_PRS
-                0x00000000000127d0        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
-                0x00000000000127d0                m_nrf_log_PRS_logs_data_const
+                0x00000000000127a8        0x8 Output/Debug/Obj/template_pca10056/nrfx_prs.o
+                0x00000000000127a8                m_nrf_log_PRS_logs_data_const
  .log_const_data_PWM
-                0x00000000000127d8        0x8 Output/Debug/Obj/template_pca10056/nrfx_pwm.o
-                0x00000000000127d8                m_nrf_log_PWM_logs_data_const
+                0x00000000000127b0        0x8 Output/Debug/Obj/template_pca10056/nrfx_pwm.o
+                0x00000000000127b0                m_nrf_log_PWM_logs_data_const
  .log_const_data_QDEC
-                0x00000000000127e0        0x8 Output/Debug/Obj/template_pca10056/nrfx_qdec.o
-                0x00000000000127e0                m_nrf_log_QDEC_logs_data_const
+                0x00000000000127b8        0x8 Output/Debug/Obj/template_pca10056/nrfx_qdec.o
+                0x00000000000127b8                m_nrf_log_QDEC_logs_data_const
  .log_const_data_RNG
-                0x00000000000127e8        0x8 Output/Debug/Obj/template_pca10056/nrfx_rng.o
-                0x00000000000127e8                m_nrf_log_RNG_logs_data_const
+                0x00000000000127c0        0x8 Output/Debug/Obj/template_pca10056/nrfx_rng.o
+                0x00000000000127c0                m_nrf_log_RNG_logs_data_const
  .log_const_data_RTC
-                0x00000000000127f0        0x8 Output/Debug/Obj/template_pca10056/nrfx_rtc.o
-                0x00000000000127f0                m_nrf_log_RTC_logs_data_const
+                0x00000000000127c8        0x8 Output/Debug/Obj/template_pca10056/nrfx_rtc.o
+                0x00000000000127c8                m_nrf_log_RTC_logs_data_const
  .log_const_data_SAADC
-                0x00000000000127f8        0x8 Output/Debug/Obj/template_pca10056/nrfx_saadc.o
-                0x00000000000127f8                m_nrf_log_SAADC_logs_data_const
+                0x00000000000127d0        0x8 Output/Debug/Obj/template_pca10056/nrfx_saadc.o
+                0x00000000000127d0                m_nrf_log_SAADC_logs_data_const
  .log_const_data_SPIM
-                0x0000000000012800        0x8 Output/Debug/Obj/template_pca10056/nrfx_spim.o
-                0x0000000000012800                m_nrf_log_SPIM_logs_data_const
+                0x00000000000127d8        0x8 Output/Debug/Obj/template_pca10056/nrfx_spim.o
+                0x00000000000127d8                m_nrf_log_SPIM_logs_data_const
  .log_const_data_SPIS
-                0x0000000000012808        0x8 Output/Debug/Obj/template_pca10056/nrfx_spis.o
-                0x0000000000012808                m_nrf_log_SPIS_logs_data_const
+                0x00000000000127e0        0x8 Output/Debug/Obj/template_pca10056/nrfx_spis.o
+                0x00000000000127e0                m_nrf_log_SPIS_logs_data_const
  .log_const_data_TIMER
-                0x0000000000012810        0x8 Output/Debug/Obj/template_pca10056/nrfx_timer.o
-                0x0000000000012810                m_nrf_log_TIMER_logs_data_const
+                0x00000000000127e8        0x8 Output/Debug/Obj/template_pca10056/nrfx_timer.o
+                0x00000000000127e8                m_nrf_log_TIMER_logs_data_const
  .log_const_data_TWI
-                0x0000000000012818        0x8 Output/Debug/Obj/template_pca10056/nrfx_twi.o
-                0x0000000000012818                m_nrf_log_TWI_logs_data_const
+                0x00000000000127f0        0x8 Output/Debug/Obj/template_pca10056/nrfx_twi.o
+                0x00000000000127f0                m_nrf_log_TWI_logs_data_const
  .log_const_data_TWIS
-                0x0000000000012820        0x8 Output/Debug/Obj/template_pca10056/nrfx_twis.o
-                0x0000000000012820                m_nrf_log_TWIS_logs_data_const
+                0x00000000000127f8        0x8 Output/Debug/Obj/template_pca10056/nrfx_twis.o
+                0x00000000000127f8                m_nrf_log_TWIS_logs_data_const
  .log_const_data_UART
-                0x0000000000012828        0x8 Output/Debug/Obj/template_pca10056/nrfx_uart.o
-                0x0000000000012828                m_nrf_log_UART_logs_data_const
+                0x0000000000012800        0x8 Output/Debug/Obj/template_pca10056/nrfx_uart.o
+                0x0000000000012800                m_nrf_log_UART_logs_data_const
  .log_const_data_UARTE
-                0x0000000000012830        0x8 Output/Debug/Obj/template_pca10056/nrfx_uarte.o
-                0x0000000000012830                m_nrf_log_UARTE_logs_data_const
+                0x0000000000012808        0x8 Output/Debug/Obj/template_pca10056/nrfx_uarte.o
+                0x0000000000012808                m_nrf_log_UARTE_logs_data_const
  .log_const_data_USBD
-                0x0000000000012838        0x8 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
-                0x0000000000012838                m_nrf_log_USBD_logs_data_const
+                0x0000000000012810        0x8 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x0000000000012810                m_nrf_log_USBD_logs_data_const
  .log_const_data_WDT
-                0x0000000000012840        0x8 Output/Debug/Obj/template_pca10056/nrfx_wdt.o
-                0x0000000000012840                m_nrf_log_WDT_logs_data_const
+                0x0000000000012818        0x8 Output/Debug/Obj/template_pca10056/nrfx_wdt.o
+                0x0000000000012818                m_nrf_log_WDT_logs_data_const
  .log_const_data_app
-                0x0000000000012848        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
-                0x0000000000012848                m_nrf_log_app_logs_data_const
+                0x0000000000012820        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000012820                m_nrf_log_app_logs_data_const
  .log_const_data_app_button
-                0x0000000000012850        0x8 Output/Debug/Obj/template_pca10056/app_button.o
-                0x0000000000012850                m_nrf_log_app_button_logs_data_const
+                0x0000000000012828        0x8 Output/Debug/Obj/template_pca10056/app_button.o
+                0x0000000000012828                m_nrf_log_app_button_logs_data_const
  .log_const_data_app_timer
-                0x0000000000012858        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
-                0x0000000000012858                m_nrf_log_app_timer_logs_data_const
+                0x0000000000012830        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x0000000000012830                m_nrf_log_app_timer_logs_data_const
  .log_const_data_app_timer_m_app_timer_id
-                0x0000000000012860        0x8 Output/Debug/Obj/template_pca10056/hci_transport.o
-                0x0000000000012860                m_nrf_log_app_timer_m_app_timer_id_logs_data_const
+                0x0000000000012838        0x8 Output/Debug/Obj/template_pca10056/hci_transport.o
+                0x0000000000012838                m_nrf_log_app_timer_m_app_timer_id_logs_data_const
  .log_const_data_app_timer_m_app_timer_id_1
-                0x0000000000012868        0x8 Output/Debug/Obj/template_pca10056/yz_timer.o
-                0x0000000000012868                m_nrf_log_app_timer_m_app_timer_id_1_logs_data_const
+                0x0000000000012840        0x8 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012840                m_nrf_log_app_timer_m_app_timer_id_1_logs_data_const
  .log_const_data_app_timer_m_app_timer_id_2
-                0x0000000000012870        0x8 Output/Debug/Obj/template_pca10056/yz_timer.o
-                0x0000000000012870                m_nrf_log_app_timer_m_app_timer_id_2_logs_data_const
+                0x0000000000012848        0x8 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x0000000000012848                m_nrf_log_app_timer_m_app_timer_id_2_logs_data_const
  .log_const_data_app_timer_m_bsp_alert_tmr
-                0x0000000000012878        0x8 Output/Debug/Obj/template_pca10056/bsp.o
-                0x0000000000012878                m_nrf_log_app_timer_m_bsp_alert_tmr_logs_data_const
+                0x0000000000012850        0x8 Output/Debug/Obj/template_pca10056/bsp.o
+                0x0000000000012850                m_nrf_log_app_timer_m_bsp_alert_tmr_logs_data_const
  .log_const_data_app_timer_m_bsp_button_tmr
-                0x0000000000012880        0x8 Output/Debug/Obj/template_pca10056/bsp.o
-                0x0000000000012880                m_nrf_log_app_timer_m_bsp_button_tmr_logs_data_const
+                0x0000000000012858        0x8 Output/Debug/Obj/template_pca10056/bsp.o
+                0x0000000000012858                m_nrf_log_app_timer_m_bsp_button_tmr_logs_data_const
  .log_const_data_app_timer_m_bsp_leds_tmr
-                0x0000000000012888        0x8 Output/Debug/Obj/template_pca10056/bsp.o
-                0x0000000000012888                m_nrf_log_app_timer_m_bsp_leds_tmr_logs_data_const
+                0x0000000000012860        0x8 Output/Debug/Obj/template_pca10056/bsp.o
+                0x0000000000012860                m_nrf_log_app_timer_m_bsp_leds_tmr_logs_data_const
  .log_const_data_app_timer_m_detection_delay_timer_id
-                0x0000000000012890        0x8 Output/Debug/Obj/template_pca10056/app_button.o
-                0x0000000000012890                m_nrf_log_app_timer_m_detection_delay_timer_id_logs_data_const
+                0x0000000000012868        0x8 Output/Debug/Obj/template_pca10056/app_button.o
+                0x0000000000012868                m_nrf_log_app_timer_m_detection_delay_timer_id_logs_data_const
  .log_const_data_app_timer_m_led_softblink_timer
-                0x0000000000012898        0x8 Output/Debug/Obj/template_pca10056/led_softblink.o
-                0x0000000000012898                m_nrf_log_app_timer_m_led_softblink_timer_logs_data_const
+                0x0000000000012870        0x8 Output/Debug/Obj/template_pca10056/led_softblink.o
+                0x0000000000012870                m_nrf_log_app_timer_m_led_softblink_timer_logs_data_const
  .log_const_data_app_timer_nrf_csense_timer
-                0x00000000000128a0        0x8 Output/Debug/Obj/template_pca10056/nrf_csense.o
-                0x00000000000128a0                m_nrf_log_app_timer_nrf_csense_timer_logs_data_const
+                0x0000000000012878        0x8 Output/Debug/Obj/template_pca10056/nrf_csense.o
+                0x0000000000012878                m_nrf_log_app_timer_nrf_csense_timer_logs_data_const
  .log_const_data_app_usbd
-                0x00000000000128a8        0x8 Output/Debug/Obj/template_pca10056/app_usbd.o
-                0x00000000000128a8                m_nrf_log_app_usbd_logs_data_const
+                0x0000000000012880        0x8 Output/Debug/Obj/template_pca10056/app_usbd.o
+                0x0000000000012880                m_nrf_log_app_usbd_logs_data_const
  .log_const_data_app_usbd_core
-                0x00000000000128b0        0x8 Output/Debug/Obj/template_pca10056/app_usbd_core.o
-                0x00000000000128b0                m_nrf_log_app_usbd_core_logs_data_const
+                0x0000000000012888        0x8 Output/Debug/Obj/template_pca10056/app_usbd_core.o
+                0x0000000000012888                m_nrf_log_app_usbd_core_logs_data_const
  .log_const_data_atfifo_m_event_queue
-                0x00000000000128b8        0x8 Output/Debug/Obj/template_pca10056/app_usbd.o
-                0x00000000000128b8                m_nrf_log_atfifo_m_event_queue_logs_data_const
+                0x0000000000012890        0x8 Output/Debug/Obj/template_pca10056/app_usbd.o
+                0x0000000000012890                m_nrf_log_atfifo_m_event_queue_logs_data_const
  .log_const_data_atfifo_m_queue
-                0x00000000000128c0        0x8 Output/Debug/Obj/template_pca10056/fds.o
-                0x00000000000128c0                m_nrf_log_atfifo_m_queue_logs_data_const
+                0x0000000000012898        0x8 Output/Debug/Obj/template_pca10056/fds.o
+                0x0000000000012898                m_nrf_log_atfifo_m_queue_logs_data_const
  .log_const_data_atfifo_m_req_fifo
-                0x00000000000128c8        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
-                0x00000000000128c8                m_nrf_log_atfifo_m_req_fifo_logs_data_const
+                0x00000000000128a0        0x8 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x00000000000128a0                m_nrf_log_atfifo_m_req_fifo_logs_data_const
  .log_const_data_balloc_libuarte_rx_pool
-                0x00000000000128d0        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x00000000000128d0                m_nrf_log_balloc_libuarte_rx_pool_logs_data_const
+                0x00000000000128a8        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000128a8                m_nrf_log_balloc_libuarte_rx_pool_logs_data_const
  .log_const_data_balloc_libuarte_vcu_rx_pool
-                0x00000000000128d8        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x00000000000128d8                m_nrf_log_balloc_libuarte_vcu_rx_pool_logs_data_const
+                0x00000000000128b0        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000128b0                m_nrf_log_balloc_libuarte_vcu_rx_pool_logs_data_const
  .log_const_data_balloc_log_mempool
-                0x00000000000128e0        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
-                0x00000000000128e0                m_nrf_log_balloc_log_mempool_logs_data_const
+                0x00000000000128b8        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x00000000000128b8                m_nrf_log_balloc_log_mempool_logs_data_const
  .log_const_data_cdc_acm
-                0x00000000000128e8        0x8 Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o
-                0x00000000000128e8                m_nrf_log_cdc_acm_logs_data_const
+                0x00000000000128c0        0x8 Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o
+                0x00000000000128c0                m_nrf_log_cdc_acm_logs_data_const
  .log_const_data_cli_uart
-                0x00000000000128f0        0x8 Output/Debug/Obj/template_pca10056/nrf_cli_uart.o
-                0x00000000000128f0                m_nrf_log_cli_uart_logs_data_const
+                0x00000000000128c8        0x8 Output/Debug/Obj/template_pca10056/nrf_cli_uart.o
+                0x00000000000128c8                m_nrf_log_cli_uart_logs_data_const
  .log_const_data_clock
-                0x00000000000128f8        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
-                0x00000000000128f8                m_nrf_log_clock_logs_data_const
+                0x00000000000128d0        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
+                0x00000000000128d0                m_nrf_log_clock_logs_data_const
  .log_const_data_gfx
-                0x0000000000012900        0x8 Output/Debug/Obj/template_pca10056/nrf_gfx.o
-                0x0000000000012900                m_nrf_log_gfx_logs_data_const
+                0x00000000000128d8        0x8 Output/Debug/Obj/template_pca10056/nrf_gfx.o
+                0x00000000000128d8                m_nrf_log_gfx_logs_data_const
  .log_const_data_hardfault
-                0x0000000000012908        0x8 Output/Debug/Obj/template_pca10056/hardfault_implementation.o
-                0x0000000000012908                m_nrf_log_hardfault_logs_data_const
+                0x00000000000128e0        0x8 Output/Debug/Obj/template_pca10056/hardfault_implementation.o
+                0x00000000000128e0                m_nrf_log_hardfault_logs_data_const
  .log_const_data_libUARTE
-                0x0000000000012910        0x8 Output/Debug/Obj/template_pca10056/nrf_libuarte_drv.o
-                0x0000000000012910                m_nrf_log_libUARTE_logs_data_const
+                0x00000000000128e8        0x8 Output/Debug/Obj/template_pca10056/nrf_libuarte_drv.o
+                0x00000000000128e8                m_nrf_log_libUARTE_logs_data_const
  .log_const_data_libUARTE_async
-                0x0000000000012918        0x8 Output/Debug/Obj/template_pca10056/nrf_libuarte_async.o
-                0x0000000000012918                m_nrf_log_libUARTE_async_logs_data_const
+                0x00000000000128f0        0x8 Output/Debug/Obj/template_pca10056/nrf_libuarte_async.o
+                0x00000000000128f0                m_nrf_log_libUARTE_async_logs_data_const
  .log_const_data_mem_mngr
-                0x0000000000012920        0x8 Output/Debug/Obj/template_pca10056/mem_manager.o
-                0x0000000000012920                m_nrf_log_mem_mngr_logs_data_const
+                0x00000000000128f8        0x8 Output/Debug/Obj/template_pca10056/mem_manager.o
+                0x00000000000128f8                m_nrf_log_mem_mngr_logs_data_const
  .log_const_data_nrf_fstorage
-                0x0000000000012928        0x8 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
-                0x0000000000012928                m_nrf_log_nrf_fstorage_logs_data_const
+                0x0000000000012900        0x8 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
+                0x0000000000012900                m_nrf_log_nrf_fstorage_logs_data_const
  .log_const_data_nrf_mpu_lib
-                0x0000000000012930        0x8 Output/Debug/Obj/template_pca10056/nrf_mpu_lib.o
-                0x0000000000012930                m_nrf_log_nrf_mpu_lib_logs_data_const
+                0x0000000000012908        0x8 Output/Debug/Obj/template_pca10056/nrf_mpu_lib.o
+                0x0000000000012908                m_nrf_log_nrf_mpu_lib_logs_data_const
  .log_const_data_pwr_mgmt
-                0x0000000000012938        0x8 Output/Debug/Obj/template_pca10056/nrf_pwr_mgmt.o
-                0x0000000000012938                m_nrf_log_pwr_mgmt_logs_data_const
+                0x0000000000012910        0x8 Output/Debug/Obj/template_pca10056/nrf_pwr_mgmt.o
+                0x0000000000012910                m_nrf_log_pwr_mgmt_logs_data_const
  .log_const_data_queue_libuarte_rxdata_queue
-                0x0000000000012940        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000000012940                m_nrf_log_queue_libuarte_rxdata_queue_logs_data_const
+                0x0000000000012918        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000000012918                m_nrf_log_queue_libuarte_rxdata_queue_logs_data_const
  .log_const_data_queue_libuarte_vcu_rxdata_queue
-                0x0000000000012948        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000000012948                m_nrf_log_queue_libuarte_vcu_rxdata_queue_logs_data_const
+                0x0000000000012920        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000000012920                m_nrf_log_queue_libuarte_vcu_rxdata_queue_logs_data_const
  .log_const_data_queue_m_buf_queue
-                0x0000000000012950        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000000012950                m_nrf_log_queue_m_buf_queue_logs_data_const
+                0x0000000000012928        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000000012928                m_nrf_log_queue_m_buf_queue_logs_data_const
  .log_const_data_queue_m_buf_queue_vcu
-                0x0000000000012958        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000000012958                m_nrf_log_queue_m_buf_queue_vcu_logs_data_const
+                0x0000000000012930        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000000012930                m_nrf_log_queue_m_buf_queue_vcu_logs_data_const
  .log_const_data_queue_m_rand_pool
-                0x0000000000012960        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
-                0x0000000000012960                m_nrf_log_queue_m_rand_pool_logs_data_const
+                0x0000000000012938        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
+                0x0000000000012938                m_nrf_log_queue_m_rand_pool_logs_data_const
  .log_const_data_rng
-                0x0000000000012968        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
-                0x0000000000012968                m_nrf_log_rng_logs_data_const
+                0x0000000000012940        0x8 Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
+                0x0000000000012940                m_nrf_log_rng_logs_data_const
  .log_const_data_sortlist
-                0x0000000000012970        0x8 Output/Debug/Obj/template_pca10056/nrf_sortlist.o
-                0x0000000000012970                m_nrf_log_sortlist_logs_data_const
+                0x0000000000012948        0x8 Output/Debug/Obj/template_pca10056/nrf_sortlist.o
+                0x0000000000012948                m_nrf_log_sortlist_logs_data_const
  .log_const_data_stack_guard
-                0x0000000000012978        0x8 Output/Debug/Obj/template_pca10056/nrf_stack_guard.o
-                0x0000000000012978                m_nrf_log_stack_guard_logs_data_const
+                0x0000000000012950        0x8 Output/Debug/Obj/template_pca10056/nrf_stack_guard.o
+                0x0000000000012950                m_nrf_log_stack_guard_logs_data_const
  .log_const_data_task_manager
-                0x0000000000012980        0x8 Output/Debug/Obj/template_pca10056/task_manager.o
-                0x0000000000012980                m_nrf_log_task_manager_logs_data_const
+                0x0000000000012958        0x8 Output/Debug/Obj/template_pca10056/task_manager.o
+                0x0000000000012958                m_nrf_log_task_manager_logs_data_const
  .log_const_data_twi_sensor
-                0x0000000000012988        0x8 Output/Debug/Obj/template_pca10056/nrf_twi_sensor.o
-                0x0000000000012988                m_nrf_log_twi_sensor_logs_data_const
+                0x0000000000012960        0x8 Output/Debug/Obj/template_pca10056/nrf_twi_sensor.o
+                0x0000000000012960                m_nrf_log_twi_sensor_logs_data_const
  .log_const_data_usbd_msc
-                0x0000000000012990        0x8 Output/Debug/Obj/template_pca10056/app_usbd_msc.o
-                0x0000000000012990                m_nrf_log_usbd_msc_logs_data_const
-                0x0000000000012998                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
+                0x0000000000012968        0x8 Output/Debug/Obj/template_pca10056/app_usbd_msc.o
+                0x0000000000012968                m_nrf_log_usbd_msc_logs_data_const
+                0x0000000000012970                __log_const_data_end__ = (__log_const_data_start__ + SIZEOF (.log_const_data))
                 0x0000000000000200                __log_const_data_size__ = SIZEOF (.log_const_data)
-                0x0000000000012998                __stop_log_const_data = __log_const_data_end__
-                0x0000000000012998                __log_const_data_load_end__ = __log_const_data_end__
+                0x0000000000012970                __stop_log_const_data = __log_const_data_end__
+                0x0000000000012970                __log_const_data_load_end__ = __log_const_data_end__
                 0x0000000000000001                . = ASSERT (((__log_const_data_start__ == __log_const_data_end__) || ((__log_const_data_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_const_data is too large to fit in FLASH1 memory segment)
-                0x0000000000012998                __nrf_balloc_load_start__ = ALIGN (__log_const_data_end__, 0x4)
+                0x0000000000012970                __nrf_balloc_load_start__ = ALIGN (__log_const_data_end__, 0x4)
 
-.nrf_balloc     0x0000000000012998       0x54
-                0x0000000000012998                __nrf_balloc_start__ = .
-                0x0000000000012998                __start_nrf_balloc = __nrf_balloc_start__
+.nrf_balloc     0x0000000000012970       0x54
+                0x0000000000012970                __nrf_balloc_start__ = .
+                0x0000000000012970                __start_nrf_balloc = __nrf_balloc_start__
  *(.nrf_balloc*)
- .nrf_balloc    0x0000000000012998       0x1c Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
-                0x0000000000012998                log_mempool
- .nrf_balloc    0x00000000000129b4       0x38 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x00000000000129b4                libuarte_rx_pool
-                0x00000000000129d0                libuarte_vcu_rx_pool
-                0x00000000000129ec                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
+ .nrf_balloc    0x0000000000012970       0x1c Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000012970                log_mempool
+ .nrf_balloc    0x000000000001298c       0x38 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000000001298c                libuarte_rx_pool
+                0x00000000000129a8                libuarte_vcu_rx_pool
+                0x00000000000129c4                __nrf_balloc_end__ = (__nrf_balloc_start__ + SIZEOF (.nrf_balloc))
                 0x0000000000000054                __nrf_balloc_size__ = SIZEOF (.nrf_balloc)
-                0x00000000000129ec                __stop_nrf_balloc = __nrf_balloc_end__
-                0x00000000000129ec                __nrf_balloc_load_end__ = __nrf_balloc_end__
+                0x00000000000129c4                __stop_nrf_balloc = __nrf_balloc_end__
+                0x00000000000129c4                __nrf_balloc_load_end__ = __nrf_balloc_end__
                 0x0000000000000001                . = ASSERT (((__nrf_balloc_start__ == __nrf_balloc_end__) || ((__nrf_balloc_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .nrf_balloc is too large to fit in FLASH1 memory segment)
-                0x00000000000129ec                __crypto_data_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
+                0x00000000000129c4                __crypto_data_load_start__ = ALIGN (__nrf_balloc_end__, 0x4)
 
-.crypto_data    0x00000000000129ec        0x0
-                0x00000000000129ec                __crypto_data_start__ = .
-                0x00000000000129ec                __start_crypto_data = __crypto_data_start__
+.crypto_data    0x00000000000129c4        0x0
+                0x00000000000129c4                __crypto_data_start__ = .
+                0x00000000000129c4                __start_crypto_data = __crypto_data_start__
  *(SORT_BY_NAME(.crypto_data*))
-                0x00000000000129ec                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
+                0x00000000000129c4                __crypto_data_end__ = (__crypto_data_start__ + SIZEOF (.crypto_data))
                 0x0000000000000000                __crypto_data_size__ = SIZEOF (.crypto_data)
-                0x00000000000129ec                __stop_crypto_data = __crypto_data_end__
-                0x00000000000129ec                __crypto_data_load_end__ = __crypto_data_end__
+                0x00000000000129c4                __stop_crypto_data = __crypto_data_end__
+                0x00000000000129c4                __crypto_data_load_end__ = __crypto_data_end__
                 0x0000000000000001                . = ASSERT (((__crypto_data_start__ == __crypto_data_end__) || ((__crypto_data_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .crypto_data is too large to fit in FLASH1 memory segment)
-                0x00000000000129ec                __cli_command_load_start__ = ALIGN (__crypto_data_end__, 0x4)
+                0x00000000000129c4                __cli_command_load_start__ = ALIGN (__crypto_data_end__, 0x4)
 
-.cli_command    0x00000000000129ec       0x40
-                0x00000000000129ec                __cli_command_start__ = .
-                0x00000000000129ec                __start_cli_command = __cli_command_start__
+.cli_command    0x00000000000129c4       0x40
+                0x00000000000129c4                __cli_command_start__ = .
+                0x00000000000129c4                __start_cli_command = __cli_command_start__
  *(.cli_command*)
- .cli_command   0x00000000000129ec        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
-                0x00000000000129ec                nrf_cli_log_const
- .cli_command   0x00000000000129f4        0x8 Output/Debug/Obj/template_pca10056/nrf_balloc.o
-                0x00000000000129f4                nrf_cli_balloc_const
- .cli_command   0x00000000000129fc       0x20 Output/Debug/Obj/template_pca10056/nrf_cli.o
-                0x00000000000129fc                nrf_cli_clear_const
-                0x0000000000012a04                nrf_cli_cli_const
-                0x0000000000012a0c                nrf_cli_history_const
-                0x0000000000012a14                nrf_cli_resize_const
- .cli_command   0x0000000000012a1c        0x8 Output/Debug/Obj/template_pca10056/nrf_queue.o
-                0x0000000000012a1c                nrf_cli_queue_const
- .cli_command   0x0000000000012a24        0x8 Output/Debug/Obj/template_pca10056/task_manager.o
-                0x0000000000012a24                nrf_cli_task_manager_const
-                0x0000000000012a2c                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
+ .cli_command   0x00000000000129c4        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x00000000000129c4                nrf_cli_log_const
+ .cli_command   0x00000000000129cc        0x8 Output/Debug/Obj/template_pca10056/nrf_balloc.o
+                0x00000000000129cc                nrf_cli_balloc_const
+ .cli_command   0x00000000000129d4       0x20 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x00000000000129d4                nrf_cli_clear_const
+                0x00000000000129dc                nrf_cli_cli_const
+                0x00000000000129e4                nrf_cli_history_const
+                0x00000000000129ec                nrf_cli_resize_const
+ .cli_command   0x00000000000129f4        0x8 Output/Debug/Obj/template_pca10056/nrf_queue.o
+                0x00000000000129f4                nrf_cli_queue_const
+ .cli_command   0x00000000000129fc        0x8 Output/Debug/Obj/template_pca10056/task_manager.o
+                0x00000000000129fc                nrf_cli_task_manager_const
+                0x0000000000012a04                __cli_command_end__ = (__cli_command_start__ + SIZEOF (.cli_command))
                 0x0000000000000040                __cli_command_size__ = SIZEOF (.cli_command)
-                0x0000000000012a2c                __stop_cli_command = __cli_command_end__
-                0x0000000000012a2c                __cli_command_load_end__ = __cli_command_end__
+                0x0000000000012a04                __stop_cli_command = __cli_command_end__
+                0x0000000000012a04                __cli_command_load_end__ = __cli_command_end__
                 0x0000000000000001                . = ASSERT (((__cli_command_start__ == __cli_command_end__) || ((__cli_command_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .cli_command is too large to fit in FLASH1 memory segment)
-                0x0000000000012a2c                __log_backends_load_start__ = ALIGN (__cli_command_end__, 0x4)
+                0x0000000000012a04                __log_backends_load_start__ = ALIGN (__cli_command_end__, 0x4)
 
-.log_backends   0x0000000000012a2c       0x10
-                0x0000000000012a2c                __log_backends_start__ = .
-                0x0000000000012a2c                __start_log_backends = __log_backends_start__
+.log_backends   0x0000000000012a04       0x10
+                0x0000000000012a04                __log_backends_start__ = .
+                0x0000000000012a04                __start_log_backends = __log_backends_start__
  *(SORT_BY_NAME(.log_backends*))
- .log_backends  0x0000000000012a2c       0x10 Output/Debug/Obj/template_pca10056/nrf_log_default_backends.o
-                0x0000000000012a3c                __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
+ .log_backends  0x0000000000012a04       0x10 Output/Debug/Obj/template_pca10056/nrf_log_default_backends.o
+                0x0000000000012a14                __log_backends_end__ = (__log_backends_start__ + SIZEOF (.log_backends))
                 0x0000000000000010                __log_backends_size__ = SIZEOF (.log_backends)
-                0x0000000000012a3c                __stop_log_backends = __log_backends_end__
-                0x0000000000012a3c                __log_backends_load_end__ = __log_backends_end__
+                0x0000000000012a14                __stop_log_backends = __log_backends_end__
+                0x0000000000012a14                __log_backends_load_end__ = __log_backends_end__
                 0x0000000000000001                . = ASSERT (((__log_backends_start__ == __log_backends_end__) || ((__log_backends_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_backends is too large to fit in FLASH1 memory segment)
-                0x0000000000012a3c                __nrf_sections_load_start__ = ALIGN (__log_backends_end__, 0x4)
+                0x0000000000012a14                __nrf_sections_load_start__ = ALIGN (__log_backends_end__, 0x4)
 
-.nrf_sections   0x0000000000012a3c        0x0
-                0x0000000000012a3c                __nrf_sections_start__ = .
-                0x0000000000012a3c                __start_nrf_sections = __nrf_sections_start__
+.nrf_sections   0x0000000000012a14        0x0
+                0x0000000000012a14                __nrf_sections_start__ = .
+                0x0000000000012a14                __start_nrf_sections = __nrf_sections_start__
  *(.nrf_sections .nrf_sections.*)
-                0x0000000000012a3c                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
+                0x0000000000012a14                __nrf_sections_end__ = (__nrf_sections_start__ + SIZEOF (.nrf_sections))
                 0x0000000000000000                __nrf_sections_size__ = SIZEOF (.nrf_sections)
-                0x0000000000012a3c                __nrf_sections_load_end__ = __nrf_sections_end__
+                0x0000000000012a14                __nrf_sections_load_end__ = __nrf_sections_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_start__ == __nrf_sections_end__) || ((__nrf_sections_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .nrf_sections is too large to fit in FLASH1 memory segment)
-                0x0000000000012a3c                __fs_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
+                0x0000000000012a14                __fs_data_load_start__ = ALIGN (__nrf_sections_end__, 0x4)
 
-.fs_data        0x0000000020000000       0x14 load address 0x0000000000012a3c
+.fs_data        0x0000000020000000       0x14 load address 0x0000000000012a14
                 0x0000000020000000                __fs_data_start__ = .
  *(.fs_data*)
  .fs_data       0x0000000020000000       0x14 Output/Debug/Obj/template_pca10056/fds.o
                 0x0000000020000000                m_fs
                 0x0000000020000014                __fs_data_end__ = (__fs_data_start__ + SIZEOF (.fs_data))
                 0x0000000000000014                __fs_data_size__ = SIZEOF (.fs_data)
-                0x0000000000012a50                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
+                0x0000000000012a28                __fs_data_load_end__ = (__fs_data_load_start__ + SIZEOF (.fs_data))
                 0x0000000000000001                . = ASSERT (((__fs_data_load_start__ == __fs_data_load_end__) || ((__fs_data_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .fs_data is too large to fit in FLASH1 memory segment)
 
 .fs_data_run    0x0000000020000000        0x0
@@ -37826,10 +37826,10 @@ Linker script and memory map
                 0x0000000020000014                __stop_fs_data = __fs_data_run_end__
                 0x0000000020000014                __fs_data_run_load_end__ = __fs_data_run_end__
                 0x0000000000000001                . = ASSERT (((__fs_data_run_start__ == __fs_data_run_end__) || ((__fs_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fs_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000012a50                __log_dynamic_data_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
+                0x0000000000012a28                __log_dynamic_data_load_start__ = ALIGN ((__fs_data_load_start__ + SIZEOF (.fs_data)), 0x4)
 
 .log_dynamic_data
-                0x0000000020000014      0x100 load address 0x0000000000012a50
+                0x0000000020000014      0x100 load address 0x0000000000012a28
                 0x0000000020000014                __log_dynamic_data_start__ = .
  *(SORT_BY_NAME(.log_dynamic_data*))
  .log_dynamic_data_CLOCK
@@ -38026,7 +38026,7 @@ Linker script and memory map
                 0x0000000020000110                m_nrf_log_usbd_msc_logs_data_dynamic
                 0x0000000020000114                __log_dynamic_data_end__ = (__log_dynamic_data_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000100                __log_dynamic_data_size__ = SIZEOF (.log_dynamic_data)
-                0x0000000000012b50                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
+                0x0000000000012b28                __log_dynamic_data_load_end__ = (__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data))
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_load_start__ == __log_dynamic_data_load_end__) || ((__log_dynamic_data_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_dynamic_data is too large to fit in FLASH1 memory segment)
 
 .log_dynamic_data_run
@@ -38038,10 +38038,10 @@ Linker script and memory map
                 0x0000000020000114                __stop_log_dynamic_data = __log_dynamic_data_run_end__
                 0x0000000020000114                __log_dynamic_data_run_load_end__ = __log_dynamic_data_run_end__
                 0x0000000000000001                . = ASSERT (((__log_dynamic_data_run_start__ == __log_dynamic_data_run_end__) || ((__log_dynamic_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .log_dynamic_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000012b50                __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
+                0x0000000000012b28                __log_filter_data_load_start__ = ALIGN ((__log_dynamic_data_load_start__ + SIZEOF (.log_dynamic_data)), 0x4)
 
 .log_filter_data
-                0x0000000020000114      0x100 load address 0x0000000000012b50
+                0x0000000020000114      0x100 load address 0x0000000000012b28
                 0x0000000020000114                __log_filter_data_start__ = .
  *(SORT_BY_NAME(.log_filter_data*))
  .log_filter_data_CLOCK
@@ -38238,7 +38238,7 @@ Linker script and memory map
                 0x0000000020000210                m_nrf_log_usbd_msc_logs_data_filter
                 0x0000000020000214                __log_filter_data_end__ = (__log_filter_data_start__ + SIZEOF (.log_filter_data))
                 0x0000000000000100                __log_filter_data_size__ = SIZEOF (.log_filter_data)
-                0x0000000000012c50                __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
+                0x0000000000012c28                __log_filter_data_load_end__ = (__log_filter_data_load_start__ + SIZEOF (.log_filter_data))
                 0x0000000000000001                . = ASSERT (((__log_filter_data_load_start__ == __log_filter_data_load_end__) || ((__log_filter_data_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .log_filter_data is too large to fit in FLASH1 memory segment)
 
 .log_filter_data_run
@@ -38250,10 +38250,10 @@ Linker script and memory map
                 0x0000000020000214                __stop_log_filter_data = __log_filter_data_run_end__
                 0x0000000020000214                __log_filter_data_run_load_end__ = __log_filter_data_run_end__
                 0x0000000000000001                . = ASSERT (((__log_filter_data_run_start__ == __log_filter_data_run_end__) || ((__log_filter_data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .log_filter_data_run is too large to fit in RAM1 memory segment)
-                0x0000000000012c50                __cli_sorted_cmd_ptrs_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
+                0x0000000000012c28                __cli_sorted_cmd_ptrs_load_start__ = ALIGN ((__log_filter_data_load_start__ + SIZEOF (.log_filter_data)), 0x4)
 
 .cli_sorted_cmd_ptrs
-                0x0000000020000214       0x20 load address 0x0000000000012c50
+                0x0000000020000214       0x20 load address 0x0000000000012c28
                 0x0000000020000214                __cli_sorted_cmd_ptrs_start__ = .
  *(.cli_sorted_cmd_ptrs*)
  .cli_sorted_cmd_ptrs
@@ -38276,7 +38276,7 @@ Linker script and memory map
                 0x0000000020000230                task_manager_str_ptr
                 0x0000000020000234                __cli_sorted_cmd_ptrs_end__ = (__cli_sorted_cmd_ptrs_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000020                __cli_sorted_cmd_ptrs_size__ = SIZEOF (.cli_sorted_cmd_ptrs)
-                0x0000000000012c70                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
+                0x0000000000012c48                __cli_sorted_cmd_ptrs_load_end__ = (__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs))
                 0x0000000000000001                . = ASSERT (((__cli_sorted_cmd_ptrs_load_start__ == __cli_sorted_cmd_ptrs_load_end__) || ((__cli_sorted_cmd_ptrs_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .cli_sorted_cmd_ptrs is too large to fit in FLASH1 memory segment)
 
 .cli_sorted_cmd_ptrs_run
@@ -38299,424 +38299,424 @@ Linker script and memory map
                 0x0000000000000000                __nrf_sections_run_end_size__ = SIZEOF (.nrf_sections_run_end)
                 0x0000000020000234                __nrf_sections_run_end_load_end__ = __nrf_sections_run_end_end__
                 0x0000000000000001                . = ASSERT (((__nrf_sections_run_end_start__ == __nrf_sections_run_end_end__) || ((__nrf_sections_run_end_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .nrf_sections_run_end is too large to fit in RAM1 memory segment)
-                0x0000000000012c70                __dtors_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
+                0x0000000000012c48                __dtors_load_start__ = ALIGN ((__cli_sorted_cmd_ptrs_load_start__ + SIZEOF (.cli_sorted_cmd_ptrs)), 0x4)
 
-.dtors          0x0000000000012c70        0x0
-                0x0000000000012c70                __dtors_start__ = .
+.dtors          0x0000000000012c48        0x0
+                0x0000000000012c48                __dtors_start__ = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0000000000012c70                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x0000000000012c48                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x0000000000012c70                __dtors_load_end__ = __dtors_end__
+                0x0000000000012c48                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .dtors is too large to fit in FLASH1 memory segment)
-                0x0000000000012c70                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x0000000000012c48                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x0000000000012c70        0x0
-                0x0000000000012c70                __ctors_start__ = .
+.ctors          0x0000000000012c48        0x0
+                0x0000000000012c48                __ctors_start__ = .
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT_BY_NAME(.init_array.*))
-                0x0000000000012c70                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x0000000000012c48                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x0000000000012c70                __ctors_load_end__ = __ctors_end__
+                0x0000000000012c48                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .ctors is too large to fit in FLASH1 memory segment)
-                0x0000000000012c70                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x0000000000012c48                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x0000000000012c70     0x4ee8
-                0x0000000000012c70                __rodata_start__ = .
+.rodata         0x0000000000012c48     0x4ed4
+                0x0000000000012c48                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000012c70       0x6e Output/Debug/Obj/template_pca10056/boards.o
- *fill*         0x0000000000012cde        0x2 
+ .rodata        0x0000000000012c48       0x6e Output/Debug/Obj/template_pca10056/boards.o
+ *fill*         0x0000000000012cb6        0x2 
  .rodata.m_board_led_list
-                0x0000000000012ce0        0x4 Output/Debug/Obj/template_pca10056/boards.o
- .rodata        0x0000000000012ce4       0x53 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
- *fill*         0x0000000000012d37        0x1 
- .rodata        0x0000000000012d38       0x6d Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
- *fill*         0x0000000000012da5        0x3 
- .rodata        0x0000000000012da8       0x2e Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
- *fill*         0x0000000000012dd6        0xa 
+                0x0000000000012cb8        0x4 Output/Debug/Obj/template_pca10056/boards.o
+ .rodata        0x0000000000012cbc       0x53 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
+ *fill*         0x0000000000012d0f        0x1 
+ .rodata        0x0000000000012d10       0x6d Output/Debug/Obj/template_pca10056/nrf_drv_rng.o
+ *fill*         0x0000000000012d7d        0x3 
+ .rodata        0x0000000000012d80       0x2e Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
+ *fill*         0x0000000000012dae        0x2 
  .rodata.delay_machine_code.0
-                0x0000000000012de0        0x6 Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
- *fill*         0x0000000000012de6        0x2 
- .rodata        0x0000000000012de8       0x81 Output/Debug/Obj/template_pca10056/nrfx_clock.o
- *fill*         0x0000000000012e69        0x3 
- .rodata        0x0000000000012e6c       0x80 Output/Debug/Obj/template_pca10056/nrfx_comp.o
- .rodata        0x0000000000012eec       0xba Output/Debug/Obj/template_pca10056/nrfx_gpiote.o
- *fill*         0x0000000000012fa6        0x2 
- .rodata        0x0000000000012fa8       0xab Output/Debug/Obj/template_pca10056/nrfx_i2s.o
- *fill*         0x0000000000013053        0x1 
- .rodata        0x0000000000013054       0x82 Output/Debug/Obj/template_pca10056/nrfx_lpcomp.o
- *fill*         0x00000000000130d6        0x2 
- .rodata        0x00000000000130d8       0xab Output/Debug/Obj/template_pca10056/nrfx_pdm.o
- *fill*         0x0000000000013183        0x1 
- .rodata        0x0000000000013184       0xa9 Output/Debug/Obj/template_pca10056/nrfx_power.o
- *fill*         0x000000000001322d        0x3 
- .rodata        0x0000000000013230        0x4 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
- .rodata        0x0000000000013234       0x4f Output/Debug/Obj/template_pca10056/nrfx_prs.o
- *fill*         0x0000000000013283        0x1 
- .rodata        0x0000000000013284       0xdb Output/Debug/Obj/template_pca10056/nrfx_pwm.o
- *fill*         0x000000000001335f        0x1 
- .rodata        0x0000000000013360       0xb0 Output/Debug/Obj/template_pca10056/nrfx_qdec.o
- .rodata        0x0000000000013410       0xae Output/Debug/Obj/template_pca10056/nrfx_qspi.o
- *fill*         0x00000000000134be        0x2 
+                0x0000000000012db0        0x6 Output/Debug/Obj/template_pca10056/nrf_drv_twi.o
+ *fill*         0x0000000000012db6        0x2 
+ .rodata        0x0000000000012db8       0x81 Output/Debug/Obj/template_pca10056/nrfx_clock.o
+ *fill*         0x0000000000012e39        0x3 
+ .rodata        0x0000000000012e3c       0x80 Output/Debug/Obj/template_pca10056/nrfx_comp.o
+ .rodata        0x0000000000012ebc       0xba Output/Debug/Obj/template_pca10056/nrfx_gpiote.o
+ *fill*         0x0000000000012f76        0x2 
+ .rodata        0x0000000000012f78       0xab Output/Debug/Obj/template_pca10056/nrfx_i2s.o
+ *fill*         0x0000000000013023        0x1 
+ .rodata        0x0000000000013024       0x82 Output/Debug/Obj/template_pca10056/nrfx_lpcomp.o
+ *fill*         0x00000000000130a6        0x2 
+ .rodata        0x00000000000130a8       0xab Output/Debug/Obj/template_pca10056/nrfx_pdm.o
+ *fill*         0x0000000000013153        0x1 
+ .rodata        0x0000000000013154       0xa9 Output/Debug/Obj/template_pca10056/nrfx_power.o
+ *fill*         0x00000000000131fd        0x3 
+ .rodata        0x0000000000013200        0x4 Output/Debug/Obj/template_pca10056/nrfx_ppi.o
+ .rodata        0x0000000000013204       0x4f Output/Debug/Obj/template_pca10056/nrfx_prs.o
+ *fill*         0x0000000000013253        0x1 
+ .rodata        0x0000000000013254       0xdb Output/Debug/Obj/template_pca10056/nrfx_pwm.o
+ *fill*         0x000000000001332f        0x1 
+ .rodata        0x0000000000013330       0xb0 Output/Debug/Obj/template_pca10056/nrfx_qdec.o
+ .rodata        0x00000000000133e0       0xae Output/Debug/Obj/template_pca10056/nrfx_qspi.o
+ *fill*         0x000000000001348e        0x2 
  .rodata.delay_machine_code.0
-                0x00000000000134c0        0x6 Output/Debug/Obj/template_pca10056/nrfx_qspi.o
- *fill*         0x00000000000134c6        0x2 
- .rodata        0x00000000000134c8       0x7b Output/Debug/Obj/template_pca10056/nrfx_rng.o
- *fill*         0x0000000000013543        0x1 
- .rodata        0x0000000000013544       0xab Output/Debug/Obj/template_pca10056/nrfx_rtc.o
- *fill*         0x00000000000135ef        0x1 
- .rodata        0x00000000000135f0       0xb1 Output/Debug/Obj/template_pca10056/nrfx_saadc.o
- *fill*         0x00000000000136a1        0x3 
- .rodata        0x00000000000136a4       0xb0 Output/Debug/Obj/template_pca10056/nrfx_spim.o
- .rodata        0x0000000000013754       0xb0 Output/Debug/Obj/template_pca10056/nrfx_spis.o
- .rodata        0x0000000000013804       0x81 Output/Debug/Obj/template_pca10056/nrfx_timer.o
- *fill*         0x0000000000013885        0x3 
- .rodata        0x0000000000013888       0xab Output/Debug/Obj/template_pca10056/nrfx_twi.o
- *fill*         0x0000000000013933        0x1 
+                0x0000000000013490        0x6 Output/Debug/Obj/template_pca10056/nrfx_qspi.o
+ *fill*         0x0000000000013496        0x2 
+ .rodata        0x0000000000013498       0x7b Output/Debug/Obj/template_pca10056/nrfx_rng.o
+ *fill*         0x0000000000013513        0x1 
+ .rodata        0x0000000000013514       0xab Output/Debug/Obj/template_pca10056/nrfx_rtc.o
+ *fill*         0x00000000000135bf        0x1 
+ .rodata        0x00000000000135c0       0xb1 Output/Debug/Obj/template_pca10056/nrfx_saadc.o
+ *fill*         0x0000000000013671        0x3 
+ .rodata        0x0000000000013674       0xb0 Output/Debug/Obj/template_pca10056/nrfx_spim.o
+ .rodata        0x0000000000013724       0xb0 Output/Debug/Obj/template_pca10056/nrfx_spis.o
+ .rodata        0x00000000000137d4       0x81 Output/Debug/Obj/template_pca10056/nrfx_timer.o
+ *fill*         0x0000000000013855        0x3 
+ .rodata        0x0000000000013858       0xab Output/Debug/Obj/template_pca10056/nrfx_twi.o
+ *fill*         0x0000000000013903        0x1 
  .rodata.irq_handlers.0
-                0x0000000000013934        0x8 Output/Debug/Obj/template_pca10056/nrfx_twi.o
- .rodata        0x000000000001393c       0xb0 Output/Debug/Obj/template_pca10056/nrfx_twis.o
- .rodata        0x00000000000139ec       0xb0 Output/Debug/Obj/template_pca10056/nrfx_uart.o
- .rodata        0x0000000000013a9c       0xb1 Output/Debug/Obj/template_pca10056/nrfx_uarte.o
- *fill*         0x0000000000013b4d        0x3 
- .rodata        0x0000000000013b50       0xb0 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
- .rodata.m_isr  0x0000000000013c00       0x64 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+                0x0000000000013904        0x8 Output/Debug/Obj/template_pca10056/nrfx_twi.o
+ .rodata        0x000000000001390c       0xb0 Output/Debug/Obj/template_pca10056/nrfx_twis.o
+ .rodata        0x00000000000139bc       0xb0 Output/Debug/Obj/template_pca10056/nrfx_uart.o
+ .rodata        0x0000000000013a6c       0xb1 Output/Debug/Obj/template_pca10056/nrfx_uarte.o
+ *fill*         0x0000000000013b1d        0x3 
+ .rodata        0x0000000000013b20       0xb0 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+ .rodata.m_isr  0x0000000000013bd0       0x64 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
  .rodata.epin_endev.4
-                0x0000000000013c64       0x12 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
- *fill*         0x0000000000013c76        0x2 
+                0x0000000000013c34       0x12 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+ *fill*         0x0000000000013c46        0x2 
  .rodata.epout_endev.3
-                0x0000000000013c78       0x12 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
- *fill*         0x0000000000013c8a        0x2 
+                0x0000000000013c48       0x12 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+ *fill*         0x0000000000013c5a        0x2 
  .rodata.event_reg_offset.2
-                0x0000000000013c8c        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
- .rodata        0x0000000000013c90       0x7b Output/Debug/Obj/template_pca10056/nrfx_wdt.o
- *fill*         0x0000000000013d0b        0x1 
- .rodata        0x0000000000013d0c       0x83 Output/Debug/Obj/template_pca10056/bsp.o
- *fill*         0x0000000000013d8f        0x1 
- .rodata        0x0000000000013d90       0x60 Output/Debug/Obj/template_pca10056/nrf_twi_sensor.o
- .rodata        0x0000000000013df0      0x5cc Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000013c5c        0x4 Output/Debug/Obj/template_pca10056/nrfx_usbd.o
+ .rodata        0x0000000000013c60       0x7b Output/Debug/Obj/template_pca10056/nrfx_wdt.o
+ *fill*         0x0000000000013cdb        0x1 
+ .rodata        0x0000000000013cdc       0x83 Output/Debug/Obj/template_pca10056/bsp.o
+ *fill*         0x0000000000013d5f        0x1 
+ .rodata        0x0000000000013d60       0x60 Output/Debug/Obj/template_pca10056/nrf_twi_sensor.o
+ .rodata        0x0000000000013dc0      0x5cc Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_log_push_ringbuf
-                0x00000000000143bc        0xc Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x000000000001438c        0xc Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_module_name
-                0x00000000000143c8        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000014398        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_severity_lvl
-                0x00000000000143d0        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x00000000000143a0        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_sub_log_backend_raw
-                0x00000000000143d8       0x60 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x00000000000143a8       0x60 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_sub_log_backend
-                0x0000000000014438        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000014408        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_backend_name_dynamic
-                0x0000000000014440        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000014410        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_sub_log_config_raw
-                0x0000000000014448       0x30 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000014418       0x30 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_sub_log_config
-                0x0000000000014478        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000014448        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_sub_log_stat_raw
-                0x0000000000014480       0x90 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x0000000000014450       0x90 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.m_sub_log_stat
-                0x0000000000014510        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x00000000000144e0        0x8 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
  .rodata.nrf_cli_log_raw
-                0x0000000000014518       0x10 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
-                0x0000000000014518                nrf_cli_log_raw
+                0x00000000000144e8       0x10 Output/Debug/Obj/template_pca10056/nrf_log_frontend.o
+                0x00000000000144e8                nrf_cli_log_raw
  .rodata.nrf_log_backend_rtt_api
-                0x0000000000014528        0xc Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
-                0x0000000000014528                nrf_log_backend_rtt_api
- *fill*         0x0000000000014534        0xc 
+                0x00000000000144f8        0xc Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
+                0x00000000000144f8                nrf_log_backend_rtt_api
+ *fill*         0x0000000000014504        0xc 
  .rodata.delay_machine_code.0
-                0x0000000000014540        0x6 Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
- *fill*         0x0000000000014546        0x2 
- .rodata        0x0000000000014548       0x6b Output/Debug/Obj/template_pca10056/nrf_log_default_backends.o
- *fill*         0x00000000000145b3        0x1 
- .rodata        0x00000000000145b4       0xc4 Output/Debug/Obj/template_pca10056/nrf_mpu_lib.o
- .rodata        0x0000000000014678       0xf3 Output/Debug/Obj/template_pca10056/nrf_stack_guard.o
- *fill*         0x000000000001476b        0x1 
- .rodata        0x000000000001476c       0x80 Output/Debug/Obj/template_pca10056/app_button.o
- .rodata        0x00000000000147ec       0x70 Output/Debug/Obj/template_pca10056/app_error_weak.o
- .rodata        0x000000000001485c       0x70 Output/Debug/Obj/template_pca10056/app_timer2.o
+                0x0000000000014510        0x6 Output/Debug/Obj/template_pca10056/nrf_log_backend_rtt.o
+ *fill*         0x0000000000014516        0x2 
+ .rodata        0x0000000000014518       0x6b Output/Debug/Obj/template_pca10056/nrf_log_default_backends.o
+ *fill*         0x0000000000014583        0x1 
+ .rodata        0x0000000000014584       0xc4 Output/Debug/Obj/template_pca10056/nrf_mpu_lib.o
+ .rodata        0x0000000000014648       0xf3 Output/Debug/Obj/template_pca10056/nrf_stack_guard.o
+ *fill*         0x000000000001473b        0x1 
+ .rodata        0x000000000001473c       0x80 Output/Debug/Obj/template_pca10056/app_button.o
+ .rodata        0x00000000000147bc       0x70 Output/Debug/Obj/template_pca10056/app_error_weak.o
+ .rodata        0x000000000001482c       0x70 Output/Debug/Obj/template_pca10056/app_timer2.o
  .rodata.m_app_timer_sortlist
-                0x00000000000148cc        0xc Output/Debug/Obj/template_pca10056/app_timer2.o
- .rodata        0x00000000000148d8      0x158 Output/Debug/Obj/template_pca10056/app_usbd.o
- .rodata        0x0000000000014a30       0xea Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o
- *fill*         0x0000000000014b1a        0x2 
- .rodata        0x0000000000014b1c       0xa5 Output/Debug/Obj/template_pca10056/app_usbd_core.o
- *fill*         0x0000000000014bc1        0x3 
- .rodata        0x0000000000014bc4       0x51 Output/Debug/Obj/template_pca10056/app_util_platform.o
- *fill*         0x0000000000014c15        0x3 
- .rodata        0x0000000000014c18       0x52 Output/Debug/Obj/template_pca10056/fds.o
- *fill*         0x0000000000014c6a        0x2 
+                0x000000000001489c        0xc Output/Debug/Obj/template_pca10056/app_timer2.o
+ .rodata        0x00000000000148a8      0x158 Output/Debug/Obj/template_pca10056/app_usbd.o
+ .rodata        0x0000000000014a00       0xea Output/Debug/Obj/template_pca10056/app_usbd_cdc_acm.o
+ *fill*         0x0000000000014aea        0x2 
+ .rodata        0x0000000000014aec       0xa5 Output/Debug/Obj/template_pca10056/app_usbd_core.o
+ *fill*         0x0000000000014b91        0x3 
+ .rodata        0x0000000000014b94       0x51 Output/Debug/Obj/template_pca10056/app_util_platform.o
+ *fill*         0x0000000000014be5        0x3 
+ .rodata        0x0000000000014be8       0x52 Output/Debug/Obj/template_pca10056/fds.o
+ *fill*         0x0000000000014c3a        0x2 
  .rodata.page_tag_swap.7
-                0x0000000000014c6c        0x8 Output/Debug/Obj/template_pca10056/fds.o
+                0x0000000000014c3c        0x8 Output/Debug/Obj/template_pca10056/fds.o
  .rodata.page_tag_data.6
-                0x0000000000014c74        0x8 Output/Debug/Obj/template_pca10056/fds.o
+                0x0000000000014c44        0x8 Output/Debug/Obj/template_pca10056/fds.o
  .rodata.dirty_header.5
-                0x0000000000014c7c        0x4 Output/Debug/Obj/template_pca10056/fds.o
- .rodata        0x0000000000014c80      0x617 Output/Debug/Obj/template_pca10056/hardfault_implementation.o
- *fill*         0x0000000000015297        0x1 
- .rodata        0x0000000000015298       0x68 Output/Debug/Obj/template_pca10056/hci_transport.o
- .rodata        0x0000000000015300       0x76 Output/Debug/Obj/template_pca10056/led_softblink.o
- *fill*         0x0000000000015376        0x2 
- .rodata        0x0000000000015378        0x9 Output/Debug/Obj/template_pca10056/mem_manager.o
- *fill*         0x0000000000015381        0x3 
- .rodata        0x0000000000015384      0x190 Output/Debug/Obj/template_pca10056/nrf_balloc.o
+                0x0000000000014c4c        0x4 Output/Debug/Obj/template_pca10056/fds.o
+ .rodata        0x0000000000014c50      0x617 Output/Debug/Obj/template_pca10056/hardfault_implementation.o
+ *fill*         0x0000000000015267        0x1 
+ .rodata        0x0000000000015268       0x68 Output/Debug/Obj/template_pca10056/hci_transport.o
+ .rodata        0x00000000000152d0       0x76 Output/Debug/Obj/template_pca10056/led_softblink.o
+ *fill*         0x0000000000015346        0x2 
+ .rodata        0x0000000000015348        0x9 Output/Debug/Obj/template_pca10056/mem_manager.o
+ *fill*         0x0000000000015351        0x3 
+ .rodata        0x0000000000015354      0x190 Output/Debug/Obj/template_pca10056/nrf_balloc.o
  .rodata.nrf_balloc_commands_raw
-                0x0000000000015514       0x20 Output/Debug/Obj/template_pca10056/nrf_balloc.o
+                0x00000000000154e4       0x20 Output/Debug/Obj/template_pca10056/nrf_balloc.o
  .rodata.nrf_balloc_commands
-                0x0000000000015534        0x8 Output/Debug/Obj/template_pca10056/nrf_balloc.o
+                0x0000000000015504        0x8 Output/Debug/Obj/template_pca10056/nrf_balloc.o
  .rodata.nrf_cli_balloc_raw
-                0x000000000001553c       0x10 Output/Debug/Obj/template_pca10056/nrf_balloc.o
-                0x000000000001553c                nrf_cli_balloc_raw
- .rodata        0x000000000001554c      0x513 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015a5f        0x1 
+                0x000000000001550c       0x10 Output/Debug/Obj/template_pca10056/nrf_balloc.o
+                0x000000000001550c                nrf_cli_balloc_raw
+ .rodata        0x000000000001551c      0x513 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015a2f        0x1 
  .rodata.m_sub_colors_raw
-                0x0000000000015a60       0x30 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015a30       0x30 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_colors
-                0x0000000000015a90        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015a60        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_echo_raw
-                0x0000000000015a98       0x30 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015a68       0x30 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_echo
-                0x0000000000015ac8        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015a98        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_cli_stats_raw
-                0x0000000000015ad0       0x30 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015aa0       0x30 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_cli_stats
-                0x0000000000015b00        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015ad0        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_cli_raw
-                0x0000000000015b08       0x40 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015ad8       0x40 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_cli
-                0x0000000000015b48        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b18        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_resize_raw
-                0x0000000000015b50       0x20 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b20       0x20 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.m_sub_resize
-                0x0000000000015b70        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b40        0x8 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.nrf_cli_clear_raw
-                0x0000000000015b78       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
-                0x0000000000015b78                nrf_cli_clear_raw
+                0x0000000000015b48       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b48                nrf_cli_clear_raw
  .rodata.nrf_cli_cli_raw
-                0x0000000000015b88       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
-                0x0000000000015b88                nrf_cli_cli_raw
+                0x0000000000015b58       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b58                nrf_cli_cli_raw
  .rodata.nrf_cli_history_raw
-                0x0000000000015b98       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
-                0x0000000000015b98                nrf_cli_history_raw
+                0x0000000000015b68       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b68                nrf_cli_history_raw
  .rodata.nrf_cli_resize_raw
-                0x0000000000015ba8       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
-                0x0000000000015ba8                nrf_cli_resize_raw
+                0x0000000000015b78       0x10 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b78                nrf_cli_resize_raw
  .rodata.cmd_get_terminal_size.15
-                0x0000000000015bb8        0x5 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015bbd        0x3 
+                0x0000000000015b88        0x5 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015b8d        0x3 
  .rodata.delay_machine_code.14
-                0x0000000000015bc0        0x6 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015bc6        0x2 
+                0x0000000000015b90        0x6 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015b96        0x2 
  .rodata.cmd.13
-                0x0000000000015bc8        0x4 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015b98        0x4 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.help.6
-                0x0000000000015bcc        0xb Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015bd7        0x1 
+                0x0000000000015b9c        0xb Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015ba7        0x1 
  .rodata.opt_sep.5
-                0x0000000000015bd8        0x3 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015bdb        0x1 
+                0x0000000000015ba8        0x3 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015bab        0x1 
  .rodata.cmd_sep.4
-                0x0000000000015bdc        0x4 Output/Debug/Obj/template_pca10056/nrf_cli.o
+                0x0000000000015bac        0x4 Output/Debug/Obj/template_pca10056/nrf_cli.o
  .rodata.tab_len.3
-                0x0000000000015be0        0x1 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015be1        0x3 
- .rodata.cmd.2  0x0000000000015be4        0x4 Output/Debug/Obj/template_pca10056/nrf_cli.o
- .rodata.cmd.1  0x0000000000015be8        0x5 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015bed        0x3 
- .rodata.cmd.0  0x0000000000015bf0        0x6 Output/Debug/Obj/template_pca10056/nrf_cli.o
- *fill*         0x0000000000015bf6        0x2 
- .rodata        0x0000000000015bf8       0x5c Output/Debug/Obj/template_pca10056/nrf_cli_uart.o
- .rodata        0x0000000000015c54       0x68 Output/Debug/Obj/template_pca10056/nrf_csense.o
- .rodata        0x0000000000015cbc       0x42 Output/Debug/Obj/template_pca10056/nrf_fprintf.o
- *fill*         0x0000000000015cfe        0x2 
- .rodata        0x0000000000015d00       0x49 Output/Debug/Obj/template_pca10056/nrf_fprintf_format.o
- *fill*         0x0000000000015d49        0x3 
+                0x0000000000015bb0        0x1 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015bb1        0x3 
+ .rodata.cmd.2  0x0000000000015bb4        0x4 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ .rodata.cmd.1  0x0000000000015bb8        0x5 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015bbd        0x3 
+ .rodata.cmd.0  0x0000000000015bc0        0x6 Output/Debug/Obj/template_pca10056/nrf_cli.o
+ *fill*         0x0000000000015bc6        0x2 
+ .rodata        0x0000000000015bc8       0x5c Output/Debug/Obj/template_pca10056/nrf_cli_uart.o
+ .rodata        0x0000000000015c24       0x68 Output/Debug/Obj/template_pca10056/nrf_csense.o
+ .rodata        0x0000000000015c8c       0x42 Output/Debug/Obj/template_pca10056/nrf_fprintf.o
+ *fill*         0x0000000000015cce        0x2 
+ .rodata        0x0000000000015cd0       0x49 Output/Debug/Obj/template_pca10056/nrf_fprintf_format.o
+ *fill*         0x0000000000015d19        0x3 
  .rodata._aV2C.0
-                0x0000000000015d4c       0x10 Output/Debug/Obj/template_pca10056/nrf_fprintf_format.o
- .rodata        0x0000000000015d5c      0x1b3 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
- *fill*         0x0000000000015f0f        0x1 
+                0x0000000000015d1c       0x10 Output/Debug/Obj/template_pca10056/nrf_fprintf_format.o
+ .rodata        0x0000000000015d2c      0x1b3 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
+ *fill*         0x0000000000015edf        0x1 
  .rodata.__func__.1
-                0x0000000000015f10       0x13 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
- *fill*         0x0000000000015f23        0x1 
+                0x0000000000015ee0       0x13 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
+ *fill*         0x0000000000015ef3        0x1 
  .rodata.__func__.0
-                0x0000000000015f24       0x13 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
- *fill*         0x0000000000015f37        0x1 
- .rodata        0x0000000000015f38       0x4a Output/Debug/Obj/template_pca10056/nrf_gfx.o
- *fill*         0x0000000000015f82        0x2 
- .rodata        0x0000000000015f84       0x4c Output/Debug/Obj/template_pca10056/nrf_memobj.o
- .rodata        0x0000000000015fd0       0xe8 Output/Debug/Obj/template_pca10056/nrf_pwr_mgmt.o
- .rodata        0x00000000000160b8      0x146 Output/Debug/Obj/template_pca10056/nrf_queue.o
- *fill*         0x00000000000161fe        0x2 
+                0x0000000000015ef4       0x13 Output/Debug/Obj/template_pca10056/nrf_fstorage.o
+ *fill*         0x0000000000015f07        0x1 
+ .rodata        0x0000000000015f08       0x4a Output/Debug/Obj/template_pca10056/nrf_gfx.o
+ *fill*         0x0000000000015f52        0x2 
+ .rodata        0x0000000000015f54       0x4c Output/Debug/Obj/template_pca10056/nrf_memobj.o
+ .rodata        0x0000000000015fa0       0xe8 Output/Debug/Obj/template_pca10056/nrf_pwr_mgmt.o
+ .rodata        0x0000000000016088      0x146 Output/Debug/Obj/template_pca10056/nrf_queue.o
+ *fill*         0x00000000000161ce        0x2 
  .rodata.nrf_queue_commands_raw
-                0x0000000000016200       0x20 Output/Debug/Obj/template_pca10056/nrf_queue.o
+                0x00000000000161d0       0x20 Output/Debug/Obj/template_pca10056/nrf_queue.o
  .rodata.nrf_queue_commands
-                0x0000000000016220        0x8 Output/Debug/Obj/template_pca10056/nrf_queue.o
+                0x00000000000161f0        0x8 Output/Debug/Obj/template_pca10056/nrf_queue.o
  .rodata.nrf_cli_queue_raw
-                0x0000000000016228       0x10 Output/Debug/Obj/template_pca10056/nrf_queue.o
-                0x0000000000016228                nrf_cli_queue_raw
+                0x00000000000161f8       0x10 Output/Debug/Obj/template_pca10056/nrf_queue.o
+                0x00000000000161f8                nrf_cli_queue_raw
  .rodata.full_queue_indicator.0
-                0x0000000000016238        0x1 Output/Debug/Obj/template_pca10056/nrf_queue.o
- *fill*         0x0000000000016239        0x3 
- .rodata        0x000000000001623c       0x5c Output/Debug/Obj/template_pca10056/nrf_sortlist.o
+                0x0000000000016208        0x1 Output/Debug/Obj/template_pca10056/nrf_queue.o
+ *fill*         0x0000000000016209        0x3 
+ .rodata        0x000000000001620c       0x5c Output/Debug/Obj/template_pca10056/nrf_sortlist.o
  .rodata.m_unknown_str
-                0x0000000000016298       0x13 Output/Debug/Obj/template_pca10056/nrf_strerror.o
- *fill*         0x00000000000162ab        0x1 
- .rodata        0x00000000000162ac      0x3e9 Output/Debug/Obj/template_pca10056/nrf_strerror.o
- *fill*         0x0000000000016695        0x3 
+                0x0000000000016268       0x13 Output/Debug/Obj/template_pca10056/nrf_strerror.o
+ *fill*         0x000000000001627b        0x1 
+ .rodata        0x000000000001627c      0x3e9 Output/Debug/Obj/template_pca10056/nrf_strerror.o
+ *fill*         0x0000000000016665        0x3 
  .rodata.nrf_strerror_array
-                0x0000000000016698      0x128 Output/Debug/Obj/template_pca10056/nrf_strerror.o
+                0x0000000000016668      0x128 Output/Debug/Obj/template_pca10056/nrf_strerror.o
  .rodata.str1.4
-                0x00000000000167c0       0x3e Output/Debug/Obj/template_pca10056/task_manager.o
- *fill*         0x00000000000167fe        0x2 
+                0x0000000000016790       0x3e Output/Debug/Obj/template_pca10056/task_manager.o
+ *fill*         0x00000000000167ce        0x2 
  .rodata.task_stack_protect.str1.4
-                0x0000000000016800       0x61 Output/Debug/Obj/template_pca10056/task_manager.o
- *fill*         0x0000000000016861        0x3 
+                0x00000000000167d0       0x61 Output/Debug/Obj/template_pca10056/task_manager.o
+ *fill*         0x0000000000016831        0x3 
  .rodata.task_mnanager_info.str1.4
-                0x0000000000016864       0xbb Output/Debug/Obj/template_pca10056/task_manager.o
- *fill*         0x000000000001691f        0x1 
+                0x0000000000016834       0xbb Output/Debug/Obj/template_pca10056/task_manager.o
+ *fill*         0x00000000000168ef        0x1 
  .rodata.m_sub_task_mngr_raw
-                0x0000000000016920       0x20 Output/Debug/Obj/template_pca10056/task_manager.o
+                0x00000000000168f0       0x20 Output/Debug/Obj/template_pca10056/task_manager.o
  .rodata.m_sub_task_mngr
-                0x0000000000016940        0x8 Output/Debug/Obj/template_pca10056/task_manager.o
+                0x0000000000016910        0x8 Output/Debug/Obj/template_pca10056/task_manager.o
  .rodata.nrf_cli_task_manager_raw
-                0x0000000000016948       0x10 Output/Debug/Obj/template_pca10056/task_manager.o
-                0x0000000000016948                nrf_cli_task_manager_raw
- .rodata        0x0000000000016958       0xaa Output/Debug/Obj/template_pca10056/nrf_libuarte_async.o
- *fill*         0x0000000000016a02        0x2 
- .rodata        0x0000000000016a04       0xcc Output/Debug/Obj/template_pca10056/nrf_libuarte_drv.o
- .rodata        0x0000000000016ad0      0x101 Output/Debug/Obj/template_pca10056/app_usbd_msc.o
- *fill*         0x0000000000016bd1        0x3 
- .rodata        0x0000000000016bd4      0x114 Output/Debug/Obj/template_pca10056/drv_rtc.o
- *fill*         0x0000000000016ce8        0x8 
+                0x0000000000016918       0x10 Output/Debug/Obj/template_pca10056/task_manager.o
+                0x0000000000016918                nrf_cli_task_manager_raw
+ .rodata        0x0000000000016928       0xaa Output/Debug/Obj/template_pca10056/nrf_libuarte_async.o
+ *fill*         0x00000000000169d2        0x2 
+ .rodata        0x00000000000169d4       0xcc Output/Debug/Obj/template_pca10056/nrf_libuarte_drv.o
+ .rodata        0x0000000000016aa0      0x101 Output/Debug/Obj/template_pca10056/app_usbd_msc.o
+ *fill*         0x0000000000016ba1        0x3 
+ .rodata        0x0000000000016ba4      0x114 Output/Debug/Obj/template_pca10056/drv_rtc.o
+ *fill*         0x0000000000016cb8        0x8 
  .rodata.delay_machine_code.0
-                0x0000000000016cf0        0x6 Output/Debug/Obj/template_pca10056/drv_rtc.o
- *fill*         0x0000000000016cf6        0x2 
- .rodata        0x0000000000016cf8       0x17 Output/Debug/Obj/template_pca10056/SEGGER_RTT.o
- *fill*         0x0000000000016d0f        0x1 
- .rodata        0x0000000000016d10       0xaa Output/Debug/Obj/template_pca10056/nrf_log_str_formatter.o
- *fill*         0x0000000000016dba        0x2 
- .rodata        0x0000000000016dbc      0x328 Output/Debug/Obj/template_pca10056/main.o
- *fill*         0x00000000000170e4        0xc 
+                0x0000000000016cc0        0x6 Output/Debug/Obj/template_pca10056/drv_rtc.o
+ *fill*         0x0000000000016cc6        0x2 
+ .rodata        0x0000000000016cc8       0x17 Output/Debug/Obj/template_pca10056/SEGGER_RTT.o
+ *fill*         0x0000000000016cdf        0x1 
+ .rodata        0x0000000000016ce0       0xaa Output/Debug/Obj/template_pca10056/nrf_log_str_formatter.o
+ *fill*         0x0000000000016d8a        0x2 
+ .rodata        0x0000000000016d8c      0x328 Output/Debug/Obj/template_pca10056/main.o
+ *fill*         0x00000000000170b4        0xc 
  .rodata.delay_machine_code.0
-                0x00000000000170f0        0x6 Output/Debug/Obj/template_pca10056/main.o
- *fill*         0x00000000000170f6        0x2 
- .rodata        0x00000000000170f8      0x3d8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000170c0        0x6 Output/Debug/Obj/template_pca10056/main.o
+ *fill*         0x00000000000170c6        0x2 
+ .rodata        0x00000000000170c8      0x3d8 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.libuarte_libuarte
-                0x00000000000174d0       0x10 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000174a0       0x10 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.libuarte_rtc
-                0x00000000000174e0        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000174b0        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.libuarte
-                0x00000000000174e8       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000174b8       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.libuarte_vcu_libuarte
-                0x0000000000017510       0x10 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000174e0       0x10 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.libuarte_vcu_rtc
-                0x0000000000017520        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000174f0        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.libuarte_vcu
-                0x0000000000017528       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000000174f8       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
  .rodata.delay_machine_code.0
-                0x0000000000017550        0x6 Output/Debug/Obj/template_pca10056/uartfunction.o
- *fill*         0x0000000000017556        0x2 
- .rodata        0x0000000000017558       0xfc Output/Debug/Obj/template_pca10056/IIC_LIS.o
- .rodata.m_twi  0x0000000000017654       0x10 Output/Debug/Obj/template_pca10056/IIC_LIS.o
- *fill*         0x0000000000017664        0xc 
+                0x0000000000017520        0x6 Output/Debug/Obj/template_pca10056/uartfunction.o
+ *fill*         0x0000000000017526        0x2 
+ .rodata        0x0000000000017528       0xfc Output/Debug/Obj/template_pca10056/IIC_LIS.o
+ .rodata.m_twi  0x0000000000017624       0x10 Output/Debug/Obj/template_pca10056/IIC_LIS.o
+ *fill*         0x0000000000017634        0xc 
  .rodata.delay_machine_code.0
-                0x0000000000017670        0x6 Output/Debug/Obj/template_pca10056/IIC_LIS.o
- *fill*         0x0000000000017676        0x2 
- .rodata        0x0000000000017678      0x1d9 Output/Debug/Obj/template_pca10056/qspi_flash.o
- *fill*         0x0000000000017851        0x3 
- .rodata        0x0000000000017854       0xba Output/Debug/Obj/template_pca10056/yz_timer.o
- *fill*         0x000000000001790e        0x2 
+                0x0000000000017640        0x6 Output/Debug/Obj/template_pca10056/IIC_LIS.o
+ *fill*         0x0000000000017646        0x2 
+ .rodata        0x0000000000017648      0x1cf Output/Debug/Obj/template_pca10056/qspi_flash.o
+ *fill*         0x0000000000017817        0x1 
+ .rodata        0x0000000000017818       0xba Output/Debug/Obj/template_pca10056/yz_timer.o
+ *fill*         0x00000000000178d2        0x2 
  .rodata.m_app_timer_id_1
-                0x0000000000017910        0x4 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x00000000000178d4        0x4 Output/Debug/Obj/template_pca10056/yz_timer.o
  .rodata.m_app_timer_id_2
-                0x0000000000017914        0x4 Output/Debug/Obj/template_pca10056/yz_timer.o
+                0x00000000000178d8        0x4 Output/Debug/Obj/template_pca10056/yz_timer.o
  .rodata.libc.__RAL_find_locale.str1.4
-                0x0000000000017918        0xa C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
- *fill*         0x0000000000017922        0x2 
+                0x00000000000178dc        0xa C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+ *fill*         0x00000000000178e6        0x2 
  .rodata.libc.__RAL_ascii_ctype_map
-                0x0000000000017924       0x80 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017924                __RAL_ascii_ctype_map
+                0x00000000000178e8       0x80 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000178e8                __RAL_ascii_ctype_map
  .rodata.libc.__RAL_ascii_ctype_mask
-                0x00000000000179a4        0xd C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
- *fill*         0x00000000000179b1        0x3 
+                0x0000000000017968        0xd C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+ *fill*         0x0000000000017975        0x3 
  .rodata.libc.__RAL_c_locale
-                0x00000000000179b4        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000179b4                __RAL_c_locale
+                0x0000000000017978        0xc C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017978                __RAL_c_locale
  .rodata.libc.__RAL_c_locale_abbrev_day_names
-                0x00000000000179c0       0x1d C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000179c0                __RAL_c_locale_abbrev_day_names
- *fill*         0x00000000000179dd        0x3 
+                0x0000000000017984       0x1d C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017984                __RAL_c_locale_abbrev_day_names
+ *fill*         0x00000000000179a1        0x3 
  .rodata.libc.__RAL_c_locale_abbrev_month_names
-                0x00000000000179e0       0x31 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x00000000000179e0                __RAL_c_locale_abbrev_month_names
- *fill*         0x0000000000017a11        0x3 
+                0x00000000000179a4       0x31 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000179a4                __RAL_c_locale_abbrev_month_names
+ *fill*         0x00000000000179d5        0x3 
  .rodata.libc.__RAL_c_locale_am_pm_indicator
-                0x0000000000017a14        0x7 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017a14                __RAL_c_locale_am_pm_indicator
- *fill*         0x0000000000017a1b        0x1 
+                0x00000000000179d8        0x7 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000179d8                __RAL_c_locale_am_pm_indicator
+ *fill*         0x00000000000179df        0x1 
  .rodata.libc.__RAL_c_locale_data
-                0x0000000000017a1c       0x58 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017a1c                __RAL_c_locale_data
+                0x00000000000179e0       0x58 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x00000000000179e0                __RAL_c_locale_data
  .rodata.libc.__RAL_c_locale_date_format
-                0x0000000000017a74        0x9 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017a74                __RAL_c_locale_date_format
- *fill*         0x0000000000017a7d        0x3 
+                0x0000000000017a38        0x9 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017a38                __RAL_c_locale_date_format
+ *fill*         0x0000000000017a41        0x3 
  .rodata.libc.__RAL_c_locale_date_time_format
-                0x0000000000017a80        0xf C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017a80                __RAL_c_locale_date_time_format
- *fill*         0x0000000000017a8f        0x1 
+                0x0000000000017a44        0xf C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017a44                __RAL_c_locale_date_time_format
+ *fill*         0x0000000000017a53        0x1 
  .rodata.libc.__RAL_c_locale_day_names
-                0x0000000000017a90       0x3a C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017a90                __RAL_c_locale_day_names
- *fill*         0x0000000000017aca        0x2 
+                0x0000000000017a54       0x3a C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017a54                __RAL_c_locale_day_names
+ *fill*         0x0000000000017a8e        0x2 
  .rodata.libc.__RAL_c_locale_month_names
-                0x0000000000017acc       0x57 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017acc                __RAL_c_locale_month_names
- *fill*         0x0000000000017b23        0x1 
+                0x0000000000017a90       0x57 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017a90                __RAL_c_locale_month_names
+ *fill*         0x0000000000017ae7        0x1 
  .rodata.libc.__RAL_c_locale_time_format
-                0x0000000000017b24        0x9 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017b24                __RAL_c_locale_time_format
- *fill*         0x0000000000017b2d        0x3 
+                0x0000000000017ae8        0x9 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017ae8                __RAL_c_locale_time_format
+ *fill*         0x0000000000017af1        0x3 
  .rodata.libc.__RAL_codeset_ascii
-                0x0000000000017b30       0x20 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017b30                __RAL_codeset_ascii
+                0x0000000000017af4       0x20 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017af4                __RAL_codeset_ascii
  .rodata.libc.__RAL_data_empty_string
-                0x0000000000017b50        0x1 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017b50                __RAL_data_empty_string
- *fill*         0x0000000000017b51        0x3 
+                0x0000000000017b14        0x1 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017b14                __RAL_data_empty_string
+ *fill*         0x0000000000017b15        0x3 
  .rodata.libc.__RAL_data_utf8_period
-                0x0000000000017b54        0x2 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
-                0x0000000000017b54                __RAL_data_utf8_period
-                0x0000000000017b58                . = ALIGN (MAX ((__rodata_start__ + 0x4), .), 0x4)
- *fill*         0x0000000000017b56        0x2 
-                0x0000000000017b58                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x0000000000004ee8                __rodata_size__ = SIZEOF (.rodata)
-                0x0000000000017b58                __rodata_load_end__ = __rodata_end__
+                0x0000000000017b18        0x2 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
+                0x0000000000017b18                __RAL_data_utf8_period
+                0x0000000000017b1c                . = ALIGN (MAX ((__rodata_start__ + 0x4), .), 0x4)
+ *fill*         0x0000000000017b1a        0x2 
+                0x0000000000017b1c                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x0000000000004ed4                __rodata_size__ = SIZEOF (.rodata)
+                0x0000000000017b1c                __rodata_load_end__ = __rodata_end__
 
-.rel.dyn        0x0000000000017b58        0x0
- .rel.iplt      0x0000000000017b58        0x0 Output/Debug/Obj/template_pca10056/thumb_crt0.o
+.rel.dyn        0x0000000000017b1c        0x0
+ .rel.iplt      0x0000000000017b1c        0x0 Output/Debug/Obj/template_pca10056/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .rodata is too large to fit in FLASH1 memory segment)
-                0x0000000000017b58                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x0000000000017b1c                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x0000000000017b58        0x0
-                0x0000000000017b58                __ARM.exidx_start__ = .
-                0x0000000000017b58                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x0000000000017b1c        0x0
+                0x0000000000017b1c                __ARM.exidx_start__ = .
+                0x0000000000017b1c                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x0000000000017b58                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x0000000000017b1c                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x0000000000017b58                __exidx_end = __ARM.exidx_end__
-                0x0000000000017b58                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x0000000000017b1c                __exidx_end = __ARM.exidx_end__
+                0x0000000000017b1c                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .ARM.exidx is too large to fit in FLASH1 memory segment)
-                0x0000000000017b58                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x0000000000017b1c                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000234        0x0 load address 0x0000000000017b58
+.fast           0x0000000020000234        0x0 load address 0x0000000000017b1c
                 0x0000000020000234                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000234                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x0000000000017b58                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x0000000000017b1c                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .fast is too large to fit in FLASH1 memory segment)
 
 .fast_run       0x0000000020000234        0x0
@@ -38725,9 +38725,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = (__fast_run_end__ - __fast_run_start__)
                 0x0000000020000234                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .fast_run is too large to fit in RAM1 memory segment)
-                0x0000000000017b58                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x0000000000017b1c                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000234      0x428 load address 0x0000000000017b58
+.data           0x0000000020000234      0x428 load address 0x0000000000017b1c
                 0x0000000020000234                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.m_buffer_mask
@@ -38879,7 +38879,7 @@ Linker script and memory map
                 0x0000000020000648                __RAL_global_locale
                 0x000000002000065c                __data_end__ = (__data_start__ + SIZEOF (.data))
                 0x0000000000000428                __data_size__ = SIZEOF (.data)
-                0x0000000000017f80                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x0000000000017f44                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/Debug/Obj/template_pca10056/thumb_crt0.o
@@ -38891,16 +38891,16 @@ Linker script and memory map
                 0x0000000000000428                __data_run_size__ = (__data_run_end__ - __data_run_start__)
                 0x000000002000065c                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .data_run is too large to fit in RAM1 memory segment)
-                0x0000000000017f80                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000000000017f44                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x000000002000065c        0x0 load address 0x0000000000017f80
+.tdata          0x000000002000065c        0x0 load address 0x0000000000017f44
                 0x000000002000065c                __tdata_start__ = .
  *(.tdata .tdata.*)
                 0x000000002000065c                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000000017f80                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000000017f80                __FLASH1_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000017f80                __FLASH1_segment_used_size__ = (__FLASH1_segment_used_end__ - __FLASH1_segment_start__)
+                0x0000000000017f44                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000000000017f44                __FLASH1_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000000000017f44                __FLASH1_segment_used_size__ = (__FLASH1_segment_used_end__ - __FLASH1_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ - __FLASH1_segment_start__) <= __FLASH1_segment_size__)), error: .tdata is too large to fit in FLASH1 memory segment)
 
 .tdata_run      0x000000002000065c        0x0
@@ -39726,7 +39726,7 @@ LOAD linker stubs
  .comment       0x000000000000003f       0x40 Output/Debug/Obj/template_pca10056/yz_timer.o
  .comment       0x000000000000003f       0x40 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
 
-.debug_line     0x0000000000000000    0x56d7d
+.debug_line     0x0000000000000000    0x56d73
  .debug_line    0x0000000000000000      0x21e Output/Debug/Obj/template_pca10056/thumb_crt0.o
  .debug_line    0x000000000000021e      0x9f7 Output/Debug/Obj/template_pca10056/boards.o
  .debug_line    0x0000000000000c15      0xc36 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
@@ -39810,10 +39810,10 @@ LOAD linker stubs
  .debug_line    0x0000000000051e10     0x1420 Output/Debug/Obj/template_pca10056/main.o
  .debug_line    0x0000000000053230     0x148e Output/Debug/Obj/template_pca10056/uartfunction.o
  .debug_line    0x00000000000546be      0xd0a Output/Debug/Obj/template_pca10056/IIC_LIS.o
- .debug_line    0x00000000000553c8      0xd26 Output/Debug/Obj/template_pca10056/qspi_flash.o
- .debug_line    0x00000000000560ee      0xc8f Output/Debug/Obj/template_pca10056/yz_timer.o
+ .debug_line    0x00000000000553c8      0xd1c Output/Debug/Obj/template_pca10056/qspi_flash.o
+ .debug_line    0x00000000000560e4      0xc8f Output/Debug/Obj/template_pca10056/yz_timer.o
 
-.debug_info     0x0000000000000000    0x71efa
+.debug_info     0x0000000000000000    0x71ebf
  .debug_info    0x0000000000000000       0x22 Output/Debug/Obj/template_pca10056/thumb_crt0.o
  .debug_info    0x0000000000000022      0x90f Output/Debug/Obj/template_pca10056/boards.o
  .debug_info    0x0000000000000931      0xc43 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
@@ -39897,10 +39897,10 @@ LOAD linker stubs
  .debug_info    0x0000000000069346     0x2151 Output/Debug/Obj/template_pca10056/main.o
  .debug_info    0x000000000006b497     0x2f74 Output/Debug/Obj/template_pca10056/uartfunction.o
  .debug_info    0x000000000006e40b     0x1201 Output/Debug/Obj/template_pca10056/IIC_LIS.o
- .debug_info    0x000000000006f60c     0x1610 Output/Debug/Obj/template_pca10056/qspi_flash.o
- .debug_info    0x0000000000070c1c     0x12de Output/Debug/Obj/template_pca10056/yz_timer.o
+ .debug_info    0x000000000006f60c     0x15d5 Output/Debug/Obj/template_pca10056/qspi_flash.o
+ .debug_info    0x0000000000070be1     0x12de Output/Debug/Obj/template_pca10056/yz_timer.o
 
-.debug_abbrev   0x0000000000000000     0xd722
+.debug_abbrev   0x0000000000000000     0xd70e
  .debug_abbrev  0x0000000000000000       0x12 Output/Debug/Obj/template_pca10056/thumb_crt0.o
  .debug_abbrev  0x0000000000000012      0x24d Output/Debug/Obj/template_pca10056/boards.o
  .debug_abbrev  0x000000000000025f      0x353 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
@@ -39984,8 +39984,8 @@ LOAD linker stubs
  .debug_abbrev  0x000000000000c8b2      0x2d2 Output/Debug/Obj/template_pca10056/main.o
  .debug_abbrev  0x000000000000cb84      0x3e6 Output/Debug/Obj/template_pca10056/uartfunction.o
  .debug_abbrev  0x000000000000cf6a      0x309 Output/Debug/Obj/template_pca10056/IIC_LIS.o
- .debug_abbrev  0x000000000000d273      0x220 Output/Debug/Obj/template_pca10056/qspi_flash.o
- .debug_abbrev  0x000000000000d493      0x28f Output/Debug/Obj/template_pca10056/yz_timer.o
+ .debug_abbrev  0x000000000000d273      0x20c Output/Debug/Obj/template_pca10056/qspi_flash.o
+ .debug_abbrev  0x000000000000d47f      0x28f Output/Debug/Obj/template_pca10056/yz_timer.o
 
 .debug_aranges  0x0000000000000000     0x96f8
  .debug_aranges
@@ -40326,7 +40326,7 @@ LOAD linker stubs
  .debug_str     0x00000000000dca3d       0xc5 Output/Debug/Obj/template_pca10056/IIC_LIS.o
                                       0x97de8 (size before relaxing)
  .debug_str     0x00000000000dcb02      0x1e8 Output/Debug/Obj/template_pca10056/qspi_flash.o
-                                      0x989f9 (size before relaxing)
+                                      0x989ea (size before relaxing)
  .debug_str     0x00000000000dccea      0x2d2 Output/Debug/Obj/template_pca10056/yz_timer.o
                                       0x972bc (size before relaxing)
 

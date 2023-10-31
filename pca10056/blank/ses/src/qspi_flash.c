@@ -23,9 +23,6 @@
 
 
 
-
-
-
 //QSPI
 
 #define QSPI_STD_CMD_WRSR   0x01
@@ -34,7 +31,7 @@
 #define QSPI_TEST_DATA_SIZE 256
 
 
-#define REMS_COMMAND 0x9F
+#define REMS_COMMAND 0x9F//RDID METHOD REFER TO DATASHEET
 
 #define WAIT_FOR_PERIPH() do { \
         while (!m_finished) {} \
@@ -44,6 +41,8 @@
 static volatile bool m_finished = false;
 static uint8_t m_buffer_tx[QSPI_TEST_DATA_SIZE];
 static uint8_t m_buffer_rx[QSPI_TEST_DATA_SIZE];
+
+
 
 static void qspi_handler(nrf_drv_qspi_evt_t event, void * p_context)
 {
@@ -91,6 +90,8 @@ static bool configure_memory()
     return 1;
 }
 
+
+
 bool qspi_test(void)
 {
     uint32_t i;
@@ -103,11 +104,16 @@ bool qspi_test(void)
         nrf_drv_qspi_config_t config = NRF_DRV_QSPI_DEFAULT_CONFIG;
 
     err_code = nrf_drv_qspi_init(&config, qspi_handler, NULL);
+   
+    if (err_code != NRF_SUCCESS)
+    return false ;
+
    // APP_ERROR_CHECK(err_code);
 
     NRF_LOG_INFO("QSPI example started.");
 
      if (configure_memory() == false)
+
      return false ; 
 
     m_finished = false;
@@ -150,19 +156,20 @@ bool qspi_test(void)
 
 
 // 获取制造商和设备       ID
-uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_id) {
+uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_id) 
+
+{
     uint32_t err_code;
 
     uint8_t command_sequence[4] = {
-        REMS_COMMAND,       // REMS命令
-        
+        REMS_COMMAND,       // REMS命令    
         0x00,               // 虚拟字节1
-        0x00,               // 虚拟字节1
-        0x00,                // 虚拟字节2
-        address            // 地址字节
+        0x00,               // 虚拟字节2
+        address             // 地址字节
     };
-
-    uint8_t response[3] = {0x01, 0x02,0x3};
+//9F这个命令不需要虚拟字节1&2还有地址字节
+    
+    uint8_t response[3] = {0x01, 0x02, 0x03};
 
     // 使用   QSPI的自定义指令接口来发送         REMS命令及其后续字节
     nrf_qspi_cinstr_conf_t cinstr_cfg = {
@@ -174,62 +181,80 @@ uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_i
         .wren      = false  // 不需要写使能
     };
 
-    //nrf_gpio_cfg_output(NRF_GPIO_PIN_MAP(0,18));//try
-    //nrf_gpio_pin_write(NRF_GPIO_PIN_MAP(0,18), 0);
 
     err_code = nrf_drv_qspi_cinstr_xfer(&cinstr_cfg, command_sequence, response);
-    NRF_LOG_INFO("IDs = %d", err_code);
-    if (err_code != NRF_SUCCESS) {
-        return err_code;
-    }
-
-    // 根据地址，确定是先读制造商           ID还是设备    ID
-    NRF_LOG_INFO("Manufacturer ID = 0x%04x", response[0]);
-    NRF_LOG_INFO("Manufacturer ID = 0x%04x", response[1]);
-    NRF_LOG_INFO("Manufacturer ID = 0x%04x", response[2]);
-    if (address == 0x00) {
+    //if ( err_code != false ) 
+    //{
+      
+    //}
+     if (err_code != NRF_SUCCESS)
+         return NRF_ERROR_TIMEOUT ;
+     else
+     {
+        NRF_LOG_INFO("Get response from flash successfully");
         *manufacturer_id = response[0];
-        *device_id = response[1];
-    } else {
-        *device_id = response[0];
-        *manufacturer_id = response[1];
-    }
+         *device_id      = response[1];
+      }
+
+    // 根据地址，确定是先读制造商           ID还是设备    ID     //for COMMAND 0x90
+    //    if (address == 0x00) {
+    //    *manufacturer_id = response[0];
+    //    *device_id = response[1];
+    //} else {
+    //    *device_id = response[0];
+    //    *manufacturer_id = response[1];
+    //}
+
+
+    NRF_LOG_INFO("Manufacturer ID = 0x%x", response[0]);
+    NRF_LOG_INFO("Memory Type     = 0x%x", response[1]);
+    NRF_LOG_INFO("Memory density  = 0x%x", response[2]);
+
 
     return NRF_SUCCESS;
 }
 
 
-int qspi_read_id(void)
+bool qspi_read_id(void)
 {
-uint32_t err_code;
-    uint16_t manufacturer_id = 0xFE, device_id = 0xAA;
+    uint32_t err_code;
+    
+    uint16_t manufacturer_id = 0xFF, device_id = 0xFF;
 
     // 初始化   QSPI（如果之前没有初始化）
     NRF_LOG_INFO("qspi init.....");
+ 
     nrf_drv_qspi_config_t config = NRF_DRV_QSPI_DEFAULT_CONFIG;
-    //err_code = nrf_drv_qspi_init(&config, NULL, NULL);
+
     err_code = nrf_drv_qspi_init(&config, qspi_handler, NULL);
-    APP_ERROR_CHECK(err_code);
+     if (err_code != NRF_SUCCESS)
+    {   
+     NRF_LOG_INFO("Init..... failed..");
+     return false ;
+    }
+     else
+        NRF_LOG_INFO("Init..... successfully \r\n");
+
+//    APP_ERROR_CHECK(err_code);
     // Handle error...
 
-    // 使用地址0   x00来读制造商     ID和设备   ID
-    NRF_LOG_INFO("qspi reading IDs.....");
-    err_code = read_ids(0x01, &manufacturer_id, &device_id);
-    APP_ERROR_CHECK(err_code);
+    // 使用地址0    x00来读制造商     ID和设备   ID
+    
+    err_code = read_ids(0x01, &manufacturer_id, &device_id);//device_id读的是   memory type，因为此处用的命令是  9     9  F
+//  APP_ERROR_CHECK(err_code);
 
-    if (err_code == false)
+    if (err_code == NRF_SUCCESS)
     {
-    NRF_LOG_INFO("qspi reading IDs successfully.....");
-    NRF_LOG_INFO("IDs = %d", manufacturer_id);
-    NRF_LOG_INFO("Manufacturer ID = 0x%04X, Device ID = 0x%04X", manufacturer_id, device_id);
+    NRF_LOG_INFO("qspi reading IDs successfully.....\r\n");
 
+    NRF_LOG_INFO("Manufacturer ID = 0x%X, Menory Type = 0x%X", manufacturer_id, device_id);
     
     }
     // Handle error...
 
     // 根据  ID进行其他操作...
 
-    return 0;
+    return NRF_SUCCESS ;
 
 
 }
