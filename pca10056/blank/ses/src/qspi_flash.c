@@ -247,7 +247,7 @@ bool qspi_read_id(uint16_t *manufacturer_id_readback)
     {
     NRF_LOG_INFO("qspi reading IDs successfully.....\r\n");
 
-    NRF_LOG_INFO("Manufacturer ID = 0x%x, Menory Type = 0x%X", manufacturer_id, device_id);
+ //   NRF_LOG_INFO("Manufacturer ID = 0x%x, Menory Type = 0x%X", manufacturer_id, device_id);
 
     *manufacturer_id_readback = manufacturer_id;
     
