@@ -104,6 +104,7 @@ Output/Debug/Obj/template_pca10056/main.o: \
  D:\SDK_nRF\nRF5_SDK_17.1.0_ddde560\examples\My\ projects\C-testing-Code\yz_timer.h \
  ../../../../../../components/libraries/timer/app_timer.h \
  ../../../../../../components/libraries/sortlist/nrf_sortlist.h \
+ ../../../../../../examples/My\ projects/C-testing-Code/pca10056/blank/ses/src/qspi_flash.h \
  ../../../../../../components/softdevice/common/nrf_sdh.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \

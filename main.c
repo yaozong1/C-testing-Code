@@ -23,6 +23,8 @@
 #include "nrf_sdm.h"
 #include "yz_timer.h"
 
+#include "qspi_flash.h"
+
 //mcp
 
 #include "nrf_sdh.h"
@@ -156,7 +158,13 @@ int main(void)
 
       }
 
-    result_qspi_flash = qspi_test();
+    uint16_t manufacturer_id_readback = 0xFF;
+
+    result_qspi_flash = qspi_read_id(&manufacturer_id_readback);//Return result and id
+
+    NRF_LOG_INFO("Manufacturer ID_readback = 0x%x", manufacturer_id_readback);
+
+ //   result_qspi_flash = qspi_test();//¿œ∑Ω∑®
 
 
 
@@ -221,7 +229,7 @@ NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
 else 
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Failed\r\n");
 
-if (result_qspi_flash == 1)
+if (result_qspi_flash == NRF_SUCCESS && manufacturer_id_readback == 0xC2)
 {
 result[5] = 0x11;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
