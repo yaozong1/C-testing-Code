@@ -71,18 +71,23 @@ uint8_t start[] = "START";
 
 uint8_t result[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07}; //for sending to esp32 by stm32___can____
 
-uint16_t manufacturer_id_readback_send= 0xFF;
+uint8_t manufacturer_id_readback_send= 0xFF;
+
+uint8_t imei[16];  //或者更大，取决于你的需要
+
+uint8_t SN_C[18];
 
 int main(void)
   {   
 
     ret_code_t err_code = NRF_LOG_INIT(NULL);
+   
     APP_ERROR_CHECK(err_code);
 
     NRF_LOG_DEFAULT_BACKENDS_INIT();
-
-    
+  
     err_code = nrf_drv_gpiote_init();
+
     APP_ERROR_CHECK(err_code);
 
     
@@ -101,11 +106,9 @@ int main(void)
     uart_init_elevate(); 
     
     uart_init_elevate_vcu(); 
-
-    
+      
     start_timer();
  
-
     Modem_Pwron();
    
     result_modem = AT_Match();
@@ -113,18 +116,22 @@ int main(void)
     nrf_delay_ms(10);
     
     NRF_LOG_INFO("AT_Matching Done");
+
+    nrf_delay_ms(10);
+
+    IMEI_NM_CD(imei);
+
+    NRF_LOG_INFO("IMEI_Numbers Received: %s", imei);
+
     nrf_delay_ms(10);
     
     nrf_delay_ms(10);
+
     NRF_LOG_INFO("IIC testing start....");
+
     nrf_delay_ms(10);
     
-
     result_motion_sensor = Lis_test();
-
-
-
-
 
  if (sim_testing_flag ==1)//if SIM CARD TESTING OR NOT.
     { 
@@ -167,11 +174,23 @@ int main(void)
  //   result_qspi_flash = qspi_test();//老方法
 
 
+// 直接将  manufacturer_id存储 为   SN_C的第一个元素
+    SN_C[0] = manufacturer_id_readback_send;
+
+    // 将  imei复制到   SN_C的后续位置
+    memcpy(&SN_C[1], imei, sizeof(imei) - 1);  // 减1，因为    imei是一个以    null结尾的字符串
+
+    // 确保   SN_C以  null结尾
+    SN_C[sizeof(SN_C)-1] = '\0';
+
+NRF_LOG_INFO("snc = %s", SN_C);
 
 
 
 //Testing Result show
 NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n");
+
+nrf_delay_ms(10);
 
 NRF_LOG_INFO("     MCU(nRF52840):            Passed \r\n");//Of course if passed
 
@@ -183,6 +202,7 @@ NRF_LOG_INFO("     Modem(SIM7000G):          Passed \r\n");
 else 
 NRF_LOG_INFO("     Modem(SIM7000G):          Failed\r\n");
 
+nrf_delay_ms(10);
 
 if (sim_testing_flag ==1)
  {
@@ -201,7 +221,7 @@ NRF_LOG_INFO("     SIMCARD(SIM7000G):        SKIPED\r\n");
 result[2] = 0x04;
 }
 
-
+nrf_delay_ms(10);
 
 if (aliyun_testing_FLAG ==1)
 {
@@ -219,7 +239,7 @@ NRF_LOG_INFO("     GSM/LTE(SIM7000G):        SKIPED\r\n");
 result[3] = 0x04;
 }
 
-
+nrf_delay_ms(10);
 
 if (result_motion_sensor == 1)
 {
@@ -229,7 +249,9 @@ NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
 else 
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Failed\r\n");
 
-if (result_qspi_flash == NRF_SUCCESS && manufacturer_id_readback_send == 0xC2)
+nrf_delay_ms(10);
+
+if (manufacturer_id_readback_send == 0xC2)
 {
 result[5] = 0x11;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
@@ -237,20 +259,30 @@ NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
 else
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Failed\r\n");
 
+nrf_delay_ms(10);
+
 result[6] = 0x11;//先默认c  CAN BUS 没有问题
 
 NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n");
 
+nrf_delay_ms(10);
+
+//NRF_LOG_FLUSH();//这里不要去掉，不然很容易被刷掉
+
     while (true)
     {
 
+     nrf_delay_ms(1000);
      //result[6] = 0x11;
      uint8_t hello[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
+
+    // NRF_LOG_INFO("hello = %s", hello);
+
      int size = sizeof(result);
+
      send_ack_to_stm(result, size);
-     nrf_delay_ms(1000);
 
-
+     
 
      /*     
        do{
@@ -262,7 +294,6 @@ NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n
                 uint8_t ext_send;
                 uint8_t buff[8] = {1,2,3,4,5,6,7,8};                
                 uint8_t lens = 0x08;
-
                 mcp_can_send_msg(can_idd, ext_send, lens, buff);
                 nrf_delay_ms(2000);        
          }

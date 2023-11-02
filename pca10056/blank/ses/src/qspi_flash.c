@@ -156,7 +156,7 @@ bool qspi_test(void)
 
 
 // 获取制造商和设备       ID
-uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_id) 
+uint32_t read_ids(uint8_t address, uint8_t *manufacturer_id, uint8_t *device_id) 
 
 {
     uint32_t err_code;
@@ -193,7 +193,7 @@ uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_i
      {
         NRF_LOG_INFO("Get response from flash successfully");
         *manufacturer_id = response[0];
-         *device_id      = response[1];
+        *device_id      = response[1];
       }
 
     // 根据地址，确定是先读制造商           ID还是设备    ID     //for COMMAND 0x90
@@ -215,11 +215,11 @@ uint32_t read_ids(uint8_t address, uint16_t *manufacturer_id, uint16_t *device_i
 }
 
 
-bool qspi_read_id(uint16_t *manufacturer_id_readback)
+bool qspi_read_id(uint8_t *manufacturer_id_readback)
 {
     uint32_t err_code;
     
-    uint16_t manufacturer_id = 0xFF, device_id = 0xFF;
+    uint8_t manufacturer_id = 0xFF, device_id = 0xFF;
 
     // 初始化   QSPI（如果之前没有初始化）
     NRF_LOG_INFO("qspi init.....");
@@ -256,7 +256,7 @@ bool qspi_read_id(uint16_t *manufacturer_id_readback)
 
     // 根据  ID进行其他操作...
 
-    return NRF_SUCCESS ;
+    return true ;
 
 
 }

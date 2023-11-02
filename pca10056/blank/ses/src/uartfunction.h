@@ -35,6 +35,8 @@ extern int wait_uart_ack_x_second(uint8_t *word, int second);
 extern void gps_receive(void);
 extern void send_ack_to_stm( uint8_t *send_array, size_t size );
 extern void send_ack_to_stm_timer( void );
+extern bool IMEI_NM_CD(uint8_t  * serial_number);
+extern bool is_digit(uint8_t ch);
 
 //Modem AT COMMAND START
 
@@ -135,6 +137,9 @@ static uint8_t GNSS_SIG_size = sizeof(GNSS_SIG);
 
 static uint8_t GSM_BD_CHECK[] = "AT+CBAND?\r\n";
 static uint8_t GSM_BD_CHECK_size = sizeof(GSM_BD_CHECK);
+
+static uint8_t IMEI_CHECK[] = "AT+CGSN\r\n";
+static uint8_t IMEI_CHECK_size = sizeof(IMEI_CHECK);
 
 static uint8_t SEND_ACK_STM[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
 static uint8_t SEND_ACK_STM_size = sizeof(SEND_ACK_STM);

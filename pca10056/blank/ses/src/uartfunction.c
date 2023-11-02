@@ -60,7 +60,12 @@
 //#define _GSM_BD_CHECK nrf_libuarte_async_tx(&libuarte, GSM_BD_CHECK, GSM_BD_CHECK_size);
 //NBIOT END
 
+//CHECK IMEI NUMBER
 
+#define _IMEI_CHECK nrf_libuarte_async_tx(&libuarte, IMEI_CHECK, IMEI_CHECK_size);
+
+
+//CHECK IMEI NUMBER END
 //UART2_FOR GNSS
 //#define _GNSS_SNR nrf_libuarte_async_tx(&libuarte_vcu, GNSS_SNR, GNSS_SNR_size);
 
@@ -71,6 +76,10 @@ bool status_modem;
 #define UART_RX_BUFFER_SIZE 1000
 uint8_t Uart_AT[UART_RX_BUFFER_SIZE];
 uint8_t Uart2_AT[UART_RX_BUFFER_SIZE];
+
+//for extract the SN number
+uint8_t Uart_Numbers[UART_RX_BUFFER_SIZE];
+uint8_t Uart_Numbers_Size = 0;
 
 //PERSIONAL FUNCTION DECLARATION END
 int lte_gsm_gps = 0;
@@ -284,6 +293,9 @@ bool AT_Match(void)//Define a AT respond function
    
    
 }
+  int size = sizeof(Uart_AT);//不请空的话在进     uart,会导致对比失效有可能对比的是上次的数据
+  memset(Uart_AT, 0, size);
+
 return 1;
 
 }
@@ -798,4 +810,63 @@ void send_ack_to_stm_timer( void )
 _SEND_ACK_STM;
  NRF_LOG_INFO("SENT ACK TO STM");
 
+}
+
+
+bool IMEI_NM_CD(uint8_t * serial_number)
+{
+
+    NRF_LOG_INFO("IMEI NUMBER CHECKING.....");
+    nrf_delay_ms(10);
+
+    _IMEI_CHECK;
+
+//进行寻找，其实就是       wait_uart_ack_x_second(OK, 10);但因为要在清空      Uart_AT之前把值传出来，所以重新写这部分
+int result = 0;
+
+for(int i=1; i <=1000;i++) //等10秒
+       {
+        if( isPresent(Uart_AT,  OK)==1 )
+        {
+            result = 1;
+
+            NRF_LOG_INFO("Get SN number......\r\n");
+
+            break; // Exit the loop when the ack is found
+        }
+
+        nrf_delay_ms(10);
+       }
+
+//uint8_t *serial_number_8 = (uint8_t *) serial_number;//创建一个指针指向传递过来的指针变量，然后用数组的方式给它赋值，最后值就到达指定数组中
+
+
+for (int i = 0; i < UART_RX_BUFFER_SIZE; i++) //Extract SN number
+    {
+        if (is_digit(Uart_AT[i])) {
+
+            serial_number[Uart_Numbers_Size++] = Uart_AT[i]; //serial_number是个指针   把找到的数字一个个存到数组内存上
+                   
+        }
+    }
+
+  //  NRF_LOG_INFO("Uart_Numbers Received: %s", serial_number);
+
+  int size = sizeof(Uart_AT);//不请空的话在进     uart,会导致对比失效有可能对比的是上次的数据
+  memset(Uart_AT, 0, size);
+  return result;
+}
+
+
+
+bool is_digit(uint8_t ch) {
+    return ch >= '0' && ch <= '9';
+}
+
+void extract_numbers() {
+    for (uint8_t i = 0; i < UART_RX_BUFFER_SIZE; i++) {
+        if (is_digit(Uart_AT[i])) {
+            Uart_Numbers[Uart_Numbers_Size++] = Uart_AT[i];
+        }
+    }
 }
