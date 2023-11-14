@@ -69,7 +69,7 @@ bool result_aliyun = 0 ;
 
 uint8_t start[] = "START";
 
-uint8_t result[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07}; //for sending to esp32 by stm32___can____
+uint8_t result[30]; //for sending to esp32 by stm32___can____
 
 uint8_t manufacturer_id_readback_send= 0xFF;
 
@@ -175,16 +175,17 @@ int main(void)
 
 
 // 直接将  manufacturer_id存储 为   SN_C的第一个元素
-    SN_C[0] = manufacturer_id_readback_send;
+    SN_C[0] = 'f';
+    SN_C[1] = manufacturer_id_readback_send;
 
     // 将  imei复制到   SN_C的后续位置
-    memcpy(&SN_C[1], imei, sizeof(imei) - 1);  // 减1，因为    imei是一个以    null结尾的字符串
+    memcpy(&SN_C[2], imei, sizeof(imei) - 1); 
 
     // 确保   SN_C以  null结尾
-    SN_C[sizeof(SN_C)-1] = '\0';
+   // SN_C[sizeof(SN_C)-1] = 'n';
+   // SN_C[sizeof(SN_C)-1] = '\0';
 
-NRF_LOG_INFO("snc = %s", SN_C);
-
+    NRF_LOG_INFO("SNC = %s", SN_C);
 
 
 //Testing Result show
@@ -269,18 +270,27 @@ nrf_delay_ms(10);
 
 //NRF_LOG_FLUSH();//这里不要去掉，不然很容易被刷掉
 
+
+//处理测试结果和      IMEI,DEVICE ID的 合成
+result[0] = 'c';
+memcpy(&result[8], SN_C, sizeof(SN_C) - 1);
+
     while (true)
     {
 
-     nrf_delay_ms(1000);
+     nrf_delay_ms(2000);
      //result[6] = 0x11;
-     uint8_t hello[] = {'c', 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07};
-
-    // NRF_LOG_INFO("hello = %s", hello);
 
      int size = sizeof(result);
 
      send_ack_to_stm(result, size);
+
+      NRF_LOG_INFO("SENT TO STM");
+
+     //size = sizeof(SN_C);
+     //send_ack_to_stm(SN_C, size);
+     //NRF_LOG_INFO("SENT ARRAY TO STM");
+
 
      
 

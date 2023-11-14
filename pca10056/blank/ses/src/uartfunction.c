@@ -800,7 +800,7 @@ void send_ack_to_stm( uint8_t *send_array, size_t size )
 
 nrf_libuarte_async_tx(&libuarte_vcu, send_array, size);
 
- NRF_LOG_INFO("SENT ACK TO STM");
+// NRF_LOG_INFO("SENT ACK TO STM");
 
 }
 
