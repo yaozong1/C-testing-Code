@@ -69,13 +69,13 @@ bool result_aliyun = 0 ;
 
 uint8_t start[] = "START";
 
-uint8_t result[30]; //for sending to esp32 by stm32___can____
+uint8_t result[9]; //for sending to esp32 by stm32___can____
 
 uint8_t manufacturer_id_readback_send= 0xFF;
 
-uint8_t imei[16];  //或者更大，取决于你的需要
+uint8_t imei[15];  //或者更大，取决于你的需要
 
-uint8_t SN_C[18];
+uint8_t SN_C[30];
 
 int main(void)
   {   
@@ -151,9 +151,6 @@ int main(void)
 
 //lte_gsm_switch_for_toby();
 
-
-
-
 //    ce_fcc_testing();
 
 
@@ -174,18 +171,7 @@ int main(void)
  //   result_qspi_flash = qspi_test();//老方法
 
 
-// 直接将  manufacturer_id存储 为   SN_C的第一个元素
-    SN_C[0] = 'f';
-    SN_C[1] = manufacturer_id_readback_send;
 
-    // 将  imei复制到   SN_C的后续位置
-    memcpy(&SN_C[2], imei, sizeof(imei) - 1); 
-
-    // 确保   SN_C以  null结尾
-   // SN_C[sizeof(SN_C)-1] = 'n';
-   // SN_C[sizeof(SN_C)-1] = '\0';
-
-    NRF_LOG_INFO("SNC = %s", SN_C);
 
 
 //Testing Result show
@@ -197,7 +183,7 @@ NRF_LOG_INFO("     MCU(nRF52840):            Passed \r\n");//Of course if passed
 
 if (result_modem == 1)
 {
-result[1] = 0x11;
+result[0] = 0x11;
 NRF_LOG_INFO("     Modem(SIM7000G):          Passed \r\n");
 }
 else 
@@ -209,7 +195,7 @@ if (sim_testing_flag ==1)
  {
 if (sim_status == 1)
 {
-result[2] = 0x11;
+result[1] = 0x11;
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        Passed \r\n");
 }
 else 
@@ -219,7 +205,7 @@ NRF_LOG_INFO("     SIMCARD(SIM7000G):        Failed\r\n");
 else
 {
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        SKIPED\r\n");
-result[2] = 0x04;
+result[1] = 0x04;
 }
 
 nrf_delay_ms(10);
@@ -228,7 +214,7 @@ if (aliyun_testing_FLAG ==1)
 {
 if (result_aliyun == 1)
 {
-result[3] = 0x11;
+result[2] = 0x11;
 NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Passed \r\n");
 }
 else 
@@ -237,14 +223,14 @@ NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Failed\r\n");
  else
 {
 NRF_LOG_INFO("     GSM/LTE(SIM7000G):        SKIPED\r\n");
-result[3] = 0x04;
+result[2] = 0x04;
 }
 
 nrf_delay_ms(10);
 
 if (result_motion_sensor == 1)
 {
-result[4] = 0x11;
+result[3] = 0x11;
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
 }
 else 
@@ -254,7 +240,7 @@ nrf_delay_ms(10);
 
 if (manufacturer_id_readback_send == 0xC2)
 {
-result[5] = 0x11;
+result[4] = 0x11;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
 }
 else
@@ -262,7 +248,7 @@ NRF_LOG_INFO("     QSPI Flash(MX25R64):      Failed\r\n");
 
 nrf_delay_ms(10);
 
-result[6] = 0x11;//先默认c  CAN BUS 没有问题
+result[5] = 0x11;//先默认c  CAN BUS 没有问题
 
 NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n");
 
@@ -272,18 +258,40 @@ nrf_delay_ms(10);
 
 
 //处理测试结果和      IMEI,DEVICE ID的 合成
-result[0] = 'c';
-memcpy(&result[8], SN_C, sizeof(SN_C) - 1);
+
+//First 10pcs number is for result[]
+    SN_C[0]  =  'c';
+    SN_C[29] =  's';
+
+    memcpy(&SN_C[1], result, sizeof(result) - 1); 
+   // memcpy(&SN_C[2], imei,   sizeof(imei)   - 1); 
+
+// 11~25 pcs number is for imei
+
+    // 将  imei复制到   SN_C的后续位置
+    memcpy(&SN_C[10], imei, sizeof(imei)    - 1); 
+
+//First 11~25 pcs number is for imei
+
+    SN_C[25] = manufacturer_id_readback_send;
+
+    // 确保   SN_C以  null结尾
+    // SN_C[sizeof(SN_C)-1] = 'n';
+    // SN_C[sizeof(SN_C)-1] = '\0';
+
+    NRF_LOG_INFO("SNC = %s", SN_C);
+
+
 
     while (true)
     {
 
-     nrf_delay_ms(2000);
+     nrf_delay_ms(3000);
      //result[6] = 0x11;
 
-     int size = sizeof(result);
+     int size = sizeof(SN_C);
 
-     send_ack_to_stm(result, size);
+     send_ack_to_stm(SN_C, size);
 
       NRF_LOG_INFO("SENT TO STM");
 

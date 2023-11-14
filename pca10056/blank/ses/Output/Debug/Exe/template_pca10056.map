@@ -38942,7 +38942,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__tdata_run_start__ == __tdata_run_end__) || ((__tdata_run_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tdata_run is too large to fit in RAM1 memory segment)
                 0x0000000020000664                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
 
-.bss            0x0000000020000664    0x1c533
+.bss            0x0000000020000664    0x1c52b
                 0x0000000020000664                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss.m_clock_cb
@@ -39115,101 +39115,102 @@ Linker script and memory map
                 0x00000000200025ce        0x1 Output/Debug/Obj/template_pca10056/main.o
                 0x00000000200025ce                result_aliyun
  *fill*         0x00000000200025cf        0x1 
- .bss.result    0x00000000200025d0       0x1e Output/Debug/Obj/template_pca10056/main.o
+ .bss.result    0x00000000200025d0        0x9 Output/Debug/Obj/template_pca10056/main.o
                 0x00000000200025d0                result
- *fill*         0x00000000200025ee        0x2 
- .bss.imei      0x00000000200025f0       0x10 Output/Debug/Obj/template_pca10056/main.o
-                0x00000000200025f0                imei
- .bss.SN_C      0x0000000020002600       0x12 Output/Debug/Obj/template_pca10056/main.o
-                0x0000000020002600                SN_C
+ *fill*         0x00000000200025d9        0x3 
+ .bss.imei      0x00000000200025dc        0xf Output/Debug/Obj/template_pca10056/main.o
+                0x00000000200025dc                imei
+ *fill*         0x00000000200025eb        0x1 
+ .bss.SN_C      0x00000000200025ec       0x1e Output/Debug/Obj/template_pca10056/main.o
+                0x00000000200025ec                SN_C
  .bss.status_modem
-                0x0000000020002612        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000020002612                status_modem
- *fill*         0x0000000020002613        0x1 
- .bss.Uart_AT   0x0000000020002614      0x3e8 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000020002614                Uart_AT
+                0x000000002000260a        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000260a                status_modem
+ *fill*         0x000000002000260b        0x1 
+ .bss.Uart_AT   0x000000002000260c      0x3e8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000260c                Uart_AT
  .bss.Uart_Numbers_Size
-                0x00000000200029fc        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x00000000200029fc                Uart_Numbers_Size
- *fill*         0x00000000200029fd        0x3 
+                0x00000000200029f4        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200029f4                Uart_Numbers_Size
+ *fill*         0x00000000200029f5        0x3 
  .bss.lte_gsm_gps
-                0x0000000020002a00        0x4 Output/Debug/Obj/template_pca10056/uartfunction.o
-                0x0000000020002a00                lte_gsm_gps
+                0x00000000200029f8        0x4 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200029f8                lte_gsm_gps
  .bss.libuarte_libuartectrl_blk
-                0x0000000020002a04       0x40 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x00000000200029fc       0x40 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_rxdata_queue_nrf_queue_buffer
-                0x0000000020002a44      0x194 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020002a3c      0x194 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_rxdata_queue_nrf_queue_cb
-                0x0000000020002bd8        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020002bd0        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_rx_pool_nrf_balloc_pool_stack
-                0x0000000020002be4       0x64 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020002bdc       0x64 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_rx_pool_nrf_balloc_pool_mem
-                0x0000000020002c48     0xc800 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x0000000020002c40     0xc800 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_rx_pool_nrf_balloc_cb
-                0x000000002000f448        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f440        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuartectrl_blk
-                0x000000002000f450       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f448       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcu_libuartectrl_blk
-                0x000000002000f478       0x40 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f470       0x40 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcu_rxdata_queue_nrf_queue_buffer
-                0x000000002000f4b8      0x194 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f4b0      0x194 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcu_rxdata_queue_nrf_queue_cb
-                0x000000002000f64c        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f644        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcu_rx_pool_nrf_balloc_pool_stack
-                0x000000002000f658       0x64 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f650       0x64 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcu_rx_pool_nrf_balloc_pool_mem
-                0x000000002000f6bc     0xc800 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002000f6b4     0xc800 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcu_rx_pool_nrf_balloc_cb
-                0x000000002001bebc        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001beb4        0x8 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.libuarte_vcuctrl_blk
-                0x000000002001bec4       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001bebc       0x28 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_buf_queue_nrf_queue_buffer
-                0x000000002001beec      0x648 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001bee4      0x648 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_buf_queue_nrf_queue_cb
-                0x000000002001c534        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001c52c        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_buf_queue_vcu_nrf_queue_buffer
-                0x000000002001c540      0x648 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001c538      0x648 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_buf_queue_vcu_nrf_queue_cb
-                0x000000002001cb88        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001cb80        0xc Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_loopback_phase
-                0x000000002001cb94        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001cb8c        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_loopback_phase_vcu
-                0x000000002001cb95        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
+                0x000000002001cb8d        0x1 Output/Debug/Obj/template_pca10056/uartfunction.o
  .bss.m_finished
-                0x000000002001cb96        0x1 Output/Debug/Obj/template_pca10056/qspi_flash.o
+                0x000000002001cb8e        0x1 Output/Debug/Obj/template_pca10056/qspi_flash.o
  *(COMMON)
-                0x000000002001cb97                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
-                0x000000000001c533                __bss_size__ = SIZEOF (.bss)
-                0x000000002001cb97                __bss_load_end__ = __bss_end__
+                0x000000002001cb8f                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x000000000001c52b                __bss_size__ = SIZEOF (.bss)
+                0x000000002001cb8f                __bss_load_end__ = __bss_end__
                 0x0000000000000001                . = ASSERT (((__bss_start__ == __bss_end__) || ((__bss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .bss is too large to fit in RAM1 memory segment)
-                0x000000002001cb98                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
+                0x000000002001cb90                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
 
-.tbss           0x000000002001cb98        0x0
-                0x000000002001cb98                __tbss_start__ = .
+.tbss           0x000000002001cb90        0x0
+                0x000000002001cb90                __tbss_start__ = .
  *(.tbss .tbss.*)
-                0x000000002001cb98                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
+                0x000000002001cb90                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
                 0x0000000000000000                __tbss_size__ = SIZEOF (.tbss)
-                0x000000002001cb98                __tbss_load_end__ = __tbss_end__
+                0x000000002001cb90                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .tbss is too large to fit in RAM1 memory segment)
-                0x000000002001cb98                __non_init_load_start__ = ALIGN (__tbss_end__, 0x4)
+                0x000000002001cb90                __non_init_load_start__ = ALIGN (__tbss_end__, 0x4)
 
-.non_init       0x000000002001cb98        0x0
-                0x000000002001cb98                __non_init_start__ = .
+.non_init       0x000000002001cb90        0x0
+                0x000000002001cb90                __non_init_start__ = .
  *(.non_init .non_init.*)
-                0x000000002001cb98                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
+                0x000000002001cb90                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
                 0x0000000000000000                __non_init_size__ = SIZEOF (.non_init)
-                0x000000002001cb98                __non_init_load_end__ = __non_init_end__
+                0x000000002001cb90                __non_init_load_end__ = __non_init_end__
                 0x0000000000000001                . = ASSERT (((__non_init_start__ == __non_init_end__) || ((__non_init_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .non_init is too large to fit in RAM1 memory segment)
-                0x000000002001cb98                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
+                0x000000002001cb90                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
 
-.heap           0x000000002001cb98     0x2000
-                0x000000002001cb98                __heap_start__ = .
+.heap           0x000000002001cb90     0x2000
+                0x000000002001cb90                __heap_start__ = .
  *(.heap .heap.*)
-                0x000000002001eb98                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
- *fill*         0x000000002001cb98     0x2000 
-                0x000000002001eb98                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x000000002001eb90                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
+ *fill*         0x000000002001cb90     0x2000 
+                0x000000002001eb90                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
                 0x0000000000002000                __heap_size__ = SIZEOF (.heap)
-                0x000000002001eb98                __heap_load_end__ = __heap_end__
+                0x000000002001eb90                __heap_load_end__ = __heap_end__
                 0x0000000000000001                . = ASSERT (((__heap_start__ == __heap_end__) || ((__heap_end__ - __RAM1_segment_start__) <= __RAM1_segment_size__)), error: .heap is too large to fit in RAM1 memory segment)
                 0x000000002003e000                __stack_load_start__ = (__RAM1_segment_start__ + (__RAM1_segment_size__ - 0x2000))
 
@@ -39772,7 +39773,7 @@ LOAD linker stubs
  .comment       0x000000000000003f       0x40 Output/Debug/Obj/template_pca10056/yz_timer.o
  .comment       0x000000000000003f       0x40 C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 5.68/lib/libc_v7em_fpv4_sp_d16_hard_t_le_eabi.a(libc2.o)
 
-.debug_line     0x0000000000000000    0x56e6e
+.debug_line     0x0000000000000000    0x56e70
  .debug_line    0x0000000000000000      0x21e Output/Debug/Obj/template_pca10056/thumb_crt0.o
  .debug_line    0x000000000000021e      0x9f7 Output/Debug/Obj/template_pca10056/boards.o
  .debug_line    0x0000000000000c15      0xc36 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
@@ -39853,13 +39854,13 @@ LOAD linker stubs
  .debug_line    0x000000000004d07f     0x3a8f Output/Debug/Obj/template_pca10056/system_nrf52840.o
  .debug_line    0x0000000000050b0e      0xb5e Output/Debug/Obj/template_pca10056/SEGGER_RTT.o
  .debug_line    0x000000000005166c      0x7a4 Output/Debug/Obj/template_pca10056/nrf_log_str_formatter.o
- .debug_line    0x0000000000051e10     0x1457 Output/Debug/Obj/template_pca10056/main.o
- .debug_line    0x0000000000053267     0x155b Output/Debug/Obj/template_pca10056/uartfunction.o
- .debug_line    0x00000000000547c2      0xd0a Output/Debug/Obj/template_pca10056/IIC_LIS.o
- .debug_line    0x00000000000554cc      0xd13 Output/Debug/Obj/template_pca10056/qspi_flash.o
- .debug_line    0x00000000000561df      0xc8f Output/Debug/Obj/template_pca10056/yz_timer.o
+ .debug_line    0x0000000000051e10     0x1459 Output/Debug/Obj/template_pca10056/main.o
+ .debug_line    0x0000000000053269     0x155b Output/Debug/Obj/template_pca10056/uartfunction.o
+ .debug_line    0x00000000000547c4      0xd0a Output/Debug/Obj/template_pca10056/IIC_LIS.o
+ .debug_line    0x00000000000554ce      0xd13 Output/Debug/Obj/template_pca10056/qspi_flash.o
+ .debug_line    0x00000000000561e1      0xc8f Output/Debug/Obj/template_pca10056/yz_timer.o
 
-.debug_info     0x0000000000000000    0x720f7
+.debug_info     0x0000000000000000    0x720e7
  .debug_info    0x0000000000000000       0x22 Output/Debug/Obj/template_pca10056/thumb_crt0.o
  .debug_info    0x0000000000000022      0x90f Output/Debug/Obj/template_pca10056/boards.o
  .debug_info    0x0000000000000931      0xc43 Output/Debug/Obj/template_pca10056/nrf_drv_clock.o
@@ -39940,11 +39941,11 @@ LOAD linker stubs
  .debug_info    0x0000000000063b1e     0x45d7 Output/Debug/Obj/template_pca10056/system_nrf52840.o
  .debug_info    0x00000000000680f5      0xdc3 Output/Debug/Obj/template_pca10056/SEGGER_RTT.o
  .debug_info    0x0000000000068eb8      0x48e Output/Debug/Obj/template_pca10056/nrf_log_str_formatter.o
- .debug_info    0x0000000000069346     0x21cd Output/Debug/Obj/template_pca10056/main.o
- .debug_info    0x000000000006b513     0x30b9 Output/Debug/Obj/template_pca10056/uartfunction.o
- .debug_info    0x000000000006e5cc     0x1201 Output/Debug/Obj/template_pca10056/IIC_LIS.o
- .debug_info    0x000000000006f7cd     0x1618 Output/Debug/Obj/template_pca10056/qspi_flash.o
- .debug_info    0x0000000000070de5     0x1312 Output/Debug/Obj/template_pca10056/yz_timer.o
+ .debug_info    0x0000000000069346     0x21bd Output/Debug/Obj/template_pca10056/main.o
+ .debug_info    0x000000000006b503     0x30b9 Output/Debug/Obj/template_pca10056/uartfunction.o
+ .debug_info    0x000000000006e5bc     0x1201 Output/Debug/Obj/template_pca10056/IIC_LIS.o
+ .debug_info    0x000000000006f7bd     0x1618 Output/Debug/Obj/template_pca10056/qspi_flash.o
+ .debug_info    0x0000000000070dd5     0x1312 Output/Debug/Obj/template_pca10056/yz_timer.o
 
 .debug_abbrev   0x0000000000000000     0xd73d
  .debug_abbrev  0x0000000000000000       0x12 Output/Debug/Obj/template_pca10056/thumb_crt0.o
