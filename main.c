@@ -263,18 +263,24 @@ nrf_delay_ms(10);
     SN_C[0]  =  'c';
     SN_C[29] =  's';
 
-    memcpy(&SN_C[1], result, sizeof(result) - 1); 
+    memcpy(&SN_C[1], result, sizeof(result)); 
    // memcpy(&SN_C[2], imei,   sizeof(imei)   - 1); 
 
 // 11~25 pcs number is for imei
 
     // 将  imei复制到   SN_C的后续位置
-    memcpy(&SN_C[10], imei, sizeof(imei)    - 1); 
+    //SN_C[10]用来作为     qt的辨识
+    SN_C[10] =  'q';
+    memcpy(&SN_C[11], imei, sizeof(imei)); 
 
 //First 11~25 pcs number is for imei
 
-    SN_C[25] = manufacturer_id_readback_send;
+    SN_C[26] = manufacturer_id_readback_send;
+    SN_C[27] =  'n';//没啥作用，只是让       qt显示一下
+    SN_C[28] =  'n';
+    
 
+    //so the qt recognization number is 'q''s' 
     // 确保   SN_C以  null结尾
     // SN_C[sizeof(SN_C)-1] = 'n';
     // SN_C[sizeof(SN_C)-1] = '\0';
