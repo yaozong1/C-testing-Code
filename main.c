@@ -183,7 +183,7 @@ NRF_LOG_INFO("     MCU(nRF52840):            Passed \r\n");//Of course if passed
 
 if (result_modem == 1)
 {
-result[0] = 0x11;
+result[0] = 0x50;
 NRF_LOG_INFO("     Modem(SIM7000G):          Passed \r\n");
 }
 else 
@@ -195,7 +195,7 @@ if (sim_testing_flag ==1)
  {
 if (sim_status == 1)
 {
-result[1] = 0x11;
+result[1] = 0x50;
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        Passed \r\n");
 }
 else 
@@ -205,7 +205,7 @@ NRF_LOG_INFO("     SIMCARD(SIM7000G):        Failed\r\n");
 else
 {
 NRF_LOG_INFO("     SIMCARD(SIM7000G):        SKIPED\r\n");
-result[1] = 0x04;
+result[1] = 0x4B;
 }
 
 nrf_delay_ms(10);
@@ -214,7 +214,7 @@ if (aliyun_testing_FLAG ==1)
 {
 if (result_aliyun == 1)
 {
-result[2] = 0x11;
+result[2] = 0x50;
 NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Passed \r\n");
 }
 else 
@@ -223,14 +223,14 @@ NRF_LOG_INFO("     GSM/LTE(SIM7000G):        Failed\r\n");
  else
 {
 NRF_LOG_INFO("     GSM/LTE(SIM7000G):        SKIPED\r\n");
-result[2] = 0x04;
+result[2] = 0x4B;
 }
 
 nrf_delay_ms(10);
 
 if (result_motion_sensor == 1)
 {
-result[3] = 0x11;
+result[3] = 0x50;
 NRF_LOG_INFO("     Motion Sensor(LIS2DH12):  Passed \r\n");
 }
 else 
@@ -240,7 +240,7 @@ nrf_delay_ms(10);
 
 if (manufacturer_id_readback_send == 0xC2)
 {
-result[4] = 0x11;
+result[4] = 0x50;
 NRF_LOG_INFO("     QSPI Flash(MX25R64):      Passed \r\n");
 }
 else
@@ -248,7 +248,7 @@ NRF_LOG_INFO("     QSPI Flash(MX25R64):      Failed\r\n");
 
 nrf_delay_ms(10);
 
-result[5] = 0x11;//先默认c  CAN BUS 没有问题
+result[5] = 0x50;//先默认c  CAN BUS 没有问题
 
 NRF_LOG_INFO("Testing Result:---------------------------------------------- \r\n");
 
