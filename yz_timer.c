@@ -47,6 +47,7 @@ static void app_timer_handler(void * p_context)
   //send_ack_to_stm_timer();
   
   NRF_LOG_FLUSH();
+  timerCount++; // 模组识别，每次中断增加计数器
 
 }
 

@@ -10,6 +10,8 @@
 #include "sdk_config.h"
 #include "boards.h"
 
+extern volatile int timerCount; // 全局变量声明
+
 extern uint8_t Uart_AT[1000];
 extern uint8_t Uart2_AT[1000];
 

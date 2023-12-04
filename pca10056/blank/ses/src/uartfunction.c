@@ -20,6 +20,7 @@
 
 #include "nordic_common.h"
 
+#include <time.h>
 
 //NBIOT
 #define _AT_CHECK nrf_libuarte_async_tx(&libuarte, text, text_size);
@@ -72,6 +73,7 @@
 #define _SEND_ACK_STM nrf_libuarte_async_tx(&libuarte_vcu, SEND_ACK_STM, SEND_ACK_STM_size);
 
 bool status_modem;
+volatile int timerCount = 0; // 全局计数器，用于定时器中断
 
 #define UART_RX_BUFFER_SIZE 1000
 uint8_t Uart_AT[UART_RX_BUFFER_SIZE];
@@ -279,26 +281,52 @@ void uart_init_elevate_vcu(void)
 
 
 
-bool AT_Match(void)//Define a AT respond function
-{
- uint8_t MATCH[] = "OK";
+//bool AT_Match(void)//Define a AT respond function
+//{
+// uint8_t MATCH[] = "OK";
 
- while(!isPresent(Uart_AT,  MATCH) == 1)//Matching AT:"OK" from module
+// while(!isPresent(Uart_AT,  MATCH) == 1)//Matching AT:"OK" from module
 
-{
-   _AT_CHECK;//Sending AT ack
+//{
+//   _AT_CHECK;//Sending AT ack
    
-   NRF_LOG_INFO("Matching....");
-   nrf_delay_ms(100);
+//   NRF_LOG_INFO("Matching....");
+//   nrf_delay_ms(100);
    
    
+//}
+//  int size = sizeof(Uart_AT);//不请空的话在进     uart,会导致对比失效有可能对比的是上次的数据
+//  memset(Uart_AT, 0, size);
+
+//return 1;
+
+//}
+
+bool AT_Match(void) {
+    uint8_t MATCH[] = "OK";
+    timerCount = 0; // 重置计数器
+
+    while (!isPresent(Uart_AT, MATCH)) {
+        _AT_CHECK;
+        NRF_LOG_INFO("Matching....");
+        nrf_delay_ms(100);
+
+        if (timerCount >= 3) { // 10秒超时（假设每2秒中断一次）
+            int size = sizeof(Uart_AT);
+            memset(Uart_AT, 0, size);
+            NRF_LOG_INFO("Matching failed....");
+            return 0;
+        }
+    }
+
+    int size = sizeof(Uart_AT);
+    memset(Uart_AT, 0, size);
+    NRF_LOG_INFO("AT_Matching Done");
+    return 1;
 }
-  int size = sizeof(Uart_AT);//不请空的话在进     uart,会导致对比失效有可能对比的是上次的数据
-  memset(Uart_AT, 0, size);
 
-return 1;
 
-}
+
 
 bool SIM_DET(void)
 {
@@ -824,7 +852,7 @@ bool IMEI_NM_CD(uint8_t * serial_number)
 //进行寻找，其实就是       wait_uart_ack_x_second(OK, 10);但因为要在清空      Uart_AT之前把值传出来，所以重新写这部分
 int result = 0;
 
-for(int i=1; i <=1000;i++) //等10秒
+for(int i=1; i <=500;i++) //等5秒
        {
         if( isPresent(Uart_AT,  OK)==1 )
         {

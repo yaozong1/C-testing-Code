@@ -73,7 +73,7 @@ uint8_t result[9]; //for sending to esp32 by stm32___can____
 
 uint8_t manufacturer_id_readback_send= 0xFF;
 
-uint8_t imei[15];  //或者更大，取决于你的需要
+uint8_t imei[] = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};  //或者更大，取决于你的需要
 
 uint8_t SN_C[30];
 
@@ -115,10 +115,11 @@ int main(void)
 
     nrf_delay_ms(10);
     
-    NRF_LOG_INFO("AT_Matching Done");
+    
 
     nrf_delay_ms(10);
 
+    if (result_modem == 1)
     IMEI_NM_CD(imei);
 
     NRF_LOG_INFO("IMEI_Numbers Received: %s", imei);
