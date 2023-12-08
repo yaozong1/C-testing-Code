@@ -311,7 +311,7 @@ bool AT_Match(void) {
         NRF_LOG_INFO("Matching....");
         nrf_delay_ms(100);
 
-        if (timerCount >= 3) { // 10秒超时（假设每2秒中断一次）
+        if (timerCount >= 4) { // 10秒超时（假设每2秒中断一次）
             int size = sizeof(Uart_AT);
             memset(Uart_AT, 0, size);
             NRF_LOG_INFO("Matching failed....");
@@ -852,7 +852,7 @@ bool IMEI_NM_CD(uint8_t * serial_number)
 //进行寻找，其实就是       wait_uart_ack_x_second(OK, 10);但因为要在清空      Uart_AT之前把值传出来，所以重新写这部分
 int result = 0;
 
-for(int i=1; i <=500;i++) //等5秒
+for(int i=1; i <=800;i++) //等8秒
        {
         if( isPresent(Uart_AT,  OK)==1 )
         {
